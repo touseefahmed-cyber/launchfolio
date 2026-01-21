@@ -671,12 +671,12 @@ function Footer() {
         return ()=>clearInterval(interval);
     }, []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
-        className: "bg-black pt-16 px-11  overflow-hidden",
+        className: "bg-black md:pt-16 pt-[32] md:px-[44px] px-[22px]   overflow-hidden",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "wrapper !border-0 relative pb-[348px]",
+            className: "wrapper !border-0 relative 2xl:pb-[348px] lg:pb-[268px] md:pb-[220px] sm:pb-[160px] pb-[90px]",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex text-[72px] leading-[72px] text-white font-medium relative",
+                    className: "flex 2xl:text-[72px] 2xl:leading-[72px] lg:text-[60px] lg:leading-[60px] md:text-[48px] md:leading-[45px] text-[42px] leading-[39px] text-white font-medium relative",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: FOOTER_DATA.heading.part1
@@ -707,7 +707,7 @@ function Footer() {
                     columnNumber: 16
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-[72px] leading-[60px] text-[#828282] font-medium",
+                    className: "2xl:text-[72px] 2xl:leading-[72px] lg:text-[60px] lg:leading-[60px] md:text-[48px] md:leading-[45px] text-[42px] leading-[39px] text-[#828282] font-medium",
                     children: FOOTER_DATA.heading.part2
                 }, void 0, false, {
                     fileName: "[project]/src/components/Site/Footer.tsx",
@@ -715,13 +715,13 @@ function Footer() {
                     columnNumber: 16
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid grid-cols-[repeat(3,minmax(50px,1fr))]  pt-[48px] border-b border-[#828282] pb-[24px] mb-[24px]",
+                    className: "grid md:grid-cols-[repeat(3,minmax(50px,1fr))] md:gap-y-0 gap-y-[32px]  pt-[48px] border-b border-[#828282] pb-[24px] mb-[24px]",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "font-medium",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-                                    className: "text-[14px] leading-[14px] text-[#828282] mb-[6px]",
+                                    className: "text-[14px] leading-[14px] text-[#828282] mb-[8px]",
                                     children: FOOTER_DATA.contact.email.label
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Site/Footer.tsx",
@@ -730,7 +730,7 @@ function Footer() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     href: FOOTER_DATA.contact.email.href,
-                                    className: "text-[18px] leading-[18px] inline-block text-white",
+                                    className: "lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px] inline-block text-white",
                                     children: FOOTER_DATA.contact.email.address
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Site/Footer.tsx",
@@ -747,7 +747,7 @@ function Footer() {
                             className: "font-medium",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-                                    className: "text-[14px] leading-[14px] text-[#828282] mb-[6px]",
+                                    className: "text-[14px] leading-[14px] text-[#828282] mb-[8px]",
                                     children: FOOTER_DATA.contact.call.label
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Site/Footer.tsx",
@@ -756,7 +756,7 @@ function Footer() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     href: FOOTER_DATA.contact.call.href,
-                                    className: "text-[18px] leading-[18px] inline-block text-white",
+                                    className: "lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px]] inline-block text-white",
                                     children: FOOTER_DATA.contact.call.text
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Site/Footer.tsx",
@@ -773,7 +773,7 @@ function Footer() {
                             className: "font-medium",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-                                    className: "text-[14px] leading-[14px] text-white mb-[6px]",
+                                    className: "text-[14px] leading-[14px] md:text-white text-[#828282] mb-[10px]",
                                     children: FOOTER_DATA.contact.social.label
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Site/Footer.tsx",
@@ -825,7 +825,7 @@ function Footer() {
                     columnNumber: 16
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid grid-cols-[repeat(3,minmax(50px,1fr))]",
+                    className: "grid sm:grid-cols-[repeat(3,minmax(50px,1fr))] grid-cols-[repeat(2,minmax(50px,1fr))]",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "font-medium",
@@ -934,7 +934,7 @@ function Footer() {
                             columnNumber: 23
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "font-medium text-[12px] leading-[12px] text-[#828282]",
+                            className: "font-medium text-[12px] leading-[12px] text-[#828282] sm:col-auto col-span-full sm:mt-0 mt-[24px]",
                             children: FOOTER_DATA.copyright
                         }, void 0, false, {
                             fileName: "[project]/src/components/Site/Footer.tsx",
@@ -948,14 +948,14 @@ function Footer() {
                     columnNumber: 16
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-full absolute bottom-[-30px] left-1/2 -translate-x-1/2",
+                    className: "w-full absolute bottom-0 left-1/2 -translate-x-1/2",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                         xmlns: "http://www.w3.org/2000/svg",
                         width: "1334",
                         height: "311",
                         viewBox: "0 0 1334 311",
                         fill: "none",
-                        className: "w-full",
+                        className: "w-full h-full",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                 d: "M1299.96 4.39878H1293.31V0.661133H1310.61V4.39878H1303.93V23.4051H1299.96V4.39878Z",
