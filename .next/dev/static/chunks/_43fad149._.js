@@ -1852,18 +1852,18 @@ const clientsData = [
 ];
 function ClientsSection() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(3);
-    if ($[0] !== "d11ac641b4b71acfd71cfa2064f7d935f5f8e80fb126481ad9aeb32180044ce0") {
+    if ($[0] !== "b06394887bcde03c4896f393da1e9c8105f3ab2c377a55313857fcf8bd246903") {
         for(let $i = 0; $i < 3; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "d11ac641b4b71acfd71cfa2064f7d935f5f8e80fb126481ad9aeb32180044ce0";
+        $[0] = "b06394887bcde03c4896f393da1e9c8105f3ab2c377a55313857fcf8bd246903";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
         t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Site$2f$FadeUp$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             delay: ANIMATION_DELAYS.heading,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "text-[64px] leading-[64px] text-black font-medium mb-[60px]",
+                className: "2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text-[46px] md:leading-[46px] text-[36px] leading-[36px] text-black font-medium md:mb-[60px] mb-[48px]",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         className: "text-[#828282]",
@@ -1871,7 +1871,7 @@ function ClientsSection() {
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/ClientsSection.tsx",
                         lineNumber: 68,
-                        columnNumber: 128
+                        columnNumber: 242
                     }, this),
                     CLIENTS_DATA.heading.part2
                 ]
@@ -1892,31 +1892,31 @@ function ClientsSection() {
     let t1;
     if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
         t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-            className: "border-b border-[#dedede]",
+            className: "border-b border-[#dedede] 2xl:px-0 px-[15px]",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "wrapper",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "py-[128px] px-[44px]",
+                    className: "md:py-[128px] py-[48px] 2xl:px-[44px] md:px-[15px] px-[10px]",
                     children: [
                         t0,
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-3 gap-[16px]",
+                            className: "md:grid lg:grid-cols-3 md:grid-cols-2 flex gap-[16px] md:overflow-hidden overflow-x-scroll scrollbar-hide",
                             children: clientsData.map(_ClientsSectionClientsDataMap)
                         }, void 0, false, {
                             fileName: "[project]/src/components/Site/ClientsSection.tsx",
                             lineNumber: 75,
-                            columnNumber: 124
+                            columnNumber: 183
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Site/ClientsSection.tsx",
                     lineNumber: 75,
-                    columnNumber: 82
+                    columnNumber: 101
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/ClientsSection.tsx",
                 lineNumber: 75,
-                columnNumber: 57
+                columnNumber: 76
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/ClientsSection.tsx",
@@ -1934,7 +1934,7 @@ function _ClientsSectionClientsDataMap(client, index) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Site$2f$FadeIn$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
         delay: ANIMATION_DELAYS.clientBase + index * ANIMATION_DELAYS.clientIncrement,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex flex-col",
+            className: "border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n                                 flex flex-col md:w-auto sm:w-[315px] w-[290px] bg-white ",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$quote$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Quote$3e$__["Quote"], {
                     className: "mb-[10px] rotate-180",
@@ -1942,7 +1942,7 @@ function _ClientsSectionClientsDataMap(client, index) {
                 }, void 0, false, {
                     fileName: "[project]/src/components/Site/ClientsSection.tsx",
                     lineNumber: 83,
-                    columnNumber: 205
+                    columnNumber: 284
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "text-[14px] leading-[22px] font-semibold",
@@ -1950,7 +1950,7 @@ function _ClientsSectionClientsDataMap(client, index) {
                 }, void 0, false, {
                     fileName: "[project]/src/components/Site/ClientsSection.tsx",
                     lineNumber: 83,
-                    columnNumber: 257
+                    columnNumber: 336
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex gap-[10px] mt-auto",
@@ -1963,12 +1963,12 @@ function _ClientsSectionClientsDataMap(client, index) {
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Site/ClientsSection.tsx",
                                 lineNumber: 83,
-                                columnNumber: 454
+                                columnNumber: 533
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/Site/ClientsSection.tsx",
                             lineNumber: 83,
-                            columnNumber: 378
+                            columnNumber: 457
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "text-[12px] leading-[12px] font-bold",
@@ -1979,26 +1979,26 @@ function _ClientsSectionClientsDataMap(client, index) {
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Site/ClientsSection.tsx",
                                     lineNumber: 83,
-                                    columnNumber: 563
+                                    columnNumber: 642
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     children: client.role
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Site/ClientsSection.tsx",
                                     lineNumber: 83,
-                                    columnNumber: 617
+                                    columnNumber: 696
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Site/ClientsSection.tsx",
                             lineNumber: 83,
-                            columnNumber: 509
+                            columnNumber: 588
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Site/ClientsSection.tsx",
                     lineNumber: 83,
-                    columnNumber: 337
+                    columnNumber: 416
                 }, this)
             ]
         }, void 0, true, {

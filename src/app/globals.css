@@ -148,7 +148,8 @@
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  border-inline: 1px solid #dedede;
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
 }
 .book_btn{
   display: flex;
@@ -264,3 +265,12 @@
 .work-history-card-enter {
   animation: bounce-in 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+

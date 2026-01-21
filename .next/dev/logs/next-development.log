@@ -560,3 +560,369 @@ Import trace:
     ./src/app/page.tsx
 
 
+[00:53:08.920] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:53:08.920] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:53:08.920] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:54:39.665] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:54:39.666] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:54:39.666] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:55:11.273] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[00:57:07.356] Server  LOG     ✓ Compiled in 55ms
+[00:57:23.816] Server  LOG     ✓ Compiled in 37ms
+[00:58:12.299] Server  LOG     ✓ Compiled in 28ms
+[00:59:06.704] Server  LOG     ✓ Compiled in 39ms
+[01:04:56.540] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[01:04:57.029] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[01:05:39.401] Server  LOG     ✓ Compiled in 48ms
+[01:05:44.259] Server  LOG     ✓ Compiled in 26ms
+[01:06:02.606] Server  LOG     ✓ Compiled in 56ms
+[01:06:22.354] Server  LOG     ✓ Compiled in 47ms
+[01:07:32.090] Server  LOG     ✓ Compiled in 42ms
+[01:07:32.666] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[01:07:33.026] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[01:08:38.316] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[01:08:38.505] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[01:09:31.661] Server  LOG     ✓ Compiled in 55ms
+[01:09:38.047] Server  LOG     ✓ Compiled in 45ms
+[01:09:44.185] Server  LOG     ✓ Compiled in 40ms
+[01:09:48.116] Server  LOG     ✓ Compiled in 47ms
+[01:09:53.280] Server  LOG     ✓ Compiled in 37ms
+[01:09:55.321] Server  LOG     ✓ Compiled in 38ms
+[01:10:01.126] Server  LOG     ✓ Compiled in 47ms
+[01:10:02.429] Server  LOG     ✓ Compiled in 51ms
+[01:10:04.167] Server  LOG     ✓ Compiled in 46ms
+[01:10:06.410] Server  LOG     ✓ Compiled in 48ms
+[01:10:10.902] Server  LOG     ✓ Compiled in 62ms
+[01:11:04.259] Server  LOG     ✓ Compiled in 105ms
+[01:11:09.489] Server  LOG     ✓ Compiled in 48ms
+[01:11:23.458] Server  LOG     ✓ Compiled in 67ms
+[01:11:34.798] Server  LOG     ✓ Compiled in 38ms
+[01:11:48.829] Server  LOG     ✓ Compiled in 66ms
+[01:11:58.625] Server  LOG     ✓ Compiled in 74ms
+[01:12:08.361] Server  LOG     ✓ Compiled in 45ms
+[01:12:48.091] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[01:12:48.546] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[01:15:34.850] Server  LOG     ✓ Compiled in 73ms
+[01:16:32.852] Server  LOG     ✓ Compiled in 75ms
+[01:16:46.782] Server  LOG     ✓ Compiled in 56ms
+[01:17:59.486] Server  LOG     ✓ Compiled in 162ms
+[01:18:32.655] Server  LOG     ✓ Compiled in 60ms
+[01:19:20.444] Server  LOG     ✓ Compiled in 58ms
+[01:19:29.050] Server  LOG     ✓ Compiled in 35ms
+[01:19:33.842] Server  LOG     ✓ Compiled in 26ms
+[01:19:36.266] Server  LOG     ✓ Compiled in 22ms
+[01:22:43.595] Server  LOG     ✓ Compiled in 69ms
+[01:22:44.682] Server  LOG     ✓ Compiled in 57ms
+[01:22:45.545] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[01:22:45.959] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[01:22:50.878] Server  LOG     ✓ Compiled in 38ms
+[01:23:24.472] Server  LOG     ✓ Compiled in 64ms
+[01:23:25.454] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[01:23:25.790] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[01:23:26.009] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectErrorBoundary router={{...}}>
+      <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+        <SegmentViewNode type="page" pagePath="page.tsx">
+          <SegmentTrieNode>
+          <Page>
+            <Page>
+              <ClientsSection>
+                <section className="border-b b...">
+                  <div className="wrapper">
+                    <div className="md:py-[128...">
+                      <FadeUp>
+                      <div className="md:grid lg...">
+                        <FadeIn delay={0.4}>
+                          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                            <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n       ..."}
+-                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex fle..."}
+                              >
+                        <FadeIn delay={0.5}>
+                          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                            <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n       ..."}
+-                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex fle..."}
+                              >
+                        <FadeIn delay={0.6000000000000001}>
+                          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                            <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n       ..."}
+-                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex fle..."}
+                              >
+                        <FadeIn delay={0.7000000000000001}>
+                          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                            <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n       ..."}
+-                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex fle..."}
+                              >
+                        <FadeIn delay={0.8}>
+                          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                            <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n       ..."}
+-                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex fle..."}
+                              >
+                        <FadeIn delay={0.9}>
+                          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                            <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n       ..."}
+-                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex fle..."}
+                              >
+            ...
+        ...
+      ...
+
+[01:24:07.774] Server  LOG     ✓ Compiled in 164ms
+[01:25:17.154] Server  LOG     ✓ Compiled in 101ms
+[01:25:54.960] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[01:25:55.298] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[01:25:55.440] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectErrorBoundary router={{...}}>
+      <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+        <SegmentViewNode type="page" pagePath="page.tsx">
+          <SegmentTrieNode>
+          <Page>
+            <Page>
+              <ClientsSection>
+                <section className="border-b b...">
+                  <div className="wrapper">
+                    <div className="md:py-[128...">
+                      <FadeUp>
+                      <div className="md:grid lg...">
+                        <FadeIn delay={0.4}>
+                          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                            <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n       ..."}
+-                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex fle..."}
+                              >
+                        <FadeIn delay={0.5}>
+                          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                            <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n       ..."}
+-                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex fle..."}
+                              >
+                        <FadeIn delay={0.6000000000000001}>
+                          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                            <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n       ..."}
+-                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex fle..."}
+                              >
+                        <FadeIn delay={0.7000000000000001}>
+                          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                            <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n       ..."}
+-                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex fle..."}
+                              >
+                        <FadeIn delay={0.8}>
+                          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                            <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n       ..."}
+-                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex fle..."}
+                              >
+                        <FadeIn delay={0.9}>
+                          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                            <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n       ..."}
+-                               className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex fle..."}
+                              >
+            ...
+        ...
+      ...
+
+[01:26:07.327] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
