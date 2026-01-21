@@ -1,0 +1,29 @@
+[00:00:00.787] Server  LOG     ✓ Ready in 606ms
+[00:00:04.968] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[00:00:05.466] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[00:00:05.543] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.864] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:08.038] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:00:08.038] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:00:08.038] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
