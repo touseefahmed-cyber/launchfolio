@@ -68,12 +68,12 @@ const FAQ_DATA = {
 
 function Faq() {
     return (
-        <section className="border-b border-[#dedede]">
+        <section className="border-b border-[#dedede] 2xl:px-0 px-[15px]">
             <div className="wrapper">
-                <div className="py-[128px] px-[44px] grid grid-cols-[54.3%_42.5%] gap-[32px] items-start">
+                <div className="md:py-[128px] py-[48px] 2xl:px-[44px] md:px-[15px] px-[10px] grid lg:grid-cols-[54.3%_42.5%] grid-cols-[100%] gap-[32px] items-start">
                     <div>
                         <FadeUp>
-                            <div className="text-[64px] leading-[64px] text-black font-medium mb-[64px]">
+                            <div className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text-[46px] md:leading-[46px] text-[36px] leading-[36px] text-black font-medium md:mb-[64px] mb-[48px]">
                                 <div>{FAQ_DATA.heading.part1}</div>
                                 <h2 className="text-[#828282]">{FAQ_DATA.heading.part2}</h2>
                             </div>
@@ -91,7 +91,7 @@ function Faq() {
                                 className="border border-[#dedede] pt-[17px] rounded-[16px] bg-white shadow"
                             >
                                 <AccordionTrigger className="py-0 px-[16px] pb-[17px] overflow-hidden">
-                                    <div className="text-[16px] leading-[16px] text-black text-bold flex gap-[20px]">
+                                    <div className="2xl:text-[16px] 2xl:leading-[16px] text-[14px] leading-[14px] text-black text-bold flex gap-[20px]">
                                         <span className="text-[#545454] transition-all duration-300 group-data-[state=open]:-translate-x-[40px]">
                                             {item.number}
                                         </span>
@@ -108,20 +108,20 @@ function Faq() {
                     </Accordion>
                     </div>
                     <div className="sticky top-[128px] self-start">
-                        <div className="border border-[#dedede] bg-white rounded-[16px] shadow p-[32px]">
-                            <figure className="w-[64px] h-[64px] rounded-full overflow-hidden mb-[20px]">
+                        <div className="border border-[#dedede] bg-white rounded-[16px] shadow sm:p-[32px] p-[22px] lg:text-left text-center">
+                            <figure className="w-[64px] h-[64px] rounded-full overflow-hidden mb-[20px] lg:mx-0 mx-auto">
                                 <Image src={user_img} alt={FAQ_DATA.callCard.imageAlt} />
                             </figure>
                             <div>
-                                <h3 className="text-[30px] leading-[30px] font-medium mb-[16px]">
+                                <h3 className="2xl:text-[30px] md:leading-[30px] md:text-[28px] sm:text-[26px] sm:leading-[26px] text-[24px] leading-[24px] font-medium mb-[16px]">
                                     <span className="block text-[#828282]">{FAQ_DATA.callCard.heading.part1}</span>
                                     {FAQ_DATA.callCard.heading.part2}
                                 </h3>
-                                <p className="text-[14px] leading-[22px] text-black mb-[30px] font-medium">
+                                <p className="text-[14px] leading-[22px] text-black mb-[30px] font-medium lg:w-auto md:w-[50%] sm:w-[70%] lg:mx-0 mx-auto">
                                     {FAQ_DATA.callCard.description}
                                 </p>
                                 <div className="">
-                                    <Link href={FAQ_DATA.callCard.button.href} className="schedule_btn">
+                                    <Link href={FAQ_DATA.callCard.button.href} className="schedule_btn lg:mx-0 mx-auto">
                                         <CalendarCheck size={18} /> {FAQ_DATA.callCard.button.text}
                                     </Link>
                                 </div>
