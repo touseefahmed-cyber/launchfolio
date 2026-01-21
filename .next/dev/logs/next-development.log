@@ -27,3 +27,7 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [00:00:08.038] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
 [00:00:08.038] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
 [00:00:08.038] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:12:51.229] Server  LOG     ✓ Compiled in 78ms
+[00:13:30.050] Server  LOG     ✓ Compiled in 58ms
+[00:14:24.051] Server  LOG     ✓ Compiled in 212ms
+[00:15:04.583] Server  LOG     ✓ Compiled in 56ms

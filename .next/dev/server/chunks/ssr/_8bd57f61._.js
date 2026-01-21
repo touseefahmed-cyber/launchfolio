@@ -348,7 +348,7 @@ function FadeUp({ children, delay = 0 }) {
         children: children
     }, void 0, false, {
         fileName: "[project]/src/components/Site/FadeUp.tsx",
-        lineNumber: 20,
+        lineNumber: 26,
         columnNumber: 9
     }, this);
 }

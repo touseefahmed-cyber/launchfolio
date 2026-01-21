@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import user_img from "../../../public/images/user_img.avif";
 
 function Header() {
@@ -29,7 +29,7 @@ function Header() {
     }, [lastScrollY]);
 
     // Parent variant for stagger
-    const dotsContainer = {
+    const dotsContainer: Variants = {
         animate: {
             transition: {
                 staggerChildren: 0.2,
@@ -38,15 +38,15 @@ function Header() {
     };
 
     // Single dot animation
-    const singleDot = {
+    const singleDot: Variants = {
         animate: {
             y: [0, -4, 0],
             backgroundColor: ["#828282", "black", "#828282"],
             transition: {
                 duration: 0.9,
-                ease: "easeInOut",
+                ease: "easeInOut" as const,
                 repeat: Infinity,
-                repeatType: "loop",
+                repeatType: "loop" as const,
             },
         },
     };

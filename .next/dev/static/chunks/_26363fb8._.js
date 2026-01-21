@@ -19,11 +19,11 @@ var _s = __turbopack_context__.k.signature();
 function SmoothScroll(t0) {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(4);
-    if ($[0] !== "ae43770703fcbae18acddb33126bca8b23a23d6317296c124f527eb26eac3ea9") {
+    if ($[0] !== "d169de861640ef9965a4d6eb1ed5f7ba864427c021ced99b99a7d3de1066adcf") {
         for(let $i = 0; $i < 4; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "ae43770703fcbae18acddb33126bca8b23a23d6317296c124f527eb26eac3ea9";
+        $[0] = "d169de861640ef9965a4d6eb1ed5f7ba864427c021ced99b99a7d3de1066adcf";
     }
     const { children } = t0;
     let t1;
@@ -56,7 +56,6 @@ function _SmoothScrollUseEffect() {
         gestureOrientation: "vertical",
         smoothWheel: true,
         wheelMultiplier: 1,
-        smoothTouch: false,
         touchMultiplier: 2,
         infinite: false
     });
