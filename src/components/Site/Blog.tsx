@@ -59,23 +59,23 @@ const ANIMATION_DELAYS = {
 
 function Blog() {
     return (
-        <section >
+        <section className="2xl:px-0 px-[15px]">
             <div className="wrapper">
-                <div className="py-[128px] px-[44px]">
-                    <div className="flex justify-between items-end mb-[64px]">
+                <div className="md:py-[128px] py-[48px] 2xl:px-[44px] md:px-[15px] px-[10px]">
+                    <div className="flex justify-between sm:items-end sm:flex-row flex-col gap-y-4 md:mb-[64px] mb-[40px]">
                         <FadeUp delay={ANIMATION_DELAYS.heading}>
-                            <div className="text-[64px] leading-[64px] text-black font-medium">
+                            <div className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text-[46px] md:leading-[46px] text-[36px] leading-[36px] text-black font-medium">
                                 <h2 className="text-[#828282]">{BLOG_DATA.heading.part1}</h2>
                                 {BLOG_DATA.heading.part2}
                             </div>
                         </FadeUp>
                         <div>
-                            <Link href={BLOG_DATA.viewAll.href} className="flex text-[18px] leading-[18px] font-medium">
+                            <Link href={BLOG_DATA.viewAll.href} className="flex sm:text-[18px] sm:leading-[18px] text-[16px] leading-[16px] font-medium justify-end">
                                 {BLOG_DATA.viewAll.text} <ArrowUpRight size={18} />
                             </Link>
                         </div>
                     </div>
-                    <div className="grid grid-cols-2 gap-[12px]">
+                    <div className="grid md:grid-cols-2 grid-cols-1 gap-[12px]">
                         {BLOG_DATA.posts.map((post) => (
                             <div
                                 key={post.id}
@@ -83,12 +83,12 @@ function Blog() {
                                     post.isLarge ? "col-span-full" : ""
                                 }`}
                             >
-                                <Link href={post.href} className={post.isLarge ? "flex" : ""} data-cursor-text="Article">
+                                <Link href={post.href} className={post.isLarge ? "md:flex" : ""} data-cursor-text="Article">
                                     <figure
                                         className={`${
                                             post.isLarge
-                                                ? "h-[500px] w-[488px] shrink-0 overflow-hidden"
-                                                : "h-[275px] w-full transition-all duration-500 ease-in-out overflow-hidden "
+                                                ? "md:h-[500px] sm:h-[275px] h-[186px] lg:w-[488px] md:w-[340px] w-full shrink-0 overflow-hidden"
+                                                : "sm:h-[275px] h-[186px] w-full transition-all duration-500 ease-in-out overflow-hidden "
                                         }`}
                                     >
                                         <Image
@@ -96,17 +96,17 @@ function Blog() {
                                             alt={post.imageAlt}
                                             className={`w-full h-full group-hover:scale-[1.1] transition-all duration-500 ease-in-out ${
                                                 post.isLarge
-                                                    ? "rounded-tl-[16px] rounded-bl-[16px]"
+                                                    ? "md:rounded-tl-[16px] md:rounded-bl-[16px]"
                                                     : "rounded-tl-[16px] rounded-tr-[16px]"
                                             }`}
                                         />
                                     </figure>
-                                    <div className={`p-[32px] ${post.isLarge ? "flex justify-center flex-col" : ""}`}>
+                                    <div className={`sm:p-[32px] p-[20px] ${post.isLarge ? "flex justify-center flex-col" : ""}`}>
                                         <h4
                                             className={`${
                                                 post.isLarge
-                                                    ? "text-[32px] leading-[36px]"
-                                                    : "text-[24px] leading-[24px]"
+                                                    ? "2xl:text-[32px] 2xl:leading-[36px] lg:text-[30px] lg:leading-[34px] md:text-[28px] md:leading-[32px] text-[20px] leading-[26px]"
+                                                    : "lg:text-[24px] lg:leading-[24px] md:text-[22px] md:leading-[28px] text-[22px] leading-[26px]"
                                             } font-medium text-black mb-[20px]`}
                                         >
                                             {post.title}

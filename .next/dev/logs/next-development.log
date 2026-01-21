@@ -28,3 +28,49 @@ Import trace:
 [00:07:18.118] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
 [00:07:18.118] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
 [00:07:18.118] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:09:34.625] Server  LOG     ✓ Compiled in 19ms
+[00:13:02.333] Server  LOG     ✓ Compiled in 48ms
+[00:13:04.124] Browser WARN    Image with src "/_next/static/media/blog_img1.4ff1c42b.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:13:16.449] Server  LOG     ✓ Compiled in 48ms
+[00:21:04.227] Browser WARN    Image with src "/_next/static/media/blog_img1.4ff1c42b.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:25:12.925] Server  LOG     ✓ Compiled in 44ms
+[00:25:13.029] Browser ERROR   ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/toseefahmed/Documents/launchfolio/Untitled/src/app/globals.css:1:1: Cannot apply unknown utility class `2xl:px-auto`
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/toseefahmed/Documents/launchfolio/Untitled/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[00:25:23.356] Browser WARN    Image with src "/_next/static/media/blog_img1.4ff1c42b.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:25:51.632] Server  LOG     ✓ Compiled in 41ms
+[00:26:21.570] Browser WARN    Image with src "/_next/static/media/blog_img1.4ff1c42b.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:29:53.234] Browser WARN    Image with src "/_next/static/media/blog_img1.4ff1c42b.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:30:38.008] Browser WARN    Image with src "/_next/static/media/blog_img1.4ff1c42b.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:30:40.255] Browser WARN    Image with src "/_next/static/media/blog_img1.4ff1c42b.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:31:06.769] Browser WARN    Image with src "/_next/static/media/blog_img1.4ff1c42b.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:31:17.463] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
