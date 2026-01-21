@@ -83,7 +83,7 @@ function Blog() {
                                     post.isLarge ? "col-span-full" : ""
                                 }`}
                             >
-                                <Link href={post.href} className={post.isLarge ? "flex" : ""}>
+                                <Link href={post.href} className={post.isLarge ? "flex" : ""} data-cursor-text="Article">
                                     <figure
                                         className={`${
                                             post.isLarge
