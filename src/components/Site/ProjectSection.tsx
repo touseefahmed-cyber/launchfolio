@@ -181,7 +181,7 @@ function ProjectSection() {
 
                             return (
                                 <div key={project.id} ref={cardRef} className="relative group">
-                                    <Link href={project.link}>
+                                    <Link href={project.link} data-cursor-text="Project">
                                         <figure className="rounded-[16px] h-[363px] overflow-hidden mb-[12px] ">
                                             <Image
                                                 src={project.img}

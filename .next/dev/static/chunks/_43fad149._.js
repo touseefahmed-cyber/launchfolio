@@ -3367,11 +3367,11 @@ const PROJECTS = [
 function ProjectSection() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(4);
-    if ($[0] !== "39cc23ccc23891a7cf6644673b34d0d5225bcc44fff17d34613ea1e8b165ba78") {
+    if ($[0] !== "d9db713f503a486271e9ac66338fa0398ac5658c46f4143e8fa31c1138932d57") {
         for(let $i = 0; $i < 4; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "39cc23ccc23891a7cf6644673b34d0d5225bcc44fff17d34613ea1e8b165ba78";
+        $[0] = "d9db713f503a486271e9ac66338fa0398ac5658c46f4143e8fa31c1138932d57";
     }
     const card1Ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const card2Ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
@@ -3470,6 +3470,7 @@ function ProjectSection() {
                                     className: "relative group",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         href: project_0.link,
+                                        "data-cursor-text": "Project",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("figure", {
                                                 className: "rounded-[16px] h-[363px] overflow-hidden mb-[12px] ",
@@ -3480,12 +3481,12 @@ function ProjectSection() {
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Site/ProjectSection.tsx",
                                                     lineNumber: 172,
-                                                    columnNumber: 191
+                                                    columnNumber: 218
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Site/ProjectSection.tsx",
                                                 lineNumber: 172,
-                                                columnNumber: 119
+                                                columnNumber: 146
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex items-center justify-between card_content transition-all duration-500 ease-in-out group-hover:!opacity-0",
@@ -3498,7 +3499,7 @@ function ProjectSection() {
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Site/ProjectSection.tsx",
                                                                 lineNumber: 172,
-                                                                columnNumber: 486
+                                                                columnNumber: 513
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 className: "text-[12px] leading-[12px] text-[#545454] font-bold",
@@ -3506,13 +3507,13 @@ function ProjectSection() {
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Site/ProjectSection.tsx",
                                                                 lineNumber: 172,
-                                                                columnNumber: 583
+                                                                columnNumber: 610
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Site/ProjectSection.tsx",
                                                         lineNumber: 172,
-                                                        columnNumber: 481
+                                                        columnNumber: 508
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3523,25 +3524,25 @@ function ProjectSection() {
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Site/ProjectSection.tsx",
                                                                     lineNumber: 172,
-                                                                    columnNumber: 781
+                                                                    columnNumber: 808
                                                                 }, this),
                                                                 " View Project"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Site/ProjectSection.tsx",
                                                             lineNumber: 172,
-                                                            columnNumber: 691
+                                                            columnNumber: 718
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Site/ProjectSection.tsx",
                                                         lineNumber: 172,
-                                                        columnNumber: 686
+                                                        columnNumber: 713
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Site/ProjectSection.tsx",
                                                 lineNumber: 172,
-                                                columnNumber: 354
+                                                columnNumber: 381
                                             }, this)
                                         ]
                                     }, void 0, true, {
