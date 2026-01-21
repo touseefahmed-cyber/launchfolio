@@ -222,7 +222,7 @@
 .change-text {
   position: relative;
   display: inline-block;
-  height: 78px;
+  @apply 2xl:h-[78px] lg:h-[64px] sm:h-[50px] h-[45px];
   overflow-x: visible;
   overflow-y: hidden;
   vertical-align: top;
@@ -238,8 +238,7 @@
   transform: translateY(20px);
   transition: all 0.6s ease;
   color: #fff;
-  font-size: 72px;
-  line-height: 72px;
+  @apply 2xl:text-[72px] 2xl:leading-[72px] lg:text-[60px] lg:leading-[60px] md:text-[48px] md:leading-[45px] text-[42px] leading-[39px];
   font-weight: 500;
 }
 

@@ -65,9 +65,9 @@ function Footer() {
     }, []);
 
     return (
-        <footer className="bg-black pt-16 px-11  overflow-hidden">
-           <div className="wrapper !border-0 relative pb-[348px]">
-               <div className="flex text-[72px] leading-[72px] text-white font-medium relative">
+        <footer className="bg-black md:pt-16 pt-[32] md:px-[44px] px-[22px]   overflow-hidden">
+           <div className="wrapper !border-0 relative 2xl:pb-[348px] lg:pb-[268px] md:pb-[220px] sm:pb-[160px] pb-[90px]">
+               <div className="flex 2xl:text-[72px] 2xl:leading-[72px] lg:text-[60px] lg:leading-[60px] md:text-[48px] md:leading-[45px] text-[42px] leading-[39px] text-white font-medium relative">
                    <div>{FOOTER_DATA.heading.part1}</div>
                    <div className="change-text relative inline-block ml-2 min-w-[250px]">
                         {FOOTER_DATA.animation.texts.map((text, index) => (
@@ -77,28 +77,28 @@ function Footer() {
                         ))}
                    </div>
                </div>
-               <p className="text-[72px] leading-[60px] text-[#828282] font-medium">
+               <p className="2xl:text-[72px] 2xl:leading-[72px] lg:text-[60px] lg:leading-[60px] md:text-[48px] md:leading-[45px] text-[42px] leading-[39px] text-[#828282] font-medium">
                    {FOOTER_DATA.heading.part2}
                </p>
-               <div className="grid grid-cols-[repeat(3,minmax(50px,1fr))]  pt-[48px] border-b border-[#828282] pb-[24px] mb-[24px]">
+               <div className="grid md:grid-cols-[repeat(3,minmax(50px,1fr))] md:gap-y-0 gap-y-[32px]  pt-[48px] border-b border-[#828282] pb-[24px] mb-[24px]">
                        <div className="font-medium">
-                           <h6 className="text-[14px] leading-[14px] text-[#828282] mb-[6px]">
+                           <h6 className="text-[14px] leading-[14px] text-[#828282] mb-[8px]">
                                {FOOTER_DATA.contact.email.label}
                            </h6>
-                           <Link href={FOOTER_DATA.contact.email.href} className="text-[18px] leading-[18px] inline-block text-white">
+                           <Link href={FOOTER_DATA.contact.email.href} className="lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px] inline-block text-white">
                                {FOOTER_DATA.contact.email.address}
                            </Link>
                        </div>
                        <div className="font-medium">
-                           <h6 className="text-[14px] leading-[14px] text-[#828282] mb-[6px]">
+                           <h6 className="text-[14px] leading-[14px] text-[#828282] mb-[8px]">
                                {FOOTER_DATA.contact.call.label}
                            </h6>
-                           <Link href={FOOTER_DATA.contact.call.href} className="text-[18px] leading-[18px] inline-block text-white">
+                           <Link href={FOOTER_DATA.contact.call.href} className="lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px]] inline-block text-white">
                                {FOOTER_DATA.contact.call.text}
                            </Link>
                        </div>
                    <div className="font-medium">
-                       <h6 className="text-[14px] leading-[14px] text-white mb-[6px]">
+                       <h6 className="text-[14px] leading-[14px] md:text-white text-[#828282] mb-[10px]">
                            {FOOTER_DATA.contact.social.label}
                        </h6>
                        <ul className="flex items-center gap-[6px]">
@@ -119,7 +119,7 @@ function Footer() {
                        </ul>
                    </div>
                </div>
-               <div className="grid grid-cols-[repeat(3,minmax(50px,1fr))]">
+               <div className="grid sm:grid-cols-[repeat(3,minmax(50px,1fr))] grid-cols-[repeat(2,minmax(50px,1fr))]">
                       <div className="font-medium">
                           <h6 className="text-[14px] leading-[14px] text-[#828282] mb-[16px]">
                               {FOOTER_DATA.menu.label}
@@ -153,13 +153,13 @@ function Footer() {
                               ))}
                           </ul>
                       </div>
-                   <div className="font-medium text-[12px] leading-[12px] text-[#828282]">
+                   <div className="font-medium text-[12px] leading-[12px] text-[#828282] sm:col-auto col-span-full sm:mt-0 mt-[24px]">
                        {FOOTER_DATA.copyright}
                    </div>
                </div>
-               <div className="w-full absolute bottom-[-30px] left-1/2 -translate-x-1/2">
+               <div className="w-full absolute bottom-0 left-1/2 -translate-x-1/2">
                    <svg xmlns="http://www.w3.org/2000/svg" width="1334" height="311" viewBox="0 0 1334 311" fill="none"
-                        className="w-full">
+                        className="w-full h-full">
                        <path d="M1299.96 4.39878H1293.31V0.661133H1310.61V4.39878H1303.93V23.4051H1299.96V4.39878Z"
                              fill="white"/>
                        <path
