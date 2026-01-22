@@ -81,7 +81,7 @@ const PRICING_DATA = {
 
 function PricingSection() {
     return (
-        <section className="border-b border-[#dedede] 2xl:px-0 px-[15px]">
+        <section className="border-b border-[#dedede] 2xl:px-0 px-[15px]" id="pricing">
             <div className="wrapper">
                 <div className="md:py-[128px] py-[48px] 2xl:px-[44px] md:px-[15px] px-[10px] ">
                     <div className="flex justify-between md:flex-row flex-col md:items-end md:mb-[60px] mb-[48px] gap-y-[24px]">

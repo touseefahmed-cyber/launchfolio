@@ -3209,6 +3209,10 @@
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;

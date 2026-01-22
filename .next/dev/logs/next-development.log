@@ -7392,3 +7392,2048 @@ It can also happen if the client has a browser extension installed which messes 
 [02:54:48.958] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
 [02:54:48.958] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
 [02:54:48.958] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:37:05.488] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[03:37:05.953] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[03:37:06.228] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Header>
+              <Page>
+                <BannerSection>
+                  <section className="border-b b...">
+                    <div className="wrapper md...">
+                      <div className={" 2xl:px-..."}>
+                        <div>
+                          <FadeIn>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <h1
++                                 className={"2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:..."}
+-                                 className="2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:te..."
+                                >
+                          ...
+                        ...
+              <HappyClients>
+              <ProjectSection>
+              <section>
+              <Page>
+                <Services>
+                  ...
+                    <div className="md:py-[128...">
+                      <div className="grid md:gr...">
+                        <div>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
+-                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
+                                >
+                          ...
+                        ...
+              <Page>
+                <About>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="grid lg:gr...">
+                          <div className="md:order-0...">
+                            <div className="mb-[64px]">
+                              <div>
+                              <div className="space-y-[4px]">
+                                <h4
++                                 className={"2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] tex..."}
+-                                 className="2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] text-..."
+                                >
++                                 Joseph Alexander
+                                ...
+                            <span>
+                            <div className="relative">
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                          ...
+              <section>
+              <TrustedSlider>
+              <Page>
+                <ClientsSection>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="md:grid lg...">
+                          <FadeIn delay={0.4}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.5}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.6000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.7000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.8}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.9}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+              ...
+          ...
+        ...
+
+[03:37:06.228] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[03:37:07.558] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:37:07.558] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:37:07.558] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:37:14.915] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[03:37:16.872] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[03:37:17.047] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[03:37:17.278] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Header>
+              <Page>
+                <BannerSection>
+                  <section className="border-b b...">
+                    <div className="wrapper md...">
+                      <div className={" 2xl:px-..."}>
+                        <div>
+                          <FadeIn>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <h1
++                                 className={"2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:..."}
+-                                 className="2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:te..."
+                                >
+                          ...
+                        ...
+              <HappyClients>
+              <ProjectSection>
+              <section>
+              <Page>
+                <Services>
+                  ...
+                    <div className="md:py-[128...">
+                      <div className="grid md:gr...">
+                        <div>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
+-                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
+                                >
+                          ...
+                        ...
+              <Page>
+                <About>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="grid lg:gr...">
+                          <div className="md:order-0...">
+                            <div className="mb-[64px]">
+                              <div>
+                              <div className="space-y-[4px]">
+                                <h4
++                                 className={"2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] tex..."}
+-                                 className="2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] text-..."
+                                >
++                                 Joseph Alexander
+                                ...
+                            <span>
+                            <div className="relative">
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                          ...
+              <section>
+              <TrustedSlider>
+              <Page>
+                <ClientsSection>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="md:grid lg...">
+                          <FadeIn delay={0.4}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.5}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.6000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.7000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.8}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.9}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+              ...
+          ...
+        ...
+
+[03:37:17.278] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[03:37:17.854] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:37:17.854] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:37:17.854] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:37:24.585] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:37:24.585] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:37:24.585] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:37:27.536] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:37:27.536] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:37:27.536] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:37:31.739] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[03:37:33.336] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[03:37:33.503] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[03:37:33.730] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Header>
+              <Page>
+                <BannerSection>
+                  <section className="border-b b...">
+                    <div className="wrapper md...">
+                      <div className={" 2xl:px-..."}>
+                        <div>
+                          <FadeIn>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <h1
++                                 className={"2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:..."}
+-                                 className="2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:te..."
+                                >
+                          ...
+                        ...
+              <HappyClients>
+              <ProjectSection>
+              <section>
+              <Page>
+                <Services>
+                  ...
+                    <div className="md:py-[128...">
+                      <div className="grid md:gr...">
+                        <div>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
+-                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
+                                >
+                          ...
+                        ...
+              <Page>
+                <About>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="grid lg:gr...">
+                          <div className="md:order-0...">
+                            <div className="mb-[64px]">
+                              <div>
+                              <div className="space-y-[4px]">
+                                <h4
++                                 className={"2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] tex..."}
+-                                 className="2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] text-..."
+                                >
++                                 Joseph Alexander
+                                ...
+                            <span>
+                            <div className="relative">
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                          ...
+              <section>
+              <TrustedSlider>
+              <Page>
+                <ClientsSection>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="md:grid lg...">
+                          <FadeIn delay={0.4}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.5}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.6000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.7000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.8}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.9}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+              ...
+          ...
+        ...
+
+[03:37:33.730] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[03:37:42.240] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:37:42.240] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:37:42.240] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:37:53.502] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:37:53.502] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:37:53.502] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:38:03.396] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[03:38:03.575] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[03:38:03.825] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Header>
+              <Page>
+                <BannerSection>
+                  <section className="border-b b...">
+                    <div className="wrapper md...">
+                      <div className={" 2xl:px-..."}>
+                        <div>
+                          <FadeIn>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <h1
++                                 className={"2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:..."}
+-                                 className="2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:te..."
+                                >
+                          ...
+                        ...
+              <HappyClients>
+              <ProjectSection>
+              <section>
+              <Page>
+                <Services>
+                  ...
+                    <div className="md:py-[128...">
+                      <div className="grid md:gr...">
+                        <div>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
+-                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
+                                >
+                          ...
+                        ...
+              <Page>
+                <About>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="grid lg:gr...">
+                          <div className="md:order-0...">
+                            <div className="mb-[64px]">
+                              <div>
+                              <div className="space-y-[4px]">
+                                <h4
++                                 className={"2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] tex..."}
+-                                 className="2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] text-..."
+                                >
++                                 Joseph Alexander
+                                ...
+                            <span>
+                            <div className="relative">
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                          ...
+              <section>
+              <TrustedSlider>
+              <Page>
+                <ClientsSection>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="md:grid lg...">
+                          <FadeIn delay={0.4}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.5}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.6000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.7000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.8}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.9}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+              ...
+          ...
+        ...
+
+[03:38:03.825] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[03:44:53.595] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:44:53.595] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:44:53.595] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:44:59.869] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:44:59.869] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:44:59.869] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:01.986] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:01.986] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:01.986] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:04.153] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:04.153] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:04.153] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:05.754] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:05.754] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:05.754] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:06.603] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:06.603] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:06.603] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:13.486] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:13.486] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:13.486] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:19.337] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:19.337] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:19.337] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:25.402] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:25.402] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:25.402] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:26.785] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:26.785] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:45:26.785] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:38:39.451] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:38:39.451] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:38:39.452] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:38:41.910] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:38:41.910] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:38:41.910] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:38:53.243] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:38:53.243] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:38:53.243] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:39:04.147] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:39:05.990] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:39:06.165] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:39:06.435] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Header>
+              <Page>
+                <BannerSection>
+                  <section className="border-b b...">
+                    <div className="wrapper md...">
+                      <div className={" 2xl:px-..."}>
+                        <div>
+                          <FadeIn>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <h1
++                                 className={"2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:..."}
+-                                 className="2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:te..."
+                                >
+                          ...
+                        ...
+              <HappyClients>
+              <ProjectSection>
+              <section>
+              <Page>
+                <Services>
+                  ...
+                    <div className="md:py-[128...">
+                      <div className="grid md:gr...">
+                        <div>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
+-                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
+                                >
+                          ...
+                        ...
+              <Page>
+                <About>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="grid lg:gr...">
+                          <div className="md:order-0...">
+                            <div className="mb-[64px]">
+                              <div>
+                              <div className="space-y-[4px]">
+                                <h4
++                                 className={"2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] tex..."}
+-                                 className="2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] text-..."
+                                >
++                                 Joseph Alexander
+                                ...
+                            <span>
+                            <div className="relative">
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                          ...
+              <section>
+              <TrustedSlider>
+              <Page>
+                <ClientsSection>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="md:grid lg...">
+                          <FadeIn delay={0.4}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.5}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.6000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.7000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.8}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.9}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+              ...
+          ...
+        ...
+
+[04:39:06.435] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[04:39:08.230] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:39:08.230] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:39:08.230] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:39:13.747] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:39:13.747] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:39:13.747] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:40:25.759] Server  LOG     ✓ Compiled in 288ms
+[04:40:30.096] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:40:30.534] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:40:30.735] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Header>
+              <Page>
+                <BannerSection>
+                  <section className="border-b b...">
+                    <div className="wrapper md...">
+                      <div className={" 2xl:px-..."}>
+                        <div>
+                          <FadeIn>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <h1
++                                 className={"2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:..."}
+-                                 className="2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:te..."
+                                >
+                          ...
+                        ...
+              <HappyClients>
+              <ProjectSection>
+              <section>
+              <Page>
+                <Services>
+                  ...
+                    <div className="md:py-[128...">
+                      <div className="grid md:gr...">
+                        <div>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
+-                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
+                                >
+                          ...
+                        ...
+              <Page>
+                <About>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="grid lg:gr...">
+                          <div className="md:order-0...">
+                            <div className="mb-[64px]">
+                              <div>
+                              <div className="space-y-[4px]">
+                                <h4
++                                 className={"2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] tex..."}
+-                                 className="2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] text-..."
+                                >
++                                 Joseph Alexander
+                                ...
+                            <span>
+                            <div className="relative">
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                          ...
+              <section>
+              <TrustedSlider>
+              <Page>
+                <ClientsSection>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="md:grid lg...">
+                          <FadeIn delay={0.4}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.5}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.6000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.7000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.8}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.9}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+              ...
+          ...
+        ...
+
+[04:40:33.251] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:40:34.328] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:40:34.328] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:40:34.328] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:40:48.701] Server  LOG     ✓ Compiled in 54ms
+[04:40:52.611] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:40:54.262] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:40:55.410] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:40:55.410] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:40:55.410] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:40:55.495] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:40:55.672] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:40:55.895] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/#services" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Header>
+              <Page>
+                <BannerSection>
+                  <section className="border-b b...">
+                    <div className="wrapper md...">
+                      <div className={" 2xl:px-..."}>
+                        <div>
+                          <FadeIn>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <h1
++                                 className={"2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:..."}
+-                                 className="2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:te..."
+                                >
+                          ...
+                        ...
+              <HappyClients>
+              <ProjectSection>
+              <section>
+              <Page>
+                <Services>
+                  ...
+                    <div className="md:py-[128...">
+                      <div className="grid md:gr...">
+                        <div>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
+-                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
+                                >
+                          ...
+                        ...
+              <Page>
+                <About>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="grid lg:gr...">
+                          <div className="md:order-0...">
+                            <div className="mb-[64px]">
+                              <div>
+                              <div className="space-y-[4px]">
+                                <h4
++                                 className={"2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] tex..."}
+-                                 className="2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] text-..."
+                                >
++                                 Joseph Alexander
+                                ...
+                            <span>
+                            <div className="relative">
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                          ...
+              <section>
+              <TrustedSlider>
+              <Page>
+                <ClientsSection>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="md:grid lg...">
+                          <FadeIn delay={0.4}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.5}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.6000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.7000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.8}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.9}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+              ...
+          ...
+        ...
+
+[04:40:55.895] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:40:55.895] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:40:55.895] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:40:58.144] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:41:01.282] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:41:02.344] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:41:02.528] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:41:02.731] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:41:07.707] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:41:07.885] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:41:08.117] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Header>
+              <Page>
+                <BannerSection>
+                  <section className="border-b b...">
+                    <div className="wrapper md...">
+                      <div className={" 2xl:px-..."}>
+                        <div>
+                          <FadeIn>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <h1
++                                 className={"2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:..."}
+-                                 className="2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:te..."
+                                >
+                          ...
+                        ...
+              <HappyClients>
+              <ProjectSection>
+              <section>
+              <Page>
+                <Services>
+                  ...
+                    <div className="md:py-[128...">
+                      <div className="grid md:gr...">
+                        <div>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
+-                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
+                                >
+                          ...
+                        ...
+              <Page>
+                <About>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="grid lg:gr...">
+                          <div className="md:order-0...">
+                            <div className="mb-[64px]">
+                              <div>
+                              <div className="space-y-[4px]">
+                                <h4
++                                 className={"2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] tex..."}
+-                                 className="2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] text-..."
+                                >
++                                 Joseph Alexander
+                                ...
+                            <span>
+                            <div className="relative">
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                          ...
+              <section>
+              <TrustedSlider>
+              <Page>
+                <ClientsSection>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="md:grid lg...">
+                          <FadeIn delay={0.4}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.5}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.6000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.7000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.8}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.9}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+              ...
+          ...
+        ...
+
+[04:41:08.117] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[04:41:09.786] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:41:10.358] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:41:10.358] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:41:10.358] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:41:15.000] Server  LOG     ✓ Compiled in 56ms
+[04:41:57.081] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:41:57.539] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:41:57.539] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:41:57.539] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:41:57.991] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:41:57.991] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:41:57.991] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:41:58.706] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:41:59.196] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:41:59.424] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/#services" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Header>
+              <Page>
+                <BannerSection>
+                  <section className="border-b b...">
+                    <div className="wrapper md...">
+                      <div className={" 2xl:px-..."}>
+                        <div>
+                          <FadeIn>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <h1
++                                 className={"2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:..."}
+-                                 className="2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:te..."
+                                >
+                          ...
+                        ...
+              <HappyClients>
+              <ProjectSection>
+              <section>
+              <Page>
+                <Services>
+                  ...
+                    <div className="md:py-[128...">
+                      <div className="grid md:gr...">
+                        <div>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
+-                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
+                                >
+                          ...
+                        ...
+              <Page>
+                <About>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="grid lg:gr...">
+                          <div className="md:order-0...">
+                            <div className="mb-[64px]">
+                              <div>
+                              <div className="space-y-[4px]">
+                                <h4
++                                 className={"2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] tex..."}
+-                                 className="2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] text-..."
+                                >
++                                 Joseph Alexander
+                                ...
+                            <span>
+                            <div className="relative">
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                                <div ref={null} className="p-0">
+                                  <div className="flex items...">
+                                    <div className="flex-1">
+                                      <h5
++                                       className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."}
+-                                       className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px]..."
+                                      >
++                                       Nexus Technology
+                                      ...
+                              ...
+                          ...
+              <section>
+              <TrustedSlider>
+              <Page>
+                <ClientsSection>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="md:grid lg...">
+                          <FadeIn delay={0.4}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.5}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.6000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.7000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.8}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.9}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+              ...
+          ...
+        ...
+
+[04:41:59.424] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:41:59.424] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:41:59.424] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:42:01.558] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:42:03.447] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:42:03.447] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:42:03.447] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:46:30.345] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:46:30.345] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:46:30.345] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:46:57.425] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:46:57.425] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:46:57.425] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:47:03.073] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:47:04.667] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[04:47:06.275] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:47:06.275] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:47:06.275] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:47:45.009] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:47:45.010] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:47:45.010] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:47:46.558] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:47:46.558] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:47:46.558] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:47:47.693] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:47:47.693] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:47:47.693] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:47:48.293] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:47:48.293] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:47:48.293] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable

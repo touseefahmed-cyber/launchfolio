@@ -49,11 +49,11 @@ var _s = __turbopack_context__.k.signature();
 function Header() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(24);
-    if ($[0] !== "b147a6b2a2ed237d7507d02ac8c4b7bc31c666ed33a76c6976d58fd6f35cdd16") {
+    if ($[0] !== "54a603245156904d00648b775b4d87075c942bdb636e8111111c619a136c63ee") {
         for(let $i = 0; $i < 24; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "b147a6b2a2ed237d7507d02ac8c4b7bc31c666ed33a76c6976d58fd6f35cdd16";
+        $[0] = "54a603245156904d00648b775b4d87075c942bdb636e8111111c619a136c63ee";
     }
     const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [lastScrollY, setLastScrollY] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
@@ -250,7 +250,7 @@ function Header() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                href: "/services",
+                                href: "#services",
                                 children: "Services"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Site/Header.tsx",
@@ -264,7 +264,7 @@ function Header() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                href: "/pricing",
+                                href: "#pricing",
                                 children: "Pricing"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Site/Header.tsx",
@@ -2253,11 +2253,11 @@ const ANIMATION_DELAYS = {
 };
 function Services() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
-    if ($[0] !== "f280834db54cab089cc256cfac4d47b72e3285ad45b7d889b407a0cddcb9a918") {
+    if ($[0] !== "352137b5eeeb7ada313b68322b2d3d74d80fe9202d4df59bd0481469299f4bcb") {
         for(let $i = 0; $i < 5; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "f280834db54cab089cc256cfac4d47b72e3285ad45b7d889b407a0cddcb9a918";
+        $[0] = "352137b5eeeb7ada313b68322b2d3d74d80fe9202d4df59bd0481469299f4bcb";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -2353,6 +2353,7 @@ function Services() {
     if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
         t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
             className: "border-b border-[#dedede] 2xl:px-0 px-[15px]",
+            id: "services",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "wrapper",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2368,28 +2369,28 @@ function Services() {
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Site/Services.tsx",
                                     lineNumber: 108,
-                                    columnNumber: 310
+                                    columnNumber: 324
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Site/Services.tsx",
                                 lineNumber: 108,
-                                columnNumber: 305
+                                columnNumber: 319
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Site/Services.tsx",
                         lineNumber: 108,
-                        columnNumber: 179
+                        columnNumber: 193
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Site/Services.tsx",
                     lineNumber: 108,
-                    columnNumber: 101
+                    columnNumber: 115
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/Services.tsx",
                 lineNumber: 108,
-                columnNumber: 76
+                columnNumber: 90
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Services.tsx",

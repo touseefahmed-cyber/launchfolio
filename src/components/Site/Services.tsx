@@ -52,7 +52,7 @@ const ANIMATION_DELAYS = {
 
 function Services() {
     return (
-        <section className="border-b border-[#dedede] 2xl:px-0 px-[15px]">
+        <section className="border-b border-[#dedede] 2xl:px-0 px-[15px]" id="services">
             <div className="wrapper">
                 <div className="md:py-[128px] py-[48px] 2xl:px-[44px] md:px-[15px] px-[10px]">
                     <div className="grid md:grid-cols-[56.2%_37.4%] sm:grid-cols-[54.2%_39.4%] grid-cols-[100%] justify-between gap-y-[48px]">
