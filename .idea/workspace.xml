@@ -6,36 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="d59b85ff-948e-4818-99eb-d44356a0274e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/build-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/images/Go0FoMJzyH0U0HMBxnHf7Y1z57UW2K_OBGZPopuLzO8/14400.1769121138872.KXBhmG94bgzRGWvevuspkkbRjEO53HnVy9_wy427x3M.Vy8iNGM2Zi0xOWJlMjAxMDZhNCI.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/images/SI6fOZZh5rJlBQRvIrHAPqJoszzattdI24fKuKzPZgs/14400.1769121138849.FnblWX0G8AuH4eVEb-CJusXLBdN7DERqP4WYoHBWImM.Vy8iYjlmLTE5YmUyMDEwNjkyIg.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00002494.del" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00002652.del" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00002815.del" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00003009.del" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00003292.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00003293.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00003294.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00003295.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00003296.del" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/CURRENT" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/fallback-build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/fallback-build-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/dev/logs/next-development.log" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/logs/next-development.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/dev/server/app/page_client-reference-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/server/app/page_client-reference-manifest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/_8bd57f61._.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/_8bd57f61._.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/_8bd57f61._.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/_8bd57f61._.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/server/middleware-build-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/server/middleware-build-manifest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/dev/static/chunks/[root-of-the-server]__0f0ba101._.css" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/static/chunks/[root-of-the-server]__0f0ba101._.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/dev/static/chunks/[root-of-the-server]__0f0ba101._.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/static/chunks/[root-of-the-server]__0f0ba101._.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/dev/static/chunks/_43fad149._.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/static/chunks/_43fad149._.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/dev/static/chunks/_43fad149._.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/static/chunks/_43fad149._.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/dev/static/chunks/src_app_globals_css_bad6b30c._.single.css" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/static/chunks/src_app_globals_css_bad6b30c._.single.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/dev/static/chunks/src_app_globals_css_bad6b30c._.single.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/static/chunks/src_app_globals_css_bad6b30c._.single.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/static/chunks/src_app_page_tsx_f340599c._.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/static/chunks/src_app_page_tsx_f340599c._.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/trace" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/trace" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Site/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Site/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Site/PricingSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Site/PricingSection.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +74,7 @@
       <updated>1769023063801</updated>
       <workItem from="1769023064887" duration="4000" />
       <workItem from="1769099260181" duration="8698000" />
-      <workItem from="1769119372146" duration="3473000" />
+      <workItem from="1769119372146" duration="4975000" />
     </task>
     <servers />
   </component>

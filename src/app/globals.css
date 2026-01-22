@@ -277,3 +277,23 @@
 html{
   scroll-behavior: smooth;
 }
+.client_slider {
+  pointer-events: none;
+}
+@keyframes floatBox {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  50% {
+    transform: translateX(1.93933px)
+    translateY(-4.84831px)
+    rotate(-2.81798deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+.animate-box {
+  animation: floatBox 3s ease-in-out infinite;
+}

@@ -117,13 +117,13 @@ function PricingSection() {
                     <div className="bg-[#f0f0f0] rounded-[6px] p-[6px]">
                         <div className="grid md:grid-cols-[41.2%_58%] grid-cols-[100%] gap-[6px] mb-[6px]">
                             <div className="bg-white md:p-[32px] p-[24px] rounded-[12px] shadow">
-                                <div className="bg-color p-[24px] rounded-[24px] lg:w-[400px] md:w-[272px] sm:w-[90%] w-full md:h-[264px] h-[200px] shadow flex flex-col justify-between mb-[32px]
+                                <div className="bg-color animate-box p-[24px] rounded-[24px] lg:w-[400px] md:w-[272px] sm:w-[90%] w-full md:h-[264px] h-[200px] shadow flex flex-col justify-between mb-[32px]
                                  md:mt-[-52px] lg:ml-[-52px] md:ml-[-38px]">
                                     <label className="bg-white rounded-full text-[12px] leading-[12px] font-semibold px-[12px] py-[8px] text-black w-fit">
                                         {PRICING_DATA.subscription.card.badge}
                                     </label>
-                                    <h5 className="lg:text-[22px] text-[18px] font-medium lg:leading-[30px] leading-[25px] text-[#b8b8b8]">
-                                        {PRICING_DATA.subscription.card.title.part1} <span className="block text-white">{PRICING_DATA.subscription.card.title.part2}</span>
+                                    <h5 className="lg:text-[22px] text-[18px] font-medium lg:leading-[30px] leading-[25px] text-[#b8b8b8] sm:w-[80%]">
+                                        {PRICING_DATA.subscription.card.title.part1} <span className=" text-white">{PRICING_DATA.subscription.card.title.part2}</span>
                                     </h5>
                                 </div>
                                 <div className="shadow inline-block rounded-[24px] text-[12px] leading-[12px] py-[9px] mb-[20px] pl-[16px] pr-[8px] font-bold">

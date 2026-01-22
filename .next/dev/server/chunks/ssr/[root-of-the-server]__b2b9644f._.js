@@ -1221,7 +1221,7 @@ function PricingSection() {
                                         className: "bg-white md:p-[32px] p-[24px] rounded-[12px] shadow",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "bg-color p-[24px] rounded-[24px] lg:w-[400px] md:w-[272px] sm:w-[90%] w-full md:h-[264px] h-[200px] shadow flex flex-col justify-between mb-[32px] md:mt-[-52px] lg:ml-[-52px] md:ml-[-38px]",
+                                                className: "bg-color animate-box p-[24px] rounded-[24px] lg:w-[400px] md:w-[272px] sm:w-[90%] w-full md:h-[264px] h-[200px] shadow flex flex-col justify-between mb-[32px] md:mt-[-52px] lg:ml-[-52px] md:ml-[-38px]",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                         className: "bg-white rounded-full text-[12px] leading-[12px] font-semibold px-[12px] py-[8px] text-black w-fit",
@@ -1232,12 +1232,12 @@ function PricingSection() {
                                                         columnNumber: 37
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-                                                        className: "lg:text-[22px] text-[18px] font-medium lg:leading-[30px] leading-[25px] text-[#b8b8b8]",
+                                                        className: "lg:text-[22px] text-[18px] font-medium lg:leading-[30px] leading-[25px] text-[#b8b8b8] sm:w-[80%]",
                                                         children: [
                                                             PRICING_DATA.subscription.card.title.part1,
                                                             " ",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "block text-white",
+                                                                className: " text-white",
                                                                 children: PRICING_DATA.subscription.card.title.part2
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Site/PricingSection.tsx",

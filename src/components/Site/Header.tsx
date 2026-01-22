@@ -1,8 +1,9 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useLayoutEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
+import gsap from "gsap";
 import user_img from "../../../public/images/user_img.avif";
 import { X } from 'lucide-react';
 
@@ -73,12 +74,35 @@ function Header() {
     // Use window.innerWidth directly if windowWidth is 0 (initial state)
     const currentWidth = windowWidth || (typeof window !== 'undefined' ? window.innerWidth : 0);
     const isMobile = currentWidth <= 769;
+    const headerRef = useRef<HTMLElement>(null);
+
+    // GSAP animations for mobile menu
+    useLayoutEffect(() => {
+        if (!isMobile || !headerRef.current) return;
+
+        if (showButton) {
+            // Create timeline for menu items and close button
+            const tl = gsap.timeline();
+            
+            // Animate menu items
+            tl.from(".header-item ul li", {
+                x: 80,
+                opacity: 0,
+                duration: 0.4,
+                stagger: 0.2,
+            });
+        } else {
+            // Reset animations when menu closes
+            gsap.set(".header-item ul li", { x: 0, opacity: 1 });
+        }
+    }, [showButton, isMobile]);
 
     return (
         <motion.header
+            ref={headerRef}
             animate={{ 
                 width: isMobile 
-                    ? "234px"  // Fixed width on mobile, no hover effect
+                    ? "228px"  // Fixed width on mobile, no hover effect
                     : isHovered 
                         ? "min-content"  // Desktop: expand on hover
                         : scrolled 
@@ -125,7 +149,7 @@ function Header() {
                 {/* Bouncing dots */}
                 {(!isMobile || !showButton) && (
                     <motion.div
-                        className="absolute right-2 top-1/2 -translate-y-1/2 flex gap-1 cursor-pointer"
+                        className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-pointer"
                         variants={dotsContainer}
                         animate={
                             isMobile 
@@ -151,7 +175,8 @@ function Header() {
                 {/* Button - only visible on mobile when dots are clicked */}
                 {isMobile && (
                     <button 
-                        className={`absolute right-2 top-1/2 -translate-y-1/2 transition-opacity duration-200 ${showButton ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+                        className={`absolute right-2 top-1/2 -translate-y-1/2 transition-opacity
+                         duration-200 close_btn ${showButton ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
                         onClick={() => setShowButton(false)}
                         aria-label="Close menu"
                     >
@@ -160,7 +185,7 @@ function Header() {
                 )}
             </nav>
             {isMobile && (
-                <div className={`flex flex-col gap-4 transition-all duration-300 mt-[16px] ${showButton ? 'block' : 'hidden'}`}>
+                <div className={`flex flex-col gap-4 transition-all duration-300 mt-[16px] header-item ${showButton ? 'block' : 'hidden'}`}>
                     <ul className="flex gap-[16px] text-sm flex-col font-bold text-black">
                         <li>
                             <Link href="/work" className="text-[18px] font-medium">Work</Link>
