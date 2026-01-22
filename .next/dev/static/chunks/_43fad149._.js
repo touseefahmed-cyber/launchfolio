@@ -2711,11 +2711,11 @@ const ANIMATION_DELAYS = {
 function About() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(25);
-    if ($[0] !== "bcc28b63f3c87b71c4bec52a90f15b178be5a4afacecc56d865ec00c7ff7687b") {
+    if ($[0] !== "c104d76e4852bebf4174431ba9cacce455a178f45c685d3dc8615ad00e615f2c") {
         for(let $i = 0; $i < 25; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "bcc28b63f3c87b71c4bec52a90f15b178be5a4afacecc56d865ec00c7ff7687b";
+        $[0] = "c104d76e4852bebf4174431ba9cacce455a178f45c685d3dc8615ad00e615f2c";
     }
     const [showAll, setShowAll] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     let t0;
@@ -2723,7 +2723,7 @@ function About() {
         t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Site$2f$FadeUp$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             delay: ANIMATION_DELAYS.heading,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "text-[64px] leading-[64px] text-black font-medium mb-[60px]",
+                className: "2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text-[46px] md:leading-[46px] text-[36px] leading-[36px]\n                         text-black font-medium md:mb-[60px] mb-[48px]",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         className: "text-[#828282]",
@@ -2731,7 +2731,7 @@ function About() {
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/About.tsx",
                         lineNumber: 93,
-                        columnNumber: 128
+                        columnNumber: 270
                     }, this),
                     ABOUT_DATA.heading.part2
                 ]
@@ -2752,14 +2752,14 @@ function About() {
     let t1;
     if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
         t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("figure", {
-            className: "overflow-hidden rounded-[16px] h-[410px]",
+            className: "overflow-hidden rounded-[16px] md:h-[410px] sm:h-[660px] h-[360px]",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$person_img$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$images$2f$person_img$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
                 alt: ABOUT_DATA.person.imageAlt
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/About.tsx",
                 lineNumber: 100,
-                columnNumber: 71
+                columnNumber: 97
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/About.tsx",
@@ -2805,7 +2805,7 @@ function About() {
                     className: "space-y-[4px]",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                            className: "text-[22px] leading-[22px] text-black font-medium",
+                            className: "2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] text-[18px] leading-[18px]\n                                     text-black font-medium",
                             children: ABOUT_DATA.person.name
                         }, void 0, false, {
                             fileName: "[project]/src/components/Site/About.tsx",
@@ -2818,7 +2818,7 @@ function About() {
                         }, void 0, false, {
                             fileName: "[project]/src/components/Site/About.tsx",
                             lineNumber: 115,
-                            columnNumber: 167
+                            columnNumber: 275
                         }, this)
                     ]
                 }, void 0, true, {
@@ -2833,7 +2833,7 @@ function About() {
             columnNumber: 10
         }, this);
         t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-            className: "block text-[18px] leading-[18px] font-medium mb-[16px]",
+            className: "block lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px] font-medium mb-[16px]",
             children: ABOUT_DATA.workHistory.label
         }, void 0, false, {
             fileName: "[project]/src/components/Site/About.tsx",
@@ -2861,7 +2861,7 @@ function About() {
                         transition: showAll ? `opacity 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) ${index_0 * 0.1}s, transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) ${index_0 * 0.1}s, margin-bottom 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) ${index_0 * 0.1}s` : "opacity 0.5s ease-in-out, transform 0.5s ease-in-out, margin-bottom 0.5s ease-in-out"
                     },
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
-                        className: "border border-[#dedede] bg-white shadow rounded-[16px] p-[20px] transition-all duration-600",
+                        className: "border border-[#dedede] bg-white shadow rounded-[16px] lg:p-[20px] p-[18px] transition-all duration-600",
                         style: {
                             transitionTimingFunction: showAll ? "cubic-bezier(0.68, -0.55, 0.265, 1.55)" : "ease-in-out"
                         },
@@ -2873,7 +2873,7 @@ function About() {
                                     className: "flex-1",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-                                            className: "text-[18px] leading-[18px] text-black font-medium mb-[8px]",
+                                            className: "2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16px] text-[14px] leading-[14px]\n                                                            text-black font-medium mb-[8px]",
                                             children: work.company
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Site/About.tsx",
@@ -2884,26 +2884,26 @@ function About() {
                                             className: "flex items-center justify-between",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-[14px] leading-[14px] text-[#545454] font-medium",
+                                                    className: "2xl:text-[14px] 2xl:leading-[14px] text-[12px] leading-[12px] text-[#545454] font-medium",
                                                     children: work.role
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Site/About.tsx",
                                                     lineNumber: 136,
-                                                    columnNumber: 268
+                                                    columnNumber: 399
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-[14px] leading-[14px] text-[#545454] font-medium",
+                                                    className: "2xl:text-[14px] 2xl:leading-[14px] text-[12px] leading-[12px] text-[#545454] font-medium",
                                                     children: work.period
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Site/About.tsx",
                                                     lineNumber: 136,
-                                                    columnNumber: 358
+                                                    columnNumber: 524
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Site/About.tsx",
                                             lineNumber: 136,
-                                            columnNumber: 217
+                                            columnNumber: 348
                                         }, this)
                                     ]
                                 }, void 0, true, {
@@ -3006,6 +3006,7 @@ function About() {
     let t13;
     if ($[19] !== t12 || $[20] !== t5) {
         t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "md:order-0 order-2",
             children: [
                 t3,
                 t4,
@@ -3018,7 +3019,7 @@ function About() {
                 }, void 0, true, {
                     fileName: "[project]/src/components/Site/About.tsx",
                     lineNumber: 186,
-                    columnNumber: 24
+                    columnNumber: 55
                 }, this)
             ]
         }, void 0, true, {
@@ -3049,15 +3050,15 @@ function About() {
     let t15;
     if ($[23] !== t13) {
         t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-            className: "border-b border-[#dedede]",
+            className: "border-b border-[#dedede] 2xl:px-0 px-[15px]",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "wrapper",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "py-[128px] px-[44px]",
+                    className: "md:py-[128px] py-[48px] 2xl:px-[44px] md:px-[15px] px-[10px]",
                     children: [
                         t0,
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-[37.4%_53.2%] gap-[64px]",
+                            className: "grid lg:grid-cols-[37.4%_53.2%] md:grid-cols-[44.4%_48.2%] grid-cols-[100%] 2xl:gap-[64px] gap-[48px]",
                             children: [
                                 t13,
                                 t14
@@ -3065,18 +3066,18 @@ function About() {
                         }, void 0, true, {
                             fileName: "[project]/src/components/Site/About.tsx",
                             lineNumber: 202,
-                            columnNumber: 125
+                            columnNumber: 184
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Site/About.tsx",
                     lineNumber: 202,
-                    columnNumber: 83
+                    columnNumber: 102
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/About.tsx",
                 lineNumber: 202,
-                columnNumber: 58
+                columnNumber: 77
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/About.tsx",
@@ -3101,7 +3102,7 @@ function _AboutABOUT_DATAParagraphsMap(paragraph, index_1) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Site$2f$FadeIn$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
         delay: delays[index_1],
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-            className: "text-[#545454] text-[20px] leading-[30px] font-medium",
+            className: "text-[#545454] 2xl:text-[20px] 2xl:leading-[30px] text-[18px] leading-[25px] font-medium",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                     className: "text-black font-semibold",
@@ -3109,7 +3110,7 @@ function _AboutABOUT_DATAParagraphsMap(paragraph, index_1) {
                 }, void 0, false, {
                     fileName: "[project]/src/components/Site/About.tsx",
                     lineNumber: 212,
-                    columnNumber: 125
+                    columnNumber: 160
                 }, this),
                 " ",
                 paragraph.text
