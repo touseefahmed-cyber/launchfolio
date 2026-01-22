@@ -25,11 +25,12 @@ const ANIMATION_DELAYS = {
 
 function Testimonial() {
     return (
-        <section className="border-b border-[#dedede]">
+        <section className="border-b border-[#dedede] 2xl:px-0 px-[15px]">
             <div className="wrapper">
-                <div className="py-[64px] px-[44px] text-center">
+                <div className="md:py-[64px] py-[32px] 2xl:px-[44px] md:px-[15px] px-[10px] text-center">
                     <FadeUp delay={ANIMATION_DELAYS.quote}>
-                        <p className="text-[28px] leading-[39px] font-medium mb-[24px] w-[70%] mx-auto">
+                        <p className="2xl:text-[28px] 2xl:leading-[39px] lg:text-[26px] lg:leading-[36px] md:text-[24px] md:leading-[33px] text-[22px] leading-[30px]
+                         font-medium mb-[24px] lg:w-[70%] md:w-[90%] w-full mx-auto">
                             "{TESTIMONIAL_DATA.quote.text}{" "}
                             <strong>{TESTIMONIAL_DATA.quote.highlight}</strong>{" "}
                             {TESTIMONIAL_DATA.quote.ending}"

@@ -1640,6 +1640,11 @@
     line-height: 32px;
   }
 
+  .leading-\[33px\] {
+    --tw-leading: 33px;
+    line-height: 33px;
+  }
+
   .leading-\[36px\] {
     --tw-leading: 36px;
     line-height: 36px;
@@ -2213,6 +2218,12 @@
   }
 
   @media (min-width: 48rem) {
+    .md\:w-\[90\%\] {
+      width: 90%;
+    }
+  }
+
+  @media (min-width: 48rem) {
     .md\:w-\[272px\] {
       width: 272px;
     }
@@ -2309,6 +2320,12 @@
   }
 
   @media (min-width: 48rem) {
+    .md\:py-\[64px\] {
+      padding-block: 64px;
+    }
+  }
+
+  @media (min-width: 48rem) {
     .md\:py-\[128px\] {
       padding-block: 128px;
     }
@@ -2335,6 +2352,12 @@
   @media (min-width: 48rem) {
     .md\:text-\[22px\] {
       font-size: 22px;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:text-\[24px\] {
+      font-size: 24px;
     }
   }
 
@@ -2380,6 +2403,13 @@
     .md\:leading-\[32px\] {
       --tw-leading: 32px;
       line-height: 32px;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:leading-\[33px\] {
+      --tw-leading: 33px;
+      line-height: 33px;
     }
   }
 
@@ -2437,6 +2467,12 @@
   @media (min-width: 64rem) {
     .lg\:w-\[69\%\] {
       width: 69%;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .lg\:w-\[70\%\] {
+      width: 70%;
     }
   }
 
@@ -2525,6 +2561,12 @@
   }
 
   @media (min-width: 64rem) {
+    .lg\:text-\[26px\] {
+      font-size: 26px;
+    }
+  }
+
+  @media (min-width: 64rem) {
     .lg\:text-\[30px\] {
       font-size: 30px;
     }
@@ -2598,6 +2640,13 @@
   }
 
   @media (min-width: 64rem) {
+    .lg\:leading-\[36px\] {
+      --tw-leading: 36px;
+      line-height: 36px;
+    }
+  }
+
+  @media (min-width: 64rem) {
     .lg\:leading-\[40px\] {
       --tw-leading: 40px;
       line-height: 40px;
@@ -2661,6 +2710,12 @@
   }
 
   @media (min-width: 96rem) {
+    .\32 xl\:text-\[28px\] {
+      font-size: 28px;
+    }
+  }
+
+  @media (min-width: 96rem) {
     .\32 xl\:text-\[30px\] {
       font-size: 30px;
     }
@@ -2709,6 +2764,13 @@
     .\32 xl\:leading-\[36px\] {
       --tw-leading: 36px;
       line-height: 36px;
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .\32 xl\:leading-\[39px\] {
+      --tw-leading: 39px;
+      line-height: 39px;
     }
   }
 

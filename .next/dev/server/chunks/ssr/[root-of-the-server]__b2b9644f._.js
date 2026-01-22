@@ -1645,16 +1645,16 @@ const ANIMATION_DELAYS = {
 };
 function Testimonial() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "border-b border-[#dedede]",
+        className: "border-b border-[#dedede] 2xl:px-0 px-[15px]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "wrapper",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "py-[64px] px-[44px] text-center",
+                className: "md:py-[64px] py-[32px] 2xl:px-[44px] md:px-[15px] px-[10px] text-center",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Site$2f$FadeUp$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                         delay: ANIMATION_DELAYS.quote,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-[28px] leading-[39px] font-medium mb-[24px] w-[70%] mx-auto",
+                            className: "2xl:text-[28px] 2xl:leading-[39px] lg:text-[26px] lg:leading-[36px] md:text-[24px] md:leading-[33px] text-[22px] leading-[30px] font-medium mb-[24px] lg:w-[70%] md:w-[90%] w-full mx-auto",
                             children: [
                                 '"',
                                 TESTIMONIAL_DATA.quote.text,
@@ -1663,7 +1663,7 @@ function Testimonial() {
                                     children: TESTIMONIAL_DATA.quote.highlight
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Site/Testimonial.tsx",
-                                    lineNumber: 34,
+                                    lineNumber: 35,
                                     columnNumber: 29
                                 }, this),
                                 " ",
@@ -1692,12 +1692,12 @@ function Testimonial() {
                                         alt: TESTIMONIAL_DATA.author.imageAlt
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Site/Testimonial.tsx",
-                                        lineNumber: 41,
+                                        lineNumber: 42,
                                         columnNumber: 33
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Site/Testimonial.tsx",
-                                    lineNumber: 40,
+                                    lineNumber: 41,
                                     columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1708,7 +1708,7 @@ function Testimonial() {
                                             children: TESTIMONIAL_DATA.author.name
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Site/Testimonial.tsx",
-                                            lineNumber: 44,
+                                            lineNumber: 45,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1716,24 +1716,24 @@ function Testimonial() {
                                             children: TESTIMONIAL_DATA.author.role
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Site/Testimonial.tsx",
-                                            lineNumber: 47,
+                                            lineNumber: 48,
                                             columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Site/Testimonial.tsx",
-                                    lineNumber: 43,
+                                    lineNumber: 44,
                                     columnNumber: 29
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Site/Testimonial.tsx",
-                            lineNumber: 39,
+                            lineNumber: 40,
                             columnNumber: 25
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Testimonial.tsx",
-                        lineNumber: 38,
+                        lineNumber: 39,
                         columnNumber: 21
                     }, this)
                 ]
