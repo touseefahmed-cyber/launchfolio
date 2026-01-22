@@ -11,6 +11,7 @@ import slider_img4 from "../../../public/images/slider-img7.png";
 import slider_img5 from "../../../public/images/slider-img7.png";
 import slider_img6 from "../../../public/images/slider-img7.png";
 import slider_img7 from "../../../public/images/slider-img7.png";
+import 'swiper/css';
 function TrustedSlider() {
     const sliderImages = [
         slider_img1,
@@ -29,14 +30,14 @@ function TrustedSlider() {
         slider_img7,
     ];
     return (
-        <section className="border-b border-[#dedede]">
+        <section className="border-b border-[#dedede] 2xl:px-0 px-[15px]">
             <div className="wrapper">
-                <div className="py-[32px] pl-[44px]">
-                    <div className="flex items-center justify-between">
+                <div className="py-[32px] 2xl:pl-[44px] md:pl-[15px] pl-[10px]">
+                    <div className="flex items-center md:flex-row flex-col gap-[32px] justify-between">
                         <div className=" text-[22px] leading-[12px] font-medium text-[#545454]">Trusted by
                               <span className="text-black"> many</span></div>
                         <Swiper
-                            className="w-[70%] mask client_slider mr-0"
+                            className="md:w-[70%] w-full mask client_slider mr-0"
                             modules={[Autoplay, FreeMode]}
                             loop={true}
                             freeMode={true}
@@ -51,7 +52,8 @@ function TrustedSlider() {
                             speed={3000}
                             allowTouchMove={false}
                             breakpoints={{
-                                640: { slidesPerView: 2 },
+                                360: { slidesPerView: 2 },
+                                640: { slidesPerView: 3 },
                                 768: { slidesPerView: 3 },
                                 1024: { slidesPerView: 4 },
                             }}
@@ -64,7 +66,7 @@ function TrustedSlider() {
                                         <Image
                                             src={img}
                                             alt={`Slider image ${index + 1}`}
-                                            className="w-full h-auto object-contain"
+                                            className="md:w-full w-[200px] h-auto object-contain"
                                         />
                                     </figure>
                                 </SwiperSlide>

@@ -3647,13 +3647,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$slider$2
 ;
 ;
 ;
+;
 function TrustedSlider() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(6);
-    if ($[0] !== "fb60079b14deeb9d9247753821e91cf821c9eb7dc8ec63966b5873fcf664b3f6") {
+    if ($[0] !== "2006b1b527e94a85ba3a34ad623cc558c013383f58ac8610f84d8a8d40db44ae") {
         for(let $i = 0; $i < 6; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "fb60079b14deeb9d9247753821e91cf821c9eb7dc8ec63966b5873fcf664b3f6";
+        $[0] = "2006b1b527e94a85ba3a34ad623cc558c013383f58ac8610f84d8a8d40db44ae";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -3689,13 +3690,13 @@ function TrustedSlider() {
                     children: " many"
                 }, void 0, false, {
                     fileName: "[project]/src/components/Site/TrustedSlider.tsx",
-                    lineNumber: 33,
+                    lineNumber: 34,
                     columnNumber: 92
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/Site/TrustedSlider.tsx",
-            lineNumber: 33,
+            lineNumber: 34,
             columnNumber: 10
         }, this);
         $[2] = t1;
@@ -3727,17 +3728,17 @@ function TrustedSlider() {
     let t4;
     if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
         t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-            className: "border-b border-[#dedede]",
+            className: "border-b border-[#dedede] 2xl:px-0 px-[15px]",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "wrapper",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "py-[32px] pl-[44px]",
+                    className: "py-[32px] 2xl:pl-[44px] md:pl-[15px] pl-[10px]",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center justify-between",
+                        className: "flex items-center md:flex-row flex-col gap-[32px] justify-between",
                         children: [
                             t1,
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Swiper"], {
-                                className: "w-[70%] mask client_slider mr-0",
+                                className: "md:w-[70%] w-full mask client_slider mr-0",
                                 modules: t2,
                                 loop: true,
                                 freeMode: true,
@@ -3747,8 +3748,11 @@ function TrustedSlider() {
                                 speed: 3000,
                                 allowTouchMove: false,
                                 breakpoints: {
-                                    640: {
+                                    360: {
                                         slidesPerView: 2
+                                    },
+                                    640: {
+                                        slidesPerView: 3
                                     },
                                     768: {
                                         slidesPerView: 3
@@ -3760,28 +3764,28 @@ function TrustedSlider() {
                                 children: sliderImages.map(_TrustedSliderSliderImagesMap)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Site/TrustedSlider.tsx",
-                                lineNumber: 59,
-                                columnNumber: 174
+                                lineNumber: 60,
+                                columnNumber: 252
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Site/TrustedSlider.tsx",
-                        lineNumber: 59,
-                        columnNumber: 119
+                        lineNumber: 60,
+                        columnNumber: 165
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Site/TrustedSlider.tsx",
-                    lineNumber: 59,
-                    columnNumber: 82
+                    lineNumber: 60,
+                    columnNumber: 101
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/TrustedSlider.tsx",
-                lineNumber: 59,
-                columnNumber: 57
+                lineNumber: 60,
+                columnNumber: 76
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/TrustedSlider.tsx",
-            lineNumber: 59,
+            lineNumber: 60,
             columnNumber: 10
         }, this);
         $[5] = t4;
@@ -3798,20 +3802,20 @@ function _TrustedSliderSliderImagesMap(img, index) {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 src: img,
                 alt: `Slider image ${index + 1}`,
-                className: "w-full h-auto object-contain"
+                className: "md:w-full w-[200px] h-auto object-contain"
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/TrustedSlider.tsx",
-                lineNumber: 77,
+                lineNumber: 81,
                 columnNumber: 69
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/TrustedSlider.tsx",
-            lineNumber: 77,
+            lineNumber: 81,
             columnNumber: 35
         }, this)
     }, index, false, {
         fileName: "[project]/src/components/Site/TrustedSlider.tsx",
-        lineNumber: 77,
+        lineNumber: 81,
         columnNumber: 10
     }, this);
 }
