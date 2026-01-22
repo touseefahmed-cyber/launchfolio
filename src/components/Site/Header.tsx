@@ -8,6 +8,7 @@ import user_img from "../../../public/images/user_img.avif";
 function Header() {
     const [scrolled, setScrolled] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
+    const [isHovered, setIsHovered] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -53,9 +54,13 @@ function Header() {
 
     return (
         <motion.header
-            animate={{ width: scrolled ? "234px" : "min-content" }}
+            animate={{ 
+                width: isHovered ? "min-content" : scrolled ? "234px" : "min-content"
+            }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
             className="glass-effect border border-[#dedede] p-3 rounded-[32px] top-6 fixed left-1/2 transform -translate-x-1/2 overflow-hidden z-50"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
         >
             <nav className="flex justify-between items-center gap-16 relative">
                 <div>
@@ -95,8 +100,8 @@ function Header() {
                 <motion.div
                     className="absolute right-2 top-1/2 -translate-y-1/2 flex gap-1"
                     variants={dotsContainer}
-                    animate={scrolled ? "animate" : "none"}
-                    style={{ opacity: scrolled ? 1 : 0 }}
+                    animate={scrolled && !isHovered ? "animate" : "none"}
+                    style={{ opacity: scrolled && !isHovered ? 1 : 0 }}
                 >
                     {[0, 1, 2].map((i) => (
                         <motion.span

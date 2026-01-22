@@ -48,15 +48,16 @@ var _s = __turbopack_context__.k.signature();
 ;
 function Header() {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(22);
-    if ($[0] !== "3993e3c8222cf5e2c5139b2a7f1ceb039db66113a3473dec3c84aca57ab7dc71") {
-        for(let $i = 0; $i < 22; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(24);
+    if ($[0] !== "b147a6b2a2ed237d7507d02ac8c4b7bc31c666ed33a76c6976d58fd6f35cdd16") {
+        for(let $i = 0; $i < 24; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "3993e3c8222cf5e2c5139b2a7f1ceb039db66113a3473dec3c84aca57ab7dc71";
+        $[0] = "b147a6b2a2ed237d7507d02ac8c4b7bc31c666ed33a76c6976d58fd6f35cdd16";
     }
     const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [lastScrollY, setLastScrollY] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    const [isHovered, setIsHovered] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     let t0;
     let t1;
     if ($[1] !== lastScrollY) {
@@ -142,7 +143,7 @@ function Header() {
         t5 = $[7];
     }
     const singleDot = t5;
-    const t6 = scrolled ? "234px" : "min-content";
+    const t6 = isHovered ? "min-content" : scrolled ? "234px" : "min-content";
     let t7;
     if ($[8] !== t6) {
         t7 = {
@@ -163,9 +164,24 @@ function Header() {
     } else {
         t8 = $[10];
     }
+    let t10;
     let t9;
     if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
-        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        t9 = ({
+            "Header[<motion.header>.onMouseEnter]": ()=>setIsHovered(true)
+        })["Header[<motion.header>.onMouseEnter]"];
+        t10 = ({
+            "Header[<motion.header>.onMouseLeave]": ()=>setIsHovered(false)
+        })["Header[<motion.header>.onMouseLeave]"];
+        $[11] = t10;
+        $[12] = t9;
+    } else {
+        t10 = $[11];
+        t9 = $[12];
+    }
+    let t11;
+    if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
+        t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 href: "/",
                 className: "flex gap-2 items-center",
@@ -179,40 +195,40 @@ function Header() {
                             height: 32
                         }, void 0, false, {
                             fileName: "[project]/src/components/Site/Header.tsx",
-                            lineNumber: 117,
-                            columnNumber: 137
+                            lineNumber: 133,
+                            columnNumber: 138
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Header.tsx",
-                        lineNumber: 117,
-                        columnNumber: 66
+                        lineNumber: 133,
+                        columnNumber: 67
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "text-sm font-bold text-black whitespace-nowrap",
                         children: "Joseph Alexander"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Header.tsx",
-                        lineNumber: 117,
-                        columnNumber: 204
+                        lineNumber: 133,
+                        columnNumber: 205
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Site/Header.tsx",
-                lineNumber: 117,
-                columnNumber: 15
+                lineNumber: 133,
+                columnNumber: 16
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Header.tsx",
-            lineNumber: 117,
-            columnNumber: 10
+            lineNumber: 133,
+            columnNumber: 11
         }, this);
-        $[11] = t9;
+        $[13] = t11;
     } else {
-        t9 = $[11];
+        t11 = $[13];
     }
-    let t10;
-    if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
-        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t12;
+    if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
+        t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "flex items-center gap-4",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -224,12 +240,12 @@ function Header() {
                                 children: "Work"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Site/Header.tsx",
-                                lineNumber: 124,
+                                lineNumber: 140,
                                 columnNumber: 125
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/Site/Header.tsx",
-                            lineNumber: 124,
+                            lineNumber: 140,
                             columnNumber: 121
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -238,12 +254,12 @@ function Header() {
                                 children: "Services"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Site/Header.tsx",
-                                lineNumber: 124,
+                                lineNumber: 140,
                                 columnNumber: 164
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/Site/Header.tsx",
-                            lineNumber: 124,
+                            lineNumber: 140,
                             columnNumber: 160
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -252,12 +268,12 @@ function Header() {
                                 children: "Pricing"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Site/Header.tsx",
-                                lineNumber: 124,
+                                lineNumber: 140,
                                 columnNumber: 211
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/Site/Header.tsx",
-                            lineNumber: 124,
+                            lineNumber: 140,
                             columnNumber: 207
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -266,18 +282,18 @@ function Header() {
                                 children: "Blog"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Site/Header.tsx",
-                                lineNumber: 124,
+                                lineNumber: 140,
                                 columnNumber: 256
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/Site/Header.tsx",
-                            lineNumber: 124,
+                            lineNumber: 140,
                             columnNumber: 252
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Site/Header.tsx",
-                    lineNumber: 124,
+                    lineNumber: 140,
                     columnNumber: 52
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -287,39 +303,39 @@ function Header() {
                         children: "Contact"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Header.tsx",
-                        lineNumber: 124,
+                        lineNumber: 140,
                         columnNumber: 301
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Site/Header.tsx",
-                    lineNumber: 124,
+                    lineNumber: 140,
                     columnNumber: 296
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/Site/Header.tsx",
-            lineNumber: 124,
+            lineNumber: 140,
             columnNumber: 11
         }, this);
-        $[12] = t10;
+        $[14] = t12;
     } else {
-        t10 = $[12];
+        t12 = $[14];
     }
-    const t11 = scrolled ? "animate" : "none";
-    const t12 = scrolled ? 1 : 0;
-    let t13;
-    if ($[13] !== t12) {
-        t13 = {
-            opacity: t12
+    const t13 = scrolled && !isHovered ? "animate" : "none";
+    const t14 = scrolled && !isHovered ? 1 : 0;
+    let t15;
+    if ($[15] !== t14) {
+        t15 = {
+            opacity: t14
         };
-        $[13] = t12;
-        $[14] = t13;
+        $[15] = t14;
+        $[16] = t15;
     } else {
-        t13 = $[14];
+        t15 = $[16];
     }
-    let t14;
-    if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
-        t14 = [
+    let t16;
+    if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
+        t16 = [
             0,
             1,
             2
@@ -329,65 +345,67 @@ function Header() {
                     variants: singleDot
                 }, i, false, {
                     fileName: "[project]/src/components/Site/Header.tsx",
-                    lineNumber: 144,
+                    lineNumber: 160,
                     columnNumber: 37
                 }, this)
         }["Header[(anonymous)()]"]);
-        $[15] = t14;
+        $[17] = t16;
     } else {
-        t14 = $[15];
+        t16 = $[17];
     }
-    let t15;
-    if ($[16] !== t11 || $[17] !== t13) {
-        t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+    let t17;
+    if ($[18] !== t13 || $[19] !== t15) {
+        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
             className: "flex justify-between items-center gap-16 relative",
             children: [
-                t9,
-                t10,
+                t11,
+                t12,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                     className: "absolute right-2 top-1/2 -translate-y-1/2 flex gap-1",
                     variants: dotsContainer,
-                    animate: t11,
-                    style: t13,
-                    children: t14
+                    animate: t13,
+                    style: t15,
+                    children: t16
                 }, void 0, false, {
                     fileName: "[project]/src/components/Site/Header.tsx",
-                    lineNumber: 152,
-                    columnNumber: 87
+                    lineNumber: 168,
+                    columnNumber: 88
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/Site/Header.tsx",
-            lineNumber: 152,
+            lineNumber: 168,
             columnNumber: 11
         }, this);
-        $[16] = t11;
-        $[17] = t13;
-        $[18] = t15;
+        $[18] = t13;
+        $[19] = t15;
+        $[20] = t17;
     } else {
-        t15 = $[18];
+        t17 = $[20];
     }
-    let t16;
-    if ($[19] !== t15 || $[20] !== t7) {
-        t16 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].header, {
+    let t18;
+    if ($[21] !== t17 || $[22] !== t7) {
+        t18 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].header, {
             animate: t7,
             transition: t8,
             className: "glass-effect border border-[#dedede] p-3 rounded-[32px] top-6 fixed left-1/2 transform -translate-x-1/2 overflow-hidden z-50",
-            children: t15
+            onMouseEnter: t9,
+            onMouseLeave: t10,
+            children: t17
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Header.tsx",
-            lineNumber: 161,
+            lineNumber: 177,
             columnNumber: 11
         }, this);
-        $[19] = t15;
-        $[20] = t7;
-        $[21] = t16;
+        $[21] = t17;
+        $[22] = t7;
+        $[23] = t18;
     } else {
-        t16 = $[21];
+        t18 = $[23];
     }
-    return t16;
+    return t18;
 }
-_s(Header, "VE6vA85VfsLT5oMa3muOcFpZWl8=");
+_s(Header, "/4fkXvuKZqVHzz+w7NKJCt7r8TU=");
 _c = Header;
 const __TURBOPACK__default__export__ = Header;
 var _c;
