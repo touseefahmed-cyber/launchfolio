@@ -67,7 +67,8 @@ function ClientsSection() {
             <div className="wrapper">
                 <div className="md:py-[128px] py-[48px] 2xl:px-[44px] md:px-[15px] px-[10px]">
                     <FadeUp delay={ANIMATION_DELAYS.heading}>
-                        <div className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text-[46px] md:leading-[46px] text-[36px] leading-[36px] text-black font-medium md:mb-[60px] mb-[48px]">
+                        <div className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text-[46px] md:leading-[46px] text-[36px] leading-[36px]
+                         text-black font-medium md:mb-[60px] mb-[48px]">
                             <h2 className="text-[#828282]">{CLIENTS_DATA.heading.part1}</h2>
                             {CLIENTS_DATA.heading.part2}
                         </div>

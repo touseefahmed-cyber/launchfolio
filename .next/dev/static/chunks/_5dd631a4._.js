@@ -1233,18 +1233,18 @@ const clientsData = [
 ];
 function ClientsSection() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(3);
-    if ($[0] !== "b06394887bcde03c4896f393da1e9c8105f3ab2c377a55313857fcf8bd246903") {
+    if ($[0] !== "41c5692da92150c862a0a3581abcec3a63d604bb41562acfbedbe08cd6d458d8") {
         for(let $i = 0; $i < 3; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "b06394887bcde03c4896f393da1e9c8105f3ab2c377a55313857fcf8bd246903";
+        $[0] = "41c5692da92150c862a0a3581abcec3a63d604bb41562acfbedbe08cd6d458d8";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
         t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Site$2f$FadeUp$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             delay: ANIMATION_DELAYS.heading,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text-[46px] md:leading-[46px] text-[36px] leading-[36px] text-black font-medium md:mb-[60px] mb-[48px]",
+                className: "2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text-[46px] md:leading-[46px] text-[36px] leading-[36px]\n                         text-black font-medium md:mb-[60px] mb-[48px]",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         className: "text-[#828282]",
@@ -1252,7 +1252,7 @@ function ClientsSection() {
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/ClientsSection.tsx",
                         lineNumber: 68,
-                        columnNumber: 242
+                        columnNumber: 270
                     }, this),
                     CLIENTS_DATA.heading.part2
                 ]
