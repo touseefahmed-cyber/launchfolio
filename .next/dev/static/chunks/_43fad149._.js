@@ -2235,18 +2235,18 @@ const ANIMATION_DELAYS = {
 };
 function Services() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
-    if ($[0] !== "22b5669ac86f5364b9546b2b7803e1768fec3e8a6efe12648288fa10cd86fda0") {
+    if ($[0] !== "f280834db54cab089cc256cfac4d47b72e3285ad45b7d889b407a0cddcb9a918") {
         for(let $i = 0; $i < 5; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "22b5669ac86f5364b9546b2b7803e1768fec3e8a6efe12648288fa10cd86fda0";
+        $[0] = "f280834db54cab089cc256cfac4d47b72e3285ad45b7d889b407a0cddcb9a918";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
         t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Site$2f$FadeUp$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             delay: ANIMATION_DELAYS.heading,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "text-[64px] leading-[64px] text-black font-medium mb-[60px]",
+                className: "2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text-[46px] md:leading-[46px] text-[36px] leading-[36px]\n                                 text-black font-medium md:mb-[60px] mb-[48px]",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         className: "text-[#828282]",
@@ -2254,7 +2254,7 @@ function Services() {
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Services.tsx",
                         lineNumber: 87,
-                        columnNumber: 128
+                        columnNumber: 278
                     }, this),
                     SERVICES_DATA.heading.part2
                 ]
@@ -2277,7 +2277,7 @@ function Services() {
         t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Site$2f$FadeUp$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             delay: ANIMATION_DELAYS.techStackLabel,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                className: "block text-[18px] leading-[18px] font-medium mb-[16px]",
+                className: "block lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px] font-medium mb-[16px]",
                 children: SERVICES_DATA.techStackLabel
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/Services.tsx",
@@ -2303,7 +2303,7 @@ function Services() {
                         t1,
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipProvider"], {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                className: "flex gap-[8px]",
+                                className: "flex gap-[8px] flex-wrap",
                                 children: techStack.map(_ServicesTechStackMap)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Site/Services.tsx",
@@ -2334,44 +2334,44 @@ function Services() {
     let t3;
     if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
         t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-            className: "border-b border-[#dedede]",
+            className: "border-b border-[#dedede] 2xl:px-0 px-[15px]",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "wrapper",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "py-[128px] px-[44px]",
+                    className: "md:py-[128px] py-[48px] 2xl:px-[44px] md:px-[15px] px-[10px]",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-[56.2%_37.4%] justify-between ",
+                        className: "grid md:grid-cols-[56.2%_37.4%] sm:grid-cols-[54.2%_39.4%] grid-cols-[100%] justify-between gap-y-[48px]",
                         children: [
                             t2,
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                    className: "space-y-[38px]",
+                                    className: "md:space-y-[38px] space-y-[28px]",
                                     children: servicesList.map(_ServicesServicesListMap)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Site/Services.tsx",
                                     lineNumber: 108,
-                                    columnNumber: 192
+                                    columnNumber: 310
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Site/Services.tsx",
                                 lineNumber: 108,
-                                columnNumber: 187
+                                columnNumber: 305
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Site/Services.tsx",
                         lineNumber: 108,
-                        columnNumber: 120
+                        columnNumber: 179
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Site/Services.tsx",
                     lineNumber: 108,
-                    columnNumber: 82
+                    columnNumber: 101
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/Services.tsx",
                 lineNumber: 108,
-                columnNumber: 57
+                columnNumber: 76
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Services.tsx",
@@ -2387,7 +2387,7 @@ function Services() {
 _c = Services;
 function _ServicesServicesListMap(service, index_0) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-        className: "flex items-center text-[22px] leading-[22px] font-medium gap-[12px]",
+        className: "flex items-center lg:text-[22px] lg:leading-[22px] text-[18px] leading-[18px] font-medium gap-[12px]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-center justify-center w-[40px] h-[40px] bg-color rounded-full",
@@ -2395,7 +2395,7 @@ function _ServicesServicesListMap(service, index_0) {
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/Services.tsx",
                 lineNumber: 116,
-                columnNumber: 108
+                columnNumber: 141
             }, this),
             service.title
         ]

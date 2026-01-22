@@ -2373,3 +2373,394 @@ Import trace:
 [00:57:27.720] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
 [00:57:27.720] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
 [00:57:27.720] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:04:52.403] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:04:52.403] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:04:52.403] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:06:10.197] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:06:10.198] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:06:10.198] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:06:56.763] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:06:56.763] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:06:56.763] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:07:10.680] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:07:10.680] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:07:10.680] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:07:11.713] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:07:11.713] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:07:11.713] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:25:44.514] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:25:44.514] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:25:44.515] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:25:53.376] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:25:53.376] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:25:53.376] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:28:12.942] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Testimonial.tsx
+    ./src/app/page.tsx
+
+
+[01:28:18.816] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Testimonial.tsx
+    ./src/app/page.tsx
+
+
+[01:28:18.858] Server  LOG     ✓ Compiled in 0ms
+[01:28:19.241] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Testimonial.tsx
+    ./src/app/page.tsx
+
+
+[01:28:19.417] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <section>
+              <Services>
+              <section>
+              <TrustedSlider>
+              <Page>
+                <ClientsSection>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="md:grid lg...">
+                          <FadeIn delay={0.4}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.5}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.6000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.7000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.8}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.9}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+              ...
+          ...
+        ...
+
+[01:28:49.928] Server  LOG     ✓ Compiled in 32ms
+[01:29:05.272] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Testimonial.tsx
+    ./src/app/page.tsx
+
+
+[01:29:05.645] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Testimonial.tsx
+    ./src/app/page.tsx
+
+
+[01:29:05.940] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <section>
+              <Page>
+                <Services>
+                  ...
+                    <div className="md:py-[128...">
+                      <div className={"grid gri..."}>
+                        <div>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
+-                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
+                                >
+                          ...
+                        ...
+              <section>
+              <TrustedSlider>
+              <Page>
+                <ClientsSection>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="md:grid lg...">
+                          <FadeIn delay={0.4}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.5}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.6000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.7000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.8}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.9}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+              ...
+          ...
+        ...
+
+[01:29:08.068] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Testimonial.tsx
+    ./src/app/page.tsx
+
+
+[01:29:08.198] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Testimonial.tsx
+    ./src/app/page.tsx
+
+
+[01:29:08.368] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <section>
+              <Page>
+                <Services>
+                  ...
+                    <div className="md:py-[128...">
+                      <div className={"grid gri..."}>
+                        <div>
+                          <FadeUp delay={0}>
+                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
+-                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
+                                >
+                          ...
+                        ...
+              <section>
+              <TrustedSlider>
+              <Page>
+                <ClientsSection>
+                  <section className="border-b b...">
+                    <div className="wrapper">
+                      <div className="md:py-[128...">
+                        <FadeUp delay={0}>
+                          <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
+                            <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                              <div
++                               className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."}
+-                               className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text..."
+                              >
+                        <div className="md:grid lg...">
+                          <FadeIn delay={0.4}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.5}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.6000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.7000000000000001}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.8}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+                          <FadeIn delay={0.9}>
+                            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
+                              <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
+                                <div
++                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n     ..."}
+-                                 className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex f..."}
+                                >
+              ...
+          ...
+        ...
+
+[01:30:23.899] Server  LOG     ✓ Compiled in 65ms
+[01:31:03.617] Server  LOG     ✓ Compiled in 46ms
+[01:32:01.951] Server  LOG     ✓ Compiled in 67ms
+[01:32:47.797] Server  LOG     ✓ Compiled in 44ms
+[01:33:16.878] Server  LOG     ✓ Compiled in 61ms
+[01:33:30.479] Server  LOG     ✓ Compiled in 44ms
+[01:33:59.657] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+

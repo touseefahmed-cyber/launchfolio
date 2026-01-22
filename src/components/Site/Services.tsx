@@ -52,14 +52,15 @@ const ANIMATION_DELAYS = {
 
 function Services() {
     return (
-        <section className="border-b border-[#dedede]">
+        <section className="border-b border-[#dedede] 2xl:px-0 px-[15px]">
             <div className="wrapper">
-                <div className="py-[128px] px-[44px]">
-                    <div className="grid grid-cols-[56.2%_37.4%] justify-between ">
+                <div className="md:py-[128px] py-[48px] 2xl:px-[44px] md:px-[15px] px-[10px]">
+                    <div className="grid md:grid-cols-[56.2%_37.4%] sm:grid-cols-[54.2%_39.4%] grid-cols-[100%] justify-between gap-y-[48px]">
                         {/* Left side */}
                         <div>
                             <FadeUp delay={ANIMATION_DELAYS.heading}>
-                                <div className="text-[64px] leading-[64px] text-black font-medium mb-[60px]">
+                                <div className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text-[46px] md:leading-[46px] text-[36px] leading-[36px]
+                                 text-black font-medium md:mb-[60px] mb-[48px]">
                                     <h2 className="text-[#828282]">{SERVICES_DATA.heading.part1}</h2>
                                     {SERVICES_DATA.heading.part2}
                                 </div>
@@ -67,12 +68,12 @@ function Services() {
 
                             <div>
                                 <FadeUp delay={ANIMATION_DELAYS.techStackLabel}>
-                                    <span className="block text-[18px] leading-[18px] font-medium mb-[16px]">
+                                    <span className="block lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px] font-medium mb-[16px]">
                                         {SERVICES_DATA.techStackLabel}
                                     </span>
                                 </FadeUp>
                                 <TooltipProvider>
-                                    <ul className="flex gap-[8px]">
+                                    <ul className="flex gap-[8px] flex-wrap">
                                         {techStack.map((tech, index) => (
                                             <li key={index}>
                                                 <FadeIn delay={ANIMATION_DELAYS.techStackBase + index * ANIMATION_DELAYS.techStackIncrement}>
@@ -96,9 +97,9 @@ function Services() {
 
                         {/* Right side */}
                         <div>
-                            <ul className="space-y-[38px]">
+                            <ul className="md:space-y-[38px] space-y-[28px]">
                                 {servicesList.map((service, index) => (
-                                    <li key={index} className="flex items-center text-[22px] leading-[22px] font-medium gap-[12px]">
+                                    <li key={index} className="flex items-center lg:text-[22px] lg:leading-[22px] text-[18px] leading-[18px] font-medium gap-[12px]">
                                         <div className="flex items-center justify-center w-[40px] h-[40px] bg-color rounded-full">
                                             {service.icon}
                                         </div>
