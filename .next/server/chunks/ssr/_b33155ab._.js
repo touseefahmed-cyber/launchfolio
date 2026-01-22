@@ -1,3 +1,0 @@
-module.exports=[9270,(a,b,c)=>{"use strict";b.exports=a.r(42602).vendored.contexts.AppRouterContext},38783,(a,b,c)=>{"use strict";b.exports=a.r(42602).vendored["react-ssr"].ReactServerDOMTurbopackClient},35112,(a,b,c)=>{"use strict";b.exports=a.r(42602).vendored["react-ssr"].ReactDOM},35574,a=>{a.v("/_next/static/media/user_img.2545e600.avif")},18415,a=>{a.v("/_next/static/media/slider-img7.9a9e78de.png")}];
-
-//# sourceMappingURL=_b33155ab._.js.map

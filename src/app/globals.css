@@ -148,8 +148,7 @@
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  border-left: 1px solid #dedede;
-  border-right: 1px solid #dedede;
+  border-inline: 1px solid #dedede;
 }
 .book_btn{
   display: flex;

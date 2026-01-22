@@ -10,7 +10,7 @@
   "static/chunks/node_modules_swiper_fdd7ef99._.js",
   "static/chunks/node_modules_@mui_system_esm_08f103e8._.js",
   "static/chunks/node_modules_@mui_material_esm_65313151._.js",
-  "static/chunks/node_modules_4db10377._.js",
+  "static/chunks/node_modules_97fb0f30._.js",
   "static/chunks/node_modules_swiper_swiper_81c11a6e.css"
 ],
     source: "dynamic"
