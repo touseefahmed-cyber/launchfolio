@@ -36,10 +36,10 @@ function HappyClients() {
         slider_img7,
     ];
     return (
-        <section className="border-b border-[#dedede]  overflow-hidden">
-            <div className="wrapper pl-[44px] py-[32px]">
-                <div className="flex items-center justify-between">
-                    <div className="flex flex-row flex-wrap items-center gap-2">
+        <section className="border-b border-[#dedede]  overflow-hidden 2xl:px-0 px-[15px]">
+            <div className="wrapper 2xl:pl-[44px] md:pl-[15px] pl-[10px] py-[32px]">
+                <div className="flex md:items-center md:flex-row flex-col justify-between gap-y-[32px]">
+                    <div className="flex flex-row  items-center gap-2">
                         <div className="*:data-[slot=avatar]:ring-background flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:grayscale">
                             <Avatar className='border-2 border-white'>
                                 <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
@@ -69,7 +69,7 @@ function HappyClients() {
 
                     </div>
                     <Swiper
-                        className="w-[70%] mask client_slider"
+                        className="md:w-[66%] w-full mask client_slider"
                         modules={[Autoplay, FreeMode]}
                         loop={true}
                         freeMode={true}
@@ -84,7 +84,8 @@ function HappyClients() {
                         speed={3000}
                         allowTouchMove={false}
                         breakpoints={{
-                            640: { slidesPerView: 2 },
+                            360: { slidesPerView: 2 },
+                            640: { slidesPerView: 3 },
                             768: { slidesPerView: 3 },
                             1024: { slidesPerView: 4 },
                         }}
@@ -97,7 +98,7 @@ function HappyClients() {
                                     <Image
                                         src={img}
                                         alt={`Slider image ${index + 1}`}
-                                        className="w-full h-auto object-contain"
+                                        className="md:w-full w-[200px] h-auto object-contain"
                                     />
                                 </figure>
                             </SwiperSlide>

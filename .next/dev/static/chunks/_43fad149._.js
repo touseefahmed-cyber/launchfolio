@@ -3927,11 +3927,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$mo
 ;
 function HappyClients() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
-    if ($[0] !== "7e8819304a993fe64260921251483bbbf5f8656ecc4ee1fd1c33345115682299") {
+    if ($[0] !== "cd82458b0cc451aa76051e2a0285f3d64651f6a1d63a442fd146bdbd77da6b89") {
         for(let $i = 0; $i < 9; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "7e8819304a993fe64260921251483bbbf5f8656ecc4ee1fd1c33345115682299";
+        $[0] = "cd82458b0cc451aa76051e2a0285f3d64651f6a1d63a442fd146bdbd77da6b89";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -4060,7 +4060,7 @@ function HappyClients() {
     let t4;
     if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
         t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex flex-row flex-wrap items-center gap-2",
+            className: "flex flex-row  items-center gap-2",
             children: [
                 t3,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4079,12 +4079,12 @@ function HappyClients() {
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Site/HappyClients.tsx",
                                 lineNumber: 58,
-                                columnNumber: 98
+                                columnNumber: 89
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/Site/HappyClients.tsx",
                             lineNumber: 58,
-                            columnNumber: 79
+                            columnNumber: 70
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "text-[14px] text-[#545454] font-semibold",
@@ -4098,7 +4098,7 @@ function HappyClients() {
                 }, void 0, true, {
                     fileName: "[project]/src/components/Site/HappyClients.tsx",
                     lineNumber: 58,
-                    columnNumber: 74
+                    columnNumber: 65
                 }, this)
             ]
         }, void 0, true, {
@@ -4135,15 +4135,15 @@ function HappyClients() {
     let t7;
     if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
         t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-            className: "border-b border-[#dedede]  overflow-hidden",
+            className: "border-b border-[#dedede]  overflow-hidden 2xl:px-0 px-[15px]",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "wrapper pl-[44px] py-[32px]",
+                className: "wrapper 2xl:pl-[44px] md:pl-[15px] pl-[10px] py-[32px]",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex items-center justify-between",
+                    className: "flex md:items-center md:flex-row flex-col justify-between gap-y-[32px]",
                     children: [
                         t4,
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Swiper"], {
-                            className: "w-[70%] mask client_slider",
+                            className: "md:w-[66%] w-full mask client_slider",
                             modules: t5,
                             loop: true,
                             freeMode: true,
@@ -4153,8 +4153,11 @@ function HappyClients() {
                             speed: 3000,
                             allowTouchMove: false,
                             breakpoints: {
-                                640: {
+                                360: {
                                     slidesPerView: 2
+                                },
+                                640: {
+                                    slidesPerView: 3
                                 },
                                 768: {
                                     slidesPerView: 3
@@ -4167,18 +4170,18 @@ function HappyClients() {
                         }, void 0, false, {
                             fileName: "[project]/src/components/Site/HappyClients.tsx",
                             lineNumber: 87,
-                            columnNumber: 174
+                            columnNumber: 257
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Site/HappyClients.tsx",
                     lineNumber: 87,
-                    columnNumber: 119
+                    columnNumber: 165
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/HappyClients.tsx",
                 lineNumber: 87,
-                columnNumber: 74
+                columnNumber: 93
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/HappyClients.tsx",
@@ -4199,20 +4202,20 @@ function _HappyClientsSliderImagesMap(img, index) {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 src: img,
                 alt: `Slider image ${index + 1}`,
-                className: "w-full h-auto object-contain"
+                className: "md:w-full w-[200px] h-auto object-contain"
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/HappyClients.tsx",
-                lineNumber: 105,
+                lineNumber: 108,
                 columnNumber: 69
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/HappyClients.tsx",
-            lineNumber: 105,
+            lineNumber: 108,
             columnNumber: 35
         }, this)
     }, index, false, {
         fileName: "[project]/src/components/Site/HappyClients.tsx",
-        lineNumber: 105,
+        lineNumber: 108,
         columnNumber: 10
     }, this);
 }
