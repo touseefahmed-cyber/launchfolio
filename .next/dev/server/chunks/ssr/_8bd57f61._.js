@@ -2479,6 +2479,14 @@ const PROJECTS = [
             scale: 0.7,
             rotation: 10,
             zIndex: 4
+        },
+        // Responsive animation for max-width 1025px
+        initialAnimationMobile: {
+            x: 400,
+            y: -660,
+            scale: 0.6,
+            rotation: 10,
+            zIndex: 4
         }
     },
     {
@@ -2491,6 +2499,13 @@ const PROJECTS = [
             x: 80,
             y: -736,
             scale: 0.7,
+            rotation: 15
+        },
+        // Responsive animation for max-width 1025px
+        initialAnimationMobile: {
+            x: 75,
+            y: -662,
+            scale: 0.6,
             rotation: 15
         }
     },
@@ -2505,6 +2520,13 @@ const PROJECTS = [
             y: -1180,
             scale: 0.7,
             rotation: -5
+        },
+        // Responsive animation for max-width 1025px
+        initialAnimationMobile: {
+            x: 380,
+            y: -990,
+            scale: 0.6,
+            rotation: -5
         }
     },
     {
@@ -2518,6 +2540,13 @@ const PROJECTS = [
             y: -1137,
             scale: 0.7,
             rotation: 5
+        },
+        // Responsive animation for max-width 1025px
+        initialAnimationMobile: {
+            x: 50,
+            y: -960,
+            scale: 0.6,
+            rotation: 5
         }
     }
 ];
@@ -2529,7 +2558,21 @@ function ProjectSection() {
     const containerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLayoutEffect"])(()=>{
         if (!card1Ref.current || !card2Ref.current || !card3Ref.current || !card4Ref.current || !containerRef.current) return;
+        // Skip GSAP animations for screens <= 769px
+        const isSmallScreen = window.innerWidth <= 769;
+        if (isSmallScreen) {
+            // Set card_content opacity to 1 for small screens (no animation)
+            const cardContents = containerRef.current?.querySelectorAll('.card_content');
+            if (cardContents) {
+                cardContents.forEach((content)=>{
+                    content.style.opacity = '1';
+                });
+            }
+            return;
+        }
         const ctx = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].context(()=>{
+            // Check if screen width is <= 1025px for responsive animation
+            const isMobile = window.innerWidth <= 1025;
             // Create a timeline to animate all cards together
             const tl = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].timeline({
                 scrollTrigger: {
@@ -2558,7 +2601,9 @@ function ProjectSection() {
             PROJECTS.forEach((project, index)=>{
                 const cardRef = cardRefs[index];
                 if (cardRef) {
-                    tl.fromTo(cardRef, project.initialAnimation, {
+                    // Use mobile animation if screen width <= 1025px, otherwise use default
+                    const animationConfig = isMobile && project.initialAnimationMobile ? project.initialAnimationMobile : project.initialAnimation;
+                    tl.fromTo(cardRef, animationConfig, {
                         ...ANIMATION_CONFIG.finalState,
                         ease: ANIMATION_CONFIG.ease
                     }, ANIMATION_CONFIG.timelineStart // All start at the same time
@@ -2578,20 +2623,26 @@ function ProjectSection() {
         // ✅ Refresh ScrollTrigger after all images load
         const handleLoad = ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ScrollTrigger"].refresh();
         window.addEventListener("load", handleLoad);
+        // Handle window resize for responsive animations
+        const handleResize = ()=>{
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ScrollTrigger"].refresh();
+        };
+        window.addEventListener("resize", handleResize);
         return ()=>{
             ctx.revert();
             window.removeEventListener("load", handleLoad);
+            window.removeEventListener("resize", handleResize);
         };
     }, []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "border-b border-[#dedede]",
+        className: "border-b border-[#dedede] 2xl:px-0 px-[15px]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "wrapper",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "py-[128px] px-[44px]",
+                className: "md:py-[128px] py-[48px] 2xl:px-[44px] md:px-[15px] px-[10px]",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     ref: containerRef,
-                    className: "grid grid-cols-2 gap-[24px] relative z-10",
+                    className: "grid md:grid-cols-2 grid-cols-1 gap-[24px] relative z-10",
                     children: PROJECTS.map((project, index)=>{
                         const cardRefs = [
                             card1Ref,
@@ -2608,19 +2659,19 @@ function ProjectSection() {
                                 "data-cursor-text": "Project",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("figure", {
-                                        className: "rounded-[16px] h-[363px] overflow-hidden mb-[12px] ",
+                                        className: "rounded-[16px] lg:h-[363px] md:h-[246px] sm:h-[440px] h-[248px] overflow-hidden mb-[12px] ",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                             src: project.img,
                                             alt: project.title,
                                             className: "w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-500 ease-in-out"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                            lineNumber: 186,
+                                            lineNumber: 243,
                                             columnNumber: 45
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                        lineNumber: 185,
+                                        lineNumber: 242,
                                         columnNumber: 41
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2629,11 +2680,11 @@ function ProjectSection() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-                                                        className: "text-black text-[18px] leading-[18px] mb-[2px] font-medium",
+                                                        className: "text-black sm:text-[18px] sm:leading-[18px] text-[16px] leading-[16px] mb-[2px] font-medium",
                                                         children: project.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                        lineNumber: 194,
+                                                        lineNumber: 251,
                                                         columnNumber: 49
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2641,13 +2692,13 @@ function ProjectSection() {
                                                         children: project.subtitle
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                        lineNumber: 197,
+                                                        lineNumber: 254,
                                                         columnNumber: 49
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                lineNumber: 193,
+                                                lineNumber: 250,
                                                 columnNumber: 45
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2658,57 +2709,57 @@ function ProjectSection() {
                                                             size: 16
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                            lineNumber: 203,
+                                                            lineNumber: 260,
                                                             columnNumber: 53
                                                         }, this),
                                                         " View Project"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                    lineNumber: 202,
+                                                    lineNumber: 259,
                                                     columnNumber: 49
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                lineNumber: 201,
+                                                lineNumber: 258,
                                                 columnNumber: 45
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                        lineNumber: 192,
+                                        lineNumber: 249,
                                         columnNumber: 41
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                lineNumber: 184,
+                                lineNumber: 241,
                                 columnNumber: 37
                             }, this)
                         }, project.id, false, {
                             fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                            lineNumber: 183,
+                            lineNumber: 240,
                             columnNumber: 33
                         }, this);
                     })
                 }, void 0, false, {
                     fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                    lineNumber: 177,
+                    lineNumber: 234,
                     columnNumber: 21
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                lineNumber: 176,
+                lineNumber: 233,
                 columnNumber: 17
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/ProjectSection.tsx",
-            lineNumber: 175,
+            lineNumber: 232,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/Site/ProjectSection.tsx",
-        lineNumber: 174,
+        lineNumber: 231,
         columnNumber: 9
     }, this);
 }

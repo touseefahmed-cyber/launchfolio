@@ -3323,6 +3323,14 @@ const PROJECTS = [
             scale: 0.7,
             rotation: 10,
             zIndex: 4
+        },
+        // Responsive animation for max-width 1025px
+        initialAnimationMobile: {
+            x: 400,
+            y: -660,
+            scale: 0.6,
+            rotation: 10,
+            zIndex: 4
         }
     },
     {
@@ -3335,6 +3343,13 @@ const PROJECTS = [
             x: 80,
             y: -736,
             scale: 0.7,
+            rotation: 15
+        },
+        // Responsive animation for max-width 1025px
+        initialAnimationMobile: {
+            x: 75,
+            y: -662,
+            scale: 0.6,
             rotation: 15
         }
     },
@@ -3349,6 +3364,13 @@ const PROJECTS = [
             y: -1180,
             scale: 0.7,
             rotation: -5
+        },
+        // Responsive animation for max-width 1025px
+        initialAnimationMobile: {
+            x: 380,
+            y: -990,
+            scale: 0.6,
+            rotation: -5
         }
     },
     {
@@ -3362,17 +3384,24 @@ const PROJECTS = [
             y: -1137,
             scale: 0.7,
             rotation: 5
+        },
+        // Responsive animation for max-width 1025px
+        initialAnimationMobile: {
+            x: 50,
+            y: -960,
+            scale: 0.6,
+            rotation: 5
         }
     }
 ];
 function ProjectSection() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(4);
-    if ($[0] !== "d9db713f503a486271e9ac66338fa0398ac5658c46f4143e8fa31c1138932d57") {
+    if ($[0] !== "54bdbfa6f5c56590d9ae3f3471f7ef908352755e8012c41a5d0bbf54a2e21d5d") {
         for(let $i = 0; $i < 4; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "d9db713f503a486271e9ac66338fa0398ac5658c46f4143e8fa31c1138932d57";
+        $[0] = "54bdbfa6f5c56590d9ae3f3471f7ef908352755e8012c41a5d0bbf54a2e21d5d";
     }
     const card1Ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const card2Ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
@@ -3387,8 +3416,17 @@ function ProjectSection() {
                 if (!card1Ref.current || !card2Ref.current || !card3Ref.current || !card4Ref.current || !containerRef.current) {
                     return;
                 }
+                const isSmallScreen = window.innerWidth <= 769;
+                if (isSmallScreen) {
+                    const cardContents = containerRef.current?.querySelectorAll(".card_content");
+                    if (cardContents) {
+                        cardContents.forEach(_ProjectSectionUseLayoutEffectCardContentsForEach);
+                    }
+                    return;
+                }
                 const ctx = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].context({
                     "ProjectSection[useLayoutEffect() > gsap.context()]": ()=>{
+                        const isMobile = window.innerWidth <= 1025;
                         const tl = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].timeline({
                             scrollTrigger: {
                                 trigger: containerRef.current,
@@ -3404,9 +3442,9 @@ function ProjectSection() {
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].set(cardRefs.filter(Boolean), {
                             transformPerspective: ANIMATION_CONFIG.transformPerspective
                         });
-                        const cardContents = containerRef.current?.querySelectorAll(".card_content");
-                        if (cardContents) {
-                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].set(cardContents, {
+                        const cardContents_0 = containerRef.current?.querySelectorAll(".card_content");
+                        if (cardContents_0) {
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].set(cardContents_0, {
                                 opacity: 0
                             });
                         }
@@ -3414,7 +3452,8 @@ function ProjectSection() {
                             "ProjectSection[useLayoutEffect() > gsap.context() > PROJECTS.forEach()]": (project, index)=>{
                                 const cardRef = cardRefs[index];
                                 if (cardRef) {
-                                    tl.fromTo(cardRef, project.initialAnimation, {
+                                    const animationConfig = isMobile && project.initialAnimationMobile ? project.initialAnimationMobile : project.initialAnimation;
+                                    tl.fromTo(cardRef, animationConfig, {
                                         ...ANIMATION_CONFIG.finalState,
                                         ease: ANIMATION_CONFIG.ease
                                     }, ANIMATION_CONFIG.timelineStart);
@@ -3432,9 +3471,12 @@ function ProjectSection() {
                 }["ProjectSection[useLayoutEffect() > gsap.context()]"], containerRef);
                 const handleLoad = _ProjectSectionUseLayoutEffectHandleLoad;
                 window.addEventListener("load", handleLoad);
+                const handleResize = _ProjectSectionUseLayoutEffectHandleResize;
+                window.addEventListener("resize", handleResize);
                 return ()=>{
                     ctx.revert();
                     window.removeEventListener("load", handleLoad);
+                    window.removeEventListener("resize", handleResize);
                 };
             }
         })["ProjectSection[useLayoutEffect()]"];
@@ -3449,14 +3491,14 @@ function ProjectSection() {
     let t2;
     if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
         t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-            className: "border-b border-[#dedede]",
+            className: "border-b border-[#dedede] 2xl:px-0 px-[15px]",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "wrapper",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "py-[128px] px-[44px]",
+                    className: "md:py-[128px] py-[48px] 2xl:px-[44px] md:px-[15px] px-[10px]",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         ref: containerRef,
-                        className: "grid grid-cols-2 gap-[24px] relative z-10",
+                        className: "grid md:grid-cols-2 grid-cols-1 gap-[24px] relative z-10",
                         children: PROJECTS.map({
                             "ProjectSection[PROJECTS.map()]": (project_0, index_0)=>{
                                 const cardRefs_0 = [
@@ -3474,19 +3516,19 @@ function ProjectSection() {
                                         "data-cursor-text": "Project",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("figure", {
-                                                className: "rounded-[16px] h-[363px] overflow-hidden mb-[12px] ",
+                                                className: "rounded-[16px] lg:h-[363px] md:h-[246px] sm:h-[440px] h-[248px] overflow-hidden mb-[12px] ",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                     src: project_0.img,
                                                     alt: project_0.title,
                                                     className: "w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-500 ease-in-out"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                    lineNumber: 172,
-                                                    columnNumber: 218
+                                                    lineNumber: 214,
+                                                    columnNumber: 257
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                lineNumber: 172,
+                                                lineNumber: 214,
                                                 columnNumber: 146
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3495,26 +3537,26 @@ function ProjectSection() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-                                                                className: "text-black text-[18px] leading-[18px] mb-[2px] font-medium",
+                                                                className: "text-black sm:text-[18px] sm:leading-[18px] text-[16px] leading-[16px] mb-[2px] font-medium",
                                                                 children: project_0.title
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                                lineNumber: 172,
-                                                                columnNumber: 513
+                                                                lineNumber: 214,
+                                                                columnNumber: 552
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 className: "text-[12px] leading-[12px] text-[#545454] font-bold",
                                                                 children: project_0.subtitle
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                                lineNumber: 172,
-                                                                columnNumber: 610
+                                                                lineNumber: 214,
+                                                                columnNumber: 682
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                        lineNumber: 172,
-                                                        columnNumber: 508
+                                                        lineNumber: 214,
+                                                        columnNumber: 547
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3524,58 +3566,58 @@ function ProjectSection() {
                                                                     size: 16
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                                    lineNumber: 172,
-                                                                    columnNumber: 808
+                                                                    lineNumber: 214,
+                                                                    columnNumber: 880
                                                                 }, this),
                                                                 " View Project"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                            lineNumber: 172,
-                                                            columnNumber: 718
+                                                            lineNumber: 214,
+                                                            columnNumber: 790
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                        lineNumber: 172,
-                                                        columnNumber: 713
+                                                        lineNumber: 214,
+                                                        columnNumber: 785
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                lineNumber: 172,
-                                                columnNumber: 381
+                                                lineNumber: 214,
+                                                columnNumber: 420
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                        lineNumber: 172,
+                                        lineNumber: 214,
                                         columnNumber: 91
                                     }, this)
                                 }, project_0.id, false, {
                                     fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                    lineNumber: 172,
+                                    lineNumber: 214,
                                     columnNumber: 24
                                 }, this);
                             }
                         }["ProjectSection[PROJECTS.map()]"])
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                        lineNumber: 168,
-                        columnNumber: 120
+                        lineNumber: 210,
+                        columnNumber: 179
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                    lineNumber: 168,
-                    columnNumber: 82
+                    lineNumber: 210,
+                    columnNumber: 101
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                lineNumber: 168,
-                columnNumber: 57
+                lineNumber: 210,
+                columnNumber: 76
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/ProjectSection.tsx",
-            lineNumber: 168,
+            lineNumber: 210,
             columnNumber: 10
         }, this);
         $[3] = t2;
@@ -3586,8 +3628,14 @@ function ProjectSection() {
 }
 _s(ProjectSection, "ITRk9nQAdnEQ9GopSAVnzAxiMos=");
 _c = ProjectSection;
+function _ProjectSectionUseLayoutEffectHandleResize() {
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScrollTrigger"].refresh();
+}
 function _ProjectSectionUseLayoutEffectHandleLoad() {
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScrollTrigger"].refresh();
+}
+function _ProjectSectionUseLayoutEffectCardContentsForEach(content) {
+    content.style.opacity = "1";
 }
 const __TURBOPACK__default__export__ = ProjectSection;
 var _c;

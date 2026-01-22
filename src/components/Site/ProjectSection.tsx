@@ -50,6 +50,14 @@ const PROJECTS = [
             rotation: 10,
             zIndex: 4,
         },
+        // Responsive animation for max-width 1025px
+        initialAnimationMobile: {
+            x: 400,
+            y: -660,
+            scale: 0.6,
+            rotation: 10,
+            zIndex: 4,
+        },
     },
     {
         id: 2,
@@ -61,6 +69,13 @@ const PROJECTS = [
             x: 80,
             y: -736,
             scale: 0.7,
+            rotation: 15,
+        },
+        // Responsive animation for max-width 1025px
+        initialAnimationMobile: {
+            x: 75,
+            y: -662,
+            scale: 0.6,
             rotation: 15,
         },
     },
@@ -76,6 +91,13 @@ const PROJECTS = [
             scale: 0.7,
             rotation: -5,
         },
+        // Responsive animation for max-width 1025px
+        initialAnimationMobile: {
+            x: 380,
+            y: -990,
+            scale: 0.6,
+            rotation: -5,
+        },
     },
     {
         id: 4,
@@ -87,6 +109,13 @@ const PROJECTS = [
             x: 30,
             y: -1137,
             scale: 0.7,
+            rotation: 5,
+        },
+        // Responsive animation for max-width 1025px
+        initialAnimationMobile: {
+            x: 50,
+            y: -960,
+            scale: 0.6,
             rotation: 5,
         },
     },
@@ -102,7 +131,23 @@ function ProjectSection() {
     useLayoutEffect(() => {
         if (!card1Ref.current || !card2Ref.current || !card3Ref.current || !card4Ref.current || !containerRef.current) return;
 
+        // Skip GSAP animations for screens <= 769px
+        const isSmallScreen = window.innerWidth <= 769;
+        if (isSmallScreen) {
+            // Set card_content opacity to 1 for small screens (no animation)
+            const cardContents = containerRef.current?.querySelectorAll('.card_content');
+            if (cardContents) {
+                cardContents.forEach((content) => {
+                    (content as HTMLElement).style.opacity = '1';
+                });
+            }
+            return;
+        }
+
         const ctx = gsap.context(() => {
+            // Check if screen width is <= 1025px for responsive animation
+            const isMobile = window.innerWidth <= 1025;
+
             // Create a timeline to animate all cards together
             const tl = gsap.timeline({
                 scrollTrigger: {
@@ -134,9 +179,14 @@ function ProjectSection() {
             PROJECTS.forEach((project, index) => {
                 const cardRef = cardRefs[index];
                 if (cardRef) {
+                    // Use mobile animation if screen width <= 1025px, otherwise use default
+                    const animationConfig = isMobile && project.initialAnimationMobile 
+                        ? project.initialAnimationMobile 
+                        : project.initialAnimation;
+
                     tl.fromTo(
                         cardRef,
-                        project.initialAnimation,
+                        animationConfig,
                         {
                             ...ANIMATION_CONFIG.finalState,
                             ease: ANIMATION_CONFIG.ease,
@@ -164,17 +214,24 @@ function ProjectSection() {
         const handleLoad = () => ScrollTrigger.refresh();
         window.addEventListener("load", handleLoad);
 
+        // Handle window resize for responsive animations
+        const handleResize = () => {
+            ScrollTrigger.refresh();
+        };
+        window.addEventListener("resize", handleResize);
+
         return () => {
             ctx.revert();
             window.removeEventListener("load", handleLoad);
+            window.removeEventListener("resize", handleResize);
         };
     }, []);
 
     return (
-        <section className="border-b border-[#dedede]">
+        <section className="border-b border-[#dedede] 2xl:px-0 px-[15px]">
             <div className="wrapper">
-                <div className="py-[128px] px-[44px]">
-                    <div ref={containerRef} className="grid grid-cols-2 gap-[24px] relative z-10">
+                <div className="md:py-[128px] py-[48px] 2xl:px-[44px] md:px-[15px] px-[10px]">
+                    <div ref={containerRef} className="grid md:grid-cols-2 grid-cols-1 gap-[24px] relative z-10">
                         {PROJECTS.map((project, index) => {
                             const cardRefs = [card1Ref, card2Ref, card3Ref, card4Ref];
                             const cardRef = cardRefs[index];
@@ -182,7 +239,7 @@ function ProjectSection() {
                             return (
                                 <div key={project.id} ref={cardRef} className="relative group">
                                     <Link href={project.link} data-cursor-text="Project">
-                                        <figure className="rounded-[16px] h-[363px] overflow-hidden mb-[12px] ">
+                                        <figure className="rounded-[16px] lg:h-[363px] md:h-[246px] sm:h-[440px] h-[248px] overflow-hidden mb-[12px] ">
                                             <Image
                                                 src={project.img}
                                                 alt={project.title}
@@ -191,7 +248,7 @@ function ProjectSection() {
                                         </figure>
                                         <div className="flex items-center justify-between card_content transition-all duration-500 ease-in-out group-hover:!opacity-0">
                                             <div>
-                                                <h6 className="text-black text-[18px] leading-[18px] mb-[2px] font-medium">
+                                                <h6 className="text-black sm:text-[18px] sm:leading-[18px] text-[16px] leading-[16px] mb-[2px] font-medium">
                                                     {project.title}
                                                 </h6>
                                                 <span className="text-[12px] leading-[12px] text-[#545454] font-bold">
