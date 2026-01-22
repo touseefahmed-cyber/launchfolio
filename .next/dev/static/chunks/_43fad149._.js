@@ -626,25 +626,25 @@ const ANIMATION_DELAYS = {
 };
 function BannerSection() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
-    if ($[0] !== "8a0803e5f9bcfac178df0fee1e53919e1c177a302c3cb7609095d81f287a864d") {
+    if ($[0] !== "85098a0de4dcd22c042e8f90a25d66230f069f88df0a9f0f4779a4345c216317") {
         for(let $i = 0; $i < 5; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "8a0803e5f9bcfac178df0fee1e53919e1c177a302c3cb7609095d81f287a864d";
+        $[0] = "85098a0de4dcd22c042e8f90a25d66230f069f88df0a9f0f4779a4345c216317";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
         t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Site$2f$FadeIn$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             delay: ANIMATION_DELAYS.badge,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "shadow inline-block rounded-[24px] text-[12px] leading-[12px] py-[9px] mb-[24px] pl-[16px] pr-[8px] font-semibold",
+                className: "shadow inline-block rounded-[24px] text-[12px] leading-[12px] py-[9px] 2xl:mb-[24px] mb-[16px] pl-[16px] pr-[8px] font-semibold",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "animate-heartbeat w-2 h-2 bg-green-500 rounded-full inline-block mr-[5px]"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/BannerSection.tsx",
                         lineNumber: 48,
-                        columnNumber: 180
+                        columnNumber: 194
                     }, this),
                     BANNER_DATA.badge.text
                 ]
@@ -667,7 +667,7 @@ function BannerSection() {
         t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Site$2f$FadeUp$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             delay: ANIMATION_DELAYS.heading,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                className: "text-[72px] leading-[68px] font-medium mb-[24px]",
+                className: "2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:text-[48px] md:leading-[45px] text-[42px] leading-[39px]\n                                 font-medium mb-[24px]",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "block text-[#828282]",
@@ -675,7 +675,7 @@ function BannerSection() {
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/BannerSection.tsx",
                         lineNumber: 55,
-                        columnNumber: 116
+                        columnNumber: 253
                     }, this),
                     BANNER_DATA.heading.part2
                 ]
@@ -698,7 +698,7 @@ function BannerSection() {
         t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Site$2f$FadeUp$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             delay: ANIMATION_DELAYS.description,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "text-[18px] leading-[25px] font-semibold w-[72%] mb-[32px]",
+                className: "lg:text-[18px] lg:leading-[25px] text-[16px] leading-[22px] font-semibold lg:w-[72%] sm:w-[90%] w-full mb-[32px]",
                 children: [
                     BANNER_DATA.description.main,
                     " ",
@@ -708,7 +708,7 @@ function BannerSection() {
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/BannerSection.tsx",
                         lineNumber: 62,
-                        columnNumber: 164
+                        columnNumber: 218
                     }, this)
                 ]
             }, void 0, true, {
@@ -729,11 +729,11 @@ function BannerSection() {
     if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
         t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "border-b border-[#dedede]",
+                className: "border-b border-[#dedede] 2xl:px-0 px-[15px]",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "wrapper pt-[144px]",
+                    className: "wrapper md:pt-[144px] sm:pt-[128px] pt-[100px]",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "px-[44px] pb-[96px] grid grid-cols-[59%_41%] justify-between",
+                        className: " 2xl:px-[44px] md:px-[15px] px-[10px] md:pb-[96px] pb-[48px] grid md:grid-cols-[59%_41%] sm:grid-cols-[70%_30%] grid-cols-[100%] justify-between",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
@@ -756,51 +756,51 @@ function BannerSection() {
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Site/BannerSection.tsx",
                                                             lineNumber: 69,
-                                                            columnNumber: 381
+                                                            columnNumber: 512
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Site/BannerSection.tsx",
                                                         lineNumber: 69,
-                                                        columnNumber: 300
+                                                        columnNumber: 431
                                                     }, this),
                                                     BANNER_DATA.cta.text
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Site/BannerSection.tsx",
                                                 lineNumber: 69,
-                                                columnNumber: 245
+                                                columnNumber: 376
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Site/BannerSection.tsx",
                                             lineNumber: 69,
-                                            columnNumber: 227
+                                            columnNumber: 358
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Site/BannerSection.tsx",
                                         lineNumber: 69,
-                                        columnNumber: 190
+                                        columnNumber: 321
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Site/BannerSection.tsx",
                                 lineNumber: 69,
-                                columnNumber: 173
+                                columnNumber: 304
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {}, void 0, false, {
                                 fileName: "[project]/src/components/Site/BannerSection.tsx",
                                 lineNumber: 69,
-                                columnNumber: 495
+                                columnNumber: 626
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Site/BannerSection.tsx",
                         lineNumber: 69,
-                        columnNumber: 95
+                        columnNumber: 142
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Site/BannerSection.tsx",
                     lineNumber: 69,
-                    columnNumber: 59
+                    columnNumber: 78
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/BannerSection.tsx",

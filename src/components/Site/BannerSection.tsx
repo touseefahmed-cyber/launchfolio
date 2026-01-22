@@ -38,24 +38,25 @@ const ANIMATION_DELAYS = {
 function BannerSection() {
     return (
         <>
-            <section className="border-b border-[#dedede]">
-                <div className="wrapper pt-[144px]">
-                    <div className="px-[44px] pb-[96px] grid grid-cols-[59%_41%] justify-between">
+            <section className="border-b border-[#dedede] 2xl:px-0 px-[15px]">
+                <div className="wrapper md:pt-[144px] sm:pt-[128px] pt-[100px]">
+                    <div className=" 2xl:px-[44px] md:px-[15px] px-[10px] md:pb-[96px] pb-[48px] grid md:grid-cols-[59%_41%] sm:grid-cols-[70%_30%] grid-cols-[100%] justify-between">
                         <div>
                             <FadeIn delay={ANIMATION_DELAYS.badge}>
-                                <div className="shadow inline-block rounded-[24px] text-[12px] leading-[12px] py-[9px] mb-[24px] pl-[16px] pr-[8px] font-semibold">
+                                <div className="shadow inline-block rounded-[24px] text-[12px] leading-[12px] py-[9px] 2xl:mb-[24px] mb-[16px] pl-[16px] pr-[8px] font-semibold">
                                     <span className="animate-heartbeat w-2 h-2 bg-green-500 rounded-full inline-block mr-[5px]"></span>
                                     {BANNER_DATA.badge.text}
                                 </div>
                             </FadeIn>
                             <FadeUp delay={ANIMATION_DELAYS.heading}>
-                                <h1 className="text-[72px] leading-[68px] font-medium mb-[24px]">
+                                <h1 className="2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:text-[48px] md:leading-[45px] text-[42px] leading-[39px]
+                                 font-medium mb-[24px]">
                                     <span className="block text-[#828282]">{BANNER_DATA.heading.part1}</span>
                                     {BANNER_DATA.heading.part2}
                                 </h1>
                             </FadeUp>
                             <FadeUp delay={ANIMATION_DELAYS.description}>
-                                <p className="text-[18px] leading-[25px] font-semibold w-[72%] mb-[32px]">
+                                <p className="lg:text-[18px] lg:leading-[25px] text-[16px] leading-[22px] font-semibold lg:w-[72%] sm:w-[90%] w-full mb-[32px]">
                                     {BANNER_DATA.description.main}{" "}
                                     <span className="text-[#545454]">{BANNER_DATA.description.secondary}</span>
                                 </p>
