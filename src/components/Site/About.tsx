@@ -172,7 +172,8 @@ function About() {
                                 <div className={`text-center transition-all duration-500 ${showAll ? 'pt-[16px]' : 'pt-[100px]'}`}>
                                     <button 
                                         onClick={() => setShowAll(!showAll)}
-                                        className="flex items-center gap-[8px] text-[14px] leading-[14px] font-medium text-black hover:opacity-70 transition-all duration-300 cursor-pointer mx-auto"
+                                        className="flex items-center gap-[8px] text-[12px] leading-[12px] font-semibold border border-[#dedede]
+                                        text-black hover:opacity-70 transition-all duration-300 cursor-pointer mx-auto bg-white shadow rounded-full py-[7px] pr-[12px] pl-[12px]"
                                     >
                                         {showAll ? ABOUT_DATA.workHistory.button.hide : ABOUT_DATA.workHistory.button.show}
                                         <ChevronDown 

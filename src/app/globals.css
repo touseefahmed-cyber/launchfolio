@@ -277,6 +277,16 @@
 html{
   scroll-behavior: smooth;
 }
+
+/* Ensure default browser cursor on mobile devices */
+@media (max-width: 1279px) {
+  * {
+    cursor: auto !important;
+  }
+  a, button, [role="button"] {
+    cursor: pointer !important;
+  }
+}
 .client_slider {
   pointer-events: none;
 }

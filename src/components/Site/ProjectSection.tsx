@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowUpRight } from "lucide-react";
@@ -10,6 +10,7 @@ import project_img2 from "../../../public/images/project_img2.png";
 import project_img3 from "../../../public/images/project_img3.png";
 import project_img4 from "../../../public/images/project_img4.png";
 import Link from "next/link";
+import FadeUp from "@/components/Site/FadeUp";
 gsap.registerPlugin(ScrollTrigger);
 
 // Animation configuration
@@ -45,7 +46,7 @@ const PROJECTS = [
         link: "#",
         initialAnimation: {
             x: 530,
-            y: -726,
+            y: -850,
             scale: 0.7,
             rotation: 10,
             zIndex: 4,
@@ -53,7 +54,7 @@ const PROJECTS = [
         // Responsive animation for max-width 1025px
         initialAnimationMobile: {
             x: 400,
-            y: -660,
+            y: -760,
             scale: 0.6,
             rotation: 10,
             zIndex: 4,
@@ -67,14 +68,14 @@ const PROJECTS = [
         link: "#",
         initialAnimation: {
             x: 80,
-            y: -736,
+            y: -850,
             scale: 0.7,
             rotation: 15,
         },
         // Responsive animation for max-width 1025px
         initialAnimationMobile: {
             x: 75,
-            y: -662,
+            y: -762,
             scale: 0.6,
             rotation: 15,
         },
@@ -87,14 +88,14 @@ const PROJECTS = [
         link: "#",
         initialAnimation: {
             x: 480,
-            y: -1180,
+            y: -1300,
             scale: 0.7,
             rotation: -5,
         },
         // Responsive animation for max-width 1025px
         initialAnimationMobile: {
             x: 380,
-            y: -990,
+            y: -1090,
             scale: 0.6,
             rotation: -5,
         },
@@ -107,14 +108,14 @@ const PROJECTS = [
         link: "#",
         initialAnimation: {
             x: 30,
-            y: -1137,
+            y: -1250,
             scale: 0.7,
             rotation: 5,
         },
         // Responsive animation for max-width 1025px
         initialAnimationMobile: {
             x: 50,
-            y: -960,
+            y: -1060,
             scale: 0.6,
             rotation: 5,
         },
@@ -131,9 +132,27 @@ function ProjectSection({ disableAnimations = false }: ProjectSectionProps) {
     const card3Ref = useRef(null);
     const card4Ref = useRef(null);
     const containerRef = useRef<HTMLDivElement>(null);
+    const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
+    const ctxRef = useRef<gsap.Context | null>(null);
+
+    // Track window width for responsive animations
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     useLayoutEffect(() => {
         if (!card1Ref.current || !card2Ref.current || !card3Ref.current || !card4Ref.current || !containerRef.current) return;
+
+        // Cleanup previous context
+        if (ctxRef.current) {
+            ctxRef.current.revert();
+            ctxRef.current = null;
+        }
 
         // Skip GSAP animations if disabled via prop
         if (disableAnimations) {
@@ -148,9 +167,29 @@ function ProjectSection({ disableAnimations = false }: ProjectSectionProps) {
         }
 
         // Skip GSAP animations for screens <= 769px
-        const isSmallScreen = window.innerWidth <= 769;
+        const isSmallScreen = windowWidth <= 769;
         if (isSmallScreen) {
-            // Set card_content opacity to 1 for small screens (no animation)
+            // Reset all transforms and set card_content opacity to 1 for small screens (no animation)
+            const cardRefs: (HTMLDivElement | null)[] = [
+                card1Ref.current,
+                card2Ref.current,
+                card3Ref.current,
+                card4Ref.current,
+            ];
+            
+            cardRefs.forEach((cardRef) => {
+                if (cardRef) {
+                    gsap.set(cardRef, {
+                        x: 0,
+                        y: 0,
+                        scale: 1,
+                        rotation: 0,
+                        opacity: 1,
+                        zIndex: 0,
+                    });
+                }
+            });
+
             const cardContents = containerRef.current?.querySelectorAll('.card_content');
             if (cardContents) {
                 cardContents.forEach((content) => {
@@ -162,7 +201,14 @@ function ProjectSection({ disableAnimations = false }: ProjectSectionProps) {
 
         const ctx = gsap.context(() => {
             // Check if screen width is <= 1025px for responsive animation
-            const isMobile = window.innerWidth <= 1025;
+            const isMobile = windowWidth <= 1025;
+
+            // Kill any existing ScrollTriggers on this container
+            ScrollTrigger.getAll().forEach(trigger => {
+                if (trigger.vars.trigger === containerRef.current) {
+                    trigger.kill();
+                }
+            });
 
             // Create a timeline to animate all cards together
             const tl = gsap.timeline({
@@ -226,27 +272,29 @@ function ProjectSection({ disableAnimations = false }: ProjectSectionProps) {
             });
         }, containerRef);
 
+        ctxRef.current = ctx;
+
         // ✅ Refresh ScrollTrigger after all images load
         const handleLoad = () => ScrollTrigger.refresh();
         window.addEventListener("load", handleLoad);
 
-        // Handle window resize for responsive animations
-        const handleResize = () => {
-            ScrollTrigger.refresh();
-        };
-        window.addEventListener("resize", handleResize);
-
         return () => {
-            ctx.revert();
+            if (ctxRef.current) {
+                ctxRef.current.revert();
+                ctxRef.current = null;
+            }
             window.removeEventListener("load", handleLoad);
-            window.removeEventListener("resize", handleResize);
         };
-    }, [disableAnimations]);
+    }, [disableAnimations, windowWidth]);
 
     return (
         <section className="border-b border-[#dedede] 2xl:px-0 px-[15px]">
             <div className="wrapper">
                 <div className="md:py-[128px] py-[48px] 2xl:px-[44px] md:px-[15px] px-[10px]">
+                        <div className="relative z-20 bg-black mix-blend-exclusion">
+                            <h2 className="xl:text-[64px] 2xl:leading-[64px] lg:text-[54px]
+                            lg:leading-[54px] md:text-[46px] md:leading-[46px] text-[36px] leading-[36px] font-medium text-white md:mb-[60px] mb-[48px]">Leatest Projects</h2>
+                        </div>
                     <div ref={containerRef} className="grid md:grid-cols-2 grid-cols-1 gap-[24px] relative z-10">
                         {PROJECTS.map((project, index) => {
                             const cardRefs = [card1Ref, card2Ref, card3Ref, card4Ref];
@@ -281,6 +329,9 @@ function ProjectSection({ disableAnimations = false }: ProjectSectionProps) {
                                 </div>
                             );
                         })}
+                    </div>
+                    <div className="mt-[64px] mx-auto">
+                        <Link href="#" className="md:text-[18px] md:leading-[18px] text-[16px] leading-[16px] text-black hover:underline font-medium flex items-center w-fit mx-auto gap-1">View all my projects <ArrowUpRight size={16} /></Link>
                     </div>
                 </div>
             </div>

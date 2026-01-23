@@ -110,7 +110,7 @@ function Header() {
 
     return (
         <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-            <motion.header
+        <motion.header
                 ref={headerRef}
                 animate={{ 
                     width: isMobile 
@@ -121,46 +121,46 @@ function Header() {
                                 ? "234px"  // Desktop: shrink when scrolled
                                 : "min-content"  // Desktop: default full width
                 }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
-                className="glass-effect border border-[#dedede] p-3 rounded-[32px] top-6 fixed left-1/2 transform -translate-x-1/2 overflow-hidden z-50"
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            className="glass-effect border border-[#dedede] p-3 rounded-[32px] top-6 fixed left-1/2 transform -translate-x-1/2 overflow-hidden z-50"
                 onMouseEnter={() => !isMobile && setIsHovered(true)}
                 onMouseLeave={() => !isMobile && setIsHovered(false)}
-            >
-                <nav className="flex justify-between items-center gap-16 relative">
-                    <div>
-                        <Link href="/" className="flex gap-2 items-center">
-                            <figure className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
-                                <Image src={user_img} alt="User" width={32} height={32} />
-                            </figure>
+        >
+            <nav className="flex justify-between items-center gap-16 relative">
+                <div>
+                    <Link href="/" className="flex gap-2 items-center">
+                        <figure className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
+                            <Image src={user_img} alt="User" width={32} height={32} />
+                        </figure>
                             <span className="text-sm font-bold text-black whitespace-nowrap">Joseph Alexander</span>
-                        </Link>
-                    </div>
+                    </Link>
+                </div>
 
-                    <div className="flex items-center gap-4">
-                        <ul className="flex gap-4 text-sm font-bold text-black items-center">
-                            <li>
-                                <Link href="/work">Work</Link>
-                            </li>
-                            <li>
+                <div className="flex items-center gap-4">
+                    <ul className="flex gap-4 text-sm font-bold text-black items-center">
+                        <li>
+                            <Link href="/work">Work</Link>
+                        </li>
+                        <li>
                                 <Link href="#services">Services</Link>
-                            </li>
-                            <li>
+                        </li>
+                        <li>
                                 <Link href="#pricing">Pricing</Link>
-                            </li>
-                            <li>
-                                <Link href="/blog">Blog</Link>
-                            </li>
-                        </ul>
-                        <div>
+                        </li>
+                        <li>
+                            <Link href="/blog">Blog</Link>
+                        </li>
+                    </ul>
+                    <div>
                             <SheetTrigger className="contact_btn">Contact</SheetTrigger>
-                        </div>
                     </div>
+                </div>
 
                 {/* Bouncing dots */}
                 {(!isMobile || !showButton) && (
-                    <motion.div
+                <motion.div
                         className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-pointer"
-                        variants={dotsContainer}
+                    variants={dotsContainer}
                         animate={
                             isMobile 
                                 ? (!isHovered && !showButton ? "animate" : "none")
@@ -172,15 +172,15 @@ function Header() {
                                 : (scrolled && !isHovered ? 1 : 0)
                         }}
                         onClick={() => isMobile && setShowButton(true)}
-                    >
-                        {[0, 1, 2].map((i) => (
-                            <motion.span
-                                key={i}
-                                className="w-1.5 h-1.5 rounded-full bg-[#828282]"
-                                variants={singleDot}
-                            />
-                        ))}
-                    </motion.div>
+                >
+                    {[0, 1, 2].map((i) => (
+                        <motion.span
+                            key={i}
+                            className="w-1.5 h-1.5 rounded-full bg-[#828282]"
+                            variants={singleDot}
+                        />
+                    ))}
+                </motion.div>
                 )}
                 {/* Button - only visible on mobile when dots are clicked */}
                 {isMobile && (
@@ -215,7 +215,7 @@ function Header() {
                     </div>
                 </div>
             )}
-            </motion.header>
+        </motion.header>
             <SheetContent className="bg-white !w-[540px]">
                 <Sidebar/>
             </SheetContent>

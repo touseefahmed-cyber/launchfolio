@@ -6,66 +6,113 @@ export default function CustomCursor() {
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const [text, setText] = useState("");
     const [isVisible, setIsVisible] = useState(false);
+    const [isDesktop, setIsDesktop] = useState(false);
     const rafRef = useRef<number | null>(null);
+    const cleanupRef = useRef<(() => void) | null>(null);
 
     useEffect(() => {
-        let currentX = window.innerWidth / 2;
-        let currentY = window.innerHeight / 2;
-        let targetX = window.innerWidth / 2;
-        let targetY = window.innerHeight / 2;
-
-        // Initialize position
-        setPosition({ x: currentX, y: currentY });
-
-        const updateCursor = (e: MouseEvent) => {
-            targetX = e.clientX;
-            targetY = e.clientY;
+        // Check if screen is desktop (width >= 1280px and has pointer device)
+        const checkDesktop = () => {
+            const hasPointerDevice = window.matchMedia("(pointer: fine)").matches;
+            const isDesktopWidth = window.innerWidth >= 1280;
+            return hasPointerDevice && isDesktopWidth;
         };
 
-        const animate = () => {
-            // Smooth interpolation for cursor movement
-            currentX += (targetX - currentX) * 0.15;
-            currentY += (targetY - currentY) * 0.15;
+        const setupCursor = () => {
+            // Cleanup previous setup if exists
+            if (cleanupRef.current) {
+                cleanupRef.current();
+                cleanupRef.current = null;
+            }
+
+            if (!checkDesktop()) {
+                setIsDesktop(false);
+                return;
+            }
+
+            setIsDesktop(true);
+
+            let currentX = window.innerWidth / 2;
+            let currentY = window.innerHeight / 2;
+            let targetX = window.innerWidth / 2;
+            let targetY = window.innerHeight / 2;
+
+            // Initialize position
             setPosition({ x: currentX, y: currentY });
-            rafRef.current = requestAnimationFrame(animate);
-        };
 
-        const handleMouseOver = (e: MouseEvent) => {
-            const target = e.target as HTMLElement;
-            const linkElement = target.closest("[data-cursor-text]");
-            if (linkElement) {
-                const cursorText = linkElement.getAttribute("data-cursor-text");
-                if (cursorText) {
-                    setText(cursorText);
-                    setIsVisible(true);
+            const updateCursor = (e: MouseEvent) => {
+                targetX = e.clientX;
+                targetY = e.clientY;
+            };
+
+            const animate = () => {
+                // Smooth interpolation for cursor movement
+                currentX += (targetX - currentX) * 0.15;
+                currentY += (targetY - currentY) * 0.15;
+                setPosition({ x: currentX, y: currentY });
+                rafRef.current = requestAnimationFrame(animate);
+            };
+
+            const handleMouseOver = (e: MouseEvent) => {
+                const target = e.target as HTMLElement;
+                const linkElement = target.closest("[data-cursor-text]");
+                if (linkElement) {
+                    const cursorText = linkElement.getAttribute("data-cursor-text");
+                    if (cursorText) {
+                        setText(cursorText);
+                        setIsVisible(true);
+                    }
                 }
-            }
+            };
+
+            const handleMouseOut = (e: MouseEvent) => {
+                const target = e.target as HTMLElement;
+                const linkElement = target.closest("[data-cursor-text]");
+                if (linkElement && !linkElement.contains(e.relatedTarget as Node)) {
+                    setText("");
+                    setIsVisible(false);
+                }
+            };
+
+            window.addEventListener("mousemove", updateCursor);
+            document.addEventListener("mouseover", handleMouseOver, true);
+            document.addEventListener("mouseout", handleMouseOut, true);
+            
+            rafRef.current = requestAnimationFrame(animate);
+
+            cleanupRef.current = () => {
+                window.removeEventListener("mousemove", updateCursor);
+                document.removeEventListener("mouseover", handleMouseOver, true);
+                document.removeEventListener("mouseout", handleMouseOut, true);
+                if (rafRef.current) {
+                    cancelAnimationFrame(rafRef.current);
+                    rafRef.current = null;
+                }
+            };
         };
 
-        const handleMouseOut = (e: MouseEvent) => {
-            const target = e.target as HTMLElement;
-            const linkElement = target.closest("[data-cursor-text]");
-            if (linkElement && !linkElement.contains(e.relatedTarget as Node)) {
-                setText("");
-                setIsVisible(false);
-            }
+        // Initial setup
+        setupCursor();
+
+        // Handle resize
+        const handleResize = () => {
+            setupCursor();
         };
 
-        window.addEventListener("mousemove", updateCursor);
-        document.addEventListener("mouseover", handleMouseOver, true);
-        document.addEventListener("mouseout", handleMouseOut, true);
-        
-        rafRef.current = requestAnimationFrame(animate);
+        window.addEventListener("resize", handleResize);
 
         return () => {
-            window.removeEventListener("mousemove", updateCursor);
-            document.removeEventListener("mouseover", handleMouseOver, true);
-            document.removeEventListener("mouseout", handleMouseOut, true);
-            if (rafRef.current) {
-                cancelAnimationFrame(rafRef.current);
+            window.removeEventListener("resize", handleResize);
+            if (cleanupRef.current) {
+                cleanupRef.current();
             }
         };
     }, []);
+
+    // Don't render on mobile/tablet
+    if (!isDesktop) {
+        return null;
+    }
 
     return (
         <>
@@ -80,14 +127,11 @@ export default function CustomCursor() {
                     pointerEvents: "none",
                 }}
             >
-                <div className="flex items-center gap-2">
-
-                    <span className="text-black text-xs font-medium whitespace-nowrap glass-effect px-3 py-1.5 rounded-full ">
-                        {text}
-                    </span>
-                </div>
+                <span className="text-black text-xs font-medium whitespace-nowrap bg-white px-3 py-1.5 rounded-full shadow-md">
+                    {text}
+                </span>
             </div>
-            {/* Default cursor dot - always visible */}
+            {/* Simple cursor pointer - always visible */}
             <div
                 className="fixed pointer-events-none z-[9998] transition-opacity duration-200"
                 style={{
@@ -97,7 +141,7 @@ export default function CustomCursor() {
                     opacity: isVisible ? 0 : 1,
                 }}
             >
-                <div className="glass-effect2 rounded-full w-[15px] h-[15px]  "></div>
+                <div className="bg-black rounded-full w-5 h-5 border border-white"></div>
             </div>
         </>
     );

@@ -1463,11 +1463,11 @@ var _s = __turbopack_context__.k.signature();
 function Header() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(44);
-    if ($[0] !== "6c39a2bf60eda6fa11d8f8ec2af1548a87b28b67bab5a53823a9b5fa779da745") {
+    if ($[0] !== "ef95bdc05cfe65eff110bd986f3a11d3df7a2ed031611c73973ac5f805763b45") {
         for(let $i = 0; $i < 44; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "6c39a2bf60eda6fa11d8f8ec2af1548a87b28b67bab5a53823a9b5fa779da745";
+        $[0] = "ef95bdc05cfe65eff110bd986f3a11d3df7a2ed031611c73973ac5f805763b45";
     }
     const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [lastScrollY, setLastScrollY] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
@@ -4327,11 +4327,11 @@ const ANIMATION_DELAYS = {
 function About() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(25);
-    if ($[0] !== "c104d76e4852bebf4174431ba9cacce455a178f45c685d3dc8615ad00e615f2c") {
+    if ($[0] !== "40b1a3e6feb8858654b0ea971896c0691deacd6217a67622087a716248d81ea8") {
         for(let $i = 0; $i < 25; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "c104d76e4852bebf4174431ba9cacce455a178f45c685d3dc8615ad00e615f2c";
+        $[0] = "40b1a3e6feb8858654b0ea971896c0691deacd6217a67622087a716248d81ea8";
     }
     const [showAll, setShowAll] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     let t0;
@@ -4586,7 +4586,7 @@ function About() {
     if ($[12] !== t10 || $[13] !== t7 || $[14] !== t8) {
         t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
             onClick: t7,
-            className: "flex items-center gap-[8px] text-[14px] leading-[14px] font-medium text-black hover:opacity-70 transition-all duration-300 cursor-pointer mx-auto",
+            className: "flex items-center gap-[8px] text-[12px] leading-[12px] font-semibold border border-[#dedede]\n                                        text-black hover:opacity-70 transition-all duration-300 cursor-pointer mx-auto bg-white shadow rounded-full py-[7px] pr-[12px] pl-[12px]",
             children: [
                 t8,
                 t10
@@ -4935,7 +4935,7 @@ const PROJECTS = [
         link: "#",
         initialAnimation: {
             x: 530,
-            y: -726,
+            y: -850,
             scale: 0.7,
             rotation: 10,
             zIndex: 4
@@ -4943,7 +4943,7 @@ const PROJECTS = [
         // Responsive animation for max-width 1025px
         initialAnimationMobile: {
             x: 400,
-            y: -660,
+            y: -760,
             scale: 0.6,
             rotation: 10,
             zIndex: 4
@@ -4957,14 +4957,14 @@ const PROJECTS = [
         link: "#",
         initialAnimation: {
             x: 80,
-            y: -736,
+            y: -850,
             scale: 0.7,
             rotation: 15
         },
         // Responsive animation for max-width 1025px
         initialAnimationMobile: {
             x: 75,
-            y: -662,
+            y: -762,
             scale: 0.6,
             rotation: 15
         }
@@ -4977,14 +4977,14 @@ const PROJECTS = [
         link: "#",
         initialAnimation: {
             x: 480,
-            y: -1180,
+            y: -1300,
             scale: 0.7,
             rotation: -5
         },
         // Responsive animation for max-width 1025px
         initialAnimationMobile: {
             x: 380,
-            y: -990,
+            y: -1090,
             scale: 0.6,
             rotation: -5
         }
@@ -4997,14 +4997,14 @@ const PROJECTS = [
         link: "#",
         initialAnimation: {
             x: 30,
-            y: -1137,
+            y: -1250,
             scale: 0.7,
             rotation: 5
         },
         // Responsive animation for max-width 1025px
         initialAnimationMobile: {
             x: 50,
-            y: -960,
+            y: -1060,
             scale: 0.6,
             rotation: 5
         }
@@ -5012,12 +5012,12 @@ const PROJECTS = [
 ];
 function ProjectSection(t0) {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
-    if ($[0] !== "1ab6e55ddf7d77dfafb0d6a0e47e8db37692077cb63e78ad4493e0a66448c044") {
-        for(let $i = 0; $i < 5; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(10);
+    if ($[0] !== "ccefd71e0dd6307ef4c112b05bfda84fa5ea5e4c7ff7c3e137cb9a852daeff72") {
+        for(let $i = 0; $i < 10; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1ab6e55ddf7d77dfafb0d6a0e47e8db37692077cb63e78ad4493e0a66448c044";
+        $[0] = "ccefd71e0dd6307ef4c112b05bfda84fa5ea5e4c7ff7c3e137cb9a852daeff72";
     }
     const { disableAnimations: t1 } = t0;
     const disableAnimations = t1 === undefined ? false : t1;
@@ -5026,13 +5026,41 @@ function ProjectSection(t0) {
     const card3Ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const card4Ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const containerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const [windowWidth, setWindowWidth] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(("TURBOPACK compile-time truthy", 1) ? window.innerWidth : "TURBOPACK unreachable");
+    const ctxRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     let t2;
     let t3;
-    if ($[1] !== disableAnimations) {
+    if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
         t2 = ({
+            "ProjectSection[useEffect()]": ()=>{
+                const handleResize = {
+                    "ProjectSection[useEffect() > handleResize]": ()=>{
+                        setWindowWidth(window.innerWidth);
+                    }
+                }["ProjectSection[useEffect() > handleResize]"];
+                window.addEventListener("resize", handleResize);
+                return ()=>window.removeEventListener("resize", handleResize);
+            }
+        })["ProjectSection[useEffect()]"];
+        t3 = [];
+        $[1] = t2;
+        $[2] = t3;
+    } else {
+        t2 = $[1];
+        t3 = $[2];
+    }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t2, t3);
+    let t4;
+    let t5;
+    if ($[3] !== disableAnimations || $[4] !== windowWidth) {
+        t4 = ({
             "ProjectSection[useLayoutEffect()]": ()=>{
                 if (!card1Ref.current || !card2Ref.current || !card3Ref.current || !card4Ref.current || !containerRef.current) {
                     return;
+                }
+                if (ctxRef.current) {
+                    ctxRef.current.revert();
+                    ctxRef.current = null;
                 }
                 if (disableAnimations) {
                     const cardContents = containerRef.current?.querySelectorAll(".card_content");
@@ -5041,8 +5069,15 @@ function ProjectSection(t0) {
                     }
                     return;
                 }
-                const isSmallScreen = window.innerWidth <= 769;
+                const isSmallScreen = windowWidth <= 769;
                 if (isSmallScreen) {
+                    const cardRefs = [
+                        card1Ref.current,
+                        card2Ref.current,
+                        card3Ref.current,
+                        card4Ref.current
+                    ];
+                    cardRefs.forEach(_ProjectSectionUseLayoutEffectCardRefsForEach);
                     const cardContents_0 = containerRef.current?.querySelectorAll(".card_content");
                     if (cardContents_0) {
                         cardContents_0.forEach(_ProjectSectionUseLayoutEffectCardContents_0ForEach);
@@ -5051,20 +5086,27 @@ function ProjectSection(t0) {
                 }
                 const ctx = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].context({
                     "ProjectSection[useLayoutEffect() > gsap.context()]": ()=>{
-                        const isMobile = window.innerWidth <= 1025;
+                        const isMobile = windowWidth <= 1025;
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScrollTrigger"].getAll().forEach({
+                            "ProjectSection[useLayoutEffect() > gsap.context() > (anonymous)()]": (trigger)=>{
+                                if (trigger.vars.trigger === containerRef.current) {
+                                    trigger.kill();
+                                }
+                            }
+                        }["ProjectSection[useLayoutEffect() > gsap.context() > (anonymous)()]"]);
                         const tl = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].timeline({
                             scrollTrigger: {
                                 trigger: containerRef.current,
                                 ...SCROLL_TRIGGER_CONFIG
                             }
                         });
-                        const cardRefs = [
+                        const cardRefs_0 = [
                             card1Ref.current,
                             card2Ref.current,
                             card3Ref.current,
                             card4Ref.current
                         ];
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].set(cardRefs.filter(Boolean), {
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].set(cardRefs_0.filter(Boolean), {
                             transformPerspective: ANIMATION_CONFIG.transformPerspective
                         });
                         const cardContents_1 = containerRef.current?.querySelectorAll(".card_content");
@@ -5075,14 +5117,14 @@ function ProjectSection(t0) {
                         }
                         PROJECTS.forEach({
                             "ProjectSection[useLayoutEffect() > gsap.context() > PROJECTS.forEach()]": (project, index)=>{
-                                const cardRef = cardRefs[index];
-                                if (cardRef) {
+                                const cardRef_0 = cardRefs_0[index];
+                                if (cardRef_0) {
                                     const animationConfig = isMobile && project.initialAnimationMobile ? project.initialAnimationMobile : project.initialAnimation;
-                                    tl.fromTo(cardRef, animationConfig, {
+                                    tl.fromTo(cardRef_0, animationConfig, {
                                         ...ANIMATION_CONFIG.finalState,
                                         ease: ANIMATION_CONFIG.ease
                                     }, ANIMATION_CONFIG.timelineStart);
-                                    const cardContent = cardRef.querySelector(".card_content");
+                                    const cardContent = cardRef_0.querySelector(".card_content");
                                     if (cardContent) {
                                         tl.to(cardContent, {
                                             opacity: 1,
@@ -5094,176 +5136,244 @@ function ProjectSection(t0) {
                         }["ProjectSection[useLayoutEffect() > gsap.context() > PROJECTS.forEach()]"]);
                     }
                 }["ProjectSection[useLayoutEffect() > gsap.context()]"], containerRef);
+                ctxRef.current = ctx;
                 const handleLoad = _ProjectSectionUseLayoutEffectHandleLoad;
                 window.addEventListener("load", handleLoad);
-                const handleResize = _ProjectSectionUseLayoutEffectHandleResize;
-                window.addEventListener("resize", handleResize);
                 return ()=>{
-                    ctx.revert();
+                    if (ctxRef.current) {
+                        ctxRef.current.revert();
+                        ctxRef.current = null;
+                    }
                     window.removeEventListener("load", handleLoad);
-                    window.removeEventListener("resize", handleResize);
                 };
             }
         })["ProjectSection[useLayoutEffect()]"];
-        t3 = [
-            disableAnimations
+        t5 = [
+            disableAnimations,
+            windowWidth
         ];
-        $[1] = disableAnimations;
-        $[2] = t2;
-        $[3] = t3;
+        $[3] = disableAnimations;
+        $[4] = windowWidth;
+        $[5] = t4;
+        $[6] = t5;
     } else {
-        t2 = $[2];
-        t3 = $[3];
+        t4 = $[5];
+        t5 = $[6];
     }
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLayoutEffect"])(t2, t3);
-    let t4;
-    if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
-        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLayoutEffect"])(t4, t5);
+    let t6;
+    if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "relative z-20 bg-black mix-blend-exclusion",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                className: "xl:text-[64px] 2xl:leading-[64px] lg:text-[54px]\n                            lg:leading-[54px] md:text-[46px] md:leading-[46px] text-[36px] leading-[36px] font-medium text-white md:mb-[60px] mb-[48px]",
+                children: "Leatest Projects"
+            }, void 0, false, {
+                fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                lineNumber: 265,
+                columnNumber: 70
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/Site/ProjectSection.tsx",
+            lineNumber: 265,
+            columnNumber: 10
+        }, this);
+        $[7] = t6;
+    } else {
+        t6 = $[7];
+    }
+    let t7;
+    if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            ref: containerRef,
+            className: "grid md:grid-cols-2 grid-cols-1 gap-[24px] relative z-10",
+            children: PROJECTS.map({
+                "ProjectSection[PROJECTS.map()]": (project_0, index_0)=>{
+                    const cardRefs_1 = [
+                        card1Ref,
+                        card2Ref,
+                        card3Ref,
+                        card4Ref
+                    ];
+                    const cardRef_1 = cardRefs_1[index_0];
+                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        ref: cardRef_1,
+                        className: "relative group",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: project_0.link,
+                            "data-cursor-text": "Project",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("figure", {
+                                    className: "rounded-[16px] lg:h-[363px] md:h-[246px] sm:h-[440px] h-[248px] overflow-hidden mb-[12px] ",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        src: project_0.img,
+                                        alt: project_0.title,
+                                        className: "w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-500 ease-in-out"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                        lineNumber: 276,
+                                        columnNumber: 251
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                    lineNumber: 276,
+                                    columnNumber: 140
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex items-center justify-between card_content transition-all duration-500 ease-in-out group-hover:!opacity-0",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
+                                                    className: "text-black sm:text-[18px] sm:leading-[18px] text-[16px] leading-[16px] mb-[2px] font-medium",
+                                                    children: project_0.title
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                                    lineNumber: 276,
+                                                    columnNumber: 546
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-[12px] leading-[12px] text-[#545454] font-bold",
+                                                    children: project_0.subtitle
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                                    lineNumber: 276,
+                                                    columnNumber: 676
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                            lineNumber: 276,
+                                            columnNumber: 541
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "flex text-[12px] leading-[12px] font-medium text-[#545454] items-center",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                                                        size: 16
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                                        lineNumber: 276,
+                                                        columnNumber: 874
+                                                    }, this),
+                                                    " View Project"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                                lineNumber: 276,
+                                                columnNumber: 784
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                            lineNumber: 276,
+                                            columnNumber: 779
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                    lineNumber: 276,
+                                    columnNumber: 414
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                            lineNumber: 276,
+                            columnNumber: 85
+                        }, this)
+                    }, project_0.id, false, {
+                        fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                        lineNumber: 276,
+                        columnNumber: 18
+                    }, this);
+                }
+            }["ProjectSection[PROJECTS.map()]"])
+        }, void 0, false, {
+            fileName: "[project]/src/components/Site/ProjectSection.tsx",
+            lineNumber: 272,
+            columnNumber: 10
+        }, this);
+        $[8] = t7;
+    } else {
+        t7 = $[8];
+    }
+    let t8;
+    if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
             className: "border-b border-[#dedede] 2xl:px-0 px-[15px]",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "wrapper",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "md:py-[128px] py-[48px] 2xl:px-[44px] md:px-[15px] px-[10px]",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        ref: containerRef,
-                        className: "grid md:grid-cols-2 grid-cols-1 gap-[24px] relative z-10",
-                        children: PROJECTS.map({
-                            "ProjectSection[PROJECTS.map()]": (project_0, index_0)=>{
-                                const cardRefs_0 = [
-                                    card1Ref,
-                                    card2Ref,
-                                    card3Ref,
-                                    card4Ref
-                                ];
-                                const cardRef_0 = cardRefs_0[index_0];
-                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    ref: cardRef_0,
-                                    className: "relative group",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: project_0.link,
-                                        "data-cursor-text": "Project",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("figure", {
-                                                className: "rounded-[16px] lg:h-[363px] md:h-[246px] sm:h-[440px] h-[248px] overflow-hidden mb-[12px] ",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    src: project_0.img,
-                                                    alt: project_0.title,
-                                                    className: "w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-500 ease-in-out"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                    lineNumber: 229,
-                                                    columnNumber: 257
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                lineNumber: 229,
-                                                columnNumber: 146
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex items-center justify-between card_content transition-all duration-500 ease-in-out group-hover:!opacity-0",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-                                                                className: "text-black sm:text-[18px] sm:leading-[18px] text-[16px] leading-[16px] mb-[2px] font-medium",
-                                                                children: project_0.title
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                                lineNumber: 229,
-                                                                columnNumber: 552
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-[12px] leading-[12px] text-[#545454] font-bold",
-                                                                children: project_0.subtitle
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                                lineNumber: 229,
-                                                                columnNumber: 682
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                        lineNumber: 229,
-                                                        columnNumber: 547
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "flex text-[12px] leading-[12px] font-medium text-[#545454] items-center",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
-                                                                    size: 16
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                                    lineNumber: 229,
-                                                                    columnNumber: 880
-                                                                }, this),
-                                                                " View Project"
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                            lineNumber: 229,
-                                                            columnNumber: 790
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                        lineNumber: 229,
-                                                        columnNumber: 785
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                lineNumber: 229,
-                                                columnNumber: 420
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
+                    children: [
+                        t6,
+                        t7,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "mt-[64px] mx-auto",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "#",
+                                className: "md:text-[18px] md:leading-[18px] text-[16px] leading-[16px] text-black hover:underline font-medium flex items-center w-fit mx-auto gap-1",
+                                children: [
+                                    "View all my projects ",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                                        size: 16
+                                    }, void 0, false, {
                                         fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                        lineNumber: 229,
-                                        columnNumber: 91
+                                        lineNumber: 285,
+                                        columnNumber: 407
                                     }, this)
-                                }, project_0.id, false, {
-                                    fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                    lineNumber: 229,
-                                    columnNumber: 24
-                                }, this);
-                            }
-                        }["ProjectSection[PROJECTS.map()]"])
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                        lineNumber: 225,
-                        columnNumber: 179
-                    }, this)
-                }, void 0, false, {
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                lineNumber: 285,
+                                columnNumber: 222
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                            lineNumber: 285,
+                            columnNumber: 187
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                    lineNumber: 225,
+                    lineNumber: 285,
                     columnNumber: 101
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                lineNumber: 225,
+                lineNumber: 285,
                 columnNumber: 76
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/ProjectSection.tsx",
-            lineNumber: 225,
+            lineNumber: 285,
             columnNumber: 10
         }, this);
-        $[4] = t4;
+        $[9] = t8;
     } else {
-        t4 = $[4];
+        t8 = $[9];
     }
-    return t4;
+    return t8;
 }
-_s(ProjectSection, "ITRk9nQAdnEQ9GopSAVnzAxiMos=");
+_s(ProjectSection, "WD1CcKbfADVtgv3XxHQu3gdHww0=");
 _c = ProjectSection;
-function _ProjectSectionUseLayoutEffectHandleResize() {
-    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScrollTrigger"].refresh();
-}
 function _ProjectSectionUseLayoutEffectHandleLoad() {
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScrollTrigger"].refresh();
 }
 function _ProjectSectionUseLayoutEffectCardContents_0ForEach(content_0) {
     content_0.style.opacity = "1";
+}
+function _ProjectSectionUseLayoutEffectCardRefsForEach(cardRef) {
+    if (cardRef) {
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].set(cardRef, {
+            x: 0,
+            y: 0,
+            scale: 1,
+            rotation: 0,
+            opacity: 1,
+            zIndex: 0
+        });
+    }
 }
 function _ProjectSectionUseLayoutEffectCardContentsForEach(content) {
     content.style.opacity = "1";

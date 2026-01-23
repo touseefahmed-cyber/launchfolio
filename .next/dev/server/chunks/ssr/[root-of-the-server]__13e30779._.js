@@ -76,63 +76,101 @@ function CustomCursor() {
     });
     const [text, setText] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [isVisible, setIsVisible] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [isDesktop, setIsDesktop] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const rafRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const cleanupRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        let currentX = window.innerWidth / 2;
-        let currentY = window.innerHeight / 2;
-        let targetX = window.innerWidth / 2;
-        let targetY = window.innerHeight / 2;
-        // Initialize position
-        setPosition({
-            x: currentX,
-            y: currentY
-        });
-        const updateCursor = (e)=>{
-            targetX = e.clientX;
-            targetY = e.clientY;
+        // Check if screen is desktop (width >= 1280px and has pointer device)
+        const checkDesktop = ()=>{
+            const hasPointerDevice = window.matchMedia("(pointer: fine)").matches;
+            const isDesktopWidth = window.innerWidth >= 1280;
+            return hasPointerDevice && isDesktopWidth;
         };
-        const animate = ()=>{
-            // Smooth interpolation for cursor movement
-            currentX += (targetX - currentX) * 0.15;
-            currentY += (targetY - currentY) * 0.15;
+        const setupCursor = ()=>{
+            // Cleanup previous setup if exists
+            if (cleanupRef.current) {
+                cleanupRef.current();
+                cleanupRef.current = null;
+            }
+            if (!checkDesktop()) {
+                setIsDesktop(false);
+                return;
+            }
+            setIsDesktop(true);
+            let currentX = window.innerWidth / 2;
+            let currentY = window.innerHeight / 2;
+            let targetX = window.innerWidth / 2;
+            let targetY = window.innerHeight / 2;
+            // Initialize position
             setPosition({
                 x: currentX,
                 y: currentY
             });
-            rafRef.current = requestAnimationFrame(animate);
-        };
-        const handleMouseOver = (e)=>{
-            const target = e.target;
-            const linkElement = target.closest("[data-cursor-text]");
-            if (linkElement) {
-                const cursorText = linkElement.getAttribute("data-cursor-text");
-                if (cursorText) {
-                    setText(cursorText);
-                    setIsVisible(true);
+            const updateCursor = (e)=>{
+                targetX = e.clientX;
+                targetY = e.clientY;
+            };
+            const animate = ()=>{
+                // Smooth interpolation for cursor movement
+                currentX += (targetX - currentX) * 0.15;
+                currentY += (targetY - currentY) * 0.15;
+                setPosition({
+                    x: currentX,
+                    y: currentY
+                });
+                rafRef.current = requestAnimationFrame(animate);
+            };
+            const handleMouseOver = (e)=>{
+                const target = e.target;
+                const linkElement = target.closest("[data-cursor-text]");
+                if (linkElement) {
+                    const cursorText = linkElement.getAttribute("data-cursor-text");
+                    if (cursorText) {
+                        setText(cursorText);
+                        setIsVisible(true);
+                    }
                 }
-            }
+            };
+            const handleMouseOut = (e)=>{
+                const target = e.target;
+                const linkElement = target.closest("[data-cursor-text]");
+                if (linkElement && !linkElement.contains(e.relatedTarget)) {
+                    setText("");
+                    setIsVisible(false);
+                }
+            };
+            window.addEventListener("mousemove", updateCursor);
+            document.addEventListener("mouseover", handleMouseOver, true);
+            document.addEventListener("mouseout", handleMouseOut, true);
+            rafRef.current = requestAnimationFrame(animate);
+            cleanupRef.current = ()=>{
+                window.removeEventListener("mousemove", updateCursor);
+                document.removeEventListener("mouseover", handleMouseOver, true);
+                document.removeEventListener("mouseout", handleMouseOut, true);
+                if (rafRef.current) {
+                    cancelAnimationFrame(rafRef.current);
+                    rafRef.current = null;
+                }
+            };
         };
-        const handleMouseOut = (e)=>{
-            const target = e.target;
-            const linkElement = target.closest("[data-cursor-text]");
-            if (linkElement && !linkElement.contains(e.relatedTarget)) {
-                setText("");
-                setIsVisible(false);
-            }
+        // Initial setup
+        setupCursor();
+        // Handle resize
+        const handleResize = ()=>{
+            setupCursor();
         };
-        window.addEventListener("mousemove", updateCursor);
-        document.addEventListener("mouseover", handleMouseOver, true);
-        document.addEventListener("mouseout", handleMouseOut, true);
-        rafRef.current = requestAnimationFrame(animate);
+        window.addEventListener("resize", handleResize);
         return ()=>{
-            window.removeEventListener("mousemove", updateCursor);
-            document.removeEventListener("mouseover", handleMouseOver, true);
-            document.removeEventListener("mouseout", handleMouseOut, true);
-            if (rafRef.current) {
-                cancelAnimationFrame(rafRef.current);
+            window.removeEventListener("resize", handleResize);
+            if (cleanupRef.current) {
+                cleanupRef.current();
             }
         };
     }, []);
+    // Don't render on mobile/tablet
+    if (!isDesktop) {
+        return null;
+    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -144,24 +182,17 @@ function CustomCursor() {
                     opacity: isVisible ? 1 : 0,
                     pointerEvents: "none"
                 },
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex items-center gap-2",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "text-black text-xs font-medium whitespace-nowrap glass-effect px-3 py-1.5 rounded-full ",
-                        children: text
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/CustomCursor.tsx",
-                        lineNumber: 85,
-                        columnNumber: 21
-                    }, this)
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "text-black text-xs font-medium whitespace-nowrap bg-white px-3 py-1.5 rounded-full shadow-md",
+                    children: text
                 }, void 0, false, {
                     fileName: "[project]/src/components/CustomCursor.tsx",
-                    lineNumber: 83,
+                    lineNumber: 130,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/CustomCursor.tsx",
-                lineNumber: 73,
+                lineNumber: 120,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -173,15 +204,15 @@ function CustomCursor() {
                     opacity: isVisible ? 0 : 1
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "glass-effect2 rounded-full w-[15px] h-[15px]  "
+                    className: "bg-black rounded-full w-5 h-5 border border-white"
                 }, void 0, false, {
                     fileName: "[project]/src/components/CustomCursor.tsx",
-                    lineNumber: 100,
+                    lineNumber: 144,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/CustomCursor.tsx",
-                lineNumber: 91,
+                lineNumber: 135,
                 columnNumber: 13
             }, this)
         ]

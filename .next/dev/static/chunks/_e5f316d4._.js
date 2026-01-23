@@ -1463,11 +1463,11 @@ var _s = __turbopack_context__.k.signature();
 function Header() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(44);
-    if ($[0] !== "6c39a2bf60eda6fa11d8f8ec2af1548a87b28b67bab5a53823a9b5fa779da745") {
+    if ($[0] !== "ef95bdc05cfe65eff110bd986f3a11d3df7a2ed031611c73973ac5f805763b45") {
         for(let $i = 0; $i < 44; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "6c39a2bf60eda6fa11d8f8ec2af1548a87b28b67bab5a53823a9b5fa779da745";
+        $[0] = "ef95bdc05cfe65eff110bd986f3a11d3df7a2ed031611c73973ac5f805763b45";
     }
     const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [lastScrollY, setLastScrollY] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);

@@ -27,7 +27,7 @@ const Page = () => {
             <section className="2xl:px-0 px-[15px]">
                 <div className="wrapper md:py-[64px] py-[48px] 2xl:px-[44px] md:px-[15px] px-[10px]">
                     <div className="border border-[#dedede] bg-white rounded-[16px] shadow sm:p-[64px] p-[32px]  text-center">
-                        <div className="flex sm:flex-row flex-col   items-center sm:text-left text-center mb-[24px] gap-2">
+                        <div className="flex sm:flex-row flex-col justify-center  items-center sm:text-left text-center mb-[24px] gap-2">
                             <div className="*:data-[slot=avatar]:ring-background flex -space-x-2  *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:grayscale">
                                 <Avatar className='border-2 border-white'>
                                     <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />

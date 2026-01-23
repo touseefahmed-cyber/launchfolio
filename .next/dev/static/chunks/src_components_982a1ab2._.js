@@ -111,11 +111,11 @@ var _s = __turbopack_context__.k.signature();
 function CustomCursor() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(23);
-    if ($[0] !== "af9c887dee84e84aa49763b3d3e3bfdea97653fc03f24c03327a7d44382f582e") {
+    if ($[0] !== "cf46d934b1737726d6ed3d8029a33d8428aabab0ba5536950178d1a67df7489b") {
         for(let $i = 0; $i < 23; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "af9c887dee84e84aa49763b3d3e3bfdea97653fc03f24c03327a7d44382f582e";
+        $[0] = "cf46d934b1737726d6ed3d8029a33d8428aabab0ba5536950178d1a67df7489b";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -130,72 +130,102 @@ function CustomCursor() {
     const [position, setPosition] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(t0);
     const [text, setText] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [isVisible, setIsVisible] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [isDesktop, setIsDesktop] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const rafRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const cleanupRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     let t1;
     let t2;
     if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
         t1 = ({
             "CustomCursor[useEffect()]": ()=>{
-                let currentX = window.innerWidth / 2;
-                let currentY = window.innerHeight / 2;
-                let targetX = window.innerWidth / 2;
-                let targetY = window.innerHeight / 2;
-                setPosition({
-                    x: currentX,
-                    y: currentY
-                });
-                const updateCursor = {
-                    "CustomCursor[useEffect() > updateCursor]": (e)=>{
-                        targetX = e.clientX;
-                        targetY = e.clientY;
-                    }
-                }["CustomCursor[useEffect() > updateCursor]"];
-                const animate = {
-                    "CustomCursor[useEffect() > animate]": ()=>{
-                        currentX = currentX + (targetX - currentX) * 0.15;
-                        currentX;
-                        currentY = currentY + (targetY - currentY) * 0.15;
-                        currentY;
+                const checkDesktop = _CustomCursorUseEffectCheckDesktop;
+                const setupCursor = {
+                    "CustomCursor[useEffect() > setupCursor]": ()=>{
+                        if (cleanupRef.current) {
+                            cleanupRef.current();
+                            cleanupRef.current = null;
+                        }
+                        if (!checkDesktop()) {
+                            setIsDesktop(false);
+                            return;
+                        }
+                        setIsDesktop(true);
+                        let currentX = window.innerWidth / 2;
+                        let currentY = window.innerHeight / 2;
+                        let targetX = window.innerWidth / 2;
+                        let targetY = window.innerHeight / 2;
                         setPosition({
                             x: currentX,
                             y: currentY
                         });
-                        rafRef.current = requestAnimationFrame(animate);
-                    }
-                }["CustomCursor[useEffect() > animate]"];
-                const handleMouseOver = {
-                    "CustomCursor[useEffect() > handleMouseOver]": (e_0)=>{
-                        const target = e_0.target;
-                        const linkElement = target.closest("[data-cursor-text]");
-                        if (linkElement) {
-                            const cursorText = linkElement.getAttribute("data-cursor-text");
-                            if (cursorText) {
-                                setText(cursorText);
-                                setIsVisible(true);
+                        const updateCursor = {
+                            "CustomCursor[useEffect() > setupCursor > updateCursor]": (e)=>{
+                                targetX = e.clientX;
+                                targetY = e.clientY;
                             }
-                        }
+                        }["CustomCursor[useEffect() > setupCursor > updateCursor]"];
+                        const animate = {
+                            "CustomCursor[useEffect() > setupCursor > animate]": ()=>{
+                                currentX = currentX + (targetX - currentX) * 0.15;
+                                currentX;
+                                currentY = currentY + (targetY - currentY) * 0.15;
+                                currentY;
+                                setPosition({
+                                    x: currentX,
+                                    y: currentY
+                                });
+                                rafRef.current = requestAnimationFrame(animate);
+                            }
+                        }["CustomCursor[useEffect() > setupCursor > animate]"];
+                        const handleMouseOver = {
+                            "CustomCursor[useEffect() > setupCursor > handleMouseOver]": (e_0)=>{
+                                const target = e_0.target;
+                                const linkElement = target.closest("[data-cursor-text]");
+                                if (linkElement) {
+                                    const cursorText = linkElement.getAttribute("data-cursor-text");
+                                    if (cursorText) {
+                                        setText(cursorText);
+                                        setIsVisible(true);
+                                    }
+                                }
+                            }
+                        }["CustomCursor[useEffect() > setupCursor > handleMouseOver]"];
+                        const handleMouseOut = {
+                            "CustomCursor[useEffect() > setupCursor > handleMouseOut]": (e_1)=>{
+                                const target_0 = e_1.target;
+                                const linkElement_0 = target_0.closest("[data-cursor-text]");
+                                if (linkElement_0 && !linkElement_0.contains(e_1.relatedTarget)) {
+                                    setText("");
+                                    setIsVisible(false);
+                                }
+                            }
+                        }["CustomCursor[useEffect() > setupCursor > handleMouseOut]"];
+                        window.addEventListener("mousemove", updateCursor);
+                        document.addEventListener("mouseover", handleMouseOver, true);
+                        document.addEventListener("mouseout", handleMouseOut, true);
+                        rafRef.current = requestAnimationFrame(animate);
+                        cleanupRef.current = ()=>{
+                            window.removeEventListener("mousemove", updateCursor);
+                            document.removeEventListener("mouseover", handleMouseOver, true);
+                            document.removeEventListener("mouseout", handleMouseOut, true);
+                            if (rafRef.current) {
+                                cancelAnimationFrame(rafRef.current);
+                                rafRef.current = null;
+                            }
+                        };
                     }
-                }["CustomCursor[useEffect() > handleMouseOver]"];
-                const handleMouseOut = {
-                    "CustomCursor[useEffect() > handleMouseOut]": (e_1)=>{
-                        const target_0 = e_1.target;
-                        const linkElement_0 = target_0.closest("[data-cursor-text]");
-                        if (linkElement_0 && !linkElement_0.contains(e_1.relatedTarget)) {
-                            setText("");
-                            setIsVisible(false);
-                        }
+                }["CustomCursor[useEffect() > setupCursor]"];
+                setupCursor();
+                const handleResize = {
+                    "CustomCursor[useEffect() > handleResize]": ()=>{
+                        setupCursor();
                     }
-                }["CustomCursor[useEffect() > handleMouseOut]"];
-                window.addEventListener("mousemove", updateCursor);
-                document.addEventListener("mouseover", handleMouseOver, true);
-                document.addEventListener("mouseout", handleMouseOut, true);
-                rafRef.current = requestAnimationFrame(animate);
+                }["CustomCursor[useEffect() > handleResize]"];
+                window.addEventListener("resize", handleResize);
                 return ()=>{
-                    window.removeEventListener("mousemove", updateCursor);
-                    document.removeEventListener("mouseover", handleMouseOver, true);
-                    document.removeEventListener("mouseout", handleMouseOut, true);
-                    if (rafRef.current) {
-                        cancelAnimationFrame(rafRef.current);
+                    window.removeEventListener("resize", handleResize);
+                    if (cleanupRef.current) {
+                        cleanupRef.current();
                     }
                 };
             }
@@ -208,6 +238,9 @@ function CustomCursor() {
         t2 = $[3];
     }
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t1, t2);
+    if (!isDesktop) {
+        return null;
+    }
     const t3 = `${position.x}px`;
     const t4 = `${position.y}px`;
     const t5 = isVisible ? 1 : 0;
@@ -229,19 +262,12 @@ function CustomCursor() {
     }
     let t7;
     if ($[8] !== text) {
-        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex items-center gap-2",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                className: "text-black text-xs font-medium whitespace-nowrap glass-effect px-3 py-1.5 rounded-full ",
-                children: text
-            }, void 0, false, {
-                fileName: "[project]/src/components/CustomCursor.tsx",
-                lineNumber: 125,
-                columnNumber: 51
-            }, this)
+        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "text-black text-xs font-medium whitespace-nowrap bg-white px-3 py-1.5 rounded-full shadow-md",
+            children: text
         }, void 0, false, {
             fileName: "[project]/src/components/CustomCursor.tsx",
-            lineNumber: 125,
+            lineNumber: 158,
             columnNumber: 10
         }, this);
         $[8] = text;
@@ -257,7 +283,7 @@ function CustomCursor() {
             children: t7
         }, void 0, false, {
             fileName: "[project]/src/components/CustomCursor.tsx",
-            lineNumber: 133,
+            lineNumber: 166,
             columnNumber: 10
         }, this);
         $[10] = t6;
@@ -287,10 +313,10 @@ function CustomCursor() {
     let t13;
     if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
         t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "glass-effect2 rounded-full w-[15px] h-[15px]  "
+            className: "bg-black rounded-full w-5 h-5 border border-white"
         }, void 0, false, {
             fileName: "[project]/src/components/CustomCursor.tsx",
-            lineNumber: 160,
+            lineNumber: 193,
             columnNumber: 11
         }, this);
         $[17] = t13;
@@ -305,7 +331,7 @@ function CustomCursor() {
             children: t13
         }, void 0, false, {
             fileName: "[project]/src/components/CustomCursor.tsx",
-            lineNumber: 167,
+            lineNumber: 200,
             columnNumber: 11
         }, this);
         $[18] = t12;
@@ -329,8 +355,13 @@ function CustomCursor() {
     }
     return t15;
 }
-_s(CustomCursor, "r5xNkpxhwPKLFvzUWTa3hzBw70s=");
+_s(CustomCursor, "4daSo0qxtuJND1AqDSV9VJxZEaU=");
 _c = CustomCursor;
+function _CustomCursorUseEffectCheckDesktop() {
+    const hasPointerDevice = window.matchMedia("(pointer: fine)").matches;
+    const isDesktopWidth = window.innerWidth >= 1280;
+    return hasPointerDevice && isDesktopWidth;
+}
 var _c;
 __turbopack_context__.k.register(_c, "CustomCursor");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
