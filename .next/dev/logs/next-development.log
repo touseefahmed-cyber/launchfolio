@@ -2242,3 +2242,1460 @@ https://react.dev/link/hydration-mismatch
 
 [01:19:49.756] Browser WARN    Image with src "/_next/static/media/project_img1.d5b8e4e9.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:27:34.338] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:27:34.338] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:27:34.338] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:43:30.518] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:43:30.519] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:43:30.519] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:48:04.044] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[01:48:04.115] Server  LOG     ✓ Compiled in 169ms
+[01:48:04.130] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[01:48:04.141] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[01:48:04.154] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[01:48:04.164] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[01:48:04.177] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[01:48:04.189] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[01:48:04.204] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[01:48:04.216] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[01:48:04.228] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[01:48:04.238] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[01:48:04.269] Server  LOG     ✓ Compiled in 0ms
+[01:48:16.750] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[01:48:17.106] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[01:48:17.106] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[01:48:17.106] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[01:48:17.288] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/blog" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="blog/page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Page>
+                <Header>
+                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
+                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
+                            <nav className="flex justi...">
+                              <div>
+                              <div>
+                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
+                                <div
+                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
++                                 style={{opacity:0}}
+-                                 style={{opacity:"1"}}
+                                  onClick={function Header[<motion.div>.onClick]}
+                                  ref={function useMotionRef.useCallback}
+                                >
+-                             <button
+-                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
+-                               aria-label="Close menu"
+-                             >
+                        ...
+              ...
+          ...
+        ...
+
+[01:48:30.975] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[01:48:39.330] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[01:48:56.770] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[01:50:30.712] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[01:50:59.078] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[01:52:00.968] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[01:52:45.402] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[01:52:47.219] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[01:52:47.687] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[01:52:47.687] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[01:52:47.687] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[01:52:48.086] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/blog" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="blog/page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Page>
+                <Header>
+                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
+                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
+                            <nav className="flex justi...">
+                              <div>
+                              ...
+                                <SheetTrigger className="contact_btn">
+                                  <DialogTrigger data-slot="sheet-trigger" className="contact_btn">
+                                    <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                                      <button
+                                        type="button"
+                                        aria-haspopup="dialog"
+                                        aria-expanded={false}
++                                       aria-controls="radix-_R_15esnelb_"
+-                                       aria-controls="radix-_R_35esnelb_"
+                                        data-state="closed"
+                                        data-slot="sheet-trigger"
+                                        className="contact_btn"
+                                        onClick={function handleEvent}
+                                        ref={function}
+                                      >
++                                       Contact
+                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
+                                <div
+                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
++                                 style={{opacity:0}}
+-                                 style={{opacity:"1"}}
+                                  onClick={function Header[<motion.div>.onClick]}
+                                  ref={function useMotionRef.useCallback}
+                                >
+-                             <button
+-                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
+-                               aria-label="Close menu"
+-                             >
+                        ...
+              ...
+          ...
+        ...
+
+[01:52:48.086] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:52:48.086] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:52:48.086] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:53:51.602] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[01:58:45.608] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[01:58:46.212] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[01:58:46.212] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[01:58:46.212] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[01:58:47.149] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Page>
+                <Header>
+                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
+                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
+                            <nav className="flex justi...">
+                              <div>
+                              <div>
+                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
+                                <div
+                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
++                                 style={{opacity:0}}
+-                                 style={{opacity:"1"}}
+                                  onClick={function Header[<motion.div>.onClick]}
+                                  ref={function useMotionRef.useCallback}
+                                >
+-                             <button
+-                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
+-                               aria-label="Close menu"
+-                             >
+                        ...
+              ...
+          ...
+        ...
+
+[01:59:34.948] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:59:36.113] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:59:36.113] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[01:59:36.113] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:00:03.745] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[02:00:03.777] Server  LOG     ✓ Compiled in 55ms
+[02:00:03.788] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:00:03.856] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:00:03.856] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:00:03.856] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:00:04.146] Browser ERROR   uncaughtError: Error: The `style` prop expects a mapping from style properties to values, not a string. For example, style={{marginRight: spacing + 'em'}} when using JSX.
+[02:03:05.346] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:03:05.728] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[02:03:06.005] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[02:03:06.006] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[02:03:06.006] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:03:06.358] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/blog" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="blog/page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Page>
+                <Header>
+                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
+                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
+                            <nav className="flex justi...">
+                              <div>
+                              <div>
+                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
+                                <div
+                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
++                                 style={{opacity:0}}
+-                                 style={{opacity:"1"}}
+                                  onClick={function Header[<motion.div>.onClick]}
+                                  ref={function useMotionRef.useCallback}
+                                >
+-                             <button
+-                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
+-                               aria-label="Close menu"
+-                             >
+                        ...
+              ...
+          ...
+        ...
+
+[02:03:07.090] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:03:07.090] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:03:07.090] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:04:10.301] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[02:04:10.348] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:04:11.590] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:04:11.590] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:04:11.590] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:04:12.822] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:04:12.822] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:04:12.822] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:04:22.149] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:04:22.229] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[02:04:42.227] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[02:04:42.251] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:04:50.485] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:04:50.547] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[02:05:17.525] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:05:17.591] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[02:05:21.357] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:05:21.357] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:05:21.357] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:05:33.809] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:05:33.893] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[02:05:39.608] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:05:39.608] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:05:39.608] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:05:54.561] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:05:54.643] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[02:05:58.024] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:05:58.024] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:05:58.024] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:05:59.622] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:05:59.622] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:05:59.622] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:06:21.447] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[02:06:21.493] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:06:25.472] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:06:25.472] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:06:25.472] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:06:32.452] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[02:06:32.476] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:06:37.976] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[02:06:38.012] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:06:39.539] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:06:39.539] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:06:39.539] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:06:41.191] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:06:41.191] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:06:41.191] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:06:43.988] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:06:43.988] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:06:43.988] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:06:47.957] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:06:47.957] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:06:47.957] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:07:07.845] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[02:07:07.900] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:07:12.556] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:07:12.556] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:07:12.556] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:07:24.535] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:07:24.595] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[02:07:25.589] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:07:25.590] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:07:25.590] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:07:26.605] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:07:26.605] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:07:26.605] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:07:33.245] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:07:33.245] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:07:33.245] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:08:27.688] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:08:27.688] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:08:27.688] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:08:36.192] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:08:36.192] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:08:36.192] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:14:32.306] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[02:14:32.502] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[02:14:32.502] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[02:14:32.502] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:14:32.782] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Page>
+                <Header>
+                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
+                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
+                            <nav className="flex justi...">
+                              <div>
+                              <div>
+                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
+                                <div
+                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
++                                 style={{opacity:0}}
+-                                 style={{opacity:"1"}}
+                                  onClick={function Header[<motion.div>.onClick]}
+                                  ref={function useMotionRef.useCallback}
+                                >
+-                             <button
+-                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
+-                               aria-label="Close menu"
+-                             >
+                        ...
+              ...
+          ...
+        ...
+
+[02:14:32.782] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:14:33.458] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:14:33.458] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:14:33.458] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:14:35.605] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:14:35.605] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:14:35.605] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:14:57.980] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:14:58.157] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[02:15:00.023] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:15:00.023] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:15:00.023] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:15:06.424] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:15:06.424] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:15:06.424] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:16:11.922] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:16:11.998] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:16:16.395] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:16:16.429] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:16:26.375] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:16:26.455] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:16:38.232] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:16:38.290] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:16:48.924] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:16:48.997] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:16:58.161] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:16:58.274] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:17:01.418] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:17:01.838] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[02:17:01.838] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[02:17:01.838] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:17:02.085] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/blog" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="blog/page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Page>
+                <Header>
+                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
+                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
+                            <nav className="flex justi...">
+                              <div>
+                              <div>
+                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
+                                <div
+                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
++                                 style={{opacity:0}}
+-                                 style={{opacity:"1"}}
+                                  onClick={function Header[<motion.div>.onClick]}
+                                  ref={function useMotionRef.useCallback}
+                                >
+-                             <button
+-                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
+-                               aria-label="Close menu"
+-                             >
+                        ...
+              ...
+          ...
+        ...
+
+[02:17:05.546] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:17:05.546] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:17:05.546] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[02:17:08.961] Browser WARN    Image with src "/_next/static/media/blog_img1.4ff1c42b.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:17:23.712] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:17:23.796] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:17:53.778] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:17:53.917] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:18:14.750] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:18:14.813] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:18:26.641] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+
+[02:18:26.709] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog/page.tsx [Server Component]
+
+

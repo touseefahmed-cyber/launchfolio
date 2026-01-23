@@ -838,6 +838,14 @@
     width: 64px;
   }
 
+  .w-\[70\%\] {
+    width: 70%;
+  }
+
+  .w-\[80\%\] {
+    width: 80%;
+  }
+
   .w-\[82\%\] {
     width: 82%;
   }
@@ -1538,12 +1546,24 @@
     font-size: 26px;
   }
 
+  .text-\[32px\] {
+    font-size: 32px;
+  }
+
   .text-\[36px\] {
     font-size: 36px;
   }
 
+  .text-\[38px\] {
+    font-size: 38px;
+  }
+
   .text-\[42px\] {
     font-size: 42px;
+  }
+
+  .text-\[48px\] {
+    font-size: 48px;
   }
 
   .leading-\[12px\] {
@@ -1596,6 +1616,11 @@
     line-height: 30px;
   }
 
+  .leading-\[35px\] {
+    --tw-leading: 35px;
+    line-height: 35px;
+  }
+
   .leading-\[36px\] {
     --tw-leading: 36px;
     line-height: 36px;
@@ -1604,6 +1629,16 @@
   .leading-\[39px\] {
     --tw-leading: 39px;
     line-height: 39px;
+  }
+
+  .leading-\[41px\] {
+    --tw-leading: 41px;
+    line-height: 41px;
+  }
+
+  .leading-\[52px\] {
+    --tw-leading: 52px;
+    line-height: 52px;
   }
 
   .leading-none {
@@ -2506,6 +2541,12 @@
   }
 
   @media (min-width: 48rem) {
+    .md\:block {
+      display: block;
+    }
+  }
+
+  @media (min-width: 48rem) {
     .md\:flex {
       display: flex;
     }
@@ -2568,6 +2609,12 @@
   @media (min-width: 48rem) {
     .md\:w-\[70\%\] {
       width: 70%;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:w-\[80\%\] {
+      width: 80%;
     }
   }
 
@@ -2838,6 +2885,13 @@
   }
 
   @media (min-width: 48rem) {
+    .md\:leading-\[41px\] {
+      --tw-leading: 41px;
+      line-height: 41px;
+    }
+  }
+
+  @media (min-width: 48rem) {
     .md\:leading-\[45px\] {
       --tw-leading: 45px;
       line-height: 45px;
@@ -3020,6 +3074,12 @@
   }
 
   @media (min-width: 64rem) {
+    .lg\:text-\[48px\] {
+      font-size: 48px;
+    }
+  }
+
+  @media (min-width: 64rem) {
     .lg\:text-\[54px\] {
       font-size: 54px;
     }
@@ -3104,6 +3164,13 @@
     .lg\:leading-\[40px\] {
       --tw-leading: 40px;
       line-height: 40px;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .lg\:leading-\[52px\] {
+      --tw-leading: 52px;
+      line-height: 52px;
     }
   }
 
