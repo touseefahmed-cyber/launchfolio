@@ -1,3 +1,0 @@
-module.exports=[9270,(a,b,c)=>{"use strict";b.exports=a.r(42602).vendored.contexts.AppRouterContext},38783,(a,b,c)=>{"use strict";b.exports=a.r(42602).vendored["react-ssr"].ReactServerDOMTurbopackClient},35112,(a,b,c)=>{"use strict";b.exports=a.r(42602).vendored["react-ssr"].ReactDOM},35574,a=>{a.v("/_next/static/media/user_img.2545e600.avif")},82676,a=>{a.v("/_next/static/media/person_img.27471948.png")},25729,a=>{a.v("/_next/static/media/project_img1.d5b8e4e9.png")},44815,a=>{a.v("/_next/static/media/project_img2.7fd1ac69.png")},94765,a=>{a.v("/_next/static/media/project_img3.7555745a.png")},54684,a=>{a.v("/_next/static/media/project_img4.3c8946cb.png")},18415,a=>{a.v("/_next/static/media/slider-img7.9a9e78de.png")}];
-
-//# sourceMappingURL=_ade0c4e9._.js.map

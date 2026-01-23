@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/toseefahmed/Documents/launchfolio/Untitled/src/app/work/page.tsx"],"sourcesContent":["import React from 'react';\n\nconst Page = () => {\n    return (\n        <section className=\"border-b border-[#dedede] 2xl:px-0 px-[15px] text-center\">\n            <div className=\"wrapper\">\n                <h1 className=\"2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:text-[48px] md:leading-[45px] text-[42px] leading-[39px]\n                                 font-medium mb-[24px]\">My most <br/> recent work</h1>\n                <p>No fluff, just hard-hitting design projects.</p>\n            </div>\n        </section>\n    );\n};\n\nexport default Page;"],"names":[],"mappings":";;;;;;AAEA,MAAM,OAAO;IACT,qBACI,8OAAC;QAAQ,WAAU;kBACf,cAAA,8OAAC;YAAI,WAAU;;8BACX,8OAAC;oBAAG,WAAU;;wBAC0B;sCAAQ,8OAAC;;;;;wBAAI;;;;;;;8BACrD,8OAAC;8BAAE;;;;;;;;;;;;;;;;;AAInB;uCAEe"}}]
+}

@@ -121,7 +121,11 @@ const PROJECTS = [
     },
 ];
 
-function ProjectSection() {
+interface ProjectSectionProps {
+    disableAnimations?: boolean;
+}
+
+function ProjectSection({ disableAnimations = false }: ProjectSectionProps) {
     const card1Ref = useRef(null);
     const card2Ref = useRef(null);
     const card3Ref = useRef(null);
@@ -130,6 +134,18 @@ function ProjectSection() {
 
     useLayoutEffect(() => {
         if (!card1Ref.current || !card2Ref.current || !card3Ref.current || !card4Ref.current || !containerRef.current) return;
+
+        // Skip GSAP animations if disabled via prop
+        if (disableAnimations) {
+            // Set card_content opacity to 1 (no animation)
+            const cardContents = containerRef.current?.querySelectorAll('.card_content');
+            if (cardContents) {
+                cardContents.forEach((content) => {
+                    (content as HTMLElement).style.opacity = '1';
+                });
+            }
+            return;
+        }
 
         // Skip GSAP animations for screens <= 769px
         const isSmallScreen = window.innerWidth <= 769;
@@ -225,7 +241,7 @@ function ProjectSection() {
             window.removeEventListener("load", handleLoad);
             window.removeEventListener("resize", handleResize);
         };
-    }, []);
+    }, [disableAnimations]);
 
     return (
         <section className="border-b border-[#dedede] 2xl:px-0 px-[15px]">

@@ -3605,7 +3605,7 @@ const PROJECTS = [
         }
     }
 ];
-function ProjectSection() {
+function ProjectSection({ disableAnimations = false }) {
     const card1Ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const card2Ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const card3Ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
@@ -3613,6 +3613,17 @@ function ProjectSection() {
     const containerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLayoutEffect"])(()=>{
         if (!card1Ref.current || !card2Ref.current || !card3Ref.current || !card4Ref.current || !containerRef.current) return;
+        // Skip GSAP animations if disabled via prop
+        if (disableAnimations) {
+            // Set card_content opacity to 1 (no animation)
+            const cardContents = containerRef.current?.querySelectorAll('.card_content');
+            if (cardContents) {
+                cardContents.forEach((content)=>{
+                    content.style.opacity = '1';
+                });
+            }
+            return;
+        }
         // Skip GSAP animations for screens <= 769px
         const isSmallScreen = window.innerWidth <= 769;
         if (isSmallScreen) {
@@ -3688,7 +3699,9 @@ function ProjectSection() {
             window.removeEventListener("load", handleLoad);
             window.removeEventListener("resize", handleResize);
         };
-    }, []);
+    }, [
+        disableAnimations
+    ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "border-b border-[#dedede] 2xl:px-0 px-[15px]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3721,12 +3734,12 @@ function ProjectSection() {
                                             className: "w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-500 ease-in-out"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                            lineNumber: 243,
+                                            lineNumber: 259,
                                             columnNumber: 45
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                        lineNumber: 242,
+                                        lineNumber: 258,
                                         columnNumber: 41
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3739,7 +3752,7 @@ function ProjectSection() {
                                                         children: project.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                        lineNumber: 251,
+                                                        lineNumber: 267,
                                                         columnNumber: 49
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3747,13 +3760,13 @@ function ProjectSection() {
                                                         children: project.subtitle
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                        lineNumber: 254,
+                                                        lineNumber: 270,
                                                         columnNumber: 49
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                lineNumber: 250,
+                                                lineNumber: 266,
                                                 columnNumber: 45
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3764,57 +3777,57 @@ function ProjectSection() {
                                                             size: 16
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                            lineNumber: 260,
+                                                            lineNumber: 276,
                                                             columnNumber: 53
                                                         }, this),
                                                         " View Project"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                    lineNumber: 259,
+                                                    lineNumber: 275,
                                                     columnNumber: 49
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                lineNumber: 258,
+                                                lineNumber: 274,
                                                 columnNumber: 45
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                        lineNumber: 249,
+                                        lineNumber: 265,
                                         columnNumber: 41
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                lineNumber: 241,
+                                lineNumber: 257,
                                 columnNumber: 37
                             }, this)
                         }, project.id, false, {
                             fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                            lineNumber: 240,
+                            lineNumber: 256,
                             columnNumber: 33
                         }, this);
                     })
                 }, void 0, false, {
                     fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                    lineNumber: 234,
+                    lineNumber: 250,
                     columnNumber: 21
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                lineNumber: 233,
+                lineNumber: 249,
                 columnNumber: 17
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/ProjectSection.tsx",
-            lineNumber: 232,
+            lineNumber: 248,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/Site/ProjectSection.tsx",
-        lineNumber: 231,
+        lineNumber: 247,
         columnNumber: 9
     }, this);
 }

@@ -5,92 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d59b85ff-948e-4818-99eb-d44356a0274e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Site/Sidebar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/sheet.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/work/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/BUILD_ID" beforeDir="false" afterPath="$PROJECT_DIR$/.next/BUILD_ID" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/build-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/cache/.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/build-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/images/Grup70j-bvhkW-siPrrd0-8ayaGCZUoMdBy8MkCrxts/14400.1769130503614.YQelNHbMqkG6uQ9Xi08j-mkPF85DvEe7osr6sf0tZO0.Vy8iMjBjN2MtMTliZTIwMTA2YzIi.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/images/Guv5jrBe86VEk96Jdu0BwLrtT3VvTQ6Cqex7hniRJ6g/14400.1769130506362.VTgC-OJA53ws6K6hKvU_CIMhmol8LkTx78tOUNqi4XQ.Vy8iYjYzYzgtMTliZTIwMTA2Zjki.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/images/Kc_n67Vnxyf7aHI7Jw0RnX9Sp9miVjquyTkqutmdqlE/14400.1769130503606.FnblWX0G8AuH4eVEb-CJusXLBdN7DERqP4WYoHBWImM.Vy8iYjlmLTE5YmUyMDEwNjkyIg.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/images/PTc-Q_5zpe6-BKaEZgUCGqph8uqUF3fvWETQdDrghIk/14400.1769130503598.AuxsBbSue62bzr7LSfuSD17ROK2ZFVGIAvefnwhDo4E.Vy8iYjlmLTE5YmUyMDEwNjkyIg.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/images/YfKf0oagpIdMKjnxRs_Y_443wPhk34etwaj6dJDA2LE/14400.1769130503606.KXBhmG94bgzRGWvevuspkkbRjEO53HnVy9_wy427x3M.Vy8iNGM2Zi0xOWJlMjAxMDZhNCI.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/images/ZkWioHjxiT5XATXbn6u2r1xzre-r8hamMH7-jRbS40I/14400.1769130503618.MUXQo57C_HiDO7IJkIG00vOk2RaKtNeedFakMqoVj8I.Vy8iMWNhNmMtMTliZTIwMTA2YjMi.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/images/gV1ESRfFHR96waPltlD2Q-mRYbZPodFd0kGMZijCNmU/14400.1769130503618.7HL7Z_rQR_lgy_bolJ11gnZgLnqYFdxnN0Ive_jFk00.Vy8iMWYwMDctMTliZTIwMTA2OTQi.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/images/tPo9abejBh9vWm3_3CdXkDZai9AqXUGavrv6sSfceRg/14400.1769130503619.t82y9W-Nw19mYj1fMoBYUMtLbWo1PPTdqUFnS3EjdvU.Vy8iMWEzYTctMTliZTIwMTA2ZDUi.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004392.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004393.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004394.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004397.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004401.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004402.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004410.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004412.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004417.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004419.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004423.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004425.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004429.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004431.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004437.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004441.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004447.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004450.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004458.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004461.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004464.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004466.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004471.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004472.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004480.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004482.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004487.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004489.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004493.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004495.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004499.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004501.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004504.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004507.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004512.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004516.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004521.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004522.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004529.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004533.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004537.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004539.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004543.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004545.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004549.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004550.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004555.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004557.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004561.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004563.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004566.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004568.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004573.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004575.sst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00004579.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/images/kJdltZ9LwFaDj26Rn9OCNuoVeLv7VQIKUcN9YIR3_7k/14400.1769130597524.po53nqATFM6GoI5bgld--XrjkNm6zq0qZFAQR4RyEOM.Vy8iMWFmNDJiLTE5YmUyMDEwNmYyIg.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006094.sst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006095.sst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006096.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006099.sst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006103.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006105.sst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006109.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006110.sst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006115.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006116.sst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006121.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006123.sst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006127.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006129.sst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006133.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006134.sst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006139.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006141.sst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006145.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006147.sst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006150.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006152.sst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/00006158.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/CURRENT" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/cache/turbopack/v16.1.0-canary.19-84-g3aa53984e/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/fallback-build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/fallback-build-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/dev/logs/next-development.log" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/logs/next-development.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/server/app-paths-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/server/app-paths-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/server/app/_not-found/page_client-reference-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/server/app/_not-found/page_client-reference-manifest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/dev/server/app/page_client-reference-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/server/app/page_client-reference-manifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/_8bd57f61._.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/_8bd57f61._.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/_8bd57f61._.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/_8bd57f61._.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/server/middleware-build-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/server/middleware-build-manifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/static/chunks/[root-of-the-server]__0f0ba101._.css" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/static/chunks/[root-of-the-server]__0f0ba101._.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/static/chunks/[root-of-the-server]__0f0ba101._.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/static/chunks/[root-of-the-server]__0f0ba101._.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/static/chunks/_43fad149._.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/static/chunks/_43fad149._.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/static/chunks/_43fad149._.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/static/chunks/_43fad149._.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/static/chunks/src_app_globals_css_bad6b30c._.single.css" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/static/chunks/src_app_globals_css_bad6b30c._.single.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/static/chunks/src_app_globals_css_bad6b30c._.single.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/static/chunks/src_app_globals_css_bad6b30c._.single.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/dev/static/chunks/src_app_page_tsx_f340599c._.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/static/chunks/src_app_page_tsx_f340599c._.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/node_modules_next_b56f6073._.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/node_modules_next_b56f6073._.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/node_modules_next_b56f6073._.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/node_modules_next_b56f6073._.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/server/next-font-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/server/next-font-manifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/server/next-font-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/server/next-font-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_52391ec2._.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_52391ec2._.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_52391ec2._.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_52391ec2._.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/static/chunks/src_app_layout_tsx_1cf6b850._.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/static/chunks/src_app_layout_tsx_1cf6b850._.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/dev/trace" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/trace" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/types/routes.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/types/routes.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/dev/types/validator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.next/dev/types/validator.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/fallback-build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/fallback-build-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/app/_global-error.html" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/_global-error.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/app/_global-error.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/_global-error.rsc" afterDir="false" />
@@ -99,6 +58,8 @@
       <change beforePath="$PROJECT_DIR$/.next/server/app/_global-error.segments/_head.segment.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/_global-error.segments/_head.segment.rsc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/app/_global-error.segments/_index.segment.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/_global-error.segments/_index.segment.rsc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/app/_global-error.segments/_tree.segment.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/_global-error.segments/_tree.segment.rsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/app/_global-error/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/_global-error/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/app/_global-error/page.js.nft.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/_global-error/page.js.nft.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/app/_not-found.html" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/_not-found.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/app/_not-found.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/_not-found.rsc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/app/_not-found.segments/_full.segment.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/_not-found.segments/_full.segment.rsc" afterDir="false" />
@@ -107,6 +68,8 @@
       <change beforePath="$PROJECT_DIR$/.next/server/app/_not-found.segments/_not-found.segment.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/_not-found.segments/_not-found.segment.rsc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/app/_not-found.segments/_not-found/__PAGE__.segment.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/_not-found.segments/_not-found/__PAGE__.segment.rsc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/app/_not-found.segments/_tree.segment.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/_not-found.segments/_tree.segment.rsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/app/_not-found/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/_not-found/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/app/_not-found/page.js.nft.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/_not-found/page.js.nft.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/app/_not-found/page_client-reference-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/_not-found/page_client-reference-manifest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/app/index.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/index.rsc" afterDir="false" />
@@ -115,27 +78,38 @@
       <change beforePath="$PROJECT_DIR$/.next/server/app/index.segments/_head.segment.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/index.segments/_head.segment.rsc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/app/index.segments/_index.segment.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/index.segments/_index.segment.rsc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/app/index.segments/_tree.segment.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/index.segments/_tree.segment.rsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/app/page.js.nft.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/page.js.nft.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/app/page_client-reference-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/app/page_client-reference-manifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/chunks/[root-of-the-server]__206abf59._.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/chunks/[root-of-the-server]__206abf59._.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/_679d1c3e._.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/chunks/ssr/_679d1c3e._.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/_679d1c3e._.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/chunks/ssr/_679d1c3e._.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/_8823e2fb._.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/_8823e2fb._.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/[root-of-the-server]__49b3b917._.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/[root-of-the-server]__49b3b917._.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/[root-of-the-server]__6b057281._.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/[root-of-the-server]__6b057281._.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/[root-of-the-server]__a30af444._.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/[root-of-the-server]__a30af444._.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/[root-of-the-server]__c232b96a._.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/[root-of-the-server]__c232b96a._.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/_679d1c3e._.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/_679d1c3e._.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/_a1770eda._.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/_a1770eda._.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/_ade0c4e9._.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/_ade0c4e9._.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/src_components_50d63f57._.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/chunks/ssr/src_components_50d63f57._.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/chunks/ssr/src_components_50d63f57._.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/chunks/ssr/src_components_50d63f57._.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/pages/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/server/pages/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages/500.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/P9Z8rolutwXINN7k9BMA3/_buildManifest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/P9Z8rolutwXINN7k9BMA3/_clientMiddlewareManifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/P9Z8rolutwXINN7k9BMA3/_ssgManifest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/chunks/7170244e6b863642.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.next/static/chunks/c01d96cf9fb36fc9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/M5t59NeVUvUVFVirpFcLM/_buildManifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/M5t59NeVUvUVFVirpFcLM/_clientMiddlewareManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/M5t59NeVUvUVFVirpFcLM/_ssgManifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/chunks/001501438f06f955.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/chunks/3df83f621c159055.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/chunks/a7935f398df0565a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/chunks/c7b85a40e7cc3af0.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/trace" beforeDir="false" afterPath="$PROJECT_DIR$/.next/trace" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.next/trace-build" beforeDir="false" afterPath="$PROJECT_DIR$/.next/trace-build" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next-env.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Site/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Site/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SmoothScroll.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SmoothScroll.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +169,7 @@
       <updated>1769023063801</updated>
       <workItem from="1769023064887" duration="4000" />
       <workItem from="1769099260181" duration="8698000" />
-      <workItem from="1769119372146" duration="10801000" />
+      <workItem from="1769119372146" duration="11547000" />
     </task>
     <servers />
   </component>
