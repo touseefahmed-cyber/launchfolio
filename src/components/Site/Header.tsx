@@ -6,13 +6,24 @@ import { motion, Variants } from "framer-motion";
 import gsap from "gsap";
 import user_img from "../../../public/images/user_img.avif";
 import { X } from 'lucide-react';
-
+import Sidebar from "@/components/Site/Sidebar";
+import {
+    Sheet,
+    SheetClose,
+    SheetContent,
+    SheetDescription,
+    SheetFooter,
+    SheetHeader,
+    SheetTitle,
+    SheetTrigger,
+} from "@/components/ui/sheet"
 function Header() {
     const [scrolled, setScrolled] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
     const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
     const [showButton, setShowButton] = useState(false);
+    const [isSheetOpen, setIsSheetOpen] = useState(false);
 
     useEffect(() => {
         // Set initial window width
@@ -98,53 +109,52 @@ function Header() {
     }, [showButton, isMobile]);
 
     return (
-        <motion.header
-            ref={headerRef}
-            animate={{ 
-                width: isMobile 
-                    ? "228px"  // Fixed width on mobile, no hover effect
-                    : isHovered 
-                        ? "min-content"  // Desktop: expand on hover
-                        : scrolled 
-                            ? "234px"  // Desktop: shrink when scrolled
-                            : "min-content"  // Desktop: default full width
-            }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="glass-effect border border-[#dedede] p-3 rounded-[32px] top-6 fixed left-1/2 transform -translate-x-1/2 overflow-hidden z-50"
-            onMouseEnter={() => !isMobile && setIsHovered(true)}
-            onMouseLeave={() => !isMobile && setIsHovered(false)}
-        >
-            <nav className="flex justify-between items-center gap-16 relative">
-                <div>
-                    <Link href="/" className="flex gap-2 items-center">
-                        <figure className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
-                            <Image src={user_img} alt="User" width={32} height={32} />
-                        </figure>
-                        <span className="text-sm font-bold text-black whitespace-nowrap">Joseph Alexander</span>
-                    </Link>
-                </div>
-
-                <div className="flex items-center gap-4">
-                    <ul className="flex gap-4 text-sm font-bold text-black items-center">
-                        <li>
-                            <Link href="/work">Work</Link>
-                        </li>
-                        <li>
-                            <Link href="#services">Services</Link>
-                        </li>
-                        <li>
-                            <Link href="#pricing">Pricing</Link>
-                        </li>
-                        <li>
-                            <Link href="/blog">Blog</Link>
-                        </li>
-                    </ul>
+        <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+            <motion.header
+                ref={headerRef}
+                animate={{ 
+                    width: isMobile 
+                        ? "228px"  // Fixed width on mobile, no hover effect
+                        : isHovered 
+                            ? "min-content"  // Desktop: expand on hover
+                            : scrolled 
+                                ? "234px"  // Desktop: shrink when scrolled
+                                : "min-content"  // Desktop: default full width
+                }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
+                className="glass-effect border border-[#dedede] p-3 rounded-[32px] top-6 fixed left-1/2 transform -translate-x-1/2 overflow-hidden z-50"
+                onMouseEnter={() => !isMobile && setIsHovered(true)}
+                onMouseLeave={() => !isMobile && setIsHovered(false)}
+            >
+                <nav className="flex justify-between items-center gap-16 relative">
                     <div>
-                        <Link href="/contact" className="contact_btn">
-                            Contact
+                        <Link href="/" className="flex gap-2 items-center">
+                            <figure className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
+                                <Image src={user_img} alt="User" width={32} height={32} />
+                            </figure>
+                            <span className="text-sm font-bold text-black whitespace-nowrap">Joseph Alexander</span>
                         </Link>
                     </div>
-                </div>
+
+                    <div className="flex items-center gap-4">
+                        <ul className="flex gap-4 text-sm font-bold text-black items-center">
+                            <li>
+                                <Link href="/work">Work</Link>
+                            </li>
+                            <li>
+                                <Link href="#services">Services</Link>
+                            </li>
+                            <li>
+                                <Link href="#pricing">Pricing</Link>
+                            </li>
+                            <li>
+                                <Link href="/blog">Blog</Link>
+                            </li>
+                        </ul>
+                        <div>
+                            <SheetTrigger className="contact_btn">Contact</SheetTrigger>
+                        </div>
+                    </div>
 
                 {/* Bouncing dots */}
                 {(!isMobile || !showButton) && (
@@ -201,13 +211,15 @@ function Header() {
                         </li>
                     </ul>
                     <div>
-                        <Link href="/contact" className="contact_btn w-[100%] text-center" onClick={() => setShowButton(false)}>
-                            Contact
-                        </Link>
+                        <SheetTrigger className="contact_btn w-full">Contact</SheetTrigger>
                     </div>
                 </div>
             )}
-        </motion.header>
+            </motion.header>
+            <SheetContent className="bg-white !w-[540px]">
+                <Sidebar/>
+            </SheetContent>
+        </Sheet>
     );
 }
 
