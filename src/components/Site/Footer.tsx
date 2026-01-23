@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from "next/link";
 import { Instagram, Linkedin, Facebook, Youtube } from 'lucide-react';
-
+import { Mail,Calendar } from 'lucide-react';
 // Footer content data
 const FOOTER_DATA = {
     animation: {
@@ -55,6 +55,7 @@ const FOOTER_DATA = {
 
 function Footer() {
     const [activeIndex, setActiveIndex] = useState(0);
+    const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -62,6 +63,30 @@ function Footer() {
         }, FOOTER_DATA.animation.interval);
 
         return () => clearInterval(interval);
+    }, []);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            const scrollBottom = scrollY + windowHeight;
+            
+            // Check if scrolled down 200px
+            const scrolled200px = scrollY >= 200;
+            
+            // Check if at the bottom of the page (with a small threshold, e.g., 50px)
+            const isAtBottom = scrollBottom >= documentHeight - 50;
+            
+            // Show if scrolled 200px AND not at bottom
+            setIsVisible(scrolled200px && !isAtBottom);
+        };
+
+        // Initial check
+        handleScroll();
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     return (
@@ -178,6 +203,22 @@ function Footer() {
                    </svg>
                </div>
            </div>
+            <div className={`glass-effect border group transition-all duration-300  ease-in-out border-[#dedede] z-30 ${isVisible ? 'translate-y-0' : 'translate-y-[130%]'} transition-all duration-300 ease-in-out rounded-full fixed bottom-[20px] w-fit md:py-[12px] py-[10px] md:px-[20px] px-[14px] left-1/2 transform -translate-x-1/2`}>
+                <div className="flex gap-[18px] items-center relative">
+                    <div className="  transition-all duration-300 ease-in-out md:block hidden">
+                        <h6 className="text-black text-[14px] leading-[14px] font-semibold mb-[4px]">Speak to me</h6>
+                        <span className="block text-[14px] leading-[14px] font-semibold text-[#545454]">Email or book a call</span>
+                    </div>
+                    <div className=" gap-[8px] md:flex hidden">
+                        <Link href="#" className="flex items-center justify-center w-[40px] h-[40px] bg-color rounded-full"><Mail /></Link>
+                        <Link href="#" className="flex items-center justify-center w-[40px] h-[40px] bg-white rounded-full shadow"><Calendar /></Link>
+                    </div>
+                    <div className=" gap-[8px] md:hidden flex">
+                        <Link href="#" className="flex items-center justify-center  bg-color rounded-full text-[12px] leading-[12px] gap-[6px] py-[8px] px-[12px]"><Mail size={16} className="shrink-0"/> Contact</Link>
+                        <Link href="#" className="flex items-center justify-center text-[12px] leading-[12px] bg-white rounded-full shadow gap-[6px] py-[8px] px-[12px] w-[120px]"><Calendar size={16} className="shrink-0"/> Book a call</Link>
+                    </div>
+                </div>
+            </div>
         </footer>
     );
 }

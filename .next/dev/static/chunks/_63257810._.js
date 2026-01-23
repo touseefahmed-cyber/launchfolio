@@ -2494,9 +2494,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$linkedin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Linkedin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/linkedin.js [app-client] (ecmascript) <export default as Linkedin>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$facebook$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Facebook$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/facebook.js [app-client] (ecmascript) <export default as Facebook>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$youtube$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Youtube$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/youtube.js [app-client] (ecmascript) <export default as Youtube>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mail.js [app-client] (ecmascript) <export default as Mail>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/calendar.js [app-client] (ecmascript) <export default as Calendar>");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
+;
 ;
 ;
 ;
@@ -2590,14 +2593,15 @@ const FOOTER_DATA = {
 };
 function Footer() {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(21);
-    if ($[0] !== "1d415b7307e68ddc8b45cdaf71b3c646dd71716b582660b44f0d0c27c7c34782") {
-        for(let $i = 0; $i < 21; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(33);
+    if ($[0] !== "af2692dc97879d547bcc3768e97fc03e04f5c656f2c028c53cc76242110463a4") {
+        for(let $i = 0; $i < 33; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1d415b7307e68ddc8b45cdaf71b3c646dd71716b582660b44f0d0c27c7c34782";
+        $[0] = "af2692dc97879d547bcc3768e97fc03e04f5c656f2c028c53cc76242110463a4";
     }
     const [activeIndex, setActiveIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    const [isVisible, setIsVisible] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     let t0;
     let t1;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -2620,132 +2624,97 @@ function Footer() {
     }
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t0, t1);
     let t2;
+    let t3;
     if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
-        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        t2 = ({
+            "Footer[useEffect()]": ()=>{
+                const handleScroll = {
+                    "Footer[useEffect() > handleScroll]": ()=>{
+                        const scrollY = window.scrollY;
+                        const windowHeight = window.innerHeight;
+                        const documentHeight = document.documentElement.scrollHeight;
+                        const scrollBottom = scrollY + windowHeight;
+                        const scrolled200px = scrollY >= 200;
+                        const isAtBottom = scrollBottom >= documentHeight - 50;
+                        setIsVisible(scrolled200px && !isAtBottom);
+                    }
+                }["Footer[useEffect() > handleScroll]"];
+                handleScroll();
+                window.addEventListener("scroll", handleScroll);
+                return ()=>window.removeEventListener("scroll", handleScroll);
+            }
+        })["Footer[useEffect()]"];
+        t3 = [];
+        $[3] = t2;
+        $[4] = t3;
+    } else {
+        t2 = $[3];
+        t3 = $[4];
+    }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t2, t3);
+    let t4;
+    if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             children: FOOTER_DATA.heading.part1
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 110,
+            lineNumber: 140,
             columnNumber: 10
         }, this);
-        $[3] = t2;
+        $[5] = t4;
     } else {
-        t2 = $[3];
+        t4 = $[5];
     }
-    let t3;
-    if ($[4] !== activeIndex) {
-        t3 = FOOTER_DATA.animation.texts.map({
+    let t5;
+    if ($[6] !== activeIndex) {
+        t5 = FOOTER_DATA.animation.texts.map({
             "Footer[FOOTER_DATA.animation.texts.map()]": (text, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                     className: `absolute ${index === activeIndex ? "active" : ""}`,
                     children: text
                 }, text, false, {
                     fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 118,
+                    lineNumber: 148,
                     columnNumber: 69
                 }, this)
         }["Footer[FOOTER_DATA.animation.texts.map()]"]);
-        $[4] = activeIndex;
-        $[5] = t3;
+        $[6] = activeIndex;
+        $[7] = t5;
     } else {
-        t3 = $[5];
+        t5 = $[7];
     }
-    let t4;
-    if ($[6] !== t3) {
-        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t6;
+    if ($[8] !== t5) {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "flex 2xl:text-[72px] 2xl:leading-[72px] lg:text-[60px] lg:leading-[60px] md:text-[48px] md:leading-[45px] text-[42px] leading-[39px] text-white font-medium relative",
             children: [
-                t2,
+                t4,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "change-text relative inline-block ml-2 min-w-[250px]",
-                    children: t3
+                    children: t5
                 }, void 0, false, {
                     fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 127,
+                    lineNumber: 157,
                     columnNumber: 196
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 127,
-            columnNumber: 10
-        }, this);
-        $[6] = t3;
-        $[7] = t4;
-    } else {
-        t4 = $[7];
-    }
-    let t5;
-    if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
-        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-            className: "2xl:text-[72px] 2xl:leading-[72px] lg:text-[60px] lg:leading-[60px] md:text-[48px] md:leading-[45px] text-[42px] leading-[39px] text-[#828282] font-medium",
-            children: FOOTER_DATA.heading.part2
-        }, void 0, false, {
-            fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 135,
+            lineNumber: 157,
             columnNumber: 10
         }, this);
         $[8] = t5;
-    } else {
-        t5 = $[8];
-    }
-    let t6;
-    if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
-        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "font-medium",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-                    className: "text-[14px] leading-[14px] text-[#828282] mb-[8px]",
-                    children: FOOTER_DATA.contact.email.label
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 142,
-                    columnNumber: 39
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    href: FOOTER_DATA.contact.email.href,
-                    className: "lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px] inline-block text-white",
-                    children: FOOTER_DATA.contact.email.address
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 142,
-                    columnNumber: 144
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 142,
-            columnNumber: 10
-        }, this);
         $[9] = t6;
     } else {
         t6 = $[9];
     }
     let t7;
     if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
-        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "font-medium",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-                    className: "text-[14px] leading-[14px] text-[#828282] mb-[8px]",
-                    children: FOOTER_DATA.contact.call.label
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 149,
-                    columnNumber: 39
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    href: FOOTER_DATA.contact.call.href,
-                    className: "lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px]] inline-block text-white",
-                    children: FOOTER_DATA.contact.call.text
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 149,
-                    columnNumber: 143
-                }, this)
-            ]
-        }, void 0, true, {
+        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+            className: "2xl:text-[72px] 2xl:leading-[72px] lg:text-[60px] lg:leading-[60px] md:text-[48px] md:leading-[45px] text-[42px] leading-[39px] text-[#828282] font-medium",
+            children: FOOTER_DATA.heading.part2
+        }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 149,
+            lineNumber: 165,
             columnNumber: 10
         }, this);
         $[10] = t7;
@@ -2754,12 +2723,30 @@ function Footer() {
     }
     let t8;
     if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
-        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-            className: "text-[14px] leading-[14px] md:text-white text-[#828282] mb-[10px]",
-            children: FOOTER_DATA.contact.social.label
-        }, void 0, false, {
+        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "font-medium",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
+                    className: "text-[14px] leading-[14px] text-[#828282] mb-[8px]",
+                    children: FOOTER_DATA.contact.email.label
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 172,
+                    columnNumber: 39
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    href: FOOTER_DATA.contact.email.href,
+                    className: "lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px] inline-block text-white",
+                    children: FOOTER_DATA.contact.email.address
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 172,
+                    columnNumber: 144
+                }, this)
+            ]
+        }, void 0, true, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 156,
+            lineNumber: 172,
             columnNumber: 10
         }, this);
         $[11] = t8;
@@ -2769,32 +2756,29 @@ function Footer() {
     let t9;
     if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
         t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "grid md:grid-cols-[repeat(3,minmax(50px,1fr))] md:gap-y-0 gap-y-[32px]  pt-[48px] border-b border-[#828282] pb-[24px] mb-[24px]",
+            className: "font-medium",
             children: [
-                t6,
-                t7,
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "font-medium",
-                    children: [
-                        t8,
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                            className: "flex items-center gap-[6px]",
-                            children: FOOTER_DATA.contact.social.links.map(_FooterFOOTER_DATAContactSocialLinksMap)
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/Site/Footer.tsx",
-                            lineNumber: 163,
-                            columnNumber: 196
-                        }, this)
-                    ]
-                }, void 0, true, {
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
+                    className: "text-[14px] leading-[14px] text-[#828282] mb-[8px]",
+                    children: FOOTER_DATA.contact.call.label
+                }, void 0, false, {
                     fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 163,
-                    columnNumber: 163
+                    lineNumber: 179,
+                    columnNumber: 39
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    href: FOOTER_DATA.contact.call.href,
+                    className: "lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px]] inline-block text-white",
+                    children: FOOTER_DATA.contact.call.text
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 179,
+                    columnNumber: 143
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 163,
+            lineNumber: 179,
             columnNumber: 10
         }, this);
         $[12] = t9;
@@ -2804,11 +2788,11 @@ function Footer() {
     let t10;
     if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
         t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-            className: "text-[14px] leading-[14px] text-[#828282] mb-[16px]",
-            children: FOOTER_DATA.menu.label
+            className: "text-[14px] leading-[14px] md:text-white text-[#828282] mb-[10px]",
+            children: FOOTER_DATA.contact.social.label
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 170,
+            lineNumber: 186,
             columnNumber: 11
         }, this);
         $[13] = t10;
@@ -2817,12 +2801,33 @@ function Footer() {
     }
     let t11;
     if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
-        t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-            className: "text-[12px] leading-[12px] flex gap-[12px] text-white flex-col",
-            children: FOOTER_DATA.menu.links.slice(0, 2).map(_FooterAnonymous)
-        }, void 0, false, {
+        t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "grid md:grid-cols-[repeat(3,minmax(50px,1fr))] md:gap-y-0 gap-y-[32px]  pt-[48px] border-b border-[#828282] pb-[24px] mb-[24px]",
+            children: [
+                t8,
+                t9,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "font-medium",
+                    children: [
+                        t10,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                            className: "flex items-center gap-[6px]",
+                            children: FOOTER_DATA.contact.social.links.map(_FooterFOOTER_DATAContactSocialLinksMap)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Site/Footer.tsx",
+                            lineNumber: 193,
+                            columnNumber: 198
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 193,
+                    columnNumber: 164
+                }, this)
+            ]
+        }, void 0, true, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 177,
+            lineNumber: 193,
             columnNumber: 11
         }, this);
         $[14] = t11;
@@ -2831,32 +2836,12 @@ function Footer() {
     }
     let t12;
     if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
-        t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "font-medium",
-            children: [
-                t10,
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex gap-[20px]",
-                    children: [
-                        t11,
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                            className: "text-[12px] leading-[12px] flex gap-[12px] text-white flex-col",
-                            children: FOOTER_DATA.menu.links.slice(2).map(_FooterAnonymous2)
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/Site/Footer.tsx",
-                            lineNumber: 184,
-                            columnNumber: 83
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 184,
-                    columnNumber: 45
-                }, this)
-            ]
-        }, void 0, true, {
+        t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
+            className: "text-[14px] leading-[14px] text-[#828282] mb-[16px]",
+            children: FOOTER_DATA.menu.label
+        }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 184,
+            lineNumber: 200,
             columnNumber: 11
         }, this);
         $[15] = t12;
@@ -2865,12 +2850,12 @@ function Footer() {
     }
     let t13;
     if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
-        t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-            className: "text-[14px] leading-[14px] text-[#828282] mb-[16px]",
-            children: FOOTER_DATA.legal.label
+        t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+            className: "text-[12px] leading-[12px] flex gap-[12px] text-white flex-col",
+            children: FOOTER_DATA.menu.links.slice(0, 2).map(_FooterAnonymous)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 191,
+            lineNumber: 207,
             columnNumber: 11
         }, this);
         $[16] = t13;
@@ -2880,39 +2865,31 @@ function Footer() {
     let t14;
     if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
         t14 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "grid sm:grid-cols-[repeat(3,minmax(50px,1fr))] grid-cols-[repeat(2,minmax(50px,1fr))]",
+            className: "font-medium",
             children: [
                 t12,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "font-medium",
+                    className: "flex gap-[20px]",
                     children: [
                         t13,
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                             className: "text-[12px] leading-[12px] flex gap-[12px] text-white flex-col",
-                            children: FOOTER_DATA.legal.links.map(_FooterFOOTER_DATALegalLinksMap)
+                            children: FOOTER_DATA.menu.links.slice(2).map(_FooterAnonymous2)
                         }, void 0, false, {
                             fileName: "[project]/src/components/Site/Footer.tsx",
-                            lineNumber: 198,
-                            columnNumber: 153
+                            lineNumber: 214,
+                            columnNumber: 83
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 198,
-                    columnNumber: 119
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "font-medium text-[12px] leading-[12px] text-[#828282] sm:col-auto col-span-full sm:mt-0 mt-[24px]",
-                    children: FOOTER_DATA.copyright
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 198,
-                    columnNumber: 305
+                    lineNumber: 214,
+                    columnNumber: 45
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 198,
+            lineNumber: 214,
             columnNumber: 11
         }, this);
         $[17] = t14;
@@ -2921,7 +2898,63 @@ function Footer() {
     }
     let t15;
     if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
-        t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
+            className: "text-[14px] leading-[14px] text-[#828282] mb-[16px]",
+            children: FOOTER_DATA.legal.label
+        }, void 0, false, {
+            fileName: "[project]/src/components/Site/Footer.tsx",
+            lineNumber: 221,
+            columnNumber: 11
+        }, this);
+        $[18] = t15;
+    } else {
+        t15 = $[18];
+    }
+    let t16;
+    if ($[19] === Symbol.for("react.memo_cache_sentinel")) {
+        t16 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "grid sm:grid-cols-[repeat(3,minmax(50px,1fr))] grid-cols-[repeat(2,minmax(50px,1fr))]",
+            children: [
+                t14,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "font-medium",
+                    children: [
+                        t15,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                            className: "text-[12px] leading-[12px] flex gap-[12px] text-white flex-col",
+                            children: FOOTER_DATA.legal.links.map(_FooterFOOTER_DATALegalLinksMap)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Site/Footer.tsx",
+                            lineNumber: 228,
+                            columnNumber: 153
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 228,
+                    columnNumber: 119
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "font-medium text-[12px] leading-[12px] text-[#828282] sm:col-auto col-span-full sm:mt-0 mt-[24px]",
+                    children: FOOTER_DATA.copyright
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 228,
+                    columnNumber: 305
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/Site/Footer.tsx",
+            lineNumber: 228,
+            columnNumber: 11
+        }, this);
+        $[19] = t16;
+    } else {
+        t16 = $[19];
+    }
+    let t17;
+    if ($[20] === Symbol.for("react.memo_cache_sentinel")) {
+        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "w-full absolute bottom-0 left-1/2 -translate-x-1/2",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                 xmlns: "http://www.w3.org/2000/svg",
@@ -2936,7 +2969,7 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 206
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -2944,7 +2977,7 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 314
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -2952,7 +2985,7 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 532
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -2960,7 +2993,7 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 641
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -2968,7 +3001,7 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 1084
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -2976,7 +3009,7 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 1553
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -2984,7 +3017,7 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 2086
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -2992,7 +3025,7 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 2527
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -3000,7 +3033,7 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 2889
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -3008,55 +3041,233 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 3149
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Site/Footer.tsx",
-                lineNumber: 205,
+                lineNumber: 235,
                 columnNumber: 79
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 205,
+            lineNumber: 235,
             columnNumber: 11
         }, this);
-        $[18] = t15;
+        $[20] = t17;
     } else {
-        t15 = $[18];
+        t17 = $[20];
     }
-    let t16;
-    if ($[19] !== t4) {
-        t16 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
-            className: "bg-black md:pt-16 pt-[32] md:px-[44px] px-[22px]   overflow-hidden",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "wrapper !border-0 relative 2xl:pb-[348px] lg:pb-[268px] md:pb-[220px] sm:pb-[160px] pb-[90px]",
-                children: [
-                    t4,
-                    t5,
-                    t9,
-                    t14,
-                    t15
-                ]
-            }, void 0, true, {
+    let t18;
+    if ($[21] !== t6) {
+        t18 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "wrapper !border-0 relative 2xl:pb-[348px] lg:pb-[268px] md:pb-[220px] sm:pb-[160px] pb-[90px]",
+            children: [
+                t6,
+                t7,
+                t11,
+                t16,
+                t17
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/Site/Footer.tsx",
+            lineNumber: 242,
+            columnNumber: 11
+        }, this);
+        $[21] = t6;
+        $[22] = t18;
+    } else {
+        t18 = $[22];
+    }
+    const t19 = `glass-effect border group transition-all duration-300  ease-in-out border-[#dedede] z-30 ${isVisible ? "translate-y-0" : "translate-y-[130%]"} transition-all duration-300 ease-in-out rounded-full fixed bottom-[20px] w-fit md:py-[12px] py-[10px] md:px-[20px] px-[14px] left-1/2 transform -translate-x-1/2`;
+    let t20;
+    if ($[23] === Symbol.for("react.memo_cache_sentinel")) {
+        t20 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "  transition-all duration-300 ease-in-out md:block hidden",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
+                    className: "text-black text-[14px] leading-[14px] font-semibold mb-[4px]",
+                    children: "Speak to me"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 251,
+                    columnNumber: 86
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "block text-[14px] leading-[14px] font-semibold text-[#545454]",
+                    children: "Email or book a call"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 251,
+                    columnNumber: 179
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/Site/Footer.tsx",
+            lineNumber: 251,
+            columnNumber: 11
+        }, this);
+        $[23] = t20;
+    } else {
+        t20 = $[23];
+    }
+    let t21;
+    if ($[24] === Symbol.for("react.memo_cache_sentinel")) {
+        t21 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            href: "#",
+            className: "flex items-center justify-center w-[40px] h-[40px] bg-color rounded-full",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {}, void 0, false, {
                 fileName: "[project]/src/components/Site/Footer.tsx",
-                lineNumber: 212,
-                columnNumber: 98
+                lineNumber: 258,
+                columnNumber: 111
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 212,
+            lineNumber: 258,
             columnNumber: 11
         }, this);
-        $[19] = t4;
-        $[20] = t16;
+        $[24] = t21;
     } else {
-        t16 = $[20];
+        t21 = $[24];
     }
-    return t16;
+    let t22;
+    if ($[25] === Symbol.for("react.memo_cache_sentinel")) {
+        t22 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: " gap-[8px] md:flex hidden",
+            children: [
+                t21,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    href: "#",
+                    className: "flex items-center justify-center w-[40px] h-[40px] bg-white rounded-full shadow",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {}, void 0, false, {
+                        fileName: "[project]/src/components/Site/Footer.tsx",
+                        lineNumber: 265,
+                        columnNumber: 166
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 265,
+                    columnNumber: 59
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/Site/Footer.tsx",
+            lineNumber: 265,
+            columnNumber: 11
+        }, this);
+        $[25] = t22;
+    } else {
+        t22 = $[25];
+    }
+    let t23;
+    if ($[26] === Symbol.for("react.memo_cache_sentinel")) {
+        t23 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            href: "#",
+            className: "flex items-center justify-center  bg-color rounded-full text-[12px] leading-[12px] gap-[6px] py-[8px] px-[12px]",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
+                    size: 16,
+                    className: "shrink-0"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 272,
+                    columnNumber: 150
+                }, this),
+                " Contact"
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/Site/Footer.tsx",
+            lineNumber: 272,
+            columnNumber: 11
+        }, this);
+        $[26] = t23;
+    } else {
+        t23 = $[26];
+    }
+    let t24;
+    if ($[27] === Symbol.for("react.memo_cache_sentinel")) {
+        t24 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex gap-[18px] items-center relative",
+            children: [
+                t20,
+                t22,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: " gap-[8px] md:hidden flex",
+                    children: [
+                        t23,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: "#",
+                            className: "flex items-center justify-center text-[12px] leading-[12px] bg-white rounded-full shadow gap-[6px] py-[8px] px-[12px] w-[120px]",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
+                                    size: 16,
+                                    className: "shrink-0"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Site/Footer.tsx",
+                                    lineNumber: 279,
+                                    columnNumber: 279
+                                }, this),
+                                " Book a call"
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/Site/Footer.tsx",
+                            lineNumber: 279,
+                            columnNumber: 124
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 279,
+                    columnNumber: 76
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/Site/Footer.tsx",
+            lineNumber: 279,
+            columnNumber: 11
+        }, this);
+        $[27] = t24;
+    } else {
+        t24 = $[27];
+    }
+    let t25;
+    if ($[28] !== t19) {
+        t25 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: t19,
+            children: t24
+        }, void 0, false, {
+            fileName: "[project]/src/components/Site/Footer.tsx",
+            lineNumber: 286,
+            columnNumber: 11
+        }, this);
+        $[28] = t19;
+        $[29] = t25;
+    } else {
+        t25 = $[29];
+    }
+    let t26;
+    if ($[30] !== t18 || $[31] !== t25) {
+        t26 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
+            className: "bg-black md:pt-16 pt-[32] md:px-[44px] px-[22px]   overflow-hidden",
+            children: [
+                t18,
+                t25
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/Site/Footer.tsx",
+            lineNumber: 294,
+            columnNumber: 11
+        }, this);
+        $[30] = t18;
+        $[31] = t25;
+        $[32] = t26;
+    } else {
+        t26 = $[32];
+    }
+    return t26;
 }
-_s(Footer, "16En7kR7TbAJMjBrm+xutVNIc5Q=");
+_s(Footer, "+fE5Rrh/SoxkomZrqkTLZTrizxg=");
 _c = Footer;
 function _FooterFOOTER_DATALegalLinksMap(link_1, index_3) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3065,12 +3276,12 @@ function _FooterFOOTER_DATALegalLinksMap(link_1, index_3) {
             children: link_1.text
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 221,
+            lineNumber: 304,
             columnNumber: 28
         }, this)
     }, index_3, false, {
         fileName: "[project]/src/components/Site/Footer.tsx",
-        lineNumber: 221,
+        lineNumber: 304,
         columnNumber: 10
     }, this);
 }
@@ -3081,12 +3292,12 @@ function _FooterAnonymous2(link_0, index_2) {
             children: link_0.text
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 224,
+            lineNumber: 307,
             columnNumber: 32
         }, this)
     }, index_2 + 2, false, {
         fileName: "[project]/src/components/Site/Footer.tsx",
-        lineNumber: 224,
+        lineNumber: 307,
         columnNumber: 10
     }, this);
 }
@@ -3097,12 +3308,12 @@ function _FooterAnonymous(link, index_1) {
             children: link.text
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 227,
+            lineNumber: 310,
             columnNumber: 28
         }, this)
     }, index_1, false, {
         fileName: "[project]/src/components/Site/Footer.tsx",
-        lineNumber: 227,
+        lineNumber: 310,
         columnNumber: 10
     }, this);
 }
@@ -3117,17 +3328,17 @@ function _FooterFOOTER_DATAContactSocialLinksMap(social, index_0) {
                 size: 16
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/Footer.tsx",
-                lineNumber: 231,
+                lineNumber: 314,
                 columnNumber: 174
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 231,
+            lineNumber: 314,
             columnNumber: 28
         }, this)
     }, index_0, false, {
         fileName: "[project]/src/components/Site/Footer.tsx",
-        lineNumber: 231,
+        lineNumber: 314,
         columnNumber: 10
     }, this);
 }

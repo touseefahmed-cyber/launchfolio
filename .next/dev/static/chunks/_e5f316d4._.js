@@ -2214,7 +2214,7 @@ const PROJECTS = [
         link: "#",
         initialAnimation: {
             x: 530,
-            y: -726,
+            y: -850,
             scale: 0.7,
             rotation: 10,
             zIndex: 4
@@ -2222,7 +2222,7 @@ const PROJECTS = [
         // Responsive animation for max-width 1025px
         initialAnimationMobile: {
             x: 400,
-            y: -660,
+            y: -760,
             scale: 0.6,
             rotation: 10,
             zIndex: 4
@@ -2236,14 +2236,14 @@ const PROJECTS = [
         link: "#",
         initialAnimation: {
             x: 80,
-            y: -736,
+            y: -850,
             scale: 0.7,
             rotation: 15
         },
         // Responsive animation for max-width 1025px
         initialAnimationMobile: {
             x: 75,
-            y: -662,
+            y: -762,
             scale: 0.6,
             rotation: 15
         }
@@ -2256,14 +2256,14 @@ const PROJECTS = [
         link: "#",
         initialAnimation: {
             x: 480,
-            y: -1180,
+            y: -1300,
             scale: 0.7,
             rotation: -5
         },
         // Responsive animation for max-width 1025px
         initialAnimationMobile: {
             x: 380,
-            y: -990,
+            y: -1090,
             scale: 0.6,
             rotation: -5
         }
@@ -2276,14 +2276,14 @@ const PROJECTS = [
         link: "#",
         initialAnimation: {
             x: 30,
-            y: -1137,
+            y: -1250,
             scale: 0.7,
             rotation: 5
         },
         // Responsive animation for max-width 1025px
         initialAnimationMobile: {
             x: 50,
-            y: -960,
+            y: -1060,
             scale: 0.6,
             rotation: 5
         }
@@ -2291,12 +2291,12 @@ const PROJECTS = [
 ];
 function ProjectSection(t0) {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
-    if ($[0] !== "1ab6e55ddf7d77dfafb0d6a0e47e8db37692077cb63e78ad4493e0a66448c044") {
-        for(let $i = 0; $i < 5; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(10);
+    if ($[0] !== "ccefd71e0dd6307ef4c112b05bfda84fa5ea5e4c7ff7c3e137cb9a852daeff72") {
+        for(let $i = 0; $i < 10; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1ab6e55ddf7d77dfafb0d6a0e47e8db37692077cb63e78ad4493e0a66448c044";
+        $[0] = "ccefd71e0dd6307ef4c112b05bfda84fa5ea5e4c7ff7c3e137cb9a852daeff72";
     }
     const { disableAnimations: t1 } = t0;
     const disableAnimations = t1 === undefined ? false : t1;
@@ -2305,13 +2305,41 @@ function ProjectSection(t0) {
     const card3Ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const card4Ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const containerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const [windowWidth, setWindowWidth] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(("TURBOPACK compile-time truthy", 1) ? window.innerWidth : "TURBOPACK unreachable");
+    const ctxRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     let t2;
     let t3;
-    if ($[1] !== disableAnimations) {
+    if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
         t2 = ({
+            "ProjectSection[useEffect()]": ()=>{
+                const handleResize = {
+                    "ProjectSection[useEffect() > handleResize]": ()=>{
+                        setWindowWidth(window.innerWidth);
+                    }
+                }["ProjectSection[useEffect() > handleResize]"];
+                window.addEventListener("resize", handleResize);
+                return ()=>window.removeEventListener("resize", handleResize);
+            }
+        })["ProjectSection[useEffect()]"];
+        t3 = [];
+        $[1] = t2;
+        $[2] = t3;
+    } else {
+        t2 = $[1];
+        t3 = $[2];
+    }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t2, t3);
+    let t4;
+    let t5;
+    if ($[3] !== disableAnimations || $[4] !== windowWidth) {
+        t4 = ({
             "ProjectSection[useLayoutEffect()]": ()=>{
                 if (!card1Ref.current || !card2Ref.current || !card3Ref.current || !card4Ref.current || !containerRef.current) {
                     return;
+                }
+                if (ctxRef.current) {
+                    ctxRef.current.revert();
+                    ctxRef.current = null;
                 }
                 if (disableAnimations) {
                     const cardContents = containerRef.current?.querySelectorAll(".card_content");
@@ -2320,8 +2348,15 @@ function ProjectSection(t0) {
                     }
                     return;
                 }
-                const isSmallScreen = window.innerWidth <= 769;
+                const isSmallScreen = windowWidth <= 769;
                 if (isSmallScreen) {
+                    const cardRefs = [
+                        card1Ref.current,
+                        card2Ref.current,
+                        card3Ref.current,
+                        card4Ref.current
+                    ];
+                    cardRefs.forEach(_ProjectSectionUseLayoutEffectCardRefsForEach);
                     const cardContents_0 = containerRef.current?.querySelectorAll(".card_content");
                     if (cardContents_0) {
                         cardContents_0.forEach(_ProjectSectionUseLayoutEffectCardContents_0ForEach);
@@ -2330,20 +2365,27 @@ function ProjectSection(t0) {
                 }
                 const ctx = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].context({
                     "ProjectSection[useLayoutEffect() > gsap.context()]": ()=>{
-                        const isMobile = window.innerWidth <= 1025;
+                        const isMobile = windowWidth <= 1025;
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScrollTrigger"].getAll().forEach({
+                            "ProjectSection[useLayoutEffect() > gsap.context() > (anonymous)()]": (trigger)=>{
+                                if (trigger.vars.trigger === containerRef.current) {
+                                    trigger.kill();
+                                }
+                            }
+                        }["ProjectSection[useLayoutEffect() > gsap.context() > (anonymous)()]"]);
                         const tl = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].timeline({
                             scrollTrigger: {
                                 trigger: containerRef.current,
                                 ...SCROLL_TRIGGER_CONFIG
                             }
                         });
-                        const cardRefs = [
+                        const cardRefs_0 = [
                             card1Ref.current,
                             card2Ref.current,
                             card3Ref.current,
                             card4Ref.current
                         ];
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].set(cardRefs.filter(Boolean), {
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].set(cardRefs_0.filter(Boolean), {
                             transformPerspective: ANIMATION_CONFIG.transformPerspective
                         });
                         const cardContents_1 = containerRef.current?.querySelectorAll(".card_content");
@@ -2354,14 +2396,14 @@ function ProjectSection(t0) {
                         }
                         PROJECTS.forEach({
                             "ProjectSection[useLayoutEffect() > gsap.context() > PROJECTS.forEach()]": (project, index)=>{
-                                const cardRef = cardRefs[index];
-                                if (cardRef) {
+                                const cardRef_0 = cardRefs_0[index];
+                                if (cardRef_0) {
                                     const animationConfig = isMobile && project.initialAnimationMobile ? project.initialAnimationMobile : project.initialAnimation;
-                                    tl.fromTo(cardRef, animationConfig, {
+                                    tl.fromTo(cardRef_0, animationConfig, {
                                         ...ANIMATION_CONFIG.finalState,
                                         ease: ANIMATION_CONFIG.ease
                                     }, ANIMATION_CONFIG.timelineStart);
-                                    const cardContent = cardRef.querySelector(".card_content");
+                                    const cardContent = cardRef_0.querySelector(".card_content");
                                     if (cardContent) {
                                         tl.to(cardContent, {
                                             opacity: 1,
@@ -2373,176 +2415,244 @@ function ProjectSection(t0) {
                         }["ProjectSection[useLayoutEffect() > gsap.context() > PROJECTS.forEach()]"]);
                     }
                 }["ProjectSection[useLayoutEffect() > gsap.context()]"], containerRef);
+                ctxRef.current = ctx;
                 const handleLoad = _ProjectSectionUseLayoutEffectHandleLoad;
                 window.addEventListener("load", handleLoad);
-                const handleResize = _ProjectSectionUseLayoutEffectHandleResize;
-                window.addEventListener("resize", handleResize);
                 return ()=>{
-                    ctx.revert();
+                    if (ctxRef.current) {
+                        ctxRef.current.revert();
+                        ctxRef.current = null;
+                    }
                     window.removeEventListener("load", handleLoad);
-                    window.removeEventListener("resize", handleResize);
                 };
             }
         })["ProjectSection[useLayoutEffect()]"];
-        t3 = [
-            disableAnimations
+        t5 = [
+            disableAnimations,
+            windowWidth
         ];
-        $[1] = disableAnimations;
-        $[2] = t2;
-        $[3] = t3;
+        $[3] = disableAnimations;
+        $[4] = windowWidth;
+        $[5] = t4;
+        $[6] = t5;
     } else {
-        t2 = $[2];
-        t3 = $[3];
+        t4 = $[5];
+        t5 = $[6];
     }
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLayoutEffect"])(t2, t3);
-    let t4;
-    if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
-        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLayoutEffect"])(t4, t5);
+    let t6;
+    if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "relative z-20 bg-black mix-blend-exclusion",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                className: "xl:text-[64px] 2xl:leading-[64px] lg:text-[54px]\n                            lg:leading-[54px] md:text-[46px] md:leading-[46px] text-[36px] leading-[36px] font-medium text-white md:mb-[60px] mb-[48px]",
+                children: "Leatest Projects"
+            }, void 0, false, {
+                fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                lineNumber: 265,
+                columnNumber: 70
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/Site/ProjectSection.tsx",
+            lineNumber: 265,
+            columnNumber: 10
+        }, this);
+        $[7] = t6;
+    } else {
+        t6 = $[7];
+    }
+    let t7;
+    if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            ref: containerRef,
+            className: "grid md:grid-cols-2 grid-cols-1 gap-[24px] relative z-10",
+            children: PROJECTS.map({
+                "ProjectSection[PROJECTS.map()]": (project_0, index_0)=>{
+                    const cardRefs_1 = [
+                        card1Ref,
+                        card2Ref,
+                        card3Ref,
+                        card4Ref
+                    ];
+                    const cardRef_1 = cardRefs_1[index_0];
+                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        ref: cardRef_1,
+                        className: "relative group",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: project_0.link,
+                            "data-cursor-text": "Project",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("figure", {
+                                    className: "rounded-[16px] lg:h-[363px] md:h-[246px] sm:h-[440px] h-[248px] overflow-hidden mb-[12px] ",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        src: project_0.img,
+                                        alt: project_0.title,
+                                        className: "w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-500 ease-in-out"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                        lineNumber: 276,
+                                        columnNumber: 251
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                    lineNumber: 276,
+                                    columnNumber: 140
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex items-center justify-between card_content transition-all duration-500 ease-in-out group-hover:!opacity-0",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
+                                                    className: "text-black sm:text-[18px] sm:leading-[18px] text-[16px] leading-[16px] mb-[2px] font-medium",
+                                                    children: project_0.title
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                                    lineNumber: 276,
+                                                    columnNumber: 546
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-[12px] leading-[12px] text-[#545454] font-bold",
+                                                    children: project_0.subtitle
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                                    lineNumber: 276,
+                                                    columnNumber: 676
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                            lineNumber: 276,
+                                            columnNumber: 541
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "flex text-[12px] leading-[12px] font-medium text-[#545454] items-center",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                                                        size: 16
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                                        lineNumber: 276,
+                                                        columnNumber: 874
+                                                    }, this),
+                                                    " View Project"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                                lineNumber: 276,
+                                                columnNumber: 784
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                            lineNumber: 276,
+                                            columnNumber: 779
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                    lineNumber: 276,
+                                    columnNumber: 414
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                            lineNumber: 276,
+                            columnNumber: 85
+                        }, this)
+                    }, project_0.id, false, {
+                        fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                        lineNumber: 276,
+                        columnNumber: 18
+                    }, this);
+                }
+            }["ProjectSection[PROJECTS.map()]"])
+        }, void 0, false, {
+            fileName: "[project]/src/components/Site/ProjectSection.tsx",
+            lineNumber: 272,
+            columnNumber: 10
+        }, this);
+        $[8] = t7;
+    } else {
+        t7 = $[8];
+    }
+    let t8;
+    if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
             className: "border-b border-[#dedede] 2xl:px-0 px-[15px]",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "wrapper",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "md:py-[128px] py-[48px] 2xl:px-[44px] md:px-[15px] px-[10px]",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        ref: containerRef,
-                        className: "grid md:grid-cols-2 grid-cols-1 gap-[24px] relative z-10",
-                        children: PROJECTS.map({
-                            "ProjectSection[PROJECTS.map()]": (project_0, index_0)=>{
-                                const cardRefs_0 = [
-                                    card1Ref,
-                                    card2Ref,
-                                    card3Ref,
-                                    card4Ref
-                                ];
-                                const cardRef_0 = cardRefs_0[index_0];
-                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    ref: cardRef_0,
-                                    className: "relative group",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: project_0.link,
-                                        "data-cursor-text": "Project",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("figure", {
-                                                className: "rounded-[16px] lg:h-[363px] md:h-[246px] sm:h-[440px] h-[248px] overflow-hidden mb-[12px] ",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    src: project_0.img,
-                                                    alt: project_0.title,
-                                                    className: "w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-500 ease-in-out"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                    lineNumber: 229,
-                                                    columnNumber: 257
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                lineNumber: 229,
-                                                columnNumber: 146
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex items-center justify-between card_content transition-all duration-500 ease-in-out group-hover:!opacity-0",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-                                                                className: "text-black sm:text-[18px] sm:leading-[18px] text-[16px] leading-[16px] mb-[2px] font-medium",
-                                                                children: project_0.title
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                                lineNumber: 229,
-                                                                columnNumber: 552
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-[12px] leading-[12px] text-[#545454] font-bold",
-                                                                children: project_0.subtitle
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                                lineNumber: 229,
-                                                                columnNumber: 682
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                        lineNumber: 229,
-                                                        columnNumber: 547
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "flex text-[12px] leading-[12px] font-medium text-[#545454] items-center",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
-                                                                    size: 16
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                                    lineNumber: 229,
-                                                                    columnNumber: 880
-                                                                }, this),
-                                                                " View Project"
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                            lineNumber: 229,
-                                                            columnNumber: 790
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                        lineNumber: 229,
-                                                        columnNumber: 785
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                                lineNumber: 229,
-                                                columnNumber: 420
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
+                    children: [
+                        t6,
+                        t7,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "mt-[64px] mx-auto",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "#",
+                                className: "md:text-[18px] md:leading-[18px] text-[16px] leading-[16px] text-black hover:underline font-medium flex items-center w-fit mx-auto gap-1",
+                                children: [
+                                    "View all my projects ",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                                        size: 16
+                                    }, void 0, false, {
                                         fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                        lineNumber: 229,
-                                        columnNumber: 91
+                                        lineNumber: 285,
+                                        columnNumber: 407
                                     }, this)
-                                }, project_0.id, false, {
-                                    fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                                    lineNumber: 229,
-                                    columnNumber: 24
-                                }, this);
-                            }
-                        }["ProjectSection[PROJECTS.map()]"])
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                        lineNumber: 225,
-                        columnNumber: 179
-                    }, this)
-                }, void 0, false, {
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                                lineNumber: 285,
+                                columnNumber: 222
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Site/ProjectSection.tsx",
+                            lineNumber: 285,
+                            columnNumber: 187
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                    lineNumber: 225,
+                    lineNumber: 285,
                     columnNumber: 101
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/ProjectSection.tsx",
-                lineNumber: 225,
+                lineNumber: 285,
                 columnNumber: 76
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/ProjectSection.tsx",
-            lineNumber: 225,
+            lineNumber: 285,
             columnNumber: 10
         }, this);
-        $[4] = t4;
+        $[9] = t8;
     } else {
-        t4 = $[4];
+        t8 = $[9];
     }
-    return t4;
+    return t8;
 }
-_s(ProjectSection, "ITRk9nQAdnEQ9GopSAVnzAxiMos=");
+_s(ProjectSection, "WD1CcKbfADVtgv3XxHQu3gdHww0=");
 _c = ProjectSection;
-function _ProjectSectionUseLayoutEffectHandleResize() {
-    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScrollTrigger"].refresh();
-}
 function _ProjectSectionUseLayoutEffectHandleLoad() {
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScrollTrigger"].refresh();
 }
 function _ProjectSectionUseLayoutEffectCardContents_0ForEach(content_0) {
     content_0.style.opacity = "1";
+}
+function _ProjectSectionUseLayoutEffectCardRefsForEach(cardRef) {
+    if (cardRef) {
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].set(cardRef, {
+            x: 0,
+            y: 0,
+            scale: 1,
+            rotation: 0,
+            opacity: 1,
+            zIndex: 0
+        });
+    }
 }
 function _ProjectSectionUseLayoutEffectCardContentsForEach(content) {
     content.style.opacity = "1";
@@ -2569,9 +2679,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$linkedin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Linkedin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/linkedin.js [app-client] (ecmascript) <export default as Linkedin>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$facebook$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Facebook$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/facebook.js [app-client] (ecmascript) <export default as Facebook>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$youtube$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Youtube$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/youtube.js [app-client] (ecmascript) <export default as Youtube>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mail.js [app-client] (ecmascript) <export default as Mail>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/calendar.js [app-client] (ecmascript) <export default as Calendar>");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
+;
 ;
 ;
 ;
@@ -2665,14 +2778,15 @@ const FOOTER_DATA = {
 };
 function Footer() {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(21);
-    if ($[0] !== "1d415b7307e68ddc8b45cdaf71b3c646dd71716b582660b44f0d0c27c7c34782") {
-        for(let $i = 0; $i < 21; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(31);
+    if ($[0] !== "671fd141eb33c5b8aff29a39646028ff028864cbd16508f15ff7ef4a8501a9f6") {
+        for(let $i = 0; $i < 31; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1d415b7307e68ddc8b45cdaf71b3c646dd71716b582660b44f0d0c27c7c34782";
+        $[0] = "671fd141eb33c5b8aff29a39646028ff028864cbd16508f15ff7ef4a8501a9f6";
     }
     const [activeIndex, setActiveIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    const [isVisible, setIsVisible] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     let t0;
     let t1;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -2695,132 +2809,97 @@ function Footer() {
     }
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t0, t1);
     let t2;
+    let t3;
     if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
-        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        t2 = ({
+            "Footer[useEffect()]": ()=>{
+                const handleScroll = {
+                    "Footer[useEffect() > handleScroll]": ()=>{
+                        const scrollY = window.scrollY;
+                        const windowHeight = window.innerHeight;
+                        const documentHeight = document.documentElement.scrollHeight;
+                        const scrollBottom = scrollY + windowHeight;
+                        const scrolled200px = scrollY >= 200;
+                        const isAtBottom = scrollBottom >= documentHeight - 50;
+                        setIsVisible(scrolled200px && !isAtBottom);
+                    }
+                }["Footer[useEffect() > handleScroll]"];
+                handleScroll();
+                window.addEventListener("scroll", handleScroll);
+                return ()=>window.removeEventListener("scroll", handleScroll);
+            }
+        })["Footer[useEffect()]"];
+        t3 = [];
+        $[3] = t2;
+        $[4] = t3;
+    } else {
+        t2 = $[3];
+        t3 = $[4];
+    }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t2, t3);
+    let t4;
+    if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             children: FOOTER_DATA.heading.part1
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 110,
+            lineNumber: 140,
             columnNumber: 10
         }, this);
-        $[3] = t2;
+        $[5] = t4;
     } else {
-        t2 = $[3];
+        t4 = $[5];
     }
-    let t3;
-    if ($[4] !== activeIndex) {
-        t3 = FOOTER_DATA.animation.texts.map({
+    let t5;
+    if ($[6] !== activeIndex) {
+        t5 = FOOTER_DATA.animation.texts.map({
             "Footer[FOOTER_DATA.animation.texts.map()]": (text, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                     className: `absolute ${index === activeIndex ? "active" : ""}`,
                     children: text
                 }, text, false, {
                     fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 118,
+                    lineNumber: 148,
                     columnNumber: 69
                 }, this)
         }["Footer[FOOTER_DATA.animation.texts.map()]"]);
-        $[4] = activeIndex;
-        $[5] = t3;
+        $[6] = activeIndex;
+        $[7] = t5;
     } else {
-        t3 = $[5];
+        t5 = $[7];
     }
-    let t4;
-    if ($[6] !== t3) {
-        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t6;
+    if ($[8] !== t5) {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "flex 2xl:text-[72px] 2xl:leading-[72px] lg:text-[60px] lg:leading-[60px] md:text-[48px] md:leading-[45px] text-[42px] leading-[39px] text-white font-medium relative",
             children: [
-                t2,
+                t4,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "change-text relative inline-block ml-2 min-w-[250px]",
-                    children: t3
+                    children: t5
                 }, void 0, false, {
                     fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 127,
+                    lineNumber: 157,
                     columnNumber: 196
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 127,
-            columnNumber: 10
-        }, this);
-        $[6] = t3;
-        $[7] = t4;
-    } else {
-        t4 = $[7];
-    }
-    let t5;
-    if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
-        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-            className: "2xl:text-[72px] 2xl:leading-[72px] lg:text-[60px] lg:leading-[60px] md:text-[48px] md:leading-[45px] text-[42px] leading-[39px] text-[#828282] font-medium",
-            children: FOOTER_DATA.heading.part2
-        }, void 0, false, {
-            fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 135,
+            lineNumber: 157,
             columnNumber: 10
         }, this);
         $[8] = t5;
-    } else {
-        t5 = $[8];
-    }
-    let t6;
-    if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
-        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "font-medium",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-                    className: "text-[14px] leading-[14px] text-[#828282] mb-[8px]",
-                    children: FOOTER_DATA.contact.email.label
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 142,
-                    columnNumber: 39
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    href: FOOTER_DATA.contact.email.href,
-                    className: "lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px] inline-block text-white",
-                    children: FOOTER_DATA.contact.email.address
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 142,
-                    columnNumber: 144
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 142,
-            columnNumber: 10
-        }, this);
         $[9] = t6;
     } else {
         t6 = $[9];
     }
     let t7;
     if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
-        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "font-medium",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-                    className: "text-[14px] leading-[14px] text-[#828282] mb-[8px]",
-                    children: FOOTER_DATA.contact.call.label
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 149,
-                    columnNumber: 39
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    href: FOOTER_DATA.contact.call.href,
-                    className: "lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px]] inline-block text-white",
-                    children: FOOTER_DATA.contact.call.text
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 149,
-                    columnNumber: 143
-                }, this)
-            ]
-        }, void 0, true, {
+        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+            className: "2xl:text-[72px] 2xl:leading-[72px] lg:text-[60px] lg:leading-[60px] md:text-[48px] md:leading-[45px] text-[42px] leading-[39px] text-[#828282] font-medium",
+            children: FOOTER_DATA.heading.part2
+        }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 149,
+            lineNumber: 165,
             columnNumber: 10
         }, this);
         $[10] = t7;
@@ -2829,12 +2908,30 @@ function Footer() {
     }
     let t8;
     if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
-        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-            className: "text-[14px] leading-[14px] md:text-white text-[#828282] mb-[10px]",
-            children: FOOTER_DATA.contact.social.label
-        }, void 0, false, {
+        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "font-medium",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
+                    className: "text-[14px] leading-[14px] text-[#828282] mb-[8px]",
+                    children: FOOTER_DATA.contact.email.label
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 172,
+                    columnNumber: 39
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    href: FOOTER_DATA.contact.email.href,
+                    className: "lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px] inline-block text-white",
+                    children: FOOTER_DATA.contact.email.address
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 172,
+                    columnNumber: 144
+                }, this)
+            ]
+        }, void 0, true, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 156,
+            lineNumber: 172,
             columnNumber: 10
         }, this);
         $[11] = t8;
@@ -2844,32 +2941,29 @@ function Footer() {
     let t9;
     if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
         t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "grid md:grid-cols-[repeat(3,minmax(50px,1fr))] md:gap-y-0 gap-y-[32px]  pt-[48px] border-b border-[#828282] pb-[24px] mb-[24px]",
+            className: "font-medium",
             children: [
-                t6,
-                t7,
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "font-medium",
-                    children: [
-                        t8,
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                            className: "flex items-center gap-[6px]",
-                            children: FOOTER_DATA.contact.social.links.map(_FooterFOOTER_DATAContactSocialLinksMap)
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/Site/Footer.tsx",
-                            lineNumber: 163,
-                            columnNumber: 196
-                        }, this)
-                    ]
-                }, void 0, true, {
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
+                    className: "text-[14px] leading-[14px] text-[#828282] mb-[8px]",
+                    children: FOOTER_DATA.contact.call.label
+                }, void 0, false, {
                     fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 163,
-                    columnNumber: 163
+                    lineNumber: 179,
+                    columnNumber: 39
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    href: FOOTER_DATA.contact.call.href,
+                    className: "lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px]] inline-block text-white",
+                    children: FOOTER_DATA.contact.call.text
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 179,
+                    columnNumber: 143
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 163,
+            lineNumber: 179,
             columnNumber: 10
         }, this);
         $[12] = t9;
@@ -2879,11 +2973,11 @@ function Footer() {
     let t10;
     if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
         t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-            className: "text-[14px] leading-[14px] text-[#828282] mb-[16px]",
-            children: FOOTER_DATA.menu.label
+            className: "text-[14px] leading-[14px] md:text-white text-[#828282] mb-[10px]",
+            children: FOOTER_DATA.contact.social.label
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 170,
+            lineNumber: 186,
             columnNumber: 11
         }, this);
         $[13] = t10;
@@ -2892,12 +2986,33 @@ function Footer() {
     }
     let t11;
     if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
-        t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-            className: "text-[12px] leading-[12px] flex gap-[12px] text-white flex-col",
-            children: FOOTER_DATA.menu.links.slice(0, 2).map(_FooterAnonymous)
-        }, void 0, false, {
+        t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "grid md:grid-cols-[repeat(3,minmax(50px,1fr))] md:gap-y-0 gap-y-[32px]  pt-[48px] border-b border-[#828282] pb-[24px] mb-[24px]",
+            children: [
+                t8,
+                t9,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "font-medium",
+                    children: [
+                        t10,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                            className: "flex items-center gap-[6px]",
+                            children: FOOTER_DATA.contact.social.links.map(_FooterFOOTER_DATAContactSocialLinksMap)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Site/Footer.tsx",
+                            lineNumber: 193,
+                            columnNumber: 198
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 193,
+                    columnNumber: 164
+                }, this)
+            ]
+        }, void 0, true, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 177,
+            lineNumber: 193,
             columnNumber: 11
         }, this);
         $[14] = t11;
@@ -2906,32 +3021,12 @@ function Footer() {
     }
     let t12;
     if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
-        t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "font-medium",
-            children: [
-                t10,
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex gap-[20px]",
-                    children: [
-                        t11,
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                            className: "text-[12px] leading-[12px] flex gap-[12px] text-white flex-col",
-                            children: FOOTER_DATA.menu.links.slice(2).map(_FooterAnonymous2)
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/Site/Footer.tsx",
-                            lineNumber: 184,
-                            columnNumber: 83
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 184,
-                    columnNumber: 45
-                }, this)
-            ]
-        }, void 0, true, {
+        t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
+            className: "text-[14px] leading-[14px] text-[#828282] mb-[16px]",
+            children: FOOTER_DATA.menu.label
+        }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 184,
+            lineNumber: 200,
             columnNumber: 11
         }, this);
         $[15] = t12;
@@ -2940,12 +3035,12 @@ function Footer() {
     }
     let t13;
     if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
-        t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
-            className: "text-[14px] leading-[14px] text-[#828282] mb-[16px]",
-            children: FOOTER_DATA.legal.label
+        t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+            className: "text-[12px] leading-[12px] flex gap-[12px] text-white flex-col",
+            children: FOOTER_DATA.menu.links.slice(0, 2).map(_FooterAnonymous)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 191,
+            lineNumber: 207,
             columnNumber: 11
         }, this);
         $[16] = t13;
@@ -2955,39 +3050,31 @@ function Footer() {
     let t14;
     if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
         t14 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "grid sm:grid-cols-[repeat(3,minmax(50px,1fr))] grid-cols-[repeat(2,minmax(50px,1fr))]",
+            className: "font-medium",
             children: [
                 t12,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "font-medium",
+                    className: "flex gap-[20px]",
                     children: [
                         t13,
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                             className: "text-[12px] leading-[12px] flex gap-[12px] text-white flex-col",
-                            children: FOOTER_DATA.legal.links.map(_FooterFOOTER_DATALegalLinksMap)
+                            children: FOOTER_DATA.menu.links.slice(2).map(_FooterAnonymous2)
                         }, void 0, false, {
                             fileName: "[project]/src/components/Site/Footer.tsx",
-                            lineNumber: 198,
-                            columnNumber: 153
+                            lineNumber: 214,
+                            columnNumber: 83
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 198,
-                    columnNumber: 119
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "font-medium text-[12px] leading-[12px] text-[#828282] sm:col-auto col-span-full sm:mt-0 mt-[24px]",
-                    children: FOOTER_DATA.copyright
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Site/Footer.tsx",
-                    lineNumber: 198,
-                    columnNumber: 305
+                    lineNumber: 214,
+                    columnNumber: 45
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 198,
+            lineNumber: 214,
             columnNumber: 11
         }, this);
         $[17] = t14;
@@ -2996,7 +3083,63 @@ function Footer() {
     }
     let t15;
     if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
-        t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
+            className: "text-[14px] leading-[14px] text-[#828282] mb-[16px]",
+            children: FOOTER_DATA.legal.label
+        }, void 0, false, {
+            fileName: "[project]/src/components/Site/Footer.tsx",
+            lineNumber: 221,
+            columnNumber: 11
+        }, this);
+        $[18] = t15;
+    } else {
+        t15 = $[18];
+    }
+    let t16;
+    if ($[19] === Symbol.for("react.memo_cache_sentinel")) {
+        t16 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "grid sm:grid-cols-[repeat(3,minmax(50px,1fr))] grid-cols-[repeat(2,minmax(50px,1fr))]",
+            children: [
+                t14,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "font-medium",
+                    children: [
+                        t15,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                            className: "text-[12px] leading-[12px] flex gap-[12px] text-white flex-col",
+                            children: FOOTER_DATA.legal.links.map(_FooterFOOTER_DATALegalLinksMap)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Site/Footer.tsx",
+                            lineNumber: 228,
+                            columnNumber: 153
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 228,
+                    columnNumber: 119
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "font-medium text-[12px] leading-[12px] text-[#828282] sm:col-auto col-span-full sm:mt-0 mt-[24px]",
+                    children: FOOTER_DATA.copyright
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 228,
+                    columnNumber: 305
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/Site/Footer.tsx",
+            lineNumber: 228,
+            columnNumber: 11
+        }, this);
+        $[19] = t16;
+    } else {
+        t16 = $[19];
+    }
+    let t17;
+    if ($[20] === Symbol.for("react.memo_cache_sentinel")) {
+        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "w-full absolute bottom-0 left-1/2 -translate-x-1/2",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                 xmlns: "http://www.w3.org/2000/svg",
@@ -3011,7 +3154,7 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 206
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -3019,7 +3162,7 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 314
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -3027,7 +3170,7 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 532
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -3035,7 +3178,7 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 641
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -3043,7 +3186,7 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 1084
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -3051,7 +3194,7 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 1553
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -3059,7 +3202,7 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 2086
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -3067,7 +3210,7 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 2527
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -3075,7 +3218,7 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 2889
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -3083,55 +3226,172 @@ function Footer() {
                         fill: "white"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Site/Footer.tsx",
-                        lineNumber: 205,
+                        lineNumber: 235,
                         columnNumber: 3149
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Site/Footer.tsx",
-                lineNumber: 205,
+                lineNumber: 235,
                 columnNumber: 79
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 205,
+            lineNumber: 235,
             columnNumber: 11
         }, this);
-        $[18] = t15;
+        $[20] = t17;
     } else {
-        t15 = $[18];
+        t17 = $[20];
     }
-    let t16;
-    if ($[19] !== t4) {
-        t16 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
-            className: "bg-black md:pt-16 pt-[32] md:px-[44px] px-[22px]   overflow-hidden",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "wrapper !border-0 relative 2xl:pb-[348px] lg:pb-[268px] md:pb-[220px] sm:pb-[160px] pb-[90px]",
-                children: [
-                    t4,
-                    t5,
-                    t9,
-                    t14,
-                    t15
-                ]
-            }, void 0, true, {
+    let t18;
+    if ($[21] !== t6) {
+        t18 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "wrapper !border-0 relative 2xl:pb-[348px] lg:pb-[268px] md:pb-[220px] sm:pb-[160px] pb-[90px]",
+            children: [
+                t6,
+                t7,
+                t11,
+                t16,
+                t17
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/Site/Footer.tsx",
+            lineNumber: 242,
+            columnNumber: 11
+        }, this);
+        $[21] = t6;
+        $[22] = t18;
+    } else {
+        t18 = $[22];
+    }
+    const t19 = `glass-effect border group transition-all duration-300 ease-in-out border-[#dedede] z-30 ${isVisible ? "translate-y-0" : "translate-y-[130%]"} transition-all duration-300 ease-in-out rounded-full fixed bottom-[20px] w-fit py-[12px] px-[20px] left-1/2 transform -translate-x-1/2`;
+    let t20;
+    if ($[23] === Symbol.for("react.memo_cache_sentinel")) {
+        t20 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "group-hover:opacity-0 transition-all duration-300 ease-in-out",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
+                    className: "text-black text-[14px] leading-[14px] font-semibold mb-[4px]",
+                    children: "Speak to me"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 251,
+                    columnNumber: 90
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "block text-[14px] leading-[14px] font-semibold text-[#545454]",
+                    children: "Email or book a call"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 251,
+                    columnNumber: 183
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/Site/Footer.tsx",
+            lineNumber: 251,
+            columnNumber: 11
+        }, this);
+        $[23] = t20;
+    } else {
+        t20 = $[23];
+    }
+    let t21;
+    if ($[24] === Symbol.for("react.memo_cache_sentinel")) {
+        t21 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            href: "#",
+            className: "flex items-center justify-center w-[40px] h-[40px] bg-color rounded-full",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {}, void 0, false, {
                 fileName: "[project]/src/components/Site/Footer.tsx",
-                lineNumber: 212,
-                columnNumber: 98
+                lineNumber: 258,
+                columnNumber: 111
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 212,
+            lineNumber: 258,
             columnNumber: 11
         }, this);
-        $[19] = t4;
-        $[20] = t16;
+        $[24] = t21;
     } else {
-        t16 = $[20];
+        t21 = $[24];
     }
-    return t16;
+    let t22;
+    if ($[25] === Symbol.for("react.memo_cache_sentinel")) {
+        t22 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex gap-[18px] items-center",
+            children: [
+                t20,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex gap-[8px]",
+                    children: [
+                        t21,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: "#",
+                            className: "flex items-center justify-center w-[40px] h-[40px] bg-white rounded-full shadow",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {}, void 0, false, {
+                                fileName: "[project]/src/components/Site/Footer.tsx",
+                                lineNumber: 265,
+                                columnNumber: 206
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Site/Footer.tsx",
+                            lineNumber: 265,
+                            columnNumber: 99
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/Site/Footer.tsx",
+                    lineNumber: 265,
+                    columnNumber: 62
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/Site/Footer.tsx",
+            lineNumber: 265,
+            columnNumber: 11
+        }, this);
+        $[25] = t22;
+    } else {
+        t22 = $[25];
+    }
+    let t23;
+    if ($[26] !== t19) {
+        t23 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: t19,
+            children: t22
+        }, void 0, false, {
+            fileName: "[project]/src/components/Site/Footer.tsx",
+            lineNumber: 272,
+            columnNumber: 11
+        }, this);
+        $[26] = t19;
+        $[27] = t23;
+    } else {
+        t23 = $[27];
+    }
+    let t24;
+    if ($[28] !== t18 || $[29] !== t23) {
+        t24 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
+            className: "bg-black md:pt-16 pt-[32] md:px-[44px] px-[22px]   overflow-hidden",
+            children: [
+                t18,
+                t23
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/Site/Footer.tsx",
+            lineNumber: 280,
+            columnNumber: 11
+        }, this);
+        $[28] = t18;
+        $[29] = t23;
+        $[30] = t24;
+    } else {
+        t24 = $[30];
+    }
+    return t24;
 }
-_s(Footer, "16En7kR7TbAJMjBrm+xutVNIc5Q=");
+_s(Footer, "+fE5Rrh/SoxkomZrqkTLZTrizxg=");
 _c = Footer;
 function _FooterFOOTER_DATALegalLinksMap(link_1, index_3) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3140,12 +3400,12 @@ function _FooterFOOTER_DATALegalLinksMap(link_1, index_3) {
             children: link_1.text
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 221,
+            lineNumber: 290,
             columnNumber: 28
         }, this)
     }, index_3, false, {
         fileName: "[project]/src/components/Site/Footer.tsx",
-        lineNumber: 221,
+        lineNumber: 290,
         columnNumber: 10
     }, this);
 }
@@ -3156,12 +3416,12 @@ function _FooterAnonymous2(link_0, index_2) {
             children: link_0.text
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 224,
+            lineNumber: 293,
             columnNumber: 32
         }, this)
     }, index_2 + 2, false, {
         fileName: "[project]/src/components/Site/Footer.tsx",
-        lineNumber: 224,
+        lineNumber: 293,
         columnNumber: 10
     }, this);
 }
@@ -3172,12 +3432,12 @@ function _FooterAnonymous(link, index_1) {
             children: link.text
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 227,
+            lineNumber: 296,
             columnNumber: 28
         }, this)
     }, index_1, false, {
         fileName: "[project]/src/components/Site/Footer.tsx",
-        lineNumber: 227,
+        lineNumber: 296,
         columnNumber: 10
     }, this);
 }
@@ -3192,17 +3452,17 @@ function _FooterFOOTER_DATAContactSocialLinksMap(social, index_0) {
                 size: 16
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/Footer.tsx",
-                lineNumber: 231,
+                lineNumber: 300,
                 columnNumber: 174
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 231,
+            lineNumber: 300,
             columnNumber: 28
         }, this)
     }, index_0, false, {
         fileName: "[project]/src/components/Site/Footer.tsx",
-        lineNumber: 231,
+        lineNumber: 300,
         columnNumber: 10
     }, this);
 }

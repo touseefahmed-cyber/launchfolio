@@ -2164,12 +2164,12 @@ const FOOTER_DATA = {
 };
 function Footer() {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(21);
-    if ($[0] !== "1d415b7307e68ddc8b45cdaf71b3c646dd71716b582660b44f0d0c27c7c34782") {
-        for(let $i = 0; $i < 21; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(24);
+    if ($[0] !== "393e911e20ad3a3d35a79e83e81cccfd11f162d62205f8229de6493b4c617230") {
+        for(let $i = 0; $i < 24; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1d415b7307e68ddc8b45cdaf71b3c646dd71716b582660b44f0d0c27c7c34782";
+        $[0] = "393e911e20ad3a3d35a79e83e81cccfd11f162d62205f8229de6493b4c617230";
     }
     const [activeIndex, setActiveIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     let t0;
@@ -2602,23 +2602,16 @@ function Footer() {
     }
     let t16;
     if ($[19] !== t4) {
-        t16 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
-            className: "bg-black md:pt-16 pt-[32] md:px-[44px] px-[22px]   overflow-hidden",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "wrapper !border-0 relative 2xl:pb-[348px] lg:pb-[268px] md:pb-[220px] sm:pb-[160px] pb-[90px]",
-                children: [
-                    t4,
-                    t5,
-                    t9,
-                    t14,
-                    t15
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/Site/Footer.tsx",
-                lineNumber: 212,
-                columnNumber: 98
-            }, this)
-        }, void 0, false, {
+        t16 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "wrapper !border-0 relative 2xl:pb-[348px] lg:pb-[268px] md:pb-[220px] sm:pb-[160px] pb-[90px]",
+            children: [
+                t4,
+                t5,
+                t9,
+                t14,
+                t15
+            ]
+        }, void 0, true, {
             fileName: "[project]/src/components/Site/Footer.tsx",
             lineNumber: 212,
             columnNumber: 11
@@ -2628,7 +2621,38 @@ function Footer() {
     } else {
         t16 = $[20];
     }
-    return t16;
+    let t17;
+    if ($[21] === Symbol.for("react.memo_cache_sentinel")) {
+        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "overlay fixed bottom-0 w-full  h-[16px] left-1/2 transform -translate-x-1/2"
+        }, void 0, false, {
+            fileName: "[project]/src/components/Site/Footer.tsx",
+            lineNumber: 220,
+            columnNumber: 11
+        }, this);
+        $[21] = t17;
+    } else {
+        t17 = $[21];
+    }
+    let t18;
+    if ($[22] !== t16) {
+        t18 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
+            className: "bg-black md:pt-16 pt-[32] md:px-[44px] px-[22px]   overflow-hidden",
+            children: [
+                t16,
+                t17
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/Site/Footer.tsx",
+            lineNumber: 227,
+            columnNumber: 11
+        }, this);
+        $[22] = t16;
+        $[23] = t18;
+    } else {
+        t18 = $[23];
+    }
+    return t18;
 }
 _s(Footer, "16En7kR7TbAJMjBrm+xutVNIc5Q=");
 _c = Footer;
@@ -2639,12 +2663,12 @@ function _FooterFOOTER_DATALegalLinksMap(link_1, index_3) {
             children: link_1.text
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 221,
+            lineNumber: 236,
             columnNumber: 28
         }, this)
     }, index_3, false, {
         fileName: "[project]/src/components/Site/Footer.tsx",
-        lineNumber: 221,
+        lineNumber: 236,
         columnNumber: 10
     }, this);
 }
@@ -2655,12 +2679,12 @@ function _FooterAnonymous2(link_0, index_2) {
             children: link_0.text
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 224,
+            lineNumber: 239,
             columnNumber: 32
         }, this)
     }, index_2 + 2, false, {
         fileName: "[project]/src/components/Site/Footer.tsx",
-        lineNumber: 224,
+        lineNumber: 239,
         columnNumber: 10
     }, this);
 }
@@ -2671,12 +2695,12 @@ function _FooterAnonymous(link, index_1) {
             children: link.text
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 227,
+            lineNumber: 242,
             columnNumber: 28
         }, this)
     }, index_1, false, {
         fileName: "[project]/src/components/Site/Footer.tsx",
-        lineNumber: 227,
+        lineNumber: 242,
         columnNumber: 10
     }, this);
 }
@@ -2691,17 +2715,17 @@ function _FooterFOOTER_DATAContactSocialLinksMap(social, index_0) {
                 size: 16
             }, void 0, false, {
                 fileName: "[project]/src/components/Site/Footer.tsx",
-                lineNumber: 231,
+                lineNumber: 246,
                 columnNumber: 174
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Site/Footer.tsx",
-            lineNumber: 231,
+            lineNumber: 246,
             columnNumber: 28
         }, this)
     }, index_0, false, {
         fileName: "[project]/src/components/Site/Footer.tsx",
-        lineNumber: 231,
+        lineNumber: 246,
         columnNumber: 10
     }, this);
 }
