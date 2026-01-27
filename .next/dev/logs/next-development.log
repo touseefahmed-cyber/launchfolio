@@ -1,469 +1,78 @@
-[00:00:01.057] Server  LOG     ✓ Ready in 884ms
-[00:00:02.525] Server  WARN    ⚠ ./public/images/user_img.avif
+[00:00:00.742] Server  LOG     ✓ Ready in 570ms
+[00:00:06.238] Server  WARN    ⚠ ./public/images/user_img.avif
 AVIF image not supported
 This version of Turbopack does not support AVIF images, will emit without optimization or encoding
 
 Import trace:
-  Server Component:
+  Client Component SSR:
     ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
 
 
-[00:00:02.650] Server  WARN    ⚠ ./public/images/user_img.avif
+[00:00:06.541] Server  WARN    ⚠ ./public/images/user_img.avif
 AVIF image not supported
 This version of Turbopack does not support AVIF images, will emit without optimization or encoding
 
 Import trace:
-  Server Component:
+  Client Component SSR:
     ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
 
 
-[00:00:02.961] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:00:03.354] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:00:03.406] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:03.409] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:00:03.569] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:00:04.127] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
+[00:00:07.264] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <a> a 
 
   ...
-    <RedirectBoundary>
-      <RedirectErrorBoundary router={{...}}>
-        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
-          <SegmentViewNode type="page" pagePath="page.tsx">
-            <SegmentTrieNode>
-            <Page>
+    <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/blog_details" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+            <SegmentViewNode type="page" pagePath="blog_detai...">
+              <SegmentTrieNode>
               <Page>
                 <Header>
-                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
-                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
-                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
-                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
-                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
-                            <nav className="flex justi...">
-                              <div>
-                              <div>
-                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
-                                <div
-                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
-+                                 style={{opacity:0}}
--                                 style={{opacity:"1"}}
-                                  onClick={function Header[<motion.div>.onClick]}
-                                  ref={function useMotionRef.useCallback}
-                                >
--                             <button
--                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
--                               aria-label="Close menu"
--                             >
-                        ...
-              ...
-          ...
-        ...
-
-[00:00:05.222] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
-
-  ...
-    <RedirectBoundary>
-      <RedirectErrorBoundary router={{...}}>
-        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
-          <SegmentViewNode type="page" pagePath="page.tsx">
-            <SegmentTrieNode>
-            <Page>
-              <Page>
-                <Header>
-                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
-                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
-                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
-                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
-                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
-                            <nav className="flex justi...">
-                              <div>
-                              <div>
-                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
-                                <div
-                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
-+                                 style={{opacity:0}}
--                                 style={{opacity:"1"}}
-                                  onClick={function Header[<motion.div>.onClick]}
-                                  ref={function useMotionRef.useCallback}
-                                >
--                             <button
--                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
--                               aria-label="Close menu"
--                             >
-                        ...
-              ...
-          ...
-        ...
-
-[00:00:05.223] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <LoadingBoundary name="/" loading={null}>
-      <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-          <RedirectBoundary>
-            <RedirectErrorBoundary router={{...}}>
-              <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
-                <SegmentViewNode type="page" pagePath="page.tsx">
-                  <SegmentTrieNode>
-                  <Page>
-                    <Header>
-                    ...
-                      <div className={" 2xl:px-..."}>
+                <section>
+                <section>
+                <Page>
+                  <section className="2xl:px-0 p...">
+                    <div className="wrapper md...">
+                      <div className="lg:w-[58.6...">
                         <div>
-                          <FadeIn>
-                          <FadeUp delay={0}>
-                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
-                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
-                                <h1
-+                                 className={"2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:..."}
--                                 className="2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:te..."
-                                >
+                        <div className="flex gap-[...">
+                          <div className="">
+                            <LinkComponent>
+                              <LinkComponent href="" className="flex items...">
+>                               <a
+>                                 className="flex items-center justify-between bg-white border border-[#dedede] rounde..."
+>                                 ref={function}
+>                                 onClick={function onClick}
+>                                 onMouseEnter={function onMouseEnter}
+>                                 onTouchStart={function onTouchStart}
+>                                 href=""
+>                               >
+                                  <div>
+                                  <div>
+                                    <LinkComponent>
+                                      <LinkComponent href="">
+>                                       <a
+>                                         ref={function}
+>                                         onClick={function onClick}
+>                                         onMouseEnter={function onMouseEnter}
+>                                         onTouchStart={function onTouchStart}
+>                                         href=""
+>                                       >
                           ...
-                        ...
-                    <HappyClients>
-                    <Page>
-                      <ProjectSection>
-                        <section className="border-b b...">
-                          <div className="wrapper">
-                            <div className="md:py-[128...">
-                              <div className="relative z...">
-                                <h2
-+                                 className={"xl:text-[64px] 2xl:leading-[64px] lg:text-[54px]\n                     ..."}
--                                 className="xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:tex..."
-                                >
-+                                 Leatest Projects
-                              ...
-                    <section>
-                    ...
-                      <div className="grid md:gr...">
-                        <div>
-                          <FadeUp delay={0}>
-                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
-                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
-                                <div
-+                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
--                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
-                                >
-                          ...
-                        ...
-                    ...
-                      <div className="wrapper">
-                        <div className="md:py-[128...">
-                          <FadeUp delay={0}>
-                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
-                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
-                                <div
-+                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
--                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
-                                >
-                          <div className="grid lg:gr...">
-                            <div className="md:order-0...">
-                              <div className="mb-[64px]">
-                                <div>
-                                <div className="space-y-[4px]">
-                                  <h4
-+                                   className={"2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] t..."}
--                                   className="2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] tex..."
-                                  >
-+                                   Joseph Alexander
-                                  ...
-                              <span>
-                              <div className="relative">
-                                ...
-                                  <div ref={null} className="p-0">
-                                    <div className="flex items...">
-                                      <div className="flex-1">
-                                        <h5
-+                                         className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[1..."}
--                                         className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."
-                                        >
-+                                         Nexus Technology
-                                        ...
-                                ...
-                                  <div ref={null} className="p-0">
-                                    <div className="flex items...">
-                                      <div className="flex-1">
-                                        <h5
-+                                         className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[1..."}
--                                         className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."
-                                        >
-+                                         Nexus Technology
-                                        ...
-                                ...
-                                  <div ref={null} className="p-0">
-                                    <div className="flex items...">
-                                      <div className="flex-1">
-                                        <h5
-+                                         className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[1..."}
--                                         className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."
-                                        >
-+                                         Nexus Technology
-                                        ...
-                                <div className="text-cente...">
-                                  <button
-                                    onClick={function About[<button>.onClick]}
-+                                   className={"flex items-center gap-[8px] text-[12px] leading-[12px] font-semibold ..."}
--                                   className="flex items-center gap-[8px] text-[12px] leading-[12px] font-semibold bo..."
-                                  >
-                            ...
-                    <section>
-                    <TrustedSlider>
-                    ...
-                      <div className="wrapper">
-                        <div className="md:py-[128...">
-                          <FadeUp delay={0}>
-                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
-                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
-                                <div
-+                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
--                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
-                                >
-                          <div className="md:grid lg...">
-                            <FadeIn delay={0.4}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.5}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.6000000000000001}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.7000000000000001}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.8}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.9}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                    ...
                 ...
-              ...
-
-[00:00:11.627] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:00:11.917] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:00:12.407] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
-
-  ...
-    <RedirectBoundary>
-      <RedirectErrorBoundary router={{...}}>
-        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
-          <SegmentViewNode type="page" pagePath="page.tsx">
-            <SegmentTrieNode>
-            <Page>
-              <Page>
-                <Header>
-                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
-                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
-                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
-                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
-                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
-                            <nav className="flex justi...">
-                              <div>
-                              ...
-                                <SheetTrigger className="contact_btn">
-                                  <DialogTrigger data-slot="sheet-trigger" className="contact_btn">
-                                    <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                                      <button
-                                        type="button"
-                                        aria-haspopup="dialog"
-                                        aria-expanded={false}
-+                                       aria-controls="radix-_R_inelb_"
--                                       aria-controls="radix-_R_1inelb_"
-                                        data-state="closed"
-                                        data-slot="sheet-trigger"
-                                        className="contact_btn"
-                                        onClick={function handleEvent}
-                                        ref={function}
-                                      >
-+                                       Contact
-                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
-                                <div
-                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
-+                                 style={{opacity:0}}
--                                 style={{opacity:"1"}}
-                                  onClick={function Header[<motion.div>.onClick]}
-                                  ref={function useMotionRef.useCallback}
-                                >
--                             <button
--                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
--                               aria-label="Close menu"
--                             >
-                        ...
-              ...
+            ...
           ...
-        ...
 
-[00:00:44.997] Server  LOG     ✓ Compiled in 641ms
-[00:00:45.827] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:00:45.827] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:00:45.827] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:00:48.322] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:00:48.322] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:00:48.322] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:01:06.620] Server  LOG     ✓ Compiled in 300ms
-[00:01:07.388] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:01:07.388] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:01:07.388] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:01:39.552] Server  LOG     ✓ Compiled in 412ms
-[00:01:59.837] Server  LOG     ✓ Compiled in 259ms
-[00:02:22.184] Server  LOG     ✓ Compiled in 242ms
-[00:02:31.164] Server  LOG     ✓ Compiled in 187ms
-[00:02:39.123] Server  LOG     ✓ Compiled in 198ms
-[00:02:45.211] Server  LOG     ✓ Compiled in 158ms
-[00:03:03.984] Server  LOG     ✓ Compiled in 153ms
-[00:04:48.575] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:04:49.017] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:04:49.555] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+[00:00:07.265] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. a <a>
+[00:00:07.265] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -478,8 +87,8 @@ https://react.dev/link/hydration-mismatch
   ...
     <RedirectBoundary>
       <RedirectErrorBoundary router={{...}}>
-        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
-          <SegmentViewNode type="page" pagePath="page.tsx">
+        <InnerLayoutRouter url="/blog_details" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+          <SegmentViewNode type="page" pagePath="blog_detai...">
             <SegmentTrieNode>
             <Page>
               <Page>
@@ -509,920 +118,94 @@ https://react.dev/link/hydration-mismatch
           ...
         ...
 
-[00:04:49.555] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:04:49.555] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:04:49.555] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:05:51.156] Server  LOG     ✓ Compiled in 201ms
-[00:06:08.460] Server  LOG     ✓ Compiled in 143ms
-[00:06:30.673] Server  WARN    ⚠ ./public/images/user_img.avif
+[00:00:10.914] Server  WARN    ⚠ ./public/images/user_img.avif
 AVIF image not supported
 This version of Turbopack does not support AVIF images, will emit without optimization or encoding
 
 Import trace:
-  Server Component:
+  Client Component SSR:
     ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
 
 
-[00:06:31.135] Server  WARN    ⚠ ./public/images/user_img.avif
+[00:00:10.940] Server  ERROR   ⨯ ReferenceError: Breadcrumb is not defined
+[00:00:11.260] Browser ERROR   uncaughtError: ReferenceError: Breadcrumb is not defined
+[00:00:18.285] Server  WARN    ⚠ ./public/images/user_img.avif
 AVIF image not supported
 This version of Turbopack does not support AVIF images, will emit without optimization or encoding
 
 Import trace:
-  Server Component:
+  Client Component SSR:
     ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
 
 
-[00:06:31.593] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+[00:00:18.498] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
 
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
 
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-https://react.dev/link/hydration-mismatch
+[00:00:19.261] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <a> a 
 
   ...
-    <RedirectBoundary>
-      <RedirectErrorBoundary router={{...}}>
-        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
-          <SegmentViewNode type="page" pagePath="page.tsx">
-            <SegmentTrieNode>
-            <Page>
+    <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/blog_details" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+            <SegmentViewNode type="page" pagePath="blog_detai...">
+              <SegmentTrieNode>
               <Page>
                 <Header>
-                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
-                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
-                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
-                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
-                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
-                            <nav className="flex justi...">
-                              <div>
-                              <div>
-                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
-                                <div
-                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
-+                                 style={{opacity:0}}
--                                 style={{opacity:"1"}}
-                                  onClick={function Header[<motion.div>.onClick]}
-                                  ref={function useMotionRef.useCallback}
-                                >
--                             <button
--                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
--                               aria-label="Close menu"
--                             >
-                        ...
-              ...
-          ...
-        ...
-
-[00:06:31.593] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:06:31.593] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:06:31.593] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:06:45.891] Server  LOG     ✓ Compiled in 203ms
-[00:07:23.986] Server  LOG     ✓ Compiled in 160ms
-[00:07:33.440] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:07:33.441] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:07:33.441] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:07:41.500] Server  LOG     ✓ Compiled in 148ms
-[00:07:42.892] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:07:43.324] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:07:44.097] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
-
-  ...
-    <RedirectBoundary>
-      <RedirectErrorBoundary router={{...}}>
-        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
-          <SegmentViewNode type="page" pagePath="page.tsx">
-            <SegmentTrieNode>
-            <Page>
-              <Page>
-                <Header>
-                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
-                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
-                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
-                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
-                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
-                            <nav className="flex justi...">
-                              <div>
-                              ...
-                                <SheetTrigger className="contact_btn">
-                                  <DialogTrigger data-slot="sheet-trigger" className="contact_btn">
-                                    <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                                      <button
-                                        type="button"
-                                        aria-haspopup="dialog"
-                                        aria-expanded={false}
-+                                       aria-controls="radix-_R_inelb_"
--                                       aria-controls="radix-_R_1inelb_"
-                                        data-state="closed"
-                                        data-slot="sheet-trigger"
-                                        className="contact_btn"
-                                        onClick={function handleEvent}
-                                        ref={function}
-                                      >
-+                                       Contact
-                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
-                                <div
-                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
-+                                 style={{opacity:0}}
--                                 style={{opacity:"1"}}
-                                  onClick={function Header[<motion.div>.onClick]}
-                                  ref={function useMotionRef.useCallback}
-                                >
--                             <button
--                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
--                               aria-label="Close menu"
--                             >
-                        ...
-              ...
-          ...
-        ...
-
-[00:07:44.097] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:07:44.097] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:07:44.097] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:07:56.069] Server  LOG     ✓ Compiled in 352ms
-[00:07:57.838] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:07:57.838] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:07:57.838] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:08:12.110] Server  LOG     ✓ Compiled in 87ms
-[00:08:18.591] Server  LOG     ✓ Compiled in 240ms
-[00:08:23.525] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:08:23.970] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:08:24.599] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
-
-  ...
-    <RedirectBoundary>
-      <RedirectErrorBoundary router={{...}}>
-        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
-          <SegmentViewNode type="page" pagePath="page.tsx">
-            <SegmentTrieNode>
-            <Page>
-              <Page>
-                <Header>
-                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
-                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
-                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
-                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
-                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
-                            <nav className="flex justi...">
-                              <div>
-                              <div>
-                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
-                                <div
-                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
-+                                 style={{opacity:0}}
--                                 style={{opacity:"1"}}
-                                  onClick={function Header[<motion.div>.onClick]}
-                                  ref={function useMotionRef.useCallback}
-                                >
--                             <button
--                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
--                               aria-label="Close menu"
--                             >
-                        ...
-              ...
-          ...
-        ...
-
-[00:08:24.599] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:08:24.599] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:08:24.599] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:08:34.080] Server  LOG     ✓ Compiled in 196ms
-[00:09:15.832] Server  LOG     ✓ Compiled in 221ms
-[00:10:00.010] Server  LOG     ✓ Compiled in 144ms
-[00:10:19.497] Server  LOG     ✓ Compiled in 177ms
-[00:10:32.725] Server  LOG     ✓ Compiled in 150ms
-[00:10:50.665] Server  LOG     ✓ Compiled in 100ms
-[00:11:29.348] Server  LOG     ✓ Compiled in 210ms
-[00:11:53.340] Server  LOG     ✓ Compiled in 169ms
-[00:11:55.921] Server  LOG     ✓ Compiled in 73ms
-[00:12:03.678] Server  LOG     ✓ Compiled in 262ms
-[00:12:56.970] Server  LOG     ✓ Compiled in 232ms
-[00:13:22.615] Server  LOG     ✓ Compiled in 268ms
-[00:13:32.194] Server  LOG     ✓ Compiled in 186ms
-[00:14:06.041] Server  LOG     ✓ Compiled in 134ms
-[00:14:15.728] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:14:16.193] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:14:16.646] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <LoadingBoundary name="/" loading={null}>
-      <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-          <RedirectBoundary>
-            <RedirectErrorBoundary router={{...}}>
-              <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
-                <SegmentViewNode type="page" pagePath="page.tsx">
-                  <SegmentTrieNode>
-                  <Page>
-                    <Header>
-                    ...
-                      <div className={" 2xl:px-..."}>
+                <section>
+                <section>
+                <Page>
+                  <section className="2xl:px-0 p...">
+                    <div className="wrapper md...">
+                      <div className="lg:w-[58.6...">
                         <div>
-                          <FadeIn>
-                          <FadeUp delay={0}>
-                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
-                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
-                                <h1
-+                                 className={"2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:..."}
--                                 className="2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:te..."
-                                >
+                        <div className="flex gap-[...">
+                          <div className="">
+                            <LinkComponent>
+                              <LinkComponent href="" className="flex items...">
+>                               <a
+>                                 className="flex items-center justify-between bg-white border border-[#dedede] rounde..."
+>                                 ref={function}
+>                                 onClick={function onClick}
+>                                 onMouseEnter={function onMouseEnter}
+>                                 onTouchStart={function onTouchStart}
+>                                 href=""
+>                               >
+                                  <div>
+                                  <div>
+                                    <LinkComponent>
+                                      <LinkComponent href="">
+>                                       <a
+>                                         ref={function}
+>                                         onClick={function onClick}
+>                                         onMouseEnter={function onMouseEnter}
+>                                         onTouchStart={function onTouchStart}
+>                                         href=""
+>                                       >
                           ...
-                        ...
-                    <HappyClients>
-                    <Page>
-                      <ProjectSection>
-                        <section className="border-b b...">
-                          <div className="wrapper">
-                            <div className="md:py-[128...">
-                              <div className="relative z...">
-                                <h2
-+                                 className={"xl:text-[64px] 2xl:leading-[64px] lg:text-[54px]\n                     ..."}
--                                 className="xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:tex..."
-                                >
-+                                 Leatest Projects
-                              ...
-                    <section>
-                    ...
-                      <div className="grid md:gr...">
-                        <div>
-                          <FadeUp delay={0}>
-                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
-                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
-                                <div
-+                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
--                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
-                                >
-                          ...
-                        ...
-                    ...
-                      <div className="wrapper">
-                        <div className="md:py-[128...">
-                          <FadeUp delay={0}>
-                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
-                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
-                                <div
-+                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
--                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
-                                >
-                          <div className="grid lg:gr...">
-                            <div className="md:order-0...">
-                              <div className="mb-[64px]">
-                                <div>
-                                <div className="space-y-[4px]">
-                                  <h4
-+                                   className={"2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] t..."}
--                                   className="2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] tex..."
-                                  >
-+                                   Joseph Alexander
-                                  ...
-                              <span>
-                              <div className="relative">
-                                ...
-                                  <div ref={null} className="p-0">
-                                    <div className="flex items...">
-                                      <div className="flex-1">
-                                        <h5
-+                                         className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[1..."}
--                                         className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."
-                                        >
-+                                         Nexus Technology
-                                        ...
-                                ...
-                                  <div ref={null} className="p-0">
-                                    <div className="flex items...">
-                                      <div className="flex-1">
-                                        <h5
-+                                         className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[1..."}
--                                         className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."
-                                        >
-+                                         Nexus Technology
-                                        ...
-                                ...
-                                  <div ref={null} className="p-0">
-                                    <div className="flex items...">
-                                      <div className="flex-1">
-                                        <h5
-+                                         className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[1..."}
--                                         className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."
-                                        >
-+                                         Nexus Technology
-                                        ...
-                                <div className="text-cente...">
-                                  <button
-                                    onClick={function About[<button>.onClick]}
-+                                   className={"flex items-center gap-[8px] text-[12px] leading-[12px] font-semibold ..."}
--                                   className="flex items-center gap-[8px] text-[12px] leading-[12px] font-semibold bo..."
-                                  >
-                            ...
-                    <section>
-                    <TrustedSlider>
-                    ...
-                      <div className="wrapper">
-                        <div className="md:py-[128...">
-                          <FadeUp delay={0}>
-                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
-                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
-                                <div
-+                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
--                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
-                                >
-                          <div className="md:grid lg...">
-                            <FadeIn delay={0.4}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.5}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.6000000000000001}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.7000000000000001}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.8}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.9}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                    ...
                 ...
-              ...
+            ...
+          ...
 
-[00:14:16.646] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:14:16.646] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:14:16.646] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:15:21.615] Server  LOG     ✓ Compiled in 227ms
-[00:15:22.003] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:15:22.839] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:15:23.556] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <LoadingBoundary name="/" loading={null}>
-      <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-          <RedirectBoundary>
-            <RedirectErrorBoundary router={{...}}>
-              <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
-                <SegmentViewNode type="page" pagePath="page.tsx">
-                  <SegmentTrieNode>
-                  <Page>
-                    <Header>
-                    ...
-                      <div className={" 2xl:px-..."}>
-                        <div>
-                          <FadeIn>
-                          <FadeUp delay={0}>
-                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
-                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
-                                <h1
-+                                 className={"2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:..."}
--                                 className="2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:te..."
-                                >
-                          ...
-                        ...
-                    <HappyClients>
-                    <Page>
-                      <ProjectSection>
-                        <section className="border-b b...">
-                          <div className="wrapper">
-                            <div className="md:py-[128...">
-                              <div className="relative z...">
-                                <h2
-+                                 className={"xl:text-[64px] 2xl:leading-[64px] lg:text-[54px]\n                     ..."}
--                                 className="xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:tex..."
-                                >
-+                                 Leatest Projects
-                              ...
-                    <section>
-                    ...
-                      <div className="grid md:gr...">
-                        <div>
-                          <FadeUp delay={0}>
-                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
-                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
-                                <div
-+                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
--                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
-                                >
-                          ...
-                        ...
-                    ...
-                      <div className="wrapper">
-                        <div className="md:py-[128...">
-                          <FadeUp delay={0}>
-                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
-                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
-                                <div
-+                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
--                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
-                                >
-                          <div className="grid lg:gr...">
-                            <div className="md:order-0...">
-                              <div className="mb-[64px]">
-                                <div>
-                                <div className="space-y-[4px]">
-                                  <h4
-+                                   className={"2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] t..."}
--                                   className="2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] tex..."
-                                  >
-+                                   Joseph Alexander
-                                  ...
-                              <span>
-                              <div className="relative">
-                                ...
-                                  <div ref={null} className="p-0">
-                                    <div className="flex items...">
-                                      <div className="flex-1">
-                                        <h5
-+                                         className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[1..."}
--                                         className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."
-                                        >
-+                                         Nexus Technology
-                                        ...
-                                ...
-                                  <div ref={null} className="p-0">
-                                    <div className="flex items...">
-                                      <div className="flex-1">
-                                        <h5
-+                                         className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[1..."}
--                                         className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."
-                                        >
-+                                         Nexus Technology
-                                        ...
-                                ...
-                                  <div ref={null} className="p-0">
-                                    <div className="flex items...">
-                                      <div className="flex-1">
-                                        <h5
-+                                         className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[1..."}
--                                         className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."
-                                        >
-+                                         Nexus Technology
-                                        ...
-                                <div className="text-cente...">
-                                  <button
-                                    onClick={function About[<button>.onClick]}
-+                                   className={"flex items-center gap-[8px] text-[12px] leading-[12px] font-semibold ..."}
--                                   className="flex items-center gap-[8px] text-[12px] leading-[12px] font-semibold bo..."
-                                  >
-                            ...
-                    <section>
-                    <TrustedSlider>
-                    ...
-                      <div className="wrapper">
-                        <div className="md:py-[128...">
-                          <FadeUp delay={0}>
-                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
-                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
-                                <div
-+                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
--                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
-                                >
-                          <div className="md:grid lg...">
-                            <FadeIn delay={0.4}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.5}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.6000000000000001}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.7000000000000001}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.8}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.9}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                    ...
-                ...
-              ...
-
-[00:15:23.556] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:15:23.557] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:15:23.557] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:15:49.411] Server  LOG     ✓ Compiled in 181ms
-[00:15:50.012] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:15:50.567] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:15:51.104] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <LoadingBoundary name="/" loading={null}>
-      <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-          <RedirectBoundary>
-            <RedirectErrorBoundary router={{...}}>
-              <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
-                <SegmentViewNode type="page" pagePath="page.tsx">
-                  <SegmentTrieNode>
-                  <Page>
-                    <Header>
-                    ...
-                      <div className={" 2xl:px-..."}>
-                        <div>
-                          <FadeIn>
-                          <FadeUp delay={0}>
-                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
-                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
-                                <h1
-+                                 className={"2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:..."}
--                                 className="2xl:text-[72px] 2xl:leading-[68px] lg:text-[64px] lg:leading-[60px] md:te..."
-                                >
-                          ...
-                        ...
-                    <HappyClients>
-                    <Page>
-                      <ProjectSection>
-                        <section className="border-b b...">
-                          <div className="wrapper">
-                            <div className="md:py-[128...">
-                              <div className="relative z...">
-                                <h2
-+                                 className={"xl:text-[64px] 2xl:leading-[64px] lg:text-[54px]\n                     ..."}
--                                 className="xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:tex..."
-                                >
-+                                 Leatest Projects
-                              ...
-                    <section>
-                    ...
-                      <div className="grid md:gr...">
-                        <div>
-                          <FadeUp delay={0}>
-                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
-                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
-                                <div
-+                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
--                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
-                                >
-                          ...
-                        ...
-                    ...
-                      <div className="wrapper">
-                        <div className="md:py-[128...">
-                          <FadeUp delay={0}>
-                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
-                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
-                                <div
-+                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
--                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
-                                >
-                          <div className="grid lg:gr...">
-                            <div className="md:order-0...">
-                              <div className="mb-[64px]">
-                                <div>
-                                <div className="space-y-[4px]">
-                                  <h4
-+                                   className={"2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] t..."}
--                                   className="2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] tex..."
-                                  >
-+                                   Joseph Alexander
-                                  ...
-                              <span>
-                              <div className="relative">
-                                ...
-                                  <div ref={null} className="p-0">
-                                    <div className="flex items...">
-                                      <div className="flex-1">
-                                        <h5
-+                                         className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[1..."}
--                                         className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."
-                                        >
-+                                         Nexus Technology
-                                        ...
-                                ...
-                                  <div ref={null} className="p-0">
-                                    <div className="flex items...">
-                                      <div className="flex-1">
-                                        <h5
-+                                         className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[1..."}
--                                         className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."
-                                        >
-+                                         Nexus Technology
-                                        ...
-                                ...
-                                  <div ref={null} className="p-0">
-                                    <div className="flex items...">
-                                      <div className="flex-1">
-                                        <h5
-+                                         className={"2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[1..."}
--                                         className="2xl:text-[18px] 2xl:leading-[18px] lg:text-[16px] lg:leading-[16p..."
-                                        >
-+                                         Nexus Technology
-                                        ...
-                                <div className="text-cente...">
-                                  <button
-                                    onClick={function About[<button>.onClick]}
-+                                   className={"flex items-center gap-[8px] text-[12px] leading-[12px] font-semibold ..."}
--                                   className="flex items-center gap-[8px] text-[12px] leading-[12px] font-semibold bo..."
-                                  >
-                            ...
-                    <section>
-                    <TrustedSlider>
-                    ...
-                      <div className="wrapper">
-                        <div className="md:py-[128...">
-                          <FadeUp delay={0}>
-                            <motion.div variants={{hidden:{...}, ...}} initial="hidden" whileInView="visible" ...>
-                              <div style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
-                                <div
-+                                 className={"2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:..."}
--                                 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:te..."
-                                >
-                          <div className="md:grid lg...">
-                            <FadeIn delay={0.4}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.5}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.6000000000000001}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.7000000000000001}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.8}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                            <FadeIn delay={0.9}>
-                              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:true, ...}} ...>
-                                <div style={{opacity:0}} ref={function useMotionRef.useCallback}>
-                                  <div
-+                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px]\n   ..."}
--                                   className={"border border-[#dedede] shadow h-[280px] p-[24px] rounded-[24px] flex..."}
-                                  >
-                    ...
-                ...
-              ...
-
-[00:15:51.104] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:15:51.104] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:15:51.104] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:16:24.255] Server  LOG     ✓ Compiled in 147ms
-[00:16:47.135] Server  LOG     ✓ Compiled in 216ms
-[00:17:03.607] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:17:03.607] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:17:03.607] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:17:09.057] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:17:09.057] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:17:09.057] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:17:14.207] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:17:14.207] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:17:14.207] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:18:52.532] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:18:52.918] Server  WARN    ⚠ ./public/images/user_img.avif
-AVIF image not supported
-This version of Turbopack does not support AVIF images, will emit without optimization or encoding
-
-Import trace:
-  Server Component:
-    ./public/images/user_img.avif
-    ./src/components/Site/Faq.tsx
-    ./src/app/page.tsx
-
-
-[00:18:53.195] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+[00:00:19.262] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. a <a>
+[00:00:19.262] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -1437,8 +220,8 @@ https://react.dev/link/hydration-mismatch
   ...
     <RedirectBoundary>
       <RedirectErrorBoundary router={{...}}>
-        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
-          <SegmentViewNode type="page" pagePath="page.tsx">
+        <InnerLayoutRouter url="/blog_details" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+          <SegmentViewNode type="page" pagePath="blog_detai...">
             <SegmentTrieNode>
             <Page>
               <Page>
@@ -1468,8 +251,699 @@ https://react.dev/link/hydration-mismatch
           ...
         ...
 
-[00:18:53.195] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:00:19.410] Browser WARN    Image with src "/_next/static/media/blog_img1.4ff1c42b.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:18:54.073] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:18:54.073] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
-[00:18:54.073] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:00:34.316] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:00:49.549] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:01:01.034] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:01:05.772] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:01:15.458] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:01:24.049] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:01:26.890] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:01:26.890] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:01:26.890] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:01:50.588] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:01:52.093] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:02:13.184] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:02:32.971] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:02:53.559] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:03:10.089] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:03:15.062] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:03:31.253] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:03:46.934] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:04:06.172] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:04:20.309] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:04:31.360] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:04:33.669] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:04:37.732] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:04:37.733] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:04:37.733] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:05:55.332] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:05:55.332] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:05:55.332] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:06:25.548] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:06:25.548] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:06:25.548] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:06:37.993] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:06:37.993] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:06:37.993] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:07:03.763] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:07:25.764] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:07:25.764] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:07:25.765] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:07:27.498] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:07:27.498] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:07:27.498] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:07:54.550] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:08:06.250] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:08:57.307] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:09:00.282] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:09:00.282] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:09:00.282] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:09:09.886] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:09:09.886] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:09:09.886] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:09:42.612] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:09:50.448] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:10:10.324] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:10:25.019] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:10:49.723] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:10:56.069] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:11:30.224] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:11:55.811] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:12:13.120] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:12:30.645] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:12:48.407] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:13:20.373] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:13:46.879] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:13:52.034] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:14:15.389] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:14:45.389] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:14:52.968] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:16:30.144] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:16:44.320] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:17:09.879] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:17:25.125] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:17:34.994] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:17:35.297] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:17:35.505] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <a> a 
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/blog_details" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+            <SegmentViewNode type="page" pagePath="blog_detai...">
+              <SegmentTrieNode>
+              <Page>
+                <Header>
+                <section>
+                <section>
+                <Page>
+                  <section className="2xl:px-0 p...">
+                    <div className="wrapper md...">
+                      <div className="lg:w-[58.6...">
+                        <div>
+                        <div className="flex gap-[...">
+                          <div className="">
+                            <LinkComponent>
+                              <LinkComponent href="" className="flex items...">
+>                               <a
+>                                 className="flex items-center justify-between bg-white border border-[#dedede] rounde..."
+>                                 ref={function}
+>                                 onClick={function onClick}
+>                                 onMouseEnter={function onMouseEnter}
+>                                 onTouchStart={function onTouchStart}
+>                                 href=""
+>                               >
+                                  <div>
+                                  <div>
+                                    <LinkComponent>
+                                      <LinkComponent href="">
+>                                       <a
+>                                         ref={function}
+>                                         onClick={function onClick}
+>                                         onMouseEnter={function onMouseEnter}
+>                                         onTouchStart={function onTouchStart}
+>                                         href=""
+>                                       >
+                          ...
+                ...
+            ...
+          ...
+
+[00:17:35.505] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. a <a>
+[00:17:35.505] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/blog_details" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+          <SegmentViewNode type="page" pagePath="blog_detai...">
+            <SegmentTrieNode>
+            <Page>
+              <Page>
+                <Header>
+                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
+                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
+                            <nav className="flex justi...">
+                              <div>
+                              <div>
+                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
+                                <div
+                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
++                                 style={{opacity:0}}
+-                                 style={{opacity:"1"}}
+                                  onClick={function Header[<motion.div>.onClick]}
+                                  ref={function useMotionRef.useCallback}
+                                >
+-                             <button
+-                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
+-                               aria-label="Close menu"
+-                             >
+                        ...
+              ...
+          ...
+        ...
+
+[00:17:35.505] Browser WARN    Image with src "/_next/static/media/blog_img1.4ff1c42b.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:17:35.629] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:17:35.630] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:17:35.630] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:09.667] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[00:18:09.925] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:18:11.182] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:11.182] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:11.182] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
