@@ -947,3 +947,692 @@ Import trace:
 [00:18:11.182] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
 [00:18:11.182] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
 [00:18:11.182] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:14.016] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:14.016] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:14.016] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:19.099] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:19.099] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:19.099] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:24.477] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[00:18:25.664] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:25.664] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:25.664] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:33.632] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:33.632] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:33.632] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:12.564] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:12.564] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:12.564] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:17.547] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[00:29:18.416] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[00:29:19.530] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:19.531] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:19.531] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:26.382] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:26.382] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:26.382] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:35.068] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[00:33:05.652] Server  ERROR   ⨯ ./src/app/project_details/page.tsx:11:1
+Module not found: Can't resolve 'react-photo-view'
+   9 | import { Badge } from "@/components/ui/badge"
+  10 | import blog_img1 from "../../../public/images/blog_img1.png";
+> 11 | import { PhotoProvider, PhotoView } from 'react-photo-view';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import 'react-photo-view/dist/react-photo-view.css';
+  13 | import Image from "next/image";
+  14 |
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./src/app/project_details/page.tsx:12:1
+Module not found: Can't resolve 'react-photo-view/dist/react-photo-view.css'
+  10 | import blog_img1 from "../../../public/images/blog_img1.png";
+  11 | import { PhotoProvider, PhotoView } from 'react-photo-view';
+> 12 | import 'react-photo-view/dist/react-photo-view.css';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import Image from "next/image";
+  14 |
+  15 | function Page() {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:05.652] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:33:05.652] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[00:33:05.653] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[00:33:05.654] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Testimonial.tsx
+    ./src/app/project_details/page.tsx
+
+
+[00:33:05.784] Browser ERROR   ./src/app/project_details/page.tsx:11:1
+Module not found: Can't resolve 'react-photo-view'
+   9 | import { Badge } from "@/components/ui/badge"
+  10 | import blog_img1 from "../../../public/images/blog_img1.png";
+> 11 | import { PhotoProvider, PhotoView } from 'react-photo-view';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import 'react-photo-view/dist/react-photo-view.css';
+  13 | import Image from "next/image";
+  14 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:33:05.784] Browser ERROR   ./src/app/project_details/page.tsx:12:1
+Module not found: Can't resolve 'react-photo-view/dist/react-photo-view.css'
+  10 | import blog_img1 from "../../../public/images/blog_img1.png";
+  11 | import { PhotoProvider, PhotoView } from 'react-photo-view';
+> 12 | import 'react-photo-view/dist/react-photo-view.css';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import Image from "next/image";
+  14 |
+  15 | function Page() {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:33:06.040] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:33:06.041] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[00:33:06.041] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[00:33:06.042] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Testimonial.tsx
+    ./src/app/project_details/page.tsx
+
+
+[00:33:06.049] Browser ERROR   uncaughtError: Error: ./src/app/project_details/page.tsx:11:1
+Module not found: Can't resolve 'react-photo-view'
+   9 | import { Badge } from "@/components/ui/badge"
+  10 | import blog_img1 from "../../../public/images/blog_img1.png";
+> 11 | import { PhotoProvider, PhotoView } from 'react-photo-view';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import 'react-photo-view/dist/react-photo-view.css';
+  13 | import Image from "next/image";
+  14 |
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:33:06.191] Browser ERROR   ./src/app/project_details/page.tsx:11:1
+Module not found: Can't resolve 'react-photo-view'
+   9 | import { Badge } from "@/components/ui/badge"
+  10 | import blog_img1 from "../../../public/images/blog_img1.png";
+> 11 | import { PhotoProvider, PhotoView } from 'react-photo-view';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import 'react-photo-view/dist/react-photo-view.css';
+  13 | import Image from "next/image";
+  14 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:33:06.191] Browser ERROR   ./src/app/project_details/page.tsx:12:1
+Module not found: Can't resolve 'react-photo-view/dist/react-photo-view.css'
+  10 | import blog_img1 from "../../../public/images/blog_img1.png";
+  11 | import { PhotoProvider, PhotoView } from 'react-photo-view';
+> 12 | import 'react-photo-view/dist/react-photo-view.css';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import Image from "next/image";
+  14 |
+  15 | function Page() {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:33:06.191] Browser ERROR   ./src/app/project_details/page.tsx:11:1
+Module not found: Can't resolve 'react-photo-view'
+   9 | import { Badge } from "@/components/ui/badge"
+  10 | import blog_img1 from "../../../public/images/blog_img1.png";
+> 11 | import { PhotoProvider, PhotoView } from 'react-photo-view';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import 'react-photo-view/dist/react-photo-view.css';
+  13 | import Image from "next/image";
+  14 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:33:06.191] Browser ERROR   ./src/app/project_details/page.tsx:12:1
+Module not found: Can't resolve 'react-photo-view/dist/react-photo-view.css'
+  10 | import blog_img1 from "../../../public/images/blog_img1.png";
+  11 | import { PhotoProvider, PhotoView } from 'react-photo-view';
+> 12 | import 'react-photo-view/dist/react-photo-view.css';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import Image from "next/image";
+  14 |
+  15 | function Page() {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:33:15.594] Browser ERROR   ./src/app/project_details/page.tsx:11:1
+Module not found: Can't resolve 'react-photo-view'
+   9 | import { Badge } from "@/components/ui/badge"
+  10 | import blog_img1 from "../../../public/images/blog_img1.png";
+> 11 | import { PhotoProvider, PhotoView } from 'react-photo-view';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import 'react-photo-view/dist/react-photo-view.css';
+  13 | import Image from "next/image";
+  14 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:33:15.595] Browser ERROR   ./src/app/project_details/page.tsx:12:1
+Module not found: Can't resolve 'react-photo-view/dist/react-photo-view.css'
+  10 | import blog_img1 from "../../../public/images/blog_img1.png";
+  11 | import { PhotoProvider, PhotoView } from 'react-photo-view';
+> 12 | import 'react-photo-view/dist/react-photo-view.css';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import Image from "next/image";
+  14 |
+  15 | function Page() {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:48.438] Browser ERROR   ./src/app/project_details/page.tsx:11:1
+Module not found: Can't resolve 'react-photo-view'
+   9 | import { Badge } from "@/components/ui/badge"
+  10 | import blog_img1 from "../../../public/images/blog_img1.png";
+> 11 | import { PhotoProvider, PhotoView } from 'react-photo-view';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import 'react-photo-view/dist/react-photo-view.css';
+  13 | import Image from "next/image";
+  14 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:48.438] Browser ERROR   ./src/app/project_details/page.tsx:12:1
+Module not found: Can't resolve 'react-photo-view/dist/react-photo-view.css'
+  10 | import blog_img1 from "../../../public/images/blog_img1.png";
+  11 | import { PhotoProvider, PhotoView } from 'react-photo-view';
+> 12 | import 'react-photo-view/dist/react-photo-view.css';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import Image from "next/image";
+  14 |
+  15 | function Page() {
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:49.079] Server  LOG     ✓ Compiled in 193ms
+[00:34:49.195] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Testimonial.tsx
+    ./src/app/project_details/page.tsx
+
+
+[00:34:49.439] Server  ERROR   ⨯ TypeError: {imported module ./nodemodules/next/dist/server/route-modules/app-page/vendored/rsc/react.js}.createContext is not a function
+[00:34:49.537] Server  ERROR   ⨯ TypeError: createContext only works in Client Components. Add the "use client" directive at the top of the file to use it. Read more: https://nextjs.org/docs/messages/context-in-server-component
+[00:34:49.538] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:34:49.538] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[00:34:49.539] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[00:34:49.539] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Testimonial.tsx
+    ./src/app/project_details/page.tsx
+
+
+[00:34:49.644] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:34:49.645] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[00:34:49.645] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[00:34:49.645] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Testimonial.tsx
+    ./src/app/project_details/page.tsx
+
+
+[00:34:49.646] Browser ERROR   uncaughtError: TypeError: createContext only works in Client Components. Add the "use client" directive at the top of the file to use it. Read more: https://nextjs.org/docs/messages/context-in-server-component
+[00:35:51.269] Server  LOG     ✓ Compiled in 1188ms
+[00:35:51.488] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Testimonial.tsx [Client Component SSR]
+    ./src/app/project_details/page.tsx [Client Component SSR]
+    ./src/app/project_details/page.tsx [Server Component]
+
+
+[00:35:52.097] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:35:52.097] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[00:35:52.097] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[00:35:52.097] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Testimonial.tsx [Client Component SSR]
+    ./src/app/project_details/page.tsx [Client Component SSR]
+    ./src/app/project_details/page.tsx [Server Component]
+
+
+[00:35:52.289] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectErrorBoundary router={{...}}>
+      <InnerLayoutRouter url="/project_d..." tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+        <SegmentViewNode type="page" pagePath="project_de...">
+          <SegmentTrieNode>
+          <ClientPageRoot Component={function Page} serverProvidedParams={{...}}>
+            <Page params={Promise} searchParams={Promise}>
+              <Header>
+                <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                  <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                    <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                      <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
+                        <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
+                          <nav className="flex justi...">
+                            <div>
+                            <div>
+                            <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
+                              <div
+                                className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-pointer"
++                               style={{opacity:0}}
+-                               style={{opacity:"1"}}
+                                onClick={function Header[<motion.div>.onClick]}
+                                ref={function useMotionRef.useCallback}
+                              >
+-                           <button
+-                             className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n             ..."}
+-                             aria-label="Close menu"
+-                           >
+                      ...
+              ...
+        ...
+      ...
+
+[00:35:53.264] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:35:53.264] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:35:53.264] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:35:56.810] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:35:56.810] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:35:56.810] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:36:00.093] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:36:00.093] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:36:00.093] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:36:17.682] Server  LOG     ✓ Compiled in 100ms
+[00:36:18.725] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Testimonial.tsx [Client Component SSR]
+    ./src/app/project_details/page.tsx [Client Component SSR]
+    ./src/app/project_details/page.tsx [Server Component]
+
+
+[00:36:19.047] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/blog_details/page.tsx [Server Component]
+
+
+[00:36:19.047] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Server Component:
+    ./public/images/user_img.avif
+    ./src/components/Site/Faq.tsx
+    ./src/app/page.tsx
+
+
+[00:36:19.047] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Header.tsx [Client Component SSR]
+    ./src/components/Site/Header.tsx [Server Component]
+    ./src/app/work/page.tsx [Server Component]
+
+
+[00:36:19.047] Server  WARN    ⚠ ./public/images/user_img.avif
+AVIF image not supported
+This version of Turbopack does not support AVIF images, will emit without optimization or encoding
+
+Import trace:
+  Client Component SSR:
+    ./public/images/user_img.avif
+    ./src/components/Site/Testimonial.tsx [Client Component SSR]
+    ./src/app/project_details/page.tsx [Client Component SSR]
+    ./src/app/project_details/page.tsx [Server Component]
+
+
+[00:36:19.300] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectErrorBoundary router={{...}}>
+      <InnerLayoutRouter url="/project_d..." tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+        <SegmentViewNode type="page" pagePath="project_de...">
+          <SegmentTrieNode>
+          <ClientPageRoot Component={function Page} serverProvidedParams={{...}}>
+            <Page params={Promise} searchParams={Promise}>
+              <Header>
+                <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                  <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                    <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                      <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
+                        <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
+                          <nav className="flex justi...">
+                            <div>
+                            <div>
+                            <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
+                              <div
+                                className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-pointer"
++                               style={{opacity:0}}
+-                               style={{opacity:"1"}}
+                                onClick={function Header[<motion.div>.onClick]}
+                                ref={function useMotionRef.useCallback}
+                              >
+-                           <button
+-                             className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n             ..."}
+-                             aria-label="Close menu"
+-                           >
+                      ...
+              ...
+        ...
+      ...
+
+[00:36:19.300] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:36:19.300] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:36:19.300] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:36:49.552] Server  LOG     ✓ Compiled in 22ms
+[00:37:22.533] Server  LOG     ✓ Compiled in 83ms
+[00:37:42.201] Server  LOG     ✓ Compiled in 53ms
+[00:38:15.815] Server  LOG     ✓ Compiled in 39ms
+[00:41:00.596] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:00.596] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:41:00.596] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:47:44.769] Server  LOG     ✓ Compiled in 92ms
+[00:47:49.860] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:47:49.860] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:47:49.860] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:48:15.543] Server  LOG     ✓ Compiled in 95ms
+[00:48:16.943] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:48:16.943] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:48:16.943] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:48:56.606] Server  LOG     ✓ Compiled in 209ms
+[00:49:05.976] Server  LOG     ✓ Compiled in 69ms
+[00:49:49.688] Server  LOG     ✓ Compiled in 102ms
+[00:50:17.925] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:50:17.925] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:50:17.925] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:50:53.372] Server  LOG     ✓ Compiled in 89ms
+[00:51:08.773] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:51:08.773] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:51:08.773] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:51:21.167] Server  LOG     ✓ Compiled in 45ms
+[00:51:31.331] Server  LOG     ✓ Compiled in 78ms
+[00:51:42.348] Server  LOG     ✓ Compiled in 47ms
+[00:52:06.358] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:52:06.358] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:52:06.358] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:52:59.113] Server  LOG     ✓ Compiled in 278ms
+[00:53:27.692] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:53:27.692] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:53:27.693] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:53:31.424] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:53:31.424] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:53:31.424] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:54:06.163] Server  LOG     ✓ Compiled in 121ms
+[00:54:08.324] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:54:08.324] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:54:08.324] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:54:11.257] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:54:11.257] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:54:11.257] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
