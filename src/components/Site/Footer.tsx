@@ -203,19 +203,29 @@ function Footer() {
                    </svg>
                </div>
            </div>
-            <div className={`glass-effect border group transition-all duration-300  ease-in-out border-[#dedede] z-30 ${isVisible ? 'translate-y-0' : 'translate-y-[130%]'} transition-all duration-300 ease-in-out rounded-full fixed bottom-[20px] w-fit md:py-[12px] py-[10px] md:px-[20px] px-[14px] left-1/2 transform -translate-x-1/2`}>
+            <div className={`glass-effect border group md:w-[277px] md:hover:w-[310px] transition-all duration-300 ease-in-out border-[#dedede] z-30 ${isVisible ? 'translate-y-0' : 'translate-y-[140%]'} 
+            rounded-full fixed bottom-[20px] md:py-[12px] py-[10px] md:px-[20px] px-[14px] left-1/2 transform -translate-x-1/2
+            hover:scale-105 hover:shadow-lg`}>
                 <div className="flex gap-[18px] items-center relative">
-                    <div className="  transition-all duration-300 ease-in-out md:block hidden">
-                        <h6 className="text-black text-[14px] leading-[14px] font-semibold mb-[4px]">Speak to me</h6>
-                        <span className="block text-[14px] leading-[14px] font-semibold text-[#545454]">Email or book a call</span>
+                    <div className="transition-all duration-300 ease-in-out md:block hidden group-hover:opacity-0 group-hover:-translate-x-2 group-hover:scale-95">
+                        <h6 className="text-black text-[14px] leading-[14px] font-semibold mb-[4px] transition-all duration-300 ease-in-out">Speak to me</h6>
+                        <span className="block text-[14px] leading-[14px] font-semibold text-[#545454] transition-all duration-300 ease-in-out">Email or book a call</span>
                     </div>
-                    <div className=" gap-[8px] md:flex hidden">
-                        <Link href="#" className="flex items-center justify-center w-[40px] h-[40px] bg-color rounded-full"><Mail /></Link>
-                        <Link href="#" className="flex items-center justify-center w-[40px] h-[40px] bg-white rounded-full shadow"><Calendar /></Link>
-                    </div>
-                    <div className=" gap-[8px] md:hidden flex">
-                        <Link href="#" className="flex items-center justify-center  bg-color rounded-full text-[12px] leading-[12px] gap-[6px] py-[8px] px-[12px]"><Mail size={16} className="shrink-0"/> Contact</Link>
-                        <Link href="#" className="flex items-center justify-center text-[12px] leading-[12px] bg-white rounded-full shadow gap-[6px] py-[8px] px-[12px] w-[120px]"><Calendar size={16} className="shrink-0"/> Book a call</Link>
+                    <div className="md:absolute md:right-0 group-hover:w-full transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]">
+                        <div className="gap-[8px] md:flex hidden group-hover:gap-[12px] transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]">
+                            <Link href="#" className="flex items-center justify-center min-w-[40px] h-[40px] bg-color rounded-full group-hover:w-full group-hover:px-[16px] transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:scale-105 hover:scale-110 active:scale-95 overflow-hidden">
+                                <Mail className="shrink-0 group-hover:mr-[8px] transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]" />
+                                <span className="text-[12px] leading-[12px] font-semibold text-white whitespace-nowrap transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] opacity-0 max-w-0 group-hover:opacity-100 group-hover:max-w-[200px] overflow-hidden">Contact</span>
+                            </Link>
+                            <Link href="#" className="flex items-center justify-center min-w-[40px] h-[40px] bg-white rounded-full shadow group-hover:w-full group-hover:px-[16px] transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:scale-105 hover:scale-110 active:scale-95 overflow-hidden">
+                                <Calendar className="shrink-0 group-hover:mr-[8px] transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]" />
+                                <span className="text-[12px] leading-[12px] font-semibold text-black whitespace-nowrap transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] opacity-0 max-w-0 group-hover:opacity-100 group-hover:max-w-[200px] overflow-hidden">Book a call</span>
+                            </Link>
+                        </div>
+                        <div className="gap-[8px] md:hidden flex">
+                            <Link href="#" className="flex items-center justify-center bg-color rounded-full text-[12px] leading-[12px] gap-[6px] py-[8px] px-[12px] transition-all duration-300 ease-in-out "><Mail size={16} className="shrink-0"/> Contact</Link>
+                            <Link href="#" className="flex items-center justify-center text-[12px] leading-[12px] bg-white rounded-full shadow gap-[6px] py-[8px] px-[12px] w-[120px] transition-all duration-300 ease-in-out "><Calendar size={16} className="shrink-0"/> Book a call</Link>
+                        </div>
                     </div>
                 </div>
             </div>
