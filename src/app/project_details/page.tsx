@@ -39,8 +39,10 @@ function Page() {
                                 <Badge variant="secondary" className="bg-white text-[12px] leading-[12px] text-black border border-[#dedede] font-semibold py-[8px] px-[12px]">Photography</Badge>
                             </div>
                         </div>
-                        <div className="">
-                            <Link href="#" className="lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px] text-black font-medium flex items-center w-fit gap-1">View Live Site <ArrowUpRight size={18} /></Link>
+                        <div className="hover_effect btn_hover">
+                            <Link href="#" className="lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px] text-black font-medium flex items-center w-fit gap-1">View Live Site
+
+                                <div className="line_arrow"><ArrowUpRight size={18} /> <ArrowUpRight size={18} /></div></Link>
                         </div>
                     </div>
                 </div>

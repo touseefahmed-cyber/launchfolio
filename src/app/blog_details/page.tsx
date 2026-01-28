@@ -62,22 +62,22 @@ function Page() {
                             <p className="text-[14px] text-[#545454] leading-[22px] mb-[18px]">Where I share my creative journey, design experiments, and industry thoughts.</p>
                             <ul className="flex items-center gap-[6px] ">
                                 <li>
-                                    <Link href="#" className="w-[46px] h-[30px] flex items-center justify-center bg-black text-white rounded-full text-[12px] leading-[12px]">
+                                    <Link href="#" className="w-[46px] h-[30px] flex items-center justify-center bg-black text-white rounded-full text-[12px] leading-[12px] transition duration-500 ease-in-out hover:-translate-y-[4px]">
                                         1,214
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="w-[30px] h-[30px] flex items-center justify-center bg-black text-white rounded-full">
+                                    <Link href="#" className="w-[30px] h-[30px] flex items-center justify-center bg-black text-white rounded-full transition duration-500 ease-in-out hover:-translate-y-[4px]">
                                         <Facebook size={14}/>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="w-[30px] h-[30px] flex items-center justify-center bg-black text-white rounded-full">
+                                    <Link href="#" className="w-[30px] h-[30px] flex items-center justify-center bg-black text-white rounded-full transition duration-500 ease-in-out hover:-translate-y-[4px]">
                                         <Instagram size={14}/>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="w-[30px] h-[30px] flex items-center justify-center bg-black text-white rounded-full">
+                                    <Link href="#" className="w-[30px] h-[30px] flex items-center justify-center bg-black text-white rounded-full transition duration-500 ease-in-out hover:-translate-y-[4px]">
                                         <Globe size={14}/>
                                     </Link>
                                 </li>
@@ -91,62 +91,64 @@ function Page() {
                     <div className="lg:w-[58.6%] md:w-[82%] w-full mx-auto">
                         <div className="flex items-baseline justify-between mb-[48px]">
                             <h2 className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text-[46px] md:leading-[46px] text-[36px] leaing-[36px] font-medium text-black">More insights</h2>
-                            <div className="">
+                            <div className="hover_effect btn_hover">
                                 <Link href="#" className="lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px]
-                                 text-black font-medium flex items-center w-fit gap-1">View All <ArrowUpRight size={18} /></Link>
+                                 text-black font-medium flex items-center w-fit gap-1">View All <div className="line_arrow"><ArrowUpRight size={18} /> <ArrowUpRight size={18} /></div>
+                                </Link>
                             </div>
                         </div>
                         <div className="flex gap-[20px] flex-col">
-                            <div className="">
+                            <div className="hover_effect group">
                                 <Link href="" className="flex items-center justify-between bg-white border border-[#dedede] rounded-[16px] p-[12px] box-shadow">
                                     <div className="flex gap-[18px] items-center">
                                         <figure className="w-[64px] h-[64px] overflow-hidden rounded-[12px] shrink-0">
-                                            <Image src={blog_img1} alt="blog_img1" className="w-full h-full object-cover"/>
+                                            <Image src={blog_img1} alt="blog_img1" className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-110
+                                             "/>
                                         </figure>
                                         <div className="">
                                             <h5 className="lg:text-[16px] text-[14px] text-black lg:leading-[24px] leading-[18px]  font-medium">How designers and developers can actually collaborate.</h5>
                                             <span className="text-[12px] leading-[12px] text-[#545454]">Apr 22, 2025</span>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div >
                                         <Link href="">
-                                            <ArrowUpRight size={16} />
+                                            <div className="line_arrow"><ArrowUpRight size={18} /> <ArrowUpRight size={18} /></div>
                                         </Link>
                                     </div>
                                 </Link>
                             </div>
-                            <div className="">
+                            <div className="hover_effect group">
                                 <Link href="" className="flex items-center justify-between bg-white border border-[#dedede] rounded-[16px] p-[12px] box-shadow">
                                     <div className="flex gap-[18px] items-center">
                                         <figure className="w-[64px] h-[64px] overflow-hidden rounded-[12px] shrink-0">
-                                            <Image src={blog_img1} alt="blog_img1" className="w-full h-full object-cover"/>
+                                            <Image src={blog_img1} alt="blog_img1" className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-110"/>
                                         </figure>
                                         <div className="">
                                             <h5 className="lg:text-[16px] text-[14px] text-black lg:leading-[24px] leading-[18px]  font-medium">How designers and developers can actually collaborate.</h5>
                                             <span className="text-[12px] leading-[12px] text-[#545454]">Apr 22, 2025</span>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div >
                                         <Link href="">
-                                            <ArrowUpRight size={16} />
+                                            <div className="line_arrow"><ArrowUpRight size={18} /> <ArrowUpRight size={18} /></div>
                                         </Link>
                                     </div>
                                 </Link>
                             </div>
-                            <div className="">
+                            <div className="hover_effect group">
                                 <Link href="" className="flex items-center justify-between bg-white border border-[#dedede] rounded-[16px] p-[12px] box-shadow">
                                     <div className="flex gap-[18px] items-center">
                                         <figure className="w-[64px] h-[64px] overflow-hidden rounded-[12px] shrink-0">
-                                            <Image src={blog_img1} alt="blog_img1" className="w-full h-full object-cover"/>
+                                            <Image src={blog_img1} alt="blog_img1" className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-110"/>
                                         </figure>
                                         <div className="">
                                             <h5 className="lg:text-[16px] text-[14px] text-black lg:leading-[24px] leading-[18px]  font-medium">How designers and developers can actually collaborate.</h5>
                                             <span className="text-[12px] leading-[12px] text-[#545454]">Apr 22, 2025</span>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div >
                                         <Link href="">
-                                            <ArrowUpRight size={16} />
+                                            <div className="line_arrow"><ArrowUpRight size={18} /> <ArrowUpRight size={18} /></div>
                                         </Link>
                                     </div>
                                 </Link>

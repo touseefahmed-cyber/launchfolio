@@ -139,16 +139,16 @@ function Header() {
                 <div className="flex items-center gap-4">
                     <ul className="flex gap-4 text-sm font-bold text-black items-center">
                         <li>
-                            <Link href="/work">Work</Link>
+                            <Link href="/work" className="transition duration-500 ease-in-out hover:text-[#828282]">Work</Link>
                         </li>
                         <li>
-                                <Link href="#services">Services</Link>
+                                <Link href="#services" className="transition duration-500 ease-in-out hover:text-[#828282]">Services</Link>
                         </li>
                         <li>
-                                <Link href="#pricing">Pricing</Link>
+                                <Link href="#pricing" className="transition duration-500 ease-in-out hover:text-[#828282]">Pricing</Link>
                         </li>
                         <li>
-                            <Link href="/blog">Blog</Link>
+                            <Link href="/blog" className="transition duration-500 ease-in-out hover:text-[#828282]">Blog</Link>
                         </li>
                     </ul>
                     <div>

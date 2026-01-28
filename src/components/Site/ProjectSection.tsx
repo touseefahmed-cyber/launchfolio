@@ -301,7 +301,7 @@ function ProjectSection({ disableAnimations = false }: ProjectSectionProps) {
                             const cardRef = cardRefs[index];
 
                             return (
-                                <div key={project.id} ref={cardRef} className="relative group">
+                                <div key={project.id} ref={cardRef} className="relative group hover_effect">
                                     <Link href={project.link} data-cursor-text="Project">
                                         <figure className="rounded-[16px] lg:h-[363px] md:h-[246px] sm:h-[440px] h-[248px] overflow-hidden mb-[12px] ">
                                             <Image
@@ -321,7 +321,7 @@ function ProjectSection({ disableAnimations = false }: ProjectSectionProps) {
                                             </div>
                                             <div>
                                                 <span className="flex text-[12px] leading-[12px] font-medium text-[#545454] items-center">
-                                                    <ArrowUpRight size={16} /> View Project
+                                                    <div className="line_arrow"><ArrowUpRight size={18} /> <ArrowUpRight size={18} /></div> View Project
                                                 </span>
                                             </div>
                                         </div>
@@ -330,8 +330,9 @@ function ProjectSection({ disableAnimations = false }: ProjectSectionProps) {
                             );
                         })}
                     </div>
-                    <div className="mt-[64px] mx-auto">
-                        <Link href="#" className="md:text-[18px] md:leading-[18px] text-[16px] leading-[16px] text-black hover:underline font-medium flex items-center w-fit mx-auto gap-1">View all my projects <ArrowUpRight size={16} /></Link>
+                    <div className="mt-[64px] mx-auto hover_effect btn_hover">
+                        <Link href="#" className="md:text-[18px] md:leading-[18px] text-[16px] leading-[16px]
+                        text-black font-medium flex items-center w-fit mx-auto gap-1">View all my projects <div className="line_arrow"><ArrowUpRight size={18} /> <ArrowUpRight size={18} /></div></Link>
                     </div>
                 </div>
             </div>

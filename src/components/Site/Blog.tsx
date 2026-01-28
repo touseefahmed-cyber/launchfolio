@@ -69,9 +69,9 @@ function Blog() {
                                 {BLOG_DATA.heading.part2}
                             </div>
                         </FadeUp>
-                        <div>
+                        <div className="hover_effect btn_hover">
                             <Link href={BLOG_DATA.viewAll.href} className="flex sm:text-[18px] sm:leading-[18px] text-[16px] leading-[16px] font-medium justify-end">
-                                {BLOG_DATA.viewAll.text} <ArrowUpRight size={18} />
+                                {BLOG_DATA.viewAll.text} <div className="line_arrow"><ArrowUpRight size={18} /> <ArrowUpRight size={18} /></div>
                             </Link>
                         </div>
                     </div>

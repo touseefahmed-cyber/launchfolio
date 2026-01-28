@@ -33,6 +33,9 @@
       --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
@@ -656,10 +659,6 @@
     margin-bottom: 20px;
   }
 
-  .mb-\[24pc\] {
-    margin-bottom: 24pc;
-  }
-
   .mb-\[24px\] {
     margin-bottom: 24px;
   }
@@ -826,10 +825,6 @@
     height: 360px;
   }
 
-  .h-\[500px\] {
-    height: 500px;
-  }
-
   .h-\[var\(--radix-select-trigger-height\)\] {
     height: var(--radix-select-trigger-height);
   }
@@ -938,10 +933,6 @@
     width: 290px;
   }
 
-  .w-\[348px\] {
-    width: 348px;
-  }
-
   .w-fit {
     width: fit-content;
   }
@@ -1047,10 +1038,6 @@
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .grid-cols-\[100\%\] {
     grid-template-columns: 100%;
   }
@@ -1093,14 +1080,6 @@
 
   .justify-end {
     justify-content: flex-end;
-  }
-
-  .\!gap-\[2px\] {
-    gap: 2px !important;
-  }
-
-  .\!gap-\[4px\] {
-    gap: 4px !important;
   }
 
   .\!gap-\[6px\] {
@@ -1704,14 +1683,6 @@
     font-size: 26px;
   }
 
-  .text-\[28px\] {
-    font-size: 28px;
-  }
-
-  .text-\[30px\] {
-    font-size: 30px;
-  }
-
   .text-\[32px\] {
     font-size: 32px;
   }
@@ -1722,18 +1693,6 @@
 
   .text-\[42px\] {
     font-size: 42px;
-  }
-
-  .text-\[46px\] {
-    font-size: 46px;
-  }
-
-  .text-\[54px\] {
-    font-size: 54px;
-  }
-
-  .text-\[64px\] {
-    font-size: 64px;
   }
 
   .leading-\[12px\] {
@@ -1796,21 +1755,6 @@
     line-height: 30px;
   }
 
-  .leading-\[31px\] {
-    --tw-leading: 31px;
-    line-height: 31px;
-  }
-
-  .leading-\[32px\] {
-    --tw-leading: 32px;
-    line-height: 32px;
-  }
-
-  .leading-\[34px\] {
-    --tw-leading: 34px;
-    line-height: 34px;
-  }
-
   .leading-\[35px\] {
     --tw-leading: 35px;
     line-height: 35px;
@@ -1824,21 +1768,6 @@
   .leading-\[39px\] {
     --tw-leading: 39px;
     line-height: 39px;
-  }
-
-  .leading-\[46px\] {
-    --tw-leading: 46px;
-    line-height: 46px;
-  }
-
-  .leading-\[54px\] {
-    --tw-leading: 54px;
-    line-height: 54px;
-  }
-
-  .leading-\[64px\] {
-    --tw-leading: 64px;
-    line-height: 64px;
   }
 
   .leading-none {
@@ -1885,6 +1814,10 @@
 
   .text-\[\#828282\] {
     color: #828282;
+  }
+
+  .text-\[\#8282822\] {
+    color: #8282822;
   }
 
   .text-\[\#b8b8b8\] {
@@ -2056,6 +1989,15 @@
   }
 
   @media (hover: hover) {
+    .group-hover\:scale-110:is(:where(.group):hover *) {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  @media (hover: hover) {
     .group-hover\:scale-\[1\.1\]:is(:where(.group):hover *) {
       scale: 1.1;
     }
@@ -2117,6 +2059,13 @@
   }
 
   @media (hover: hover) {
+    .hover\:-translate-y-\[4px\]:hover {
+      --tw-translate-y: calc(4px * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:bg-accent:hover {
       background-color: var(--accent);
     }
@@ -2161,6 +2110,18 @@
   @media (hover: hover) {
     .hover\:bg-transparent:hover {
       background-color: #0000;
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:text-\[\#545454\]:hover {
+      color: #545454;
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:text-\[\#828282\]:hover {
+      color: #828282;
     }
   }
 
@@ -4087,6 +4048,7 @@
 }
 
 .contact_btn {
+  cursor: pointer;
   background: #fff;
   border: 1px solid #dedede;
   border-radius: 24px;
@@ -4094,8 +4056,13 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 14px;
+  transition: all .5s ease-in-out;
   display: inline-block;
   box-shadow: 0 .597144px .597144px -.9375px #00000012, 0 1.81088px 1.81088px -1.875px #00000012, 0 4.78699px 4.78699px -2.8125px #0000000f, 0 15px 15px -3.75px #00000008;
+}
+
+.contact_btn:hover {
+  box-shadow: none;
 }
 
 .wrapper {
@@ -4337,6 +4304,51 @@ html {
   box-shadow: 0 .597144px .597144px -.9375px #00000012, 0 1.81088px 1.81088px -1.875px #00000012, 0 4.78699px 4.78699px -2.8125px #0000000f, 0 15px 15px -3.75px #00000008;
 }
 
+.line_arrow {
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+  transition: all .4s .1s;
+}
+
+.btn_hover a {
+  transition: all .5s ease-in-out;
+  position: relative;
+}
+
+.btn_hover a:after {
+  content: "";
+  background: #000;
+  width: 0;
+  height: 1px;
+  transition: all .5s ease-in-out;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.btn_hover a:hover:after {
+  width: 100%;
+}
+
+.hover_effect:hover .line_arrow {
+  transform: translate3d(0, 0, 30px)rotateX(-90deg);
+}
+
+.line_arrow {
+  transform-style: preserve-3d;
+  transform-origin: 50% 0;
+  transition: transform .4s;
+  position: relative;
+}
+
+.hover_effect .line_arrow svg:last-child {
+  transform-origin: 50% 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate3d(0, 105%, 0)rotateX(90deg);
+}
+
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
@@ -4506,6 +4518,24 @@ html {
 @property --tw-ease {
   syntax: "*";
   inherits: false
+}
+
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
 }
 
 @property --tw-blur {

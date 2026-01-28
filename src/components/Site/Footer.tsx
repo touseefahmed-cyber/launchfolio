@@ -110,7 +110,7 @@ function Footer() {
                            <h6 className="text-[14px] leading-[14px] text-[#828282] mb-[8px]">
                                {FOOTER_DATA.contact.email.label}
                            </h6>
-                           <Link href={FOOTER_DATA.contact.email.href} className="lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px] inline-block text-white">
+                           <Link href={FOOTER_DATA.contact.email.href} className="lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px] inline-block text-white transition duration-500 ease-in-out hover:text-[#545454]">
                                {FOOTER_DATA.contact.email.address}
                            </Link>
                        </div>
@@ -118,7 +118,7 @@ function Footer() {
                            <h6 className="text-[14px] leading-[14px] text-[#828282] mb-[8px]">
                                {FOOTER_DATA.contact.call.label}
                            </h6>
-                           <Link href={FOOTER_DATA.contact.call.href} className="lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px]] inline-block text-white">
+                           <Link href={FOOTER_DATA.contact.call.href} className="lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px]] inline-block text-white transition duration-500 ease-in-out hover:text-[#545454]">
                                {FOOTER_DATA.contact.call.text}
                            </Link>
                        </div>
@@ -133,7 +133,7 @@ function Footer() {
                                    <li key={index}>
                                        <Link
                                            href={social.href}
-                                           className="w-[30px] h-[30px] flex items-center justify-center bg-white text-black rounded-full"
+                                           className="w-[30px] h-[30px] flex items-center justify-center bg-white text-black rounded-full transition duration-500 ease-in-out hover:-translate-y-[4px]"
                                            aria-label={social.name}
                                        >
                                            <IconComponent size={16} />
@@ -153,14 +153,14 @@ function Footer() {
                               <ul className="text-[12px] leading-[12px] flex gap-[12px] text-white flex-col">
                                   {FOOTER_DATA.menu.links.slice(0, 2).map((link, index) => (
                                       <li key={index}>
-                                          <Link href={link.href}>{link.text}</Link>
+                                          <Link href={link.href} className="transition duration-500 ease-in-out hover:text-[#545454]">{link.text}</Link>
                                       </li>
                                   ))}
                               </ul>
                               <ul className="text-[12px] leading-[12px] flex gap-[12px] text-white flex-col">
                                   {FOOTER_DATA.menu.links.slice(2).map((link, index) => (
                                       <li key={index + 2}>
-                                          <Link href={link.href}>{link.text}</Link>
+                                          <Link href={link.href} className="transition duration-500 ease-in-out hover:text-[#545454] hover:underline">{link.text}</Link>
                                       </li>
                                   ))}
                               </ul>
@@ -173,12 +173,12 @@ function Footer() {
                           <ul className="text-[12px] leading-[12px] flex gap-[12px] text-white flex-col">
                               {FOOTER_DATA.legal.links.map((link, index) => (
                                   <li key={index}>
-                                      <Link href={link.href}>{link.text}</Link>
+                                      <Link href={link.href} className="transition duration-500 ease-in-out hover:text-[#828282] hover:underline">{link.text}</Link>
                                   </li>
                               ))}
                           </ul>
                       </div>
-                   <div className="font-medium text-[12px] leading-[12px] text-[#828282] sm:col-auto col-span-full sm:mt-0 mt-[24px]">
+                   <div className="font-medium text-[12px] leading-[12px] text-[#8282822] sm:col-auto col-span-full sm:mt-0 mt-[24px]">
                        {FOOTER_DATA.copyright}
                    </div>
                </div>
