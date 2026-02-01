@@ -5,7 +5,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
-import user_img from "../../../public/images/user_img.avif";
+import CONSTANTS from "@/constant";
 import Image from "next/image";
 import Link from "next/link";
 import { CalendarCheck } from 'lucide-react';
@@ -110,7 +110,7 @@ function Faq() {
                     <div className="sticky top-[128px] self-start">
                         <div className="border border-[#dedede] bg-white rounded-[16px] shadow sm:p-[32px] p-[22px] lg:text-left text-center">
                             <figure className="w-[64px] h-[64px] rounded-full overflow-hidden mb-[20px] lg:mx-0 mx-auto">
-                                <Image src={user_img} alt={FAQ_DATA.callCard.imageAlt} />
+                                <Image src={CONSTANTS.profile} alt={FAQ_DATA.callCard.imageAlt} width={64} height={64} />
                             </figure>
                             <div>
                                 <h3 className="2xl:text-[30px] md:leading-[30px] md:text-[28px] sm:text-[26px] sm:leading-[26px] text-[24px] leading-[24px] font-medium mb-[16px]">

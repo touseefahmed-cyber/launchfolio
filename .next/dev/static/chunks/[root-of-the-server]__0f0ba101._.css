@@ -175,6 +175,10 @@
   :root, :host {
     --color-red-500: #fb2c36;
     --color-green-500: #00c758;
+    --color-gray-100: #f3f4f6;
+    --color-gray-300: #d1d5dc;
+    --color-gray-400: #99a1af;
+    --color-gray-600: #4a5565;
     --color-black: #000;
     --color-white: #fff;
     --spacing: .25rem;
@@ -204,6 +208,10 @@
     :root, :host {
       --color-red-500: lab(55.4814% 75.0732 48.8528);
       --color-green-500: lab(70.5521% -66.5147 45.8073);
+      --color-gray-100: lab(96.1596% -.0823438 -1.13575);
+      --color-gray-300: lab(85.1236% -.612259 -3.7138);
+      --color-gray-400: lab(65.9269% -.832707 -8.17473);
+      --color-gray-600: lab(35.6337% -1.58697 -10.8425);
     }
   }
 }
@@ -679,6 +687,10 @@
     margin-top: calc(var(--spacing) * -4);
   }
 
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+
   .mt-\[10px\] {
     margin-top: 10px;
   }
@@ -845,6 +857,10 @@
     height: calc(var(--spacing) * 5);
   }
 
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
+
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
@@ -945,10 +961,6 @@
     width: 24px !important;
   }
 
-  .\!w-\[277px\] {
-    width: 277px !important;
-  }
-
   .\!w-\[540px\] {
     width: 540px !important;
   }
@@ -971,6 +983,10 @@
 
   .w-5 {
     width: calc(var(--spacing) * 5);
+  }
+
+  .w-6 {
+    width: calc(var(--spacing) * 6);
   }
 
   .w-8 {
@@ -1023,10 +1039,6 @@
 
   .w-\[200px\] {
     width: 200px;
-  }
-
-  .w-\[277px\] {
-    width: 277px;
   }
 
   .w-\[290px\] {
@@ -1099,16 +1111,6 @@
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
 
-  .-translate-y-10 {
-    --tw-translate-y: calc(var(--spacing) * -10);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-
-  .-translate-y-\[10px\] {
-    --tw-translate-y: calc(10px * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-
   .translate-y-0 {
     --tw-translate-y: calc(var(--spacing) * 0);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -1116,16 +1118,6 @@
 
   .translate-y-0\.5 {
     --tw-translate-y: calc(var(--spacing) * .5);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-
-  .translate-y-\[10px\] {
-    --tw-translate-y: 10px;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-
-  .translate-y-\[130\%\] {
-    --tw-translate-y: 130%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
 
@@ -1487,6 +1479,10 @@
     background-color: var(--destructive);
   }
 
+  .bg-gray-300 {
+    background-color: var(--color-gray-300);
+  }
+
   .bg-green-500 {
     background-color: var(--color-green-500);
   }
@@ -1533,6 +1529,10 @@
 
   .p-1 {
     padding: calc(var(--spacing) * 1);
+  }
+
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
 
   .p-3 {
@@ -1617,6 +1617,10 @@
 
   .px-\[22px\] {
     padding-inline: 22px;
+  }
+
+  .px-\[30px\] {
+    padding-inline: 30px;
   }
 
   .py-0 {
@@ -1964,6 +1968,10 @@
     color: var(--foreground);
   }
 
+  .text-gray-600 {
+    color: var(--color-gray-600);
+  }
+
   .text-muted-foreground {
     color: var(--muted-foreground);
   }
@@ -2128,12 +2136,6 @@
   }
 
   @media (hover: hover) {
-    .group-hover\:block:is(:where(.group):hover *) {
-      display: block;
-    }
-  }
-
-  @media (hover: hover) {
     .group-hover\:w-full:is(:where(.group):hover *) {
       width: 100%;
     }
@@ -2265,12 +2267,6 @@
   }
 
   @media (hover: hover) {
-    .hover\:w-\[310px\]:hover {
-      width: 310px;
-    }
-  }
-
-  @media (hover: hover) {
     .hover\:-translate-y-\[4px\]:hover {
       --tw-translate-y: calc(4px * -1);
       translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -2310,6 +2306,18 @@
       .hover\:bg-destructive\/90:hover {
         background-color: color-mix(in oklab, var(--destructive) 90%, transparent);
       }
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:bg-gray-100:hover {
+      background-color: var(--color-gray-100);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:bg-gray-400:hover {
+      background-color: var(--color-gray-400);
     }
   }
 
@@ -3255,14 +3263,14 @@
   }
 
   @media (min-width: 48rem) {
-    .md\:py-\[12px\] {
-      padding-block: 12px;
+    .md\:px-\[50px\] {
+      padding-inline: 50px;
     }
   }
 
   @media (min-width: 48rem) {
-    .md\:py-\[48px\] {
-      padding-block: 48px;
+    .md\:py-\[12px\] {
+      padding-block: 12px;
     }
   }
 
@@ -3287,12 +3295,6 @@
   @media (min-width: 48rem) {
     .md\:pt-\[144px\] {
       padding-top: 144px;
-    }
-  }
-
-  @media (min-width: 48rem) {
-    .md\:pb-\[64px\] {
-      padding-bottom: 64px;
     }
   }
 
@@ -3466,12 +3468,6 @@
   @media (min-width: 64rem) {
     .lg\:w-\[38\%\] {
       width: 38%;
-    }
-  }
-
-  @media (min-width: 64rem) {
-    .lg\:w-\[56\%\] {
-      width: 56%;
     }
   }
 

@@ -1,16 +1,8 @@
-import React from 'react';
+import CallAction from "@/components/Site/CallAction";
+import Footer from "@/components/Site/Footer";
 import Header from "@/components/Site/Header";
 import ProjectSection from "@/components/Site/ProjectSection";
-import Footer from "@/components/Site/Footer";
 import TrustedSlider from "@/components/Site/TrustedSlider";
-import Image from "next/image";
-import user_img from "../../../public/images/user_img.avif";
-import Link from "next/link";
-import {CalendarCheck} from "lucide-react";
-import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
-import Stack from "@mui/material/Stack";
-import Rating from "@mui/material/Rating";
-import CallAction from "@/components/Site/CallAction";
 
 const Page = () => {
     return (

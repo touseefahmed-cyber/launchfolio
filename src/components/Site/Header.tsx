@@ -1,22 +1,18 @@
 "use client";
-import React, { useEffect, useState, useLayoutEffect, useRef } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { motion, Variants } from "framer-motion";
-import gsap from "gsap";
-import user_img from "../../../public/images/user_img.avif";
-import { X } from 'lucide-react';
 import Sidebar from "@/components/Site/Sidebar";
 import {
     Sheet,
-    SheetClose,
     SheetContent,
-    SheetDescription,
-    SheetFooter,
-    SheetHeader,
-    SheetTitle,
-    SheetTrigger,
-} from "@/components/ui/sheet"
+    SheetTrigger
+} from "@/components/ui/sheet";
+import { motion, Variants } from "framer-motion";
+import gsap from "gsap";
+import { X } from 'lucide-react';
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import CONSTANTS from "@/constant";
+
 function Header() {
     const [scrolled, setScrolled] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
@@ -130,9 +126,9 @@ function Header() {
                 <div>
                     <Link href="/" className="flex gap-2 items-center">
                         <figure className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
-                            <Image src={user_img} alt="User" width={32} height={32} />
+                            <Image src={CONSTANTS.profile} alt="User" width={32} height={32} />
                         </figure>
-                            <span className="text-sm font-bold text-black whitespace-nowrap">Joseph Alexander</span>
+                            <span className="text-sm font-bold text-black whitespace-nowrap">{CONSTANTS.siteName}</span>
                     </Link>
                 </div>
 

@@ -1,11 +1,10 @@
 "use client"
 
-import React from 'react';
-import Link from "next/link";
-import Image from "next/image";
-import user_img from "../../../public/images/user_img.avif";
 import FadeIn from "@/components/Site/FadeIn";
 import FadeUp from "@/components/Site/FadeUp";
+import CONSTANTS from "@/constant";
+import Image from "next/image";
+import Link from "next/link";
 
 // Banner content data
 const BANNER_DATA = {
@@ -24,6 +23,7 @@ const BANNER_DATA = {
         href: "#",
         text: "Book a call with me",
         imageAlt: "User avatar",
+        image: CONSTANTS.profile,
     },
 };
 
@@ -65,7 +65,7 @@ function BannerSection() {
                                 <div className="">
                                     <Link href={BANNER_DATA.cta.href} className="book_btn">
                                         <figure className="w-[32px] h-[32px] rounded-full overflow-hidden flex-shrink-0">
-                                            <Image src={user_img} alt={BANNER_DATA.cta.imageAlt} />
+                                            <Image src={CONSTANTS.profile} alt={BANNER_DATA.cta.imageAlt} width={32} height={32} />
                                         </figure>
                                         {BANNER_DATA.cta.text}
                                     </Link>

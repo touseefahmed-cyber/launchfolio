@@ -2,7 +2,7 @@
 import React from 'react';
 import { Quote } from 'lucide-react';
 import Image from "next/image";
-import user_img from "../../../public/images/user_img.avif";
+import CONSTANTS from "@/constant";
 import FadeUp from "@/components/Site/FadeUp";
 import FadeIn from "@/components/Site/FadeIn";
 
@@ -27,37 +27,37 @@ const clientsData = [
         name: "Mark Martinez",
         role: "Customer Manager at SupportEase",
         testimonial: "The new UI design cut our customer support tickets in half. It's been a game-changer for us.",
-        image: user_img,
+        image: CONSTANTS.profile,
     },
     {
         name: "Sarah Johnson",
         role: "Product Lead at InnovateX",
         testimonial: "Our workflow has improved dramatically thanks to the intuitive interface.",
-        image: user_img,
+        image: CONSTANTS.profile,
     },
     {
         name: "James Smith",
         role: "CEO at TechSolutions",
         testimonial: "The UI redesign boosted our customer engagement by 40%. Highly recommend!",
-        image: user_img,
+        image: CONSTANTS.profile,
     },
     {
         name: "Emily Davis",
         role: "Marketing Head at CreativeCo",
         testimonial: "It's rare to find a design that truly solves real user problems. Fantastic work!",
-        image: user_img,
+        image: CONSTANTS.profile,
     },
     {
         name: "Robert Wilson",
         role: "Operations Manager at FlowCorp",
         testimonial: "The new UI has significantly reduced our training time for new employees.",
-        image: user_img,
+        image: CONSTANTS.profile,
     },
     {
         name: "Linda Taylor",
         role: "Customer Success Lead at BrightStart",
         testimonial: "We’ve seen a noticeable drop in customer complaints. Excellent UI improvements!",
-        image: user_img,
+        image: CONSTANTS.profile,
     },
 ];
 
@@ -86,7 +86,7 @@ function ClientsSection() {
                                     <p className="text-[14px] leading-[22px] font-semibold">{client.testimonial}</p>
                                     <div className="flex gap-[10px] mt-auto">
                                         <figure className="w-[38px] h-[38px] rounded-full overflow-hidden shrink-0">
-                                            <Image src={client.image} alt={client.name} />
+                                            <Image src={client.image} alt={client.name} width={38} height={38} />
                                         </figure>
                                         <div className="text-[12px] leading-[12px] font-bold">
                                             <h6 className="text-black mb-[6px]">{client.name}</h6>
