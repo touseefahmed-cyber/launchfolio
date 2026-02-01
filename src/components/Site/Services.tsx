@@ -1,47 +1,12 @@
-"use client";
-import React from 'react';
-import { Figma, Framer, PaintBucket, Laptop, PanelTop, WandSparkles, Earth, AppWindow, Trello } from 'lucide-react';
+import FadeIn from "@/components/Site/FadeIn";
+import FadeUp from "@/components/Site/FadeUp";
 import {
     Tooltip,
     TooltipContent,
     TooltipProvider,
     TooltipTrigger,
-} from "@/components/ui/tooltip"
-import FadeUp from "@/components/Site/FadeUp";
-import FadeIn from "@/components/Site/FadeIn";
-
-// Services content data
-const SERVICES_DATA = {
-    heading: {
-        part1: "Services that",
-        part2: "supercharge your business.",
-    },
-    techStackLabel: "My tech stack",
-};
-
-// Tech stack data
-const techStack = [
-    { icon: <Figma />, name: 'Figma' },
-    { icon: <Framer />, name: 'Framer' },
-    { icon: <Figma />, name: 'Webflow' },
-    { icon: <Framer />, name: 'Rive' },
-    { icon: <Figma />, name: 'Blender' },
-    { icon: <Trello />, name: 'Trello' },
-    { icon: <Figma />, name: 'Chatgpt' },
-    { icon: <Framer />, name: 'Claude' },
-];
-
-// Services data
-const servicesList = [
-    { icon: <Framer />, title: 'Framer Development' },
-    { icon: <PaintBucket />, title: 'Brand Design' },
-    { icon: <Laptop />, title: 'Web Apps' },
-    { icon: <PanelTop />, title: 'Landing Pages' },
-    { icon: <WandSparkles />, title: 'Motion Graphics' },
-    { icon: <Earth />, title: '3D Design' },
-    { icon: <AppWindow />, title: 'UX / UI Consultation' },
-];
-
+} from "@/components/ui/tooltip";
+import CONTENT from '@/content';
 // Animation delays
 const ANIMATION_DELAYS = {
     heading: 0,
@@ -51,6 +16,7 @@ const ANIMATION_DELAYS = {
 };
 
 function Services() {
+    const SERVICES = CONTENT.SERVICES;
     return (
         <section className="border-b border-[#dedede] 2xl:px-0 px-[15px]" id="services">
             <div className="wrapper">
@@ -61,20 +27,20 @@ function Services() {
                             <FadeUp delay={ANIMATION_DELAYS.heading}>
                                 <div className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text-[46px] md:leading-[46px] text-[36px] leading-[36px]
                                  text-black font-medium md:mb-[60px] mb-[48px]">
-                                    <h2 className="text-[#828282]">{SERVICES_DATA.heading.part1}</h2>
-                                    {SERVICES_DATA.heading.part2}
+                                    <h2 className="text-[#828282]">{SERVICES.heading.part1}</h2>
+                                    {SERVICES.heading.part2}
                                 </div>
                             </FadeUp>
 
                             <div>
                                 <FadeUp delay={ANIMATION_DELAYS.techStackLabel}>
                                     <span className="block lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px] font-medium mb-[16px]">
-                                        {SERVICES_DATA.techStackLabel}
+                                        {SERVICES.techStackLabel}
                                     </span>
                                 </FadeUp>
                                 <TooltipProvider>
                                     <ul className="flex gap-[8px] flex-wrap">
-                                        {techStack.map((tech, index) => (
+                                        {SERVICES.techStack.map((tech, index) => (
                                             <li key={index}>
                                                 <FadeIn delay={ANIMATION_DELAYS.techStackBase + index * ANIMATION_DELAYS.techStackIncrement}>
                                                     <Tooltip>
@@ -98,7 +64,7 @@ function Services() {
                         {/* Right side */}
                         <div>
                             <ul className="md:space-y-[38px] space-y-[28px]">
-                                {servicesList.map((service, index) => (
+                                {SERVICES.servicesList.map((service, index) => (
                                     <li key={index} className="flex items-center lg:text-[22px] lg:leading-[22px] text-[18px] leading-[18px] font-medium gap-[12px]">
                                         <div className="flex items-center justify-center w-[40px] h-[40px] bg-color rounded-full">
                                             {service.icon}

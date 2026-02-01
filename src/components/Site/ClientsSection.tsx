@@ -5,63 +5,18 @@ import Image from "next/image";
 import CONSTANTS from "@/constant";
 import FadeUp from "@/components/Site/FadeUp";
 import FadeIn from "@/components/Site/FadeIn";
+import CONTENT from '@/content';
 
-// Clients section content data
-const CLIENTS_DATA = {
-    heading: {
-        part1: "Hear from what my,",
-        part2: "clients have to say.",
-    },
-};
-
+ 
 // Animation delays
 const ANIMATION_DELAYS = {
     heading: 0,
     clientBase: 0.4,
     clientIncrement: 0.1,
 };
-
-// Clients data
-const clientsData = [
-    {
-        name: "Mark Martinez",
-        role: "Customer Manager at SupportEase",
-        testimonial: "The new UI design cut our customer support tickets in half. It's been a game-changer for us.",
-        image: CONSTANTS.profile,
-    },
-    {
-        name: "Sarah Johnson",
-        role: "Product Lead at InnovateX",
-        testimonial: "Our workflow has improved dramatically thanks to the intuitive interface.",
-        image: CONSTANTS.profile,
-    },
-    {
-        name: "James Smith",
-        role: "CEO at TechSolutions",
-        testimonial: "The UI redesign boosted our customer engagement by 40%. Highly recommend!",
-        image: CONSTANTS.profile,
-    },
-    {
-        name: "Emily Davis",
-        role: "Marketing Head at CreativeCo",
-        testimonial: "It's rare to find a design that truly solves real user problems. Fantastic work!",
-        image: CONSTANTS.profile,
-    },
-    {
-        name: "Robert Wilson",
-        role: "Operations Manager at FlowCorp",
-        testimonial: "The new UI has significantly reduced our training time for new employees.",
-        image: CONSTANTS.profile,
-    },
-    {
-        name: "Linda Taylor",
-        role: "Customer Success Lead at BrightStart",
-        testimonial: "We’ve seen a noticeable drop in customer complaints. Excellent UI improvements!",
-        image: CONSTANTS.profile,
-    },
-];
-
+    
 function ClientsSection() {
+    const CLIENTS = CONTENT.CLIENTS;
     return (
         <section className="border-b border-[#dedede] 2xl:px-0 px-[15px]">
             <div className="wrapper">
@@ -69,13 +24,13 @@ function ClientsSection() {
                     <FadeUp delay={ANIMATION_DELAYS.heading}>
                         <div className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text-[46px] md:leading-[46px] text-[36px] leading-[36px]
                          text-black font-medium md:mb-[60px] mb-[48px]">
-                            <h2 className="text-[#828282]">{CLIENTS_DATA.heading.part1}</h2>
-                            {CLIENTS_DATA.heading.part2}
+                            <h2 className="text-[#828282]">{CLIENTS.heading.part1}</h2>
+                            {CLIENTS.heading.part2}
                         </div>
                     </FadeUp>
 
                     <div className="md:grid lg:grid-cols-3 md:grid-cols-2 flex gap-[16px] md:overflow-hidden overflow-x-scroll scrollbar-hide">
-                        {clientsData.map((client, index) => (
+                        {CLIENTS.clientsList.map((client, index) => (
                             <FadeIn
                                 key={index}
                                 delay={ANIMATION_DELAYS.clientBase + index * ANIMATION_DELAYS.clientIncrement}

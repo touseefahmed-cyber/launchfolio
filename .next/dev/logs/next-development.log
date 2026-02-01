@@ -8435,3 +8435,969 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [03:53:06.128] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
 [03:53:06.128] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
 [03:53:06.128] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[03:55:45.253] Server  LOG     ✓ Compiled in 15ms
+[03:55:46.085] Browser ERROR   ./src/content.ts:58:1
+Parsing ecmascript source code failed
+  56 | }
+  57 |
+> 58 | export default CONTENT;
+     | ^^^^^^
+
+Expected ',', got 'export'
+
+Import traces:
+  Client Component Browser:
+    ./src/content.ts [Client Component Browser]
+    ./src/components/Site/Testimonial.tsx [Client Component Browser]
+    ./src/components/Site/Testimonial.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/content.ts [Client Component SSR]
+    ./src/components/Site/Testimonial.tsx [Client Component SSR]
+    ./src/components/Site/Testimonial.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+[03:56:10.237] Server  ERROR   ⨯ ReferenceError: CONTENT is not defined
+[03:56:10.331] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:56:11.088] Browser ERROR   uncaughtError: ReferenceError: CONTENT is not defined
+[03:56:17.040] Server  LOG     ✓ Compiled in 87ms
+[03:56:18.085] Browser ERROR   ./src/content.ts:58:1
+Parsing ecmascript source code failed
+  56 | }
+  57 |
+> 58 | export default CONTENT;
+     | ^^^^^^
+
+Expected ',', got 'export'
+
+Import traces:
+  Client Component Browser:
+    ./src/content.ts [Client Component Browser]
+    ./src/components/Site/Testimonial.tsx [Client Component Browser]
+    ./src/components/Site/Testimonial.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/content.ts [Client Component SSR]
+    ./src/components/Site/Testimonial.tsx [Client Component SSR]
+    ./src/components/Site/Testimonial.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+[03:56:23.915] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:56:24.196] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:56:25.093] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Page>
+                <Header>
+                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
+                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
+                            <nav className="flex justi...">
+                              <div>
+                              <div>
+                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
+                                <div
+                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
++                                 style={{opacity:0}}
+-                                 style={{opacity:"1"}}
+                                  onClick={function Header[<motion.div>.onClick]}
+                                  ref={function useMotionRef.useCallback}
+                                >
+-                             <button
+-                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
+-                               aria-label="Close menu"
+-                             >
+                        ...
+              ...
+          ...
+        ...
+
+[03:56:25.093] Browser WARN    Image with src "/adnan.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:56:25.093] Browser WARN    Image with src "/_next/static/media/project_img1.d5b8e4e9.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:56:25.093] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:56:25.093] Browser WARN    Image with src "/_next/static/media/project_img3.7555745a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:56:25.093] Browser WARN    Image with src "/_next/static/media/project_img4.3c8946cb.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:56:38.061] Server  LOG     ✓ Compiled in 18ms
+[03:56:48.459] Server  LOG     ✓ Compiled in 62ms
+[03:56:49.086] Browser ERROR   uncaughtError: ReferenceError: SERVICES_DATA is not defined
+[03:56:51.123] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:56:51.204] Server  LOG     ✓ Compiled in 28ms
+[03:56:51.304] Server  ERROR   ⨯ ReferenceError: SERVICES_DATA is not defined
+[03:56:51.374] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:56:52.089] Browser ERROR   uncaughtError: ReferenceError: SERVICES_DATA is not defined
+[03:56:52.714] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:56:52.767] Server  LOG     ✓ Compiled in 33ms
+[03:56:52.865] Server  ERROR   ⨯ ReferenceError: CONTENT is not defined
+[03:56:52.943] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:56:53.965] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:56:53.965] Browser ERROR   uncaughtError: ReferenceError: SERVICES_DATA is not defined
+[03:56:54.023] Server  LOG     ✓ Compiled in 39ms
+[03:56:54.122] Server  ERROR   ⨯ ReferenceError: SERVICES_DATA is not defined
+[03:56:54.187] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:56:55.088] Browser ERROR   uncaughtError: ReferenceError: SERVICES_DATA is not defined
+[03:56:58.492] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:56:58.537] Server  ERROR   ⨯ ReferenceError: SERVICES_DATA is not defined
+[03:56:58.542] Server  LOG     ✓ Compiled in 23ms
+[03:56:58.593] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:56:59.087] Browser ERROR   uncaughtError: ReferenceError: SERVICES_DATA is not defined
+[03:57:13.065] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:57:13.128] Server  LOG     ✓ Compiled in 81ms
+[03:57:13.232] Server  ERROR   ⨯ ReferenceError: SERVICES_DATA is not defined
+[03:57:13.317] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:57:14.086] Browser ERROR   uncaughtError: ReferenceError: SERVICES_DATA is not defined
+[03:57:14.789] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:57:14.847] Server  LOG     ✓ Compiled in 39ms
+[03:57:14.947] Server  ERROR   ⨯ ReferenceError: SERVICES_DATA is not defined
+[03:57:15.010] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:57:16.086] Browser ERROR   uncaughtError: ReferenceError: SERVICES_DATA is not defined
+[03:57:16.541] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:57:16.601] Server  LOG     ✓ Compiled in 31ms
+[03:57:16.790] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:57:17.087] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Page>
+                <Header>
+                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
+                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
+                            <nav className="flex justi...">
+                              <div>
+                              <div>
+                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
+                                <div
+                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
++                                 style={{opacity:0}}
+-                                 style={{opacity:"1"}}
+                                  onClick={function Header[<motion.div>.onClick]}
+                                  ref={function useMotionRef.useCallback}
+                                >
+-                             <button
+-                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
+-                               aria-label="Close menu"
+-                             >
+                        ...
+              ...
+          ...
+        ...
+
+[03:57:17.087] Browser WARN    Image with src "/adnan.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:57:17.087] Browser WARN    Image with src "/_next/static/media/project_img1.d5b8e4e9.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:57:17.087] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:57:17.087] Browser WARN    Image with src "/_next/static/media/project_img3.7555745a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:57:17.087] Browser WARN    Image with src "/_next/static/media/project_img4.3c8946cb.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:58:10.536] Server  LOG     ✓ Compiled in 75ms
+[03:58:10.785] Server  ERROR   ⨯ ReferenceError: Figma is not defined
+[03:58:10.862] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:58:11.086] Browser ERROR   uncaughtError: ReferenceError: Figma is not defined
+[03:58:13.557] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:58:13.557] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/components/Site/Services.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[03:58:13.557] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:58:13.616] Server  LOG     ✓ Compiled in 87ms
+[03:58:13.837] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:58:15.085] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Page>
+                <Header>
+                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
+                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
+                            <nav className="flex justi...">
+                              <div>
+                              <div>
+                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
+                                <div
+                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
++                                 style={{opacity:0}}
+-                                 style={{opacity:"1"}}
+                                  onClick={function Header[<motion.div>.onClick]}
+                                  ref={function useMotionRef.useCallback}
+                                >
+-                             <button
+-                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
+-                               aria-label="Close menu"
+-                             >
+                        ...
+              ...
+          ...
+        ...
+
+[03:58:15.085] Browser WARN    Image with src "/adnan.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:58:15.085] Browser WARN    Image with src "/_next/static/media/project_img1.d5b8e4e9.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:58:15.085] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:58:15.085] Browser WARN    Image with src "/_next/static/media/project_img3.7555745a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:58:15.085] Browser WARN    Image with src "/_next/static/media/project_img4.3c8946cb.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:58:20.706] Server  LOG     ✓ Compiled in 45ms
+[03:58:52.312] Server  LOG     ✓ Compiled in 28ms
+[03:58:53.086] Browser ERROR   ./src/content.ts:3:21
+Parsing ecmascript source code failed
+  1 | // Tech stack data
+  2 | const techStack = [
+> 3 |     { icon: <Figma />, name: 'Figma' },
+    |                     ^
+  4 |     { icon: <Framer />, name: 'Framer' },
+  5 |     { icon: <Figma />, name: 'Webflow' },
+  6 |     { icon: <Framer />, name: 'Rive' },
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/content.ts [Client Component Browser]
+    ./src/components/Site/Testimonial.tsx [Client Component Browser]
+    ./src/components/Site/Testimonial.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/content.ts [Client Component SSR]
+    ./src/components/Site/Testimonial.tsx [Client Component SSR]
+    ./src/components/Site/Testimonial.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+[03:58:58.282] Server  ERROR   ⨯ ReferenceError: Figma is not defined
+[03:58:58.347] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:58:59.091] Browser ERROR   uncaughtError: ReferenceError: Figma is not defined
+[03:59:17.353] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:59:17.353] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/components/Site/Services.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[03:59:17.354] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:59:17.417] Server  LOG     ✓ Compiled in 61ms
+[03:59:17.653] Server  ERROR   ⨯ ReferenceError: Figma is not defined
+[03:59:17.721] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:59:18.086] Browser ERROR   uncaughtError: ReferenceError: Figma is not defined
+[03:59:20.712] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:59:20.712] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/components/Site/Services.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[03:59:20.713] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:59:20.767] Server  LOG     ✓ Compiled in 25ms
+[03:59:20.951] Server  ERROR   ⨯ ReferenceError: Figma is not defined
+[03:59:21.017] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:59:22.088] Browser ERROR   uncaughtError: ReferenceError: Figma is not defined
+[03:59:26.748] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:59:26.748] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/content.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[03:59:26.748] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:59:26.822] Server  LOG     ✓ Compiled in 20ms
+[03:59:27.037] Server  ERROR   ⨯ ReferenceError: Figma is not defined
+[03:59:27.106] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:59:27.992] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:59:27.992] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/content.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[03:59:27.992] Browser ERROR   uncaughtError: ReferenceError: Figma is not defined
+[03:59:27.992] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:59:28.072] Server  LOG     ✓ Compiled in 36ms
+[03:59:28.187] Server  ERROR   ⨯ ReferenceError: techStack is not defined
+[03:59:28.256] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:59:29.089] Browser ERROR   uncaughtError: ReferenceError: techStack is not defined
+[03:59:38.155] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:59:38.246] Server  LOG     ✓ Compiled in 17ms
+[03:59:38.347] Server  ERROR   ⨯ ReferenceError: techStack is not defined
+[03:59:38.432] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:59:39.088] Browser ERROR   uncaughtError: ReferenceError: techStack is not defined
+[03:59:40.643] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:59:40.702] Server  LOG     ✓ Compiled in 15ms
+[03:59:40.793] Server  ERROR   ⨯ ReferenceError: techStack is not defined
+[03:59:40.860] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:59:41.086] Browser ERROR   uncaughtError: ReferenceError: techStack is not defined
+[03:59:42.906] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:59:42.962] Server  LOG     ✓ Compiled in 26ms
+[03:59:43.053] Server  ERROR   ⨯ ReferenceError: techStack is not defined
+[03:59:43.136] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:59:44.088] Browser ERROR   uncaughtError: ReferenceError: techStack is not defined
+[03:59:47.207] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:59:47.265] Server  LOG     ✓ Compiled in 25ms
+[03:59:47.361] Server  ERROR   ⨯ ReferenceError: servicesList is not defined
+[03:59:47.429] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:59:48.089] Browser ERROR   uncaughtError: ReferenceError: servicesList is not defined
+[03:59:49.360] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:59:49.420] Server  LOG     ✓ Compiled in 29ms
+[03:59:49.626] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:59:50.093] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Page>
+                <Header>
+                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
+                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
+                            <nav className="flex justi...">
+                              <div>
+                              <div>
+                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
+                                <div
+                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
++                                 style={{opacity:0}}
+-                                 style={{opacity:"1"}}
+                                  onClick={function Header[<motion.div>.onClick]}
+                                  ref={function useMotionRef.useCallback}
+                                >
+-                             <button
+-                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
+-                               aria-label="Close menu"
+-                             >
+                        ...
+              ...
+          ...
+        ...
+
+[03:59:50.093] Browser WARN    Image with src "/adnan.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:59:50.093] Browser WARN    Image with src "/_next/static/media/project_img1.d5b8e4e9.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:59:50.093] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:59:50.093] Browser WARN    Image with src "/_next/static/media/project_img3.7555745a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:59:50.093] Browser WARN    Image with src "/_next/static/media/project_img4.3c8946cb.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:59:53.452] Server  LOG     ✓ Compiled in 47ms
+[04:00:02.086] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[04:00:03.541] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:00:03.769] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Page>
+                <Header>
+                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
+                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
+                            <nav className="flex justi...">
+                              <div>
+                              <div>
+                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
+                                <div
+                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
++                                 style={{opacity:0}}
+-                                 style={{opacity:"1"}}
+                                  onClick={function Header[<motion.div>.onClick]}
+                                  ref={function useMotionRef.useCallback}
+                                >
+-                             <button
+-                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
+-                               aria-label="Close menu"
+-                             >
+                        ...
+              ...
+          ...
+        ...
+
+[04:00:03.769] Browser WARN    Image with src "/adnan.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:00:03.769] Browser WARN    Image with src "/_next/static/media/project_img1.d5b8e4e9.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:00:03.769] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:00:03.769] Browser WARN    Image with src "/_next/static/media/project_img3.7555745a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:00:03.769] Browser WARN    Image with src "/_next/static/media/project_img4.3c8946cb.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:00:03.769] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[04:00:13.674] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:13.674] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:13.674] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:19.014] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:19.014] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:19.014] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:25.358] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:25.358] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:25.358] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:30.773] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:30.773] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:30.773] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:45.214] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:45.214] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:45.214] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:47.272] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:47.272] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:47.272] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:48.964] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:48.964] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:00:48.964] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:01:35.547] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:01:35.547] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:01:35.547] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:01:48.678] Server  LOG     ✓ Compiled in 17ms
+[04:01:49.084] Browser ERROR   ./src/content.tsx:92:1
+Parsing ecmascript source code failed
+  90 | }
+  91 |
+> 92 | export default CONTENT;
+     | ^^^^^^
+
+Expected ',', got 'export'
+
+Import traces:
+  Server Component:
+    ./src/content.tsx
+    ./src/components/Site/Services.tsx
+    ./src/app/page.tsx
+
+  Client Component Browser:
+    ./src/content.tsx [Client Component Browser]
+    ./src/components/Site/Testimonial.tsx [Client Component Browser]
+    ./src/components/Site/Testimonial.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/content.tsx [Client Component SSR]
+    ./src/components/Site/Testimonial.tsx [Client Component SSR]
+    ./src/components/Site/Testimonial.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+[04:01:50.085] Browser ERROR   ./src/content.tsx:93:1
+Parsing ecmascript source code failed
+  91 | }
+  92 |
+> 93 | export default CONTENT;
+     | ^^^^^^
+
+Expected ',', got 'export'
+
+Import traces:
+  Server Component:
+    ./src/content.tsx
+    ./src/components/Site/Services.tsx
+    ./src/app/page.tsx
+
+  Client Component Browser:
+    ./src/content.tsx [Client Component Browser]
+    ./src/components/Site/Testimonial.tsx [Client Component Browser]
+    ./src/components/Site/Testimonial.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/content.tsx [Client Component SSR]
+    ./src/components/Site/Testimonial.tsx [Client Component SSR]
+    ./src/components/Site/Testimonial.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+[04:02:00.260] Server  LOG     ✓ Compiled in 24ms
+[04:02:01.087] Browser ERROR   uncaughtError: ReferenceError: CLIENTS_DATA is not defined
+[04:02:28.886] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:02:28.959] Server  LOG     ✓ Compiled in 22ms
+[04:02:29.144] Server  ERROR   ⨯ ReferenceError: CONTENT is not defined
+[04:02:29.183] Browser ERROR   uncaughtError: ReferenceError: CLIENTS_DATA is not defined
+[04:02:29.289] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:02:30.090] Browser ERROR   uncaughtError: ReferenceError: CLIENTS_DATA is not defined
+[04:02:30.223] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:02:30.278] Server  LOG     ✓ Compiled in 36ms
+[04:02:30.396] Server  ERROR   ⨯ ReferenceError: CLIENTS_DATA is not defined
+[04:02:30.462] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:02:31.091] Browser ERROR   uncaughtError: ReferenceError: CLIENTS_DATA is not defined
+[04:02:32.961] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:02:33.009] Server  LOG     ✓ Compiled in 42ms
+[04:02:33.212] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:02:34.094] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Page>
+                <Header>
+                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
+                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
+                            <nav className="flex justi...">
+                              <div>
+                              <div>
+                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
+                                <div
+                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
++                                 style={{opacity:0}}
+-                                 style={{opacity:"1"}}
+                                  onClick={function Header[<motion.div>.onClick]}
+                                  ref={function useMotionRef.useCallback}
+                                >
+-                             <button
+-                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
+-                               aria-label="Close menu"
+-                             >
+                        ...
+              ...
+          ...
+        ...
+
+[04:02:34.094] Browser WARN    Image with src "/adnan.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:02:34.094] Browser WARN    Image with src "/_next/static/media/project_img1.d5b8e4e9.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:02:34.094] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:02:34.094] Browser WARN    Image with src "/_next/static/media/project_img3.7555745a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:02:34.094] Browser WARN    Image with src "/_next/static/media/project_img4.3c8946cb.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:02:39.572] Server  LOG     ✓ Compiled in 36ms
+[04:02:39.803] Server  ERROR   ⨯ ReferenceError: ClientsSection is not defined
+[04:02:39.898] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:02:40.440] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:02:40.440] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/components/Site/ClientsSection.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[04:02:40.440] Browser ERROR   uncaughtError: ReferenceError: ClientsSection is not defined
+[04:02:40.440] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:02:40.498] Server  LOG     ✓ Compiled in 26ms
+[04:02:40.608] Server  ERROR   ⨯ ReferenceError: clientsData is not defined
+[04:02:40.676] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:02:41.090] Browser ERROR   uncaughtError: ReferenceError: clientsData is not defined
+[04:02:46.531] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:02:46.531] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:02:46.690] Server  ERROR   ⨯ ReferenceError: clientsList is not defined
+[04:02:46.796] Server  ERROR   ⨯ ReferenceError: clientsList is not defined
+[04:02:47.305] Browser ERROR   uncaughtError: ReferenceError: clientsList is not defined
+[04:02:48.761] Server  LOG     ✓ Compiled in 17ms
+[04:02:53.682] Server  LOG     ✓ Compiled in 12ms
+[04:03:05.587] Server  LOG     ✓ Compiled in 29ms
+[04:03:40.178] Server  LOG     ✓ Compiled in 18ms
+[04:03:48.085] Browser ERROR   ./src/content.tsx:131:7
+Parsing ecmascript source code failed
+  129 |         clientsList: clientsList,
+  130 |         // Clients data (from real Upwork reviews)
+> 131 | const clientsData = [
+      |       ^^^^^^^^^^^
+  132 |     {
+  133 |       name: "Upwork Client",
+  134 |       role: "AI Project (Gmail PDF Search)",
+
+Unexpected token `clientsData`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Server Component:
+    ./src/content.tsx
+    ./src/components/Site/Services.tsx
+    ./src/app/page.tsx
+
+  Client Component Browser:
+    ./src/content.tsx [Client Component Browser]
+    ./src/components/Site/Testimonial.tsx [Client Component Browser]
+    ./src/components/Site/Testimonial.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/content.tsx [Client Component SSR]
+    ./src/components/Site/Testimonial.tsx [Client Component SSR]
+    ./src/components/Site/Testimonial.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+[04:03:49.282] Server  ERROR   ⨯ ReferenceError: clientsData is not defined
+[04:03:49.402] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:03:50.094] Browser ERROR   uncaughtError: ReferenceError: clientsData is not defined
+[04:03:52.430] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:03:52.636] Server  ERROR   ⨯ ReferenceError: clientsData is not defined
+[04:03:52.733] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:03:53.090] Browser ERROR   uncaughtError: ReferenceError: clientsData is not defined
+[04:04:03.620] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:04:03.701] Server  ERROR   ⨯ ReferenceError: clientsData is not defined
+[04:04:03.709] Server  LOG     ✓ Compiled in 21ms
+[04:04:03.768] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:04:04.089] Browser ERROR   uncaughtError: ReferenceError: clientsData is not defined
+[04:04:05.860] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:04:05.924] Server  LOG     ✓ Compiled in 18ms
+[04:04:06.138] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:04:07.093] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Page>
+                <Header>
+                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
+                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
+                            <nav className="flex justi...">
+                              <div>
+                              <div>
+                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
+                                <div
+                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
++                                 style={{opacity:0}}
+-                                 style={{opacity:"1"}}
+                                  onClick={function Header[<motion.div>.onClick]}
+                                  ref={function useMotionRef.useCallback}
+                                >
+-                             <button
+-                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
+-                               aria-label="Close menu"
+-                             >
+                        ...
+              ...
+          ...
+        ...
+
+[04:04:07.093] Browser WARN    Image with src "/adnan.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:04:07.093] Browser WARN    Image with src "/_next/static/media/project_img1.d5b8e4e9.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:04:07.093] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:04:07.093] Browser WARN    Image with src "/_next/static/media/project_img3.7555745a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:04:07.093] Browser WARN    Image with src "/_next/static/media/project_img4.3c8946cb.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:04:42.710] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[04:04:43.489] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:04:43.490] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:04:43.490] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:04:47.413] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:04:47.413] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:04:47.413] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:04:57.220] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:04:57.220] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:04:57.220] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:05:15.737] Server  ERROR   ⨯ ReferenceError: clientsList is not defined
+[04:05:15.863] Server  ERROR   ⨯ ReferenceError: clientsList is not defined
+[04:05:15.987] Server  ERROR   ⨯ ReferenceError: clientsList is not defined
+[04:05:16.091] Server  ERROR   ⨯ ReferenceError: clientsList is not defined
+[04:05:16.213] Server  ERROR   ⨯ ReferenceError: clientsList is not defined
+[04:05:16.312] Server  ERROR   ⨯ ReferenceError: clientsList is not defined
+[04:05:16.387] Browser ERROR   uncaughtError: ReferenceError: clientsList is not defined
+[04:05:17.698] Server  LOG     ✓ Compiled in 10ms
+[04:05:33.674] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:05:33.914] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Page>
+                <Header>
+                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
+                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
+                            <nav className="flex justi...">
+                              <div>
+                              <div>
+                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
+                                <div
+                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
++                                 style={{opacity:0}}
+-                                 style={{opacity:"1"}}
+                                  onClick={function Header[<motion.div>.onClick]}
+                                  ref={function useMotionRef.useCallback}
+                                >
+-                             <button
+-                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
+-                               aria-label="Close menu"
+-                             >
+                        ...
+              ...
+          ...
+        ...
+
+[04:05:33.914] Browser WARN    Image with src "/adnan.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:05:33.914] Browser WARN    Image with src "/_next/static/media/project_img1.d5b8e4e9.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:05:33.914] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:05:33.914] Browser WARN    Image with src "/_next/static/media/project_img3.7555745a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:05:33.914] Browser WARN    Image with src "/_next/static/media/project_img4.3c8946cb.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:05:33.914] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[04:05:35.209] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:05:35.209] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:05:35.209] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:05:37.658] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:05:37.658] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:05:37.658] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:05:38.901] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:05:38.901] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:05:38.901] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:05:39.518] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:05:39.518] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:05:39.518] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:05:45.642] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:05:45.642] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:05:45.642] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:05:49.907] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:05:49.907] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:05:49.907] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:16:54.885] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:16:54.886] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:16:54.886] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:16:59.418] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:16:59.418] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:16:59.418] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:17:00.435] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:17:00.435] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:17:00.435] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:17:05.893] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:17:05.893] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:17:05.893] Browser WARN    'black' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[04:17:32.061] Server  LOG     ✓ Compiled in 120ms
+[04:17:33.086] Browser ERROR   uncaughtError: ReferenceError: ABOUT_DATA is not defined
+[04:17:36.894] Server  ERROR   ⨯ ReferenceError: Instagram is not defined
+[04:17:37.027] Server  ERROR   ⨯ ReferenceError: Instagram is not defined
+[04:17:37.029] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:17:37.029] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:17:37.142] Server  ERROR   ⨯ ReferenceError: Instagram is not defined
+[04:17:37.246] Server  ERROR   ⨯ ReferenceError: Instagram is not defined
+[04:17:37.312] Browser ERROR   uncaughtError: ReferenceError: Instagram is not defined
+[04:17:42.993] Server  LOG     ✓ Compiled in 11ms
+[04:17:50.085] Browser ERROR   ./src/content.tsx:175:1
+Parsing ecmascript source code failed
+  173 | }
+  174 |
+> 175 | export default CONTENT;
+      | ^^^^^^
+
+Expected ',', got 'export'
+
+Import traces:
+  Server Component:
+    ./src/content.tsx
+    ./src/components/Site/Services.tsx
+    ./src/app/page.tsx
+
+  Client Component Browser:
+    ./src/content.tsx [Client Component Browser]
+    ./src/components/Site/Testimonial.tsx [Client Component Browser]
+    ./src/components/Site/Testimonial.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/content.tsx [Client Component SSR]
+    ./src/components/Site/Testimonial.tsx [Client Component SSR]
+    ./src/components/Site/Testimonial.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+[04:17:57.481] Server  ERROR   ⨯ ReferenceError: ABOUT_DATA is not defined
+[04:17:57.600] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:17:58.091] Browser ERROR   uncaughtError: ReferenceError: ABOUT_DATA is not defined
+[04:18:03.401] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:18:03.461] Server  LOG     ✓ Compiled in 59ms
+[04:18:03.675] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:18:04.090] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Page>
+                <Header>
+                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
+                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
+                            <nav className="flex justi...">
+                              <div>
+                              <div>
+                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
+                                <div
+                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
++                                 style={{opacity:0}}
+-                                 style={{opacity:"1"}}
+                                  onClick={function Header[<motion.div>.onClick]}
+                                  ref={function useMotionRef.useCallback}
+                                >
+-                             <button
+-                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
+-                               aria-label="Close menu"
+-                             >
+                        ...
+              ...
+          ...
+        ...
+
+[04:18:04.090] Browser WARN    Image with src "/adnan.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:18:04.090] Browser WARN    Image with src "/_next/static/media/project_img1.d5b8e4e9.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:18:04.090] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:18:04.090] Browser WARN    Image with src "/_next/static/media/project_img3.7555745a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:18:04.090] Browser WARN    Image with src "/_next/static/media/project_img4.3c8946cb.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:18:18.114] Server  ERROR   ⨯ ReferenceError: Instagram is not defined
+[04:18:18.222] Server  ERROR   ⨯ ReferenceError: Instagram is not defined
+[04:18:18.331] Server  ERROR   ⨯ ReferenceError: Instagram is not defined
+[04:18:18.456] Server  ERROR   ⨯ ReferenceError: Instagram is not defined
+[04:18:18.572] Server  ERROR   ⨯ ReferenceError: Instagram is not defined
+[04:18:18.669] Server  ERROR   ⨯ ReferenceError: Instagram is not defined
+[04:18:18.722] Browser ERROR   uncaughtError: ReferenceError: Instagram is not defined
+[04:18:31.745] Server  LOG     ✓ Compiled in 26ms
+[04:18:44.091] Server  LOG     ✓ Compiled in 17ms
+[04:19:25.274] Server  LOG     ✓ Compiled in 17ms
+[04:20:00.456] Server  LOG     ✓ Compiled in 19ms
+[04:23:25.489] Server  LOG     ✓ Compiled in 19ms
+[04:23:25.680] Server  ERROR   ⨯ ReferenceError: prof is not defined
+[04:23:25.789] Server  ERROR   ⨯ ReferenceError: prof is not defined
+[04:23:25.862] Browser ERROR   uncaughtError: ReferenceError: prof is not defined
+[04:23:29.697] Server  LOG     ✓ Compiled in 20ms
+[04:23:30.726] Server  LOG     ✓ Compiled in 22ms
+[04:23:53.425] Server  ERROR   ⨯ Error: Image with src "/adnan.jpeg" is missing required "width" property.
+[04:23:53.525] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:23:53.729] Browser ERROR   uncaughtError: Error: Image with src "/adnan.jpeg" is missing required "width" property.
+[04:24:01.711] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:24:01.775] Server  LOG     ✓ Compiled in 45ms
+[04:24:02.033] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:24:02.315] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Page>
+              <Page>
+                <Header>
+                  <Sheet open={false} onOpenChange={function bound dispatchSetState}>
+                    <Dialog data-slot="sheet" open={false} onOpenChange={function bound dispatchSetState}>
+                      <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
+                        <motion.header ref={{current:null}} animate={{width:"min..."}} transition={{duration:0.4, ...}} ...>
+                          <header className="glass-effe..." onMouseEnter={function Header[<motion.header>.onMouseEnter]} ...>
+                            <nav className="flex justi...">
+                              <div>
+                              <div>
+                              <motion.div className="absolute m..." variants={{animate:{...}}} animate="none" ...>
+                                <div
+                                  className="absolute md:right-2 right-0 top-1/2 -translate-y-1/2 flex gap-1 cursor-po..."
++                                 style={{opacity:0}}
+-                                 style={{opacity:"1"}}
+                                  onClick={function Header[<motion.div>.onClick]}
+                                  ref={function useMotionRef.useCallback}
+                                >
+-                             <button
+-                               className={"absolute right-2 top-1/2 -translate-y-1/2 transition-opacity\n           ..."}
+-                               aria-label="Close menu"
+-                             >
+                        ...
+              ...
+          ...
+        ...
+
+[04:24:02.315] Browser WARN    Image with src "/adnan.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:24:02.315] Browser WARN    Image with src "/_next/static/media/project_img1.d5b8e4e9.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:24:02.315] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:24:02.315] Browser WARN    Image with src "/_next/static/media/project_img3.7555745a.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:24:02.315] Browser WARN    Image with src "/_next/static/media/project_img4.3c8946cb.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:24:02.315] Browser WARN    Image with src "/_next/static/media/project_img2.7fd1ac69.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading

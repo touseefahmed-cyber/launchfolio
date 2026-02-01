@@ -1,73 +1,16 @@
 "use client"
 
-import React, { useState } from 'react';
-import Image from "next/image";
-import person_img from "../../../public/images/person_img.png";
-import Link from "next/link";
-import { Instagram,Linkedin ,Facebook ,Youtube, ChevronDown } from 'lucide-react';
-import { Card, CardContent } from "@/components/ui/card";
-import FadeUp from "@/components/Site/FadeUp";
 import FadeIn from "@/components/Site/FadeIn";
+import FadeUp from "@/components/Site/FadeUp";
+import { Card, CardContent } from "@/components/ui/card";
+import CONTENT from '@/content';
+import { ChevronDown } from 'lucide-react';
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from 'react'; 
+import CONSTANTS from '@/constant';
 
-// About content data
-const ABOUT_DATA = {
-    heading: {
-        part1: "Designing experiences",
-        part2: "that solve real problems.",
-    },
-    person: {
-        name: "Joseph Alexander",
-        role: "Full-stack Designer",
-        imageAlt: "Joseph Alexander",
-    },
-    workHistory: {
-        label: "My work history",
-        button: {
-            show: "Show",
-            hide: "Hide",
-        },
-    },
-    paragraphs: [
-        {
-            highlight: "I love turning ideas into something real through design.",
-            text: "What started as a hobby turned into a career when I discovered how design can make things both look great and work better.",
-        },
-        {
-            highlight: "I focus on creating user interfaces that serve a real purpose",
-            text: "– making sure they're not just pretty, but actually solve problems. Whether I'm working on a mobile app or a website, my goal is to make something that feels natural and easy to use.",
-        },
-        {
-            highlight: "I'm a bit of a perfectionist when it comes to the small stuff,",
-            text: "but I think that's what makes good design great. This attention to detail helps me build strong relationships with clients, as they know I'll put the same care into their project that they would.",
-        },
-    ],
-    socialLinks: [
-        { icon: Instagram, href: "#", name: "Instagram" },
-        { icon: Linkedin, href: "#", name: "LinkedIn" },
-        { icon: Facebook, href: "#", name: "Facebook" },
-        { icon: Youtube, href: "#", name: "YouTube" },
-    ],
-};
-
-// Work history data
-const workHistory = [
-    {
-        company: "Nexus Technology",
-        role: "Full-Stack Designer",
-        period: "2012-2024"
-    },
-    {
-        company: "Nexus Technology",
-        role: "Full-Stack Designer",
-        period: "2012-2024"
-    },
-    {
-        company: "Nexus Technology",
-        role: "Full-Stack Designer",
-        period: "2012-2024"
-    }
-];
-
+ 
 // Animation delays
 const ANIMATION_DELAYS = {
     heading: 0,
@@ -78,6 +21,7 @@ const ANIMATION_DELAYS = {
 
 function About() {
     const [showAll, setShowAll] = useState(false);
+    const ABOUT = CONTENT.ABOUT;
     return (
         <section className="border-b border-[#dedede] 2xl:px-0 px-[15px]">
             <div className="wrapper">
@@ -85,8 +29,8 @@ function About() {
                     <FadeUp delay={ANIMATION_DELAYS.heading}>
                         <div className="2xl:text-[64px] 2xl:leading-[64px] lg:text-[54px] lg:leading-[54px] md:text-[46px] md:leading-[46px] text-[36px] leading-[36px]
                          text-black font-medium md:mb-[60px] mb-[48px]">
-                            <h2 className="text-[#828282]">{ABOUT_DATA.heading.part1}</h2>
-                            {ABOUT_DATA.heading.part2}
+                            <h2 className="text-[#828282]">{ABOUT.heading.part1}</h2>
+                            {ABOUT.heading.part2}
                         </div>
                     </FadeUp>
                     <div className="grid lg:grid-cols-[37.4%_53.2%] md:grid-cols-[44.4%_48.2%] grid-cols-[100%] 2xl:gap-[64px] gap-[48px]">
@@ -95,10 +39,10 @@ function About() {
                             <div className="mb-[64px]">
                                 <div className="mb-[16px] relative">
                                     <figure className="overflow-hidden rounded-[16px] md:h-[410px] sm:h-[660px] h-[360px]">
-                                        <Image src={person_img} alt={ABOUT_DATA.person.imageAlt} />
+                                        <Image src={CONSTANTS.profile} alt={CONSTANTS.profile_alt} width={100} height={100} />
                                     </figure>
                                     <ul className="flex items-center gap-[6px] absolute bottom-[10px] right-[10px]">
-                                        {ABOUT_DATA.socialLinks.map((social, index) => {
+                                        {ABOUT.socialLinks.map((social, index) => {
                                             const IconComponent = social.icon;
                                             return (
                                                 <li key={index}>
@@ -117,18 +61,18 @@ function About() {
                                 <div className="space-y-[4px]">
                                     <h4 className="2xl:text-[22px] 2xl:leading-[22px] sm:text-[20px] sm:leading-[20px] text-[18px] leading-[18px]
                                      text-black font-medium">
-                                        {ABOUT_DATA.person.name}
+                                        {ABOUT.person.name}
                                     </h4>
                                     <span className="text-[14px] leading-[14px] font-bold text-[#545454]">
-                                        {ABOUT_DATA.person.role}
+                                        {ABOUT.person.role}
                                     </span>
                                 </div>
                             </div>
                             <span className="block lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px] font-medium mb-[16px]">
-                                {ABOUT_DATA.workHistory.label}
+                                    {ABOUT.workHistoryLabel}
                             </span>
                             <div className="relative">
-                                {workHistory.map((work, index) => {
+                                {ABOUT.workHistory.map((work, index) => {
                                     const offsetY = showAll ? index * 16 : index * 8;
                                     const offsetX = showAll ? index * 8 : index * 8;
                                     
@@ -139,7 +83,7 @@ function About() {
                                                 showAll ? 'relative mb-[16px]' : 'absolute top-0 left-0 w-full'
                                             }`}
                                             style={{
-                                                zIndex: showAll ? 'auto' : workHistory.length - index,
+                                                zIndex: showAll ? 'auto' : ABOUT.workHistory.length - index,
                                                 transform: showAll ? 'none' : `translateY(${offsetY}px) translateX(${offsetX}px)`,
                                                 opacity: showAll ? 1 : index === 0 ? 1 : index === 1 ? 0.3 : 0.15,
                                                 transition: showAll 
@@ -175,7 +119,7 @@ function About() {
                                         className="flex items-center gap-[8px] text-[12px] leading-[12px] font-semibold border border-[#dedede]
                                         text-black hover:opacity-70 transition-all duration-300 cursor-pointer mx-auto bg-white shadow rounded-full py-[7px] pr-[12px] pl-[12px]"
                                     >
-                                        {showAll ? ABOUT_DATA.workHistory.button.hide : ABOUT_DATA.workHistory.button.show}
+                                        {showAll ? ABOUT.workHistoryButton.hide : ABOUT.workHistoryButton.show}
                                         <ChevronDown 
                                             size={16} 
                                             className={`transition-transform duration-300 ${showAll ? 'rotate-180' : ''}`}
@@ -187,7 +131,7 @@ function About() {
 
                         {/* Right side */}
                         <div className="space-y-[30px]">
-                            {ABOUT_DATA.paragraphs.map((paragraph, index) => {
+                                {ABOUT.paragraphs.map((paragraph, index) => {
                                 const delays = [
                                     ANIMATION_DELAYS.paragraph1,
                                     ANIMATION_DELAYS.paragraph2,
