@@ -88,19 +88,29 @@ const clientsList = [
 // Work history data
 const workHistory = [
     {
-        company: "Nexus Technology",
-        role: "Full-Stack Designer",
-        period: "2012-2024"
+        company: "Abu Dhabi National Takaful Co. PSC",
+        role: "Software Developer",
+        period: "07/2025 – Current"
     },
     {
-        company: "Nexus Technology",
-        role: "Full-Stack Designer",
-        period: "2012-2024"
+        company: "DX Futuretech DMCC",
+        role: "Full Stack Developer",
+        period: "06/2024 – 07/2025"
     },
     {
-        company: "Nexus Technology",
-        role: "Full-Stack Designer",
-        period: "2012-2024"
+        company: "Code Hub Systems",
+        role: "Software Engineer",
+        period: "04/2023 – 06/2024"
+    },
+    {
+        company: "BPO Flexible",
+        role: "Software Engineer",
+        period: "02/2023 – 08/2023"
+    },
+    {
+        company: "Denode Tech",
+        role: "PHP Developer (CodeIgniter)",
+        period: "11/2021 – 02/2023"
     }
 ];
 const CONTENT = {
