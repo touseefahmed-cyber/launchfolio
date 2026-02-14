@@ -17,7 +17,7 @@ const BLOG_DATA = {
         text: "View All",
         href: "#",
     },
-    author: "Joseph Alexander",
+    author: "Muhammad Adnan",
     posts: [
         {
             id: 1,

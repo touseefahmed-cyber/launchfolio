@@ -1,25 +1,11 @@
-"use client"
-
-import React, { useState } from 'react';
+ 
 import Image from "next/image";
-import person_img from "../../../public/images/person_img.png";
 import Link from "next/link";
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
-} from "@/components/ui/select"
 import { Button } from "@/components/ui/button"
-
-
-
-
-
+import CONSTANTS from "@/constant";
 
 function Sidebar() {
     return (
@@ -31,11 +17,11 @@ function Sidebar() {
                 </div>
                 <div className="flex gap-[10px] sm:mb-[32px] mb-[24px]">
                     <figure className="w-[38px] h-[38px] rounded-full overflow-hidden shrink-0">
-                        <Image src={person_img} alt="person_img" />
+                        <Image src={CONSTANTS.profile} alt={CONSTANTS.profile_alt} width={38} height={38} />
                     </figure>
                     <div className=" font-semibold">
-                        <h6 className="text-black mb-[3px] text-[14px] leading-[14px]">Joseph Alexander</h6>
-                        <Link href="" className="text-[12px] leading-[12px] text-black">joseph@launchnow.design</Link>
+                        <h6 className="text-black mb-[3px] text-[14px] leading-[14px]">{CONSTANTS.siteName}</h6>
+                        <Link href="" className="text-[12px] leading-[12px] text-black">{CONSTANTS.email}</Link>
                     </div>
                 </div>
                 <form>
@@ -53,17 +39,17 @@ function Sidebar() {
                             <Textarea className="bg-white text-[16px] leading-[16px] font-medium text-black md:h-[200px] h-[150px]"/>
                         </li>
                         <li className="col-span-full">
-                            <Label htmlFor="Name" className="text-[12px] leading-[12px] font-semibold mb-[6px] inline-block">What's your budget?</Label>
-                            <Select>
-                                <SelectTrigger className="bg-white">
-                                    <SelectValue placeholder="Select.." className="data-[placeholder]:text-red-500"/>
-                                </SelectTrigger>
-                                <SelectContent>
-                                    <SelectItem value="light">Light</SelectItem>
-                                    <SelectItem value="dark">Dark</SelectItem>
-                                    <SelectItem value="system">System</SelectItem>
-                                </SelectContent>
-                            </Select>
+                            <Label className="text-[12px] leading-[12px] font-semibold mb-[6px] inline-block">What's your budget?</Label>
+                            <div className="grid grid-cols-2 gap-[12px]">
+                                <div>
+                                    <Label htmlFor="budget-min" className="text-[11px] text-[#828282] font-medium mb-[4px] inline-block">Min ($)</Label>
+                                    <Input id="budget-min" type="number" placeholder="e.g. 1000" min={0} step={100} className="bg-white text-[16px] leading-[16px] font-medium text-black" />
+                                </div>
+                                <div>
+                                    <Label htmlFor="budget-max" className="text-[11px] text-[#828282] font-medium mb-[4px] inline-block">Max ($)</Label>
+                                    <Input id="budget-max" type="number" placeholder="e.g. 5000" min={0} step={100} className="bg-white text-[16px] leading-[16px] font-medium text-black" />
+                                </div>
+                            </div>
                         </li>
                     </ul>
                     <Button className="mt-[16px] bg-color rounded-full w-full cursor-pointer font-semibold h-[44px]">Send Message</Button>

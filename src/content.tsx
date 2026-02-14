@@ -177,9 +177,9 @@ const CONTENT = {
             part2: "that solve real problems.",
         },
         person: {
-            name: "Joseph Alexander",
-            role: "Full-stack Designer",
-            imageAlt: "Joseph Alexander",
+            name: "Muhammad Adnan",
+            role: "Software Engineer",
+            imageAlt: "Muhammad Adnan",
         },
         workHistoryLabel: "My work history",
         workHistoryButton: {
