@@ -1,16 +1,12 @@
 "use client";
-import React from "react";
-import { useLayoutEffect, useRef, useState, useEffect } from "react";
+import CONTENT from "@/content";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
-import project_img1 from "../../../public/images/project_img1.png";
-import project_img2 from "../../../public/images/project_img2.png";
-import project_img3 from "../../../public/images/project_img3.png";
-import project_img4 from "../../../public/images/project_img4.png";
 import Link from "next/link";
-import FadeUp from "@/components/Site/FadeUp";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
+
 gsap.registerPlugin(ScrollTrigger);
 
 // Animation configuration
@@ -37,90 +33,7 @@ const SCROLL_TRIGGER_CONFIG = {
 };
 
 // Project data
-const PROJECTS = [
-    {
-        id: 1,
-        img: project_img1,
-        title: "Axiom",
-        subtitle: "Ecommerce Site",
-        link: "#",
-        initialAnimation: {
-            x: 530,
-            y: -850,
-            scale: 0.7,
-            rotation: 10,
-            zIndex: 4,
-        },
-        // Responsive animation for max-width 1025px
-        initialAnimationMobile: {
-            x: 400,
-            y: -760,
-            scale: 0.6,
-            rotation: 10,
-            zIndex: 4,
-        },
-    },
-    {
-        id: 2,
-        img: project_img2,
-        title: "Essentia",
-        subtitle: "Ecommerce Site",
-        link: "#",
-        initialAnimation: {
-            x: 80,
-            y: -850,
-            scale: 0.7,
-            rotation: 15,
-        },
-        // Responsive animation for max-width 1025px
-        initialAnimationMobile: {
-            x: 75,
-            y: -762,
-            scale: 0.6,
-            rotation: 15,
-        },
-    },
-    {
-        id: 3,
-        img: project_img3,
-        title: "Mugen",
-        subtitle: "Design studio",
-        link: "#",
-        initialAnimation: {
-            x: 480,
-            y: -1300,
-            scale: 0.7,
-            rotation: -5,
-        },
-        // Responsive animation for max-width 1025px
-        initialAnimationMobile: {
-            x: 380,
-            y: -1090,
-            scale: 0.6,
-            rotation: -5,
-        },
-    },
-    {
-        id: 4,
-        img: project_img4,
-        title: "Launchfolio",
-        subtitle: "Portfolio Site",
-        link: "#",
-        initialAnimation: {
-            x: 30,
-            y: -1250,
-            scale: 0.7,
-            rotation: 5,
-        },
-        // Responsive animation for max-width 1025px
-        initialAnimationMobile: {
-            x: 50,
-            y: -1060,
-            scale: 0.6,
-            rotation: 5,
-        },
-    },
-];
+
 
 interface ProjectSectionProps {
     disableAnimations?: boolean;
@@ -134,7 +47,7 @@ function ProjectSection({ disableAnimations = false }: ProjectSectionProps) {
     const containerRef = useRef<HTMLDivElement>(null);
     const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
     const ctxRef = useRef<gsap.Context | null>(null);
-
+    const PROJECTS =  CONTENT.PROJECTS;
     // Track window width for responsive animations
     useEffect(() => {
         const handleResize = () => {
@@ -305,8 +218,11 @@ function ProjectSection({ disableAnimations = false }: ProjectSectionProps) {
                                     <Link href={project.link} data-cursor-text="Project">
                                         <figure className="rounded-[16px] lg:h-[363px] md:h-[246px] sm:h-[440px] h-[248px] overflow-hidden mb-[12px] ">
                                             <Image
-                                                src={project.img}
+                                                src={project.img} 
                                                 alt={project.title}
+                                                width={500}
+                                                height={500}
+                                                unoptimized={typeof project.img === "string"}
                                                 className="w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-500 ease-in-out"
                                             />
                                         </figure>

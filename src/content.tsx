@@ -1,6 +1,11 @@
 import { Figma, Framer, PaintBucket, Laptop, PanelTop, WandSparkles, Earth, AppWindow, Trello } from 'lucide-react';
 import CONSTANTS from '@/constant';
 import { Instagram,Linkedin ,Facebook ,Youtube, ChevronDown } from 'lucide-react';
+import project_img1 from "../public/images/project_img1.png";
+import project_img2 from "../public/images/project_img2.png";
+import project_img3 from "../public/images/project_img3.png";
+import project_img4 from "../public/images/project_img4.png";
+
 const techStack = [
     { icon: <Figma />, name: 'Figma' },
     { icon: <Framer />, name: 'Framer' },
@@ -198,7 +203,91 @@ const CONTENT = {
             { icon: Facebook, href: "#", name: "Facebook" },
             { icon: Youtube, href: "#", name: "YouTube" },
         ],
-    }
+    },
+     PROJECTS : [
+        {
+            id: 1,
+            img: "https://upwork-usw2-prod-agora-file-storage.s3.us-west-2.amazonaws.com/profile/portfolio/thumbnail/e9d011ad84b5874c5571ba4e2f97c973?response-content-disposition=inline%3B%20filename%3D%22image_original%22%3B%20filename%2A%3Dutf-8%27%27image_original&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEUaCXVzLXdlc3QtMiJIMEYCIQDcRrBe8IJ0RopbgWbuQyIPBmbQonrpXXFK9UB597LgbgIhAJh3d6iNBrUJy%2FxUU3ym7yZQWd8nk2Oq01J5%2FGK96tJgKpIFCA4QABoMNzM5OTM5MTczODE5IgzeX0h6tXJvWaEwzmgq7wQy6utFq%2FAEqQCpbmPxxUPrLHzf3JBS7UvaFYDdW24fqxA7kDKH5amPy4ds4%2BbzHzRc%2BifQspA2nJJ9yTKESioEkdiWangcpIxzLwrQ4VICWNCFVNFyhNMharkH0CjnOqt6YKI7YxqWJqHEkjZgY6Mo4aFdubWMinGAskEZIeD77qxx%2FgE1WolbACtA1ihJG%2BB0SRaKuXb2L5Z0DT05S5ATBRr2NtcSmlpQx7WHlYKRZJr4yr4qpR6oYKM24URkhGx4SIhifakWjDhCJ%2FH5r1tzVyv7m0qcDhe%2FY2jMAEFkp1rEZSwPgVo3Kk4gw911CNHgTVV7k67YllqWVGQIEN%2BggacVQMKnepb%2FefEnfnOqcMHMPzRlAzAJSZmgfPrqJo4Xv9efGPpl2uV%2FNAIy3Jz5TG75IzF9pXA6eVLr%2FLZ0UlmijF6b5w%2FwWSmdsvHnogI7mkFSHZC0S6KRelBPXNpXhGZS38S3fhBLyudypYSCHDBdoOLSapvf7L4fPa%2FIxPCQqy99k%2BnkT1MSWYVilVD65gtYp1xQQ9vgjZnjP8j1y4GqU6JL2wF5hcqC2uJq98VMPEECJrbAA0%2BqyqHvPkDRMGKmOhnUOSVl%2B6NnccM4FACXhPVtVuMyg3D%2BcMuQA6q6pQmxycf0Aztv0W2S3%2B%2BPPFt0ZxUPQP8%2FadxjPKIbPIQgB0LKUYhMBWQjykSF252JJYPmaHqNQhtNAXIuIzxOVPk7CflVoFSL0eNQmsV%2FPjMbHCW%2Fkt0jC081oyLGaCxh6zB0Cz%2Bg71mxPAGb5NbA557ZsaET%2BHuwQpyIYRlN7t95Z8V06adyRHCf3q%2FhJDC2vsPMBjqYAbgzge5NQQNjlZb2OaDcEnwHdcCIFxm8f38JZPS%2B%2FeJJ5mqkqHCzj84NymzDVAU3sCEfMWoJrB2fQXWnB2rCwo%2FSxX1zpYhcirK2K9%2FDhUKT5ubvSHCJFYcZ3lKyj6No9M5zd4acJdjXkPOCii1u6xyqtQ3eTpR8LJGLwsEgPZEs70B%2BC3L9TvwBiAIrtZPF%2BqI4W%2FX%2BTGS5&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260214T204930Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1799&X-Amz-Credential=ASIA2YR6PYW5UYRM7JD4%2F20260214%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Signature=80c24e7115994f8e8fb85b344448f9f6ef47caeb5d338a571f1dd2aa4b131004",
+            title: "Call Donna",
+            subtitle: "AI Voice Agent",
+            link: "/work/call-donna",
+            initialAnimation: {
+                x: 530,
+                y: -850,
+                scale: 0.7,
+                rotation: 10,
+                zIndex: 4,
+            },
+            // Responsive animation for max-width 1025px
+            initialAnimationMobile: {
+                x: 400,
+                y: -760,
+                scale: 0.6,
+                rotation: 10,
+                zIndex: 4,
+            },
+        },
+        {
+            id: 2,
+            img: project_img2,
+            title: "Essentia",
+            subtitle: "Ecommerce Site",
+            link: "#",
+            initialAnimation: {
+                x: 80,
+                y: -850,
+                scale: 0.7,
+                rotation: 15,
+            },
+            // Responsive animation for max-width 1025px
+            initialAnimationMobile: {
+                x: 75,
+                y: -762,
+                scale: 0.6,
+                rotation: 15,
+            },
+        },
+        {
+            id: 3,
+            img: project_img3,
+            title: "Mugen",
+            subtitle: "Design studio",
+            link: "#",
+            initialAnimation: {
+                x: 480,
+                y: -1300,
+                scale: 0.7,
+                rotation: -5,
+            },
+            // Responsive animation for max-width 1025px
+            initialAnimationMobile: {
+                x: 380,
+                y: -1090,
+                scale: 0.6,
+                rotation: -5,
+            },
+        },
+        {
+            id: 4,
+            img: project_img4,
+            title: "Launchfolio",
+            subtitle: "Portfolio Site",
+            link: "#",
+            initialAnimation: {
+                x: 30,
+                y: -1250,
+                scale: 0.7,
+                rotation: 5,
+            },
+            // Responsive animation for max-width 1025px
+            initialAnimationMobile: {
+                x: 50,
+                y: -1060,
+                scale: 0.6,
+                rotation: 5,
+            },
+        },
+    ]
 }
 
 export default CONTENT;
