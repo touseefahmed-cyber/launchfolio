@@ -1,31 +1,35 @@
-import { Figma, Framer, PaintBucket, Laptop, PanelTop, WandSparkles, Earth, AppWindow, Trello } from 'lucide-react';
+import { Code2, Bot, Server, Database, LayoutTemplate, MessageCircle, Laptop, PanelTop, Workflow, Zap, ScanSearch, Sparkles, PlugZap } from 'lucide-react';
 import CONSTANTS from '@/constant';
-import { Instagram,Linkedin ,Facebook ,Youtube, ChevronDown } from 'lucide-react';
-import project_img1 from "../public/images/project_img1.png";
+import { Instagram,Linkedin ,Facebook ,Youtube } from 'lucide-react';
 import project_img2 from "../public/images/project_img2.png";
 import project_img3 from "../public/images/project_img3.png";
 import project_img4 from "../public/images/project_img4.png";
 
 const techStack = [
-    { icon: <Figma />, name: 'Figma' },
-    { icon: <Framer />, name: 'Framer' },
-    { icon: <Figma />, name: 'Webflow' },
-    { icon: <Framer />, name: 'Rive' },
-    { icon: <Figma />, name: 'Blender' },
-    { icon: <Trello />, name: 'Trello' },
-    { icon: <Figma />, name: 'Chatgpt' },
-    { icon: <Framer />, name: 'Claude' },
+    { icon: <Code2 />, name: 'React / Next.js' },
+    { icon: <Server />, name: 'Node.js / .NET' },
+    { icon: <Database />, name: 'Oracle / SQL / MySQL' },
+    { icon: <Bot />, name: 'LangChain / LLMs' },
+    { icon: <Sparkles />, name: 'Hugging Face' },
+    { icon: <Workflow />, name: 'n8n' },
+    { icon: <PlugZap />, name: 'Make' },
+    { icon: <LayoutTemplate />, name: 'Strapi CMS' },
+    { icon: <MessageCircle />, name: 'AI Chatbots' },
+    { icon: <Laptop />, name: 'Vue.js' },
+    { icon: <PanelTop />, name: 'RESTful APIs' },
 ];
 
-// Services data
+// Services: Development → AI → Data & Automation (each with distinct icon)
 const servicesList = [
-    { icon: <Framer />, title: 'Framer Development' },
-    { icon: <PaintBucket />, title: 'Brand Design' },
-    { icon: <Laptop />, title: 'Web Apps' },
-    { icon: <PanelTop />, title: 'Landing Pages' },
-    { icon: <WandSparkles />, title: 'Motion Graphics' },
-    { icon: <Earth />, title: '3D Design' },
-    { icon: <AppWindow />, title: 'UX / UI Consultation' },
+    { icon: <Laptop />, title: 'Full-Stack Web Development' },
+    { icon: <Code2 />, title: 'UI/UX & Frontend Development' },
+    { icon: <PanelTop />, title: 'API Design & Integration' },
+    { icon: <Database />, title: 'Database Design & Optimization' },
+    { icon: <LayoutTemplate />, title: 'CMS & Content Management' },
+    { icon: <Bot />, title: 'AI & LLM Integration (RAG, Chatbots)' },
+    { icon: <MessageCircle />, title: 'AI Agents' },
+    { icon: <Workflow />, title: 'Workflows & Automation' },
+    { icon: <ScanSearch />, title: 'Web Scraping & Data Extraction' },
 ];
 // Clients data (from real Upwork reviews)
 const clientsList = [
