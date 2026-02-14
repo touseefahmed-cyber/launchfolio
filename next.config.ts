@@ -13,6 +13,22 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'images.iimg.live',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.amiinu.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'betainos-cms.s3.eu-north-1.amazonaws.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.arvai.app',
+      },
+      {
+        protocol: 'https',
+        hostname: 'alno.ai',
+      },
     ],
   },
 };

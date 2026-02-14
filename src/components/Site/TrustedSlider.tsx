@@ -1,33 +1,21 @@
 "use client"
-
-import React, { useState } from 'react';
 import {Autoplay, FreeMode} from "swiper/modules";
 import {Swiper, SwiperSlide} from "swiper/react";
-import Image from "next/image";
-import slider_img1 from "../../../public/images/slider-img7.png";
-import slider_img2 from "../../../public/images/slider-img7.png";
-import slider_img3 from "../../../public/images/slider-img7.png";
-import slider_img4 from "../../../public/images/slider-img7.png";
-import slider_img5 from "../../../public/images/slider-img7.png";
-import slider_img6 from "../../../public/images/slider-img7.png";
-import slider_img7 from "../../../public/images/slider-img7.png";
+import Image from "next/image"; 
 import 'swiper/css';
+
+type SliderItem = {
+    src: string;
+    label?: string;
+};
+
 function TrustedSlider() {
-    const sliderImages = [
-        slider_img1,
-        slider_img2,
-        slider_img3,
-        slider_img4,
-        slider_img5,
-        slider_img6,
-        slider_img7,
-        slider_img1,
-        slider_img2,
-        slider_img3,
-        slider_img4,
-        slider_img5,
-        slider_img6,
-        slider_img7,
+    const sliderItems: SliderItem[] = [
+        { src: "https://www.amiinu.com/_next/static/media/logo.f89dceac.svg" },
+        { src: "https://betainos-cms.s3.eu-north-1.amazonaws.com/LOGO_HEADER_FOOTER_BETAINOS_c360afd039_586930a408.svg" },
+        { src: "https://www.arvai.app/_next/static/media/white-logo.4f70e01d.svg", label: "ArvAi" },
+        { src: "", label: "Ultimate AI" },
+        { src: "https://images.iimg.live/images/excellent-snapshot-5934.webp" },
     ];
     return (
         <section className="border-b border-[#dedede] 2xl:px-0 px-[15px]">
@@ -60,14 +48,21 @@ function TrustedSlider() {
                         >
 
 
-                            {sliderImages.map((img, index) => (
+                            {sliderItems.map((item, index) => (
                                 <SwiperSlide key={index}>
-                                    <figure className="w-full h-full">
+                                    <figure className="w-full h-full flex flex-row items-center justify-center gap-2">
                                         <Image
-                                            src={img}
-                                            alt={`Slider image ${index + 1}`}
+                                            src={item.src}
+                                            alt={item.label ?? `Slider image ${index + 1}`}
+                                            width={120}
+                                            height={40}
                                             className="md:w-full w-[200px] h-auto object-contain"
                                         />
+                                        {item.label && (
+                                            <figcaption className="text-sm font-medium text-[#545454] whitespace-nowrap">
+                                                {item.label}
+                                            </figcaption>
+                                        )}
                                     </figure>
                                 </SwiperSlide>
                             ))}
