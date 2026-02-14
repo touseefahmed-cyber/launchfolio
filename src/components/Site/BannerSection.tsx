@@ -3,8 +3,10 @@
 import FadeIn from "@/components/Site/FadeIn";
 import FadeUp from "@/components/Site/FadeUp";
 import CONSTANTS from "@/constant";
+
+const BOOKING_URL = CONSTANTS.calComBookingUrl;
 import Image from "next/image";
-import Link from "next/link";
+import BookingLink from "@/components/Site/BookingLink";
 
 // Banner content data
 const BANNER_DATA = {
@@ -20,7 +22,7 @@ const BANNER_DATA = {
         secondary: "I create everything your brand needs to attract customers and turn them into sales.",
     },
     cta: {
-        href: "#",
+        href: BOOKING_URL,
         text: "Book a call with me",
         imageAlt: "User avatar",
         image: CONSTANTS.profile,
@@ -63,12 +65,12 @@ function BannerSection() {
                             </FadeUp>
                             <FadeUp delay={ANIMATION_DELAYS.cta}>
                                 <div className="">
-                                    <Link href={BANNER_DATA.cta.href} className="book_btn">
+                                    <BookingLink className="book_btn">
                                         <figure className="w-[32px] h-[32px] rounded-full overflow-hidden flex-shrink-0">
                                             <Image src={CONSTANTS.profile} alt={BANNER_DATA.cta.imageAlt} width={32} height={32} />
                                         </figure>
                                         {BANNER_DATA.cta.text}
-                                    </Link>
+                                    </BookingLink>
                                 </div>
                             </FadeUp>
                         </div>

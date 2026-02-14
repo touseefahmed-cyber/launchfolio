@@ -2,7 +2,7 @@ import React from 'react';
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
 import Stack from "@mui/material/Stack";
 import Rating from "@mui/material/Rating";
-import Link from "next/link";
+import BookingLink from "@/components/Site/BookingLink";
 import {CalendarCheck} from "lucide-react";
 
 function CallAction() {
@@ -44,9 +44,9 @@ function CallAction() {
                         Book a free discovery call.
                     </h3>
                     <div className="">
-                        <Link href="#" className="schedule_btn  mx-auto">
+                        <BookingLink className="schedule_btn  mx-auto">
                             <CalendarCheck size={18} /> Schedule Now
-                        </Link>
+                        </BookingLink>
                     </div>
                 </div>
             </div>

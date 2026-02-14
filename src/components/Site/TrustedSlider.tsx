@@ -14,7 +14,7 @@ function TrustedSlider() {
         { src: "https://www.amiinu.com/_next/static/media/logo.f89dceac.svg" },
         { src: "https://betainos-cms.s3.eu-north-1.amazonaws.com/LOGO_HEADER_FOOTER_BETAINOS_c360afd039_586930a408.svg" },
         { src: "https://www.arvai.app/_next/static/media/white-logo.4f70e01d.svg", label: "ArvAi" },
-        { src: "", label: "Ultimate AI" },
+        // { src: "", label: ÷"Ultimate AI" },
         { src: "https://images.iimg.live/images/excellent-snapshot-5934.webp" },
     ];
     return (

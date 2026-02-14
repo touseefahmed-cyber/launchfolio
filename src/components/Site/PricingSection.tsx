@@ -1,7 +1,11 @@
 import React from "react";
 import {RefreshCw, MessageSquare, HandCoins, Check, CalendarCheck} from 'lucide-react';
 import Link from "next/link";
+import BookingLink from "@/components/Site/BookingLink";
 import FadeUp from "@/components/Site/FadeUp";
+import CONSTANTS from "@/constant";
+
+const BOOKING_URL = CONSTANTS.calComBookingUrl;
 
 // Pricing section content data
 const PRICING_DATA = {
@@ -56,7 +60,7 @@ const PRICING_DATA = {
             ],
             cta: {
                 text: "Get Started",
-                href: "#",
+                href: BOOKING_URL,
             },
         },
     },
@@ -74,7 +78,7 @@ const PRICING_DATA = {
         ],
         cta: {
             text: "Get quote",
-            href: "#",
+            href: BOOKING_URL,
         },
     },
 };
@@ -159,9 +163,9 @@ function PricingSection() {
                                     ))}
                                 </ul>
                                 <div className="">
-                                    <Link href={PRICING_DATA.subscription.unlimited.cta.href} className="schedule_btn">
+                                    <BookingLink className="schedule_btn">
                                         <CalendarCheck size={18}/> {PRICING_DATA.subscription.unlimited.cta.text}
-                                    </Link>
+                                    </BookingLink>
                                 </div>
                             </div>
                         </div>
@@ -185,9 +189,9 @@ function PricingSection() {
                                     </ul>
                                 </div>
                                 <div className="">
-                                    <Link href={PRICING_DATA.singleProject.cta.href} className="white_btn">
+                                    <BookingLink className="white_btn">
                                         <CalendarCheck size={18}/> {PRICING_DATA.singleProject.cta.text}
-                                    </Link>
+                                    </BookingLink>
                                 </div>
                             </div>
                         </div>

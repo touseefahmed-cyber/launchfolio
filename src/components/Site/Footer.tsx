@@ -1,8 +1,13 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import Link from "next/link";
+import BookingLink from "@/components/Site/BookingLink";
 import { Instagram, Linkedin, Facebook, Youtube } from 'lucide-react';
 import { Mail,Calendar } from 'lucide-react';
+import CONSTANTS from "@/constant";
+
+const BOOKING_URL = CONSTANTS.calComBookingUrl;
+
 // Footer content data
 const FOOTER_DATA = {
     animation: {
@@ -22,7 +27,7 @@ const FOOTER_DATA = {
         call: {
             label: "Call Me",
             text: "Book Now",
-            href: "#",
+            href: BOOKING_URL,
         },
         social: {
             label: "Social",
@@ -118,9 +123,9 @@ function Footer() {
                            <h6 className="text-[14px] leading-[14px] text-[#828282] mb-[8px]">
                                {FOOTER_DATA.contact.call.label}
                            </h6>
-                           <Link href={FOOTER_DATA.contact.call.href} className="lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px]] inline-block text-white transition duration-500 ease-in-out hover:text-[#545454]">
+                           <BookingLink className="lg:text-[18px] lg:leading-[18px] text-[16px] leading-[16px]] inline-block text-white transition duration-500 ease-in-out hover:text-[#545454]">
                                {FOOTER_DATA.contact.call.text}
-                           </Link>
+                           </BookingLink>
                        </div>
                    <div className="font-medium">
                        <h6 className="text-[14px] leading-[14px] md:text-white text-[#828282] mb-[10px]">
@@ -217,14 +222,14 @@ function Footer() {
                                 <Mail className="shrink-0 group-hover:mr-[8px] transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]" />
                                 <span className="text-[12px] leading-[12px] font-semibold text-white whitespace-nowrap transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] opacity-0 max-w-0 group-hover:opacity-100 group-hover:max-w-[200px] overflow-hidden">Contact</span>
                             </Link>
-                            <Link href="#" className="flex items-center justify-center min-w-[40px] h-[40px] bg-white rounded-full shadow group-hover:w-full group-hover:px-[16px] transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:scale-105 hover:scale-110 active:scale-95 overflow-hidden">
+                            <BookingLink className="flex items-center justify-center min-w-[40px] h-[40px] bg-white rounded-full shadow group-hover:w-full group-hover:px-[16px] transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:scale-105 hover:scale-110 active:scale-95 overflow-hidden">
                                 <Calendar className="shrink-0 group-hover:mr-[8px] transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]" />
                                 <span className="text-[12px] leading-[12px] font-semibold text-black whitespace-nowrap transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] opacity-0 max-w-0 group-hover:opacity-100 group-hover:max-w-[200px] overflow-hidden">Book a call</span>
-                            </Link>
+                            </BookingLink>
                         </div>
                         <div className="gap-[8px] md:hidden flex">
                             <Link href="#" className="flex items-center justify-center bg-color rounded-full text-[12px] leading-[12px] gap-[6px] py-[8px] px-[12px] transition-all duration-300 ease-in-out "><Mail size={16} className="shrink-0"/> Contact</Link>
-                            <Link href="#" className="flex items-center justify-center text-[12px] leading-[12px] bg-white rounded-full shadow gap-[6px] py-[8px] px-[12px] w-[120px] transition-all duration-300 ease-in-out "><Calendar size={16} className="shrink-0"/> Book a call</Link>
+                            <BookingLink className="flex items-center justify-center text-[12px] leading-[12px] bg-white rounded-full shadow gap-[6px] py-[8px] px-[12px] w-[120px] transition-all duration-300 ease-in-out "><Calendar size={16} className="shrink-0"/> Book a call</BookingLink>
                         </div>
                     </div>
                 </div>

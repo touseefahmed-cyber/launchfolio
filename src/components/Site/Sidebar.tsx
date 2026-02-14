@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import BookingLink from "@/components/Site/BookingLink";
 import { useRef } from "react";
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -48,7 +49,7 @@ function Sidebar() {
             <div>
                 <div className="sm:mb-[24px] mb-[20px]">
                     <h2 className="md:text-[32px] md:leading-[32px] text-[26px] leading-[26px] text-black font-medium mb-[8px]">Request a quote</h2>
-                    <p className="text-[14px] text-[#828282] leading-[14px] font-medium">Fill out the form below or <Link href="" className="text-black">book a call.</Link></p>
+                    <p className="text-[14px] text-[#828282] leading-[14px] font-medium">Fill out the form below or <BookingLink className="text-black">book a call.</BookingLink></p>
                 </div>
                 <div className="flex gap-[10px] sm:mb-[32px] mb-[24px]">
                     <figure className="w-[38px] h-[38px] rounded-full overflow-hidden shrink-0">

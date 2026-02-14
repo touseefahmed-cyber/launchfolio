@@ -6,8 +6,11 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion"
 import CONSTANTS from "@/constant";
+
+const BOOKING_URL = CONSTANTS.calComBookingUrl;
 import Image from "next/image";
 import Link from "next/link";
+import BookingLink from "@/components/Site/BookingLink";
 import { CalendarCheck } from 'lucide-react';
 import FadeUp from "@/components/Site/FadeUp";
 
@@ -60,7 +63,7 @@ const FAQ_DATA = {
         description: "Learn more about how I work and how I can help you and your business take the next step.",
         button: {
             text: "Schedule Now",
-            href: "#",
+            href: BOOKING_URL,
         },
         imageAlt: "User avatar",
     },
@@ -121,9 +124,9 @@ function Faq() {
                                     {FAQ_DATA.callCard.description}
                                 </p>
                                 <div className="">
-                                    <Link href={FAQ_DATA.callCard.button.href} className="schedule_btn lg:mx-0 mx-auto">
+                                    <BookingLink className="schedule_btn lg:mx-0 mx-auto">
                                         <CalendarCheck size={18} /> {FAQ_DATA.callCard.button.text}
-                                    </Link>
+                                    </BookingLink>
                                 </div>
                             </div>
                         </div>
